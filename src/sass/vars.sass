@@ -1,12 +1,17 @@
 $black: #000
 $white: #fff
-$dark: #171717
 
-$grey: #D9D9D9
+$pink: #FF1A5E
+$violet1: #4B50C8
+$violet2: #1F2272
 
-$pink: #F4E7FF
-$blue: #E8FDFB
-$orange: #FCA11F
+$grey1: #23262F
+$grey2: #3A3F50
+$grey3: #777E90
+$grey4: #B1B5C3
+$grey5: #E4E5ED
+$grey6: #F6F7FC
+
 
 $ffHeading: 'OpenSans'
 $ffText: 'Poppins'
@@ -40,6 +45,11 @@ $trs: all 0.35s ease-in-out
 	@if $theme == white
 		background-color: $white
 		color: $black
+
+	@if $theme == main
+		background-color: $violet1
+		color: $white
+
 
 
 =sz($w, $h)

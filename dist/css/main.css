@@ -9033,6 +9033,21 @@ button:hover, button:active, button:focus, a:hover, a:active, a:focus, input:hov
   flex: 1 0 auto;
 }
 
+.btn__top {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  border: none;
+  background-color: #4B50C8;
+  color: #fff;
+}
+
 .preloader {
   display: flex;
   align-items: center;
@@ -9045,14 +9060,14 @@ button:hover, button:active, button:focus, a:hover, a:active, a:focus, input:hov
   left: 0;
   z-index: 100500;
   transition: all 0.35s ease-in-out;
-  background-color: #fff;
+  background-color: #4B50C8;
 }
 .preloader-dots .dot {
   display: inline-block;
   width: 10px;
   height: 10px;
   margin: 2px;
-  background: #000;
+  background: #fff;
   border-radius: 50%;
   animation: moveit 1.8s infinite;
 }
