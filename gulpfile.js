@@ -9,13 +9,21 @@ const plumber = require('gulp-plumber');
 // Minify images
 gulp.task('img', function () {
     return gulp
-        .src('src/img/*.{png,jpg,jpeg}')
+        .src('src/img/**/*.{png,jpg,jpeg}')
         .pipe(plumber())
         .pipe(tinypng({
             key: 'sDvt7LyYkdMk1533VRPWdY6wcfx9HY2X',
             sigFile: 'img/.tinypng-sigs',
             log: true
         }))
+        .pipe(gulp.dest('dist/img'))
+        .pipe(browserSync.stream());
+});
+
+// Copy svg
+gulp.task('svg', function () {
+    return gulp
+        .src('src/img/**/*.svg')
         .pipe(gulp.dest('dist/img'))
         .pipe(browserSync.stream());
 });
@@ -31,7 +39,7 @@ gulp.task('favicon', function () {
 // Copy fonts
 gulp.task('fonts', function () {
     return gulp
-        .src('src/fonts/*')
+        .src('src/fonts/**/*')
         .pipe(gulp.dest('dist/fonts'))
         .pipe(browserSync.stream());
 });
@@ -70,8 +78,9 @@ gulp.task('serve', function () {
 // Watch for changes
 gulp.task('watch', function () {
     gulp.watch('src/img/*', gulp.series('img'));
+    //gulp.watch('src/img/*', gulp.series('svg'));
     gulp.watch('src/fav/*', gulp.series('favicon'));
     gulp.watch('src/fonts/*', gulp.series('fonts'));
 });
 
-gulp.task('default', gulp.series('sass', 'img', 'favicon', 'fonts', 'serve', 'watch'));
+gulp.task('default', gulp.series('sass', 'img', 'svg', 'favicon', 'fonts', 'serve', 'watch'));

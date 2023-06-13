@@ -8891,115 +8891,78 @@ textarea.form-control-lg {
   }
 }
 @font-face {
-  font-family: "OpenSans";
-  font-style: normal;
-  font-weight: 800;
-  font-display: swap;
-  src: local("OpenSans"), local("OpenSans"), url("../fonts/OpenSans/OpenSans-ExtraBold.woff") format("woff"), url("../fonts/OpenSans/OpenSans-ExtraBold.woff2") format("woff2"), url("../fonts/OpenSans/OpenSans-ExtraBold.ttf") format("ttf");
-}
-@font-face {
-  font-family: "OpenSans";
+  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: local("OpenSans"), local("OpenSans"), url("../fonts/OpenSans/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans/OpenSans-Bold.ttf") format("ttf");
+  src: local("Inter"), local("Inter"), url("../fonts/Inter/Inter-Bold.woff") format("woff"), url("../fonts/Inter/Inter-Bold.woff2") format("woff2"), url("../fonts/Inter/Inter-Bold.ttf") format("ttf");
 }
 @font-face {
-  font-family: "OpenSans";
+  font-family: "Inter";
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: local("OpenSans"), local("OpenSans"), url("../fonts/OpenSans/OpenSans-SemiBold.woff") format("woff"), url("../fonts/OpenSans/OpenSans-SemiBold.woff2") format("woff2"), url("../fonts/OpenSans/OpenSans-SemiBold.ttf") format("ttf");
+  src: local("Inter"), local("Inter"), url("../fonts/Inter/Inter-SemiBold.woff") format("woff"), url("../fonts/Inter/Inter-SemiBold.woff2") format("woff2"), url("../fonts/Inter/Inter-SemiBold.ttf") format("ttf");
 }
 @font-face {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: local("Poppins"), local("Poppins"), url("../fonts/Poppins/Poppins-Bold.woff") format("woff"), url("../fonts/Poppins/Poppins-Bold.woff2") format("woff2"), url("../fonts/Poppins/Poppins-Bold.ttf") format("ttf");
-}
-@font-face {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: local("Poppins"), local("Poppins"), url("../fonts/Poppins/Poppins-SemiBold.woff") format("woff"), url("../fonts/Poppins/Poppins-SemiBold.woff2") format("woff2"), url("../fonts/Poppins/Poppins-SemiBold.ttf") format("ttf");
-}
-@font-face {
-  font-family: "Poppins";
+  font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: local("Poppins"), local("Poppins"), url("../fonts/Poppins/Poppins-Medium.woff") format("woff"), url("../fonts/Poppins/Poppins-Medium.woff2") format("woff2"), url("../fonts/Poppins/Poppins-Medium.ttf") format("ttf");
+  src: local("Inter"), local("Inter"), url("../fonts/Inter/Inter-Medium.woff") format("woff"), url("../fonts/Inter/Inter-Medium.woff2") format("woff2"), url("../fonts/Inter/Inter-Medium.ttf") format("ttf");
 }
 @font-face {
-  font-family: "Poppins";
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local("Poppins"), local("Poppins"), url("../fonts/Poppins/Poppins-Regular.woff") format("woff"), url("../fonts/Poppins/Poppins-Regular.woff2") format("woff2"), url("../fonts/Poppins/Poppins-Regular.ttf") format("ttf");
-}
-@font-face {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: local("Montserrat"), local("Montserrat"), url("../fonts/Montserrat/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat/Montserrat-Bold.ttf") format("ttf");
-}
-@font-face {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: local("Montserrat"), local("Montserrat"), url("../fonts/Montserrat/Montserrat-SemiBold.woff") format("woff"), url("../fonts/Montserrat/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat/Montserrat-SemiBold.ttf") format("ttf");
-}
-@font-face {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: local("Montserrat"), local("Montserrat"), url("../fonts/Montserrat/Montserrat-Medium.woff") format("woff"), url("../fonts/Montserrat/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat/Montserrat-Medium.ttf") format("ttf");
-}
-@font-face {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local("Montserrat"), local("Montserrat"), url("../fonts/Montserrat/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat/Montserrat-Regular.ttf") format("ttf");
-}
-@font-face {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: local("Montserrat"), local("Montserrat"), url("../fonts/Montserrat/Montserrat-Light.woff") format("woff"), url("../fonts/Montserrat/Montserrat-Light.woff2") format("woff2"), url("../fonts/Montserrat/Montserrat-Light.ttf") format("ttf");
-}
-html, body {
-  height: 100%;
-  min-height: 100vh;
-  scroll-behavior: smooth;
-}
-
-body {
-  background-color: #fff;
+  src: local("Inter"), local("Inter"), url("../fonts/Inter/Inter-Regular.woff") format("woff"), url("../fonts/Inter/Inter-Regular.woff2") format("woff2"), url("../fonts/Inter/Inter-Regular.ttf") format("ttf");
 }
 body::-webkit-scrollbar {
   width: 10px;
   height: 10px;
 }
 body::-webkit-scrollbar-track {
-  background-color: #000;
+  background-color: #1F2272;
 }
 body::-webkit-scrollbar-thumb {
-  background: #000;
+  background: #4B50C8;
+}
+
+:root {
+  --sectionMy: 100px;
+  --sectionSm: 50px;
+  --headingMb: 16px;
+  --gap: 16px;
+  --gapSm: 8px;
+  --gapMd: 32px;
+  --gapLg: 48px;
+}
+@media only screen and (max-width: 991px) {
+  :root {
+    --sectionMy: 50px;
+    --sectionSm: 25px;
+    --gapLg: 24px;
+  }
+}
+
+html, body {
+  height: 100%;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+body {
+  background-color: #fff;
 }
 
 *::-moz-selection {
-  background-color: #fff;
+  background-color: #dc3545;
 }
 
 *::selection {
-  background-color: #fff;
+  background-color: #dc3545;
 }
 
 a {
@@ -9028,24 +8991,11 @@ button:hover, button:active, button:focus, a:hover, a:active, a:focus, input:hov
 .page__body {
   display: flex;
   flex-direction: column;
+  background-color: #2C32BF;
+  color: #fff;
 }
 .page__wrapper {
   flex: 1 0 auto;
-}
-
-.btn__top {
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: nowrap;
-  border: none;
-  background-color: #4B50C8;
-  color: #fff;
 }
 
 .preloader {
@@ -9105,6 +9055,236 @@ button:hover, button:active, button:focus, a:hover, a:active, a:focus, input:hov
     transform: translateY(-3px);
   }
 }
+h2, .h2 {
+  font: 400 1.75rem/1.1428571429 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  letter-spacing: -0.01em;
+}
+@media only screen and (max-width: 480px) {
+  h2, .h2 {
+    font: 400 1.25rem/1.5 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+}
+
+.btn__top {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  border: none;
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.chip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 8px;
+  padding: 12px 16px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20pc;
+  box-shadow: 0px 40px 64px -32px rgba(15, 15, 15, 0.1);
+  -webkit-backdrop-filter: blur(16px);
+          backdrop-filter: blur(16px);
+  font: 400 0.875rem/1.4285714286 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  text-align: center;
+  transition: all 0.35s ease-in-out;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.chip:hover, .chip:focus, .chip:active {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+@media only screen and (max-width: 772px) {
+  .chip {
+    padding: 0.75vh 4vw;
+    font: 400 0.625rem/1 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+}
+.chip__wrap {
+  margin-top: var(--gapLg);
+  margin-bottom: var(--gapLg);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+.chip__wrap:last-child {
+  margin-bottom: 0;
+}
+@media only screen and (max-width: 772px) {
+  .chip__wrap {
+    justify-content: center;
+  }
+}
+
+.rating {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  max-width: 150px;
+  gap: 4px;
+  padding: 4px 6px;
+  border-radius: 8px;
+  background-color: #4B50C8;
+  color: #fff;
+  font: 700 0.75rem/1 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  background-image: url(../img/bg/bg1.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  overflow: hidden;
+}
+.hero__subtitle {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 10vmax;
+  font-weight: 700;
+  line-height: 1;
+}
+.hero__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font: 600 3.625rem/1.1034482759 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  letter-spacing: -0.02em;
+}
+@media only screen and (max-width: 1200px) {
+  .hero__title {
+    line-height: 1;
+    font-size: 4vmax;
+  }
+}
+.hero__description {
+  font: 400 1rem/1.5 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  margin-bottom: 0;
+}
+.hero__img {
+  position: relative;
+  min-height: 250px;
+}
+.hero__img * {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: auto;
+  max-width: 600px;
+  width: 100%;
+}
+@media only screen and (min-width: 1200px) {
+  .hero__img * {
+    transform: scale(1.2);
+  }
+}
+
+.card {
+  width: 100%;
+  margin: 0;
+  background-color: transparent;
+  border: 1px solid #1F2272;
+  border-radius: 8px;
+  overflow: hidden;
+  justify-self: center;
+}
+@media only screen and (max-width: 568px) {
+  .card {
+    max-width: 256px;
+  }
+}
+.card * {
+  transition: all 0.35s ease-in-out;
+}
+.card__wrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(256px, 1fr));
+  justify-content: center;
+  gap: var(--gapMd);
+  margin: var(--gapMd) auto;
+}
+.card__wrap:last-child {
+  margin-bottom: 0;
+}
+.card__wrap-outer {
+  display: flex;
+  justify-content: center;
+}
+.card__img {
+  position: relative;
+  width: 100%;
+  padding-top: 50%;
+  background-color: #222796;
+}
+.card__img * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card__content {
+  padding: 12px 16px;
+  text-align: center;
+}
+.card__header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: var(--gapSm);
+  padding-bottom: 12px;
+  border-bottom: 1px solid #E4E5ED;
+}
+.card__text {
+  padding-top: 12px;
+  padding-bottom: 16px;
+}
+.card__title {
+  font: 700 1.25rem/1.2 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: #FF1A5E;
+}
+.card__label {
+  font: 700 1rem/1.5 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  text-decoration: underline;
+}
+.card__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  padding: 16px 24px;
+  border-radius: 8px;
+  background-image: linear-gradient(180deg, #FF4EA3 0%, #B8008F 100%);
+  background-color: #FF1A5E;
+  color: #fff;
+  font: 700 0.875rem/1.1428571429 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.card__btn:hover, .card__btn:focus, .card__btn:active {
+  background-image: none;
+}
+
 body {
   background-repeat: no-repeat;
   background-size: cover;
@@ -9121,4 +9301,33 @@ a:hover, a:focus, a:active, a:focus-visible {
      -moz-appearance: none;
           appearance: none;
   box-shadow: none;
+}
+
+.container {
+  max-width: 1144px;
+}
+
+.section {
+  padding-top: var(--sectionMy);
+  padding-bottom: var(--sectionMy);
+}
+
+.page__error {
+  display: flex;
+  flex-direction: column;
+}
+.page__error .section {
+  flex: 1;
+}
+.page__error .section:nth-child(even) {
+  padding-top: var(--sectionSm);
+  padding-bottom: var(--sectionSm);
+}
+@media only screen and (max-width: 772px) {
+  .page__error .section {
+    text-align: center;
+  }
+  .page__error .section:first-child {
+    flex: initial;
+  }
 }

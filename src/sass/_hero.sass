@@ -1,0 +1,44 @@
+.hero
+    display: flex
+    align-items: center
+    background-image: url(../img/bg/bg1.svg)
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: 50%
+    overflow: hidden
+
+    &__subtitle
+        margin-top: 0
+        margin-bottom: 0
+        font-size: 10vmax
+        font-weight: 700
+        line-height: 1
+
+    &__title
+        margin-top: 0
+        margin-bottom: 0
+        //margin-bottom: var(--headingMb)
+        +ft(58, 64, 600)
+        letter-spacing: -0.02em
+        +maw($lg)
+            line-height: 1
+            font-size: 4vmax
+
+    &__description
+        +ft(16, 24, 400)
+        margin-bottom: 0
+
+    &__img
+        position: relative
+        min-height: 250px
+
+        & *
+            +ps(absolute, (t, 0), (b, 0), (l, 0), (r, 0))
+            display: block
+            object-fit: contain
+            margin: auto
+            max-width: 600px
+            width: 100%
+
+            +miw($lg)
+                transform: scale(1.2)

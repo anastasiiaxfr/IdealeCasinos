@@ -4,5 +4,41 @@
         +sz(40px, 40px)
         +flex(flex, center, center, nowrap)
         border: none
-        +theme(main)
+        background-color: $red
+        color: $white
 
+
+.chip
+    +flex(flex, center, center, nowrap)
+    gap: 8px
+    padding: 12px 16px
+    background: rgba($white, 0.2)
+    border: 1px solid rgba($white, 0.2)
+    border-radius: 20pc
+    box-shadow: $bxsd1
+    backdrop-filter: blur(16px)
+    +ft(14, 20, 400)
+    text-align: center
+    transition: $trs
+    user-select: none
+
+    &:hover, &:focus, &:active
+        background-color: rgba($white, 0.3)
+
+    +maw($sm)
+        padding: 0.75vh 4vw
+        +ft(10, 10, 400)
+        letter-spacing: 0.05em
+        text-transform: uppercase
+
+    &__wrap
+        margin-top: var(--gapLg)
+        margin-bottom: var(--gapLg)
+        +flex(flex, center, flex-start, wrap)
+        gap: var(--gap)
+
+        &:last-child
+            margin-bottom: 0
+
+        +maw($sm)
+            justify-content: center

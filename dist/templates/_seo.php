@@ -21,7 +21,7 @@ $site_name = "Ideale";
 
 <meta property="og:image:height" content="600" />
 <meta property="og:image:width" content="314" />
-<meta property="og:image" content="<?php echo $img ?>" />
+<meta property="og:image" content="<?php $_SERVER['DOCUMENT_ROOT']?>/<?php echo $img ?>" />
 
 <meta property="fb:app_id" content="..." />
 <meta property="fb:admins" content="<?php echo $author ?>" />
@@ -37,34 +37,34 @@ $site_name = "Ideale";
 <meta name="twitter:creator" content="<?php echo $author ?>" />
 <meta name="twitter:title" content="<?php echo $title ?>" />
 <meta name="twitter:description" content="<?php echo $description ?>" />
-<meta name="twitter:image" content="<?php echo $img ?>" />
+<meta name="twitter:image" content="<?php $_SERVER['DOCUMENT_ROOT']?>/<?php echo $img ?>" />
 
 <!-- G++ -->
 <meta itemprop="name" content="<?php echo $title ?>" />
 <meta itemprop="description" content="<?php echo $description ?>" />
-<meta itemprop="image" content="<?php echo $img ?>" />
+<meta itemprop="image" content="<?php $_SERVER['DOCUMENT_ROOT']?>/<?php echo $img ?>" />
 
-<link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="<?php $_SERVER['DOCUMENT_ROOT']?>/fav/apple-touch-icon.png" />
 
-<link rel="mask-icon" href="fav/safari-pinned-tab.svg" color="#5bbad5" />
+<link rel="mask-icon" href="<?php $_SERVER['DOCUMENT_ROOT']?>/fav/safari-pinned-tab.svg" color="#5bbad5" />
 
-<link href="fav/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-<link href="fav/favicon.ico" rel="icon" type="image/x-icon" />
+<link href="<?php $_SERVER['DOCUMENT_ROOT']?>/fav/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<link href="<?php $_SERVER['DOCUMENT_ROOT']?>/fav/favicon.ico" rel="icon" type="image/x-icon" />
 
 <!--Favicon-->
-<link rel="shortcut icon" href="fav/favicon.png" type="image/x-icon" />
-<link rel="icon" href="fav/favicon.png" type="image/x-icon" />
+<link rel="shortcut icon" href="<?php $_SERVER['DOCUMENT_ROOT']?>/fav/favicon.png" type="image/x-icon" />
+<link rel="icon" href="<?php $_SERVER['DOCUMENT_ROOT']?>/fav/favicon.png" type="image/x-icon" />
 
-<link rel="apple-touch-icon" sizes="144x144" href="fav/apple-touch-icon.png" />
-<link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png" />
-<link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png" />
-<link rel="mask-icon" href="fav/safari-pinned-tab.svg" color="#4B50C8" />
+<link rel="apple-touch-icon" sizes="144x144" href="<?php $_SERVER['DOCUMENT_ROOT']?>/fav/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="<?php $_SERVER['DOCUMENT_ROOT']?>/fav/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="<?php $_SERVER['DOCUMENT_ROOT']?>/fav/favicon-16x16.png" />
+<link rel="mask-icon" href="<?php $_SERVER['DOCUMENT_ROOT']?>/fav/safari-pinned-tab.svg" color="#4B50C8" />
 
-<link rel="manifest" href="fav/site.webmanifest" />
-<link rel="mask-icon" href="fav/safari-pinned-tab.svg" color="#4B50C8" />
+<link rel="manifest" href="<?php $_SERVER['DOCUMENT_ROOT']?>/fav/site.webmanifest" />
+<link rel="mask-icon" href="<?php $_SERVER['DOCUMENT_ROOT']?>/fav/safari-pinned-tab.svg" color="#4B50C8" />
 <meta name="msapplication-TileColor" content="#4b50c8" />
 <meta name="theme-color" content="#4B50C8" />
-<meta name="msapplication-config" content="fav/browserconfig.xml" />
+<meta name="msapplication-config" content="<?php $_SERVER['DOCUMENT_ROOT']?>/fav/browserconfig.xml" />
 
 <script async type="application/ld+json">
   {

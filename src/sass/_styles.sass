@@ -10,3 +10,28 @@ a
         outline: none
         appearance: none
         box-shadow: none
+
+.container
+    max-width: 1144px
+    
+.section
+    padding-top: var(--sectionMy)
+    padding-bottom: var(--sectionMy)
+
+.page
+    &__error
+        display: flex
+        flex-direction: column
+
+        .section
+            flex: 1
+
+            &:nth-child(even)
+                padding-top: var(--sectionSm)
+                padding-bottom: var(--sectionSm)
+                
+
+            +maw($sm)
+                text-align: center
+                &:first-child
+                    flex: initial

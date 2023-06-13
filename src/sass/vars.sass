@@ -4,6 +4,7 @@ $white: #fff
 $pink: #FF1A5E
 $violet1: #4B50C8
 $violet2: #1F2272
+$violet3: #2C32BF
 
 $grey1: #23262F
 $grey2: #3A3F50
@@ -13,122 +14,133 @@ $grey5: #E4E5ED
 $grey6: #F6F7FC
 
 
-$ffHeading: 'OpenSans'
-$ffText: 'Poppins'
+$ffHeading: 'Inter'
+$ffText: 'Inter'
 $ffBack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
 
 $xlg: 1400
 $lg: 1200
 $md: 991
-$sm: 768
+$sm: 772
 $xsm: 520
 $xs: 480
 $xxs: 360
 
 $trs: all 0.35s ease-in-out
 
+
+$bd1: 1px solid #1F2272
+$bd2: 1px solid #E4E5ED
+
+$bxsd1: 0px 40px 64px -32px rgba(15, 15, 15, 0.1)
+
+$brs1: 8px
+
+$grad1: linear-gradient(180deg, #FF4EA3 0%, #B8008F 100%)
+
 =ft($fz, $lh: 16, $fw: 400, $ff: $ffText)
-	$lh: $lh/$fz
-	$fz: $fz/16 + rem
-	$ff: $ff, $ffBack
-	font: $fw $fz/$lh $ff 
+    $lh: $lh/$fz
+    $fz: $fz/16 + rem
+    $ff: $ff, $ffBack
+    font: $fw $fz/$lh $ff 
 
 
 =theme($theme)
-	@if $theme == dark
-		background-color: $dark
-		color: $grey
+    @if $theme == dark
+        background-color: $dark
+        color: $grey
 
-		*::selection
-			background-color: rgba($white, 0.1)
+    @if $theme == white
+        background-color: $white
+        color: $black
 
-	@if $theme == white
-		background-color: $white
-		color: $black
-
-	@if $theme == main
-		background-color: $violet1
-		color: $white
+    @if $theme == main
+        background-color: $violet1
+        color: $white
+    
+    @if $theme == primary
+        background-color: $violet3
+        color: $white
 
 
 
 =sz($w, $h)
-	width: $w
-	height: $h
+    width: $w
+    height: $h
 
 =flex($fx, $ai, $jc, $fxw)
-	display: $fx
-	align-items: $ai
-	justify-content: $jc
-	flex-wrap: $fxw
+    display: $fx
+    align-items: $ai
+    justify-content: $jc
+    flex-wrap: $fxw
 
 
 // input +padding((t, 30px), (b, 40px))
 // +position(absolute, (t, 0), (r, 0))
 =position($ps, $val)
-	@each $x in $ps
-		@if $x == t
-			top: $val
+    @each $x in $ps
+        @if $x == t
+            top: $val
 
-		@if $x == b
-			bottom: $val
+        @if $x == b
+            bottom: $val
 
-		@if $x == l
-			left: $val
+        @if $x == l
+            left: $val
 
-		@if $x == r
-			right: $val
+        @if $x == r
+            right: $val
 
 =ps($params...)
-	position: nth($params, 1)
-	@each $par, $val in $params
-		@if $par != null and $val != null
-			+position($par, $val)
+    position: nth($params, 1)
+    @each $par, $val in $params
+        @if $par != null and $val != null
+            +position($par, $val)
 
 // input +padding((t, 30px), (b, 40px))
 =padding($pd, $val)
-	@if $pd == t
-		padding-top: $val
+    @if $pd == t
+        padding-top: $val
 
-	@if $pd == b
-		padding-bottom: $val
+    @if $pd == b
+        padding-bottom: $val
 
-	@if $pd == l
-		padding-left: $val
+    @if $pd == l
+        padding-left: $val
 
-	@if $pd == r
-		padding-right: $val
+    @if $pd == r
+        padding-right: $val
 
-	@if $pd == all
-		padding: $val
+    @if $pd == all
+        padding: $val
 
-	
+    
 
 =pd($params...)
-	@each $par, $val in $params
-		@if $par != null and $val != null
-			+padding($par, $val)
+    @each $par, $val in $params
+        @if $par != null and $val != null
+            +padding($par, $val)
 
 =margin($mg, $val)
-	@if $mg == t
-		margin-top: $val
+    @if $mg == t
+        margin-top: $val
 
-	@if $mg == b
-		margin-bottom: $val
+    @if $mg == b
+        margin-bottom: $val
 
-	@if $mg == l
-		margin-left: $val
+    @if $mg == l
+        margin-left: $val
 
-	@if $mg == r
-		margin-right: $val
+    @if $mg == r
+        margin-right: $val
 
-	@if $mg == all
-		margin: $val
+    @if $mg == all
+        margin: $val
 
 =mg($params...)
-	@each $par, $val in $params
-		@if $par != null and $val != null
-			+margin($par, $val)
+    @each $par, $val in $params
+        @if $par != null and $val != null
+            +margin($par, $val)
 
 // =sp($prop, $params...)
 // 	@if $prop == mg
@@ -138,61 +150,83 @@ $trs: all 0.35s ease-in-out
 
 $i: 0
 =spacer($arr)
-	@for $val from 1 through length($arr) 
-		$spr: nth($arr, 1)
-	@if $spr == mg
-		@for $i from 2 through length($arr)
-			$props: nth($arr, $i)
-			+margin($props...)
-	@if $spr == pd
-		@for $i from 2 through length($arr)
-			$props: nth($arr, $i)
-			+padding($props...)
-	
+    @for $val from 1 through length($arr) 
+        $spr: nth($arr, 1)
+    @if $spr == mg
+        @for $i from 2 through length($arr)
+            $props: nth($arr, $i)
+            +margin($props...)
+    @if $spr == pd
+        @for $i from 2 through length($arr)
+            $props: nth($arr, $i)
+            +padding($props...)
+    
 =sp($x, $y)
-	+spacer($x)
-	+spacer($y)
-		
-	
+    +spacer($x)
+    +spacer($y)
+        
+    
 //+sp((mg, (l, 20px), (b, 15px)), (pd, (r, 10px)))
 
-	
+    
 =maw($brkp)
-	@media only screen and (max-width: $brkp+"px")
-		@content
+    @media only screen and (max-width: $brkp+"px")
+        @content
 
 =miw($brkp)
-	@media only screen and (min-width: $brkp+"px")
-		@content
+    @media only screen and (min-width: $brkp+"px")
+        @content
 
 =mw($min, $max)
-	@media only screen and (min-width: $min+"px") and (max-width: $max+"px")
-		@content
+    @media only screen and (min-width: $min+"px") and (max-width: $max+"px")
+        @content
 
 
 @function rem($val)
-	$res: $val/16 + rem
-	@return $res
+    $res: $val/16 + rem
+    @return $res
 
 @function em($val)
-	$res: $val/16 + em
-	@return $res 
+    $res: $val/16 + em
+    @return $res 
 
 
 
 //  font-size: calc([minfz] + ([maxfz] - [minfz]) * ((100vw - [miw]) / ([maw] - [miw])));
-	
+    
 =rfz($maw, $miw, $minfz, $maxfz)
-	$maw : $maw + px
-	$miw : $miw + px
-	$minfz : $minfz + px
-	$maxfz : $maxfz + px	
-	@media only screen and (min-width: $miw) 
-		font-size: calc(#{$minfz} + (#{$maxfz} - #{$minfz}) * ((100vw - #{$miw}) / (#{$maw} - #{$miw})))
+    $maw : $maw + px
+    $miw : $miw + px
+    $minfz : $minfz + px
+    $maxfz : $maxfz + px	
+    @media only screen and (min-width: $miw) 
+        font-size: calc(#{$minfz} + (#{$maxfz} - #{$minfz}) * ((100vw - #{$miw}) / (#{$maw} - #{$miw})))
 
-	@media only screen and (min-width: $maw)
-		font-size: $maxfz
-	
+    @media only screen and (min-width: $maw)
+        font-size: $maxfz
+    
 // +rfz(1120, 320, 12, 40)
 
+%scroll
+    &::-webkit-scrollbar
+        width: 10px
+        height: 10px
 
+    &::-webkit-scrollbar-track
+        background-color: $violet2
+
+    &::-webkit-scrollbar-thumb
+        background: $violet1
+
+\:root
+    --sectionMy: 100px
+    --sectionSm: 50px
+    --headingMb: 16px
+    --gap: 16px
+    --gapSm: 8px
+    --gapMd: 32px
+    --gapLg: 48px
+    +maw($md)
+        --sectionMy: 50px
+        --sectionSm: 25px
+        --gapLg: 24px
