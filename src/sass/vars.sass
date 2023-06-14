@@ -14,23 +14,25 @@ $grey5: #E4E5ED
 $grey6: #F6F7FC
 
 
+
 $ffHeading: 'Inter'
 $ffText: 'Inter'
 $ffBack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
 
 $xlg: 1400
 $lg: 1200
-$md: 991
+$md: 998
 $sm: 772
 $xsm: 520
 $xs: 480
 $xxs: 360
 
-$trs: all 0.35s ease-in-out
+$trs: all 0.45s ease-in-out
 
 
 $bd1: 1px solid #1F2272
 $bd2: 1px solid #E4E5ED
+$bd3: 1px solid rgba(#2C32BF, 0.5)
 
 $bxsd1: 0px 40px 64px -32px rgba(15, 15, 15, 0.1)
 
@@ -47,12 +49,12 @@ $grad1: linear-gradient(180deg, #FF4EA3 0%, #B8008F 100%)
 
 =theme($theme)
     @if $theme == dark
-        background-color: $dark
-        color: $grey
+        background-color: $violet2
+        color: $white
 
     @if $theme == white
-        background-color: $white
-        color: $black
+        background-color: $grey6
+        color: $grey2
 
     @if $theme == main
         background-color: $violet1
@@ -218,12 +220,36 @@ $i: 0
     &::-webkit-scrollbar-thumb
         background: $violet1
 
+%hover-link
+    position: relative
+    &::before
+        content: ''
+        +ps(absolute, (b, -1px), (l, 0))
+        +sz(100%, 1px)
+        border-radius: 1px
+        background-color: $white
+
+        transform-origin: right
+        transform: scaleX(0)
+        transition: transform .3s ease-in-out
+%hover
+    @extend %hover-link
+
+    &:hover, &:focus, &:active
+        //color: $viole1
+        opacity: 1
+        &::before
+            transform-origin: left
+            transform: scaleX(1)
+
 \:root
+    --headerH: 64px
     --sectionMy: 100px
     --sectionSm: 50px
     --headingMb: 16px
     --gap: 16px
-    --gapSm: 8px
+    --gapXs: 8px
+    --gapSm: 24px
     --gapMd: 32px
     --gapLg: 48px
     +maw($md)

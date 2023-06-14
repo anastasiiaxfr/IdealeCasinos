@@ -35,3 +35,50 @@ a
                 text-align: center
                 &:first-child
                     flex: initial
+    &__hero
+        padding-top: calc(var(--gapSm) + var(--headerH))
+        padding-bottom: var(--gapSm)
+        background: url('../img/bg/bg-hero.svg') no-repeat 50%/cover
+        backdrop-filter: blur(15px)
+        border-top: $bd3
+        h1
+            margin-bottom: var(--headingMb)
+            +ft(58, 64, 600)
+            letter-spacing: -0.02em
+
+            +maw($xs)
+                +ft(28, 32, 600)
+        p
+            margin-bottom: 0
+            +ft(16, 24, 400)
+        a
+            text-decoration: underline
+            transition: $trs
+            &:hover, &:focus, &:active
+                text-decoration: none
+
+    &__container
+        +theme(white)
+        height: 100%
+        padding: var(--gapMd) 0
+
+    &__content
+        padding-top: calc(var(--gapSm) + var(--headerH))
+        padding-bottom: var(--gapSm)
+
+.logos
+    +flex(inline-flex, center, center, wrap)
+    gap: var(--gap)
+    
+    & *
+        max-width: 150px
+        height: auto
+        object-fit: contain
+        transition: $trs
+        &:hover, &:active, &:focus
+            opacity: 0.5
+
+        +maw(480)
+            max-width: 40px
+            transform: scale(1.2)
+

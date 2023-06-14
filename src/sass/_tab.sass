@@ -1,0 +1,79 @@
+.tab
+    +flex(inline-flex, center, center, nowrap)
+    padding: 8px 12px
+    border: none
+    border-radius: 20pc
+    background-color: rgba($violet1, 20%)
+    color: $violet1
+    cursor: pointer
+    transition: $trs
+    +ft(14, 20, 600)
+    user-select: none
+
+    +maw($xs)
+        text-transform: uppercase
+        +ft(10, 12, 600)
+    
+    &--active, &:hover, &:active, &:focus
+        background-color: $violet1
+        color: $white
+    
+    &__wrap
+        +flex(flex, center, flex-start, wrap)
+        gap: var(--gapXs)
+
+    &__container    
+        margin-top: var(--gap)
+      
+    &__item
+        padding: var(--gap)
+        background-color: $white
+        border-radius: var(--gap)
+        border: $bd2
+
+        display: none
+
+        & + &
+            margin-top: var(--gap)
+
+        &--active
+            display: block
+
+    &__header
+        margin-bottom: var(--gap)
+        +ft(20, 24, 700)
+
+    &__content
+        display: grid
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr))
+        row-gap: var(--gapSm)
+        column-gap: 12px
+
+        +maw($xs)
+            grid-template-columns: 1fr
+
+    &__crumb
+        position: relative
+        +flex(flex, center, flex-start, wrap)
+        padding: 10px
+        overflow: hidden
+        white-space: nowrap
+        +ft(16, 24, 400)
+        border-radius: 8px
+        background-color: $grey6
+        border: 1px solid darken($grey6, 2%)
+        color: $grey2
+        transition: $trs
+
+        &::after
+            content: ''
+            +sz(100%, 100%)
+            +ps(absolute, (r, 0), (t, 0), (b, 0))
+            background: linear-gradient(90deg, transparent 70%, $grey6)
+
+        span
+            display: block
+            text-overflow: ellipsis
+
+        &:hover, &:active, &:focus
+            background-color: darken($grey6, 2%)

@@ -31,6 +31,13 @@
         letter-spacing: 0.05em
         text-transform: uppercase
 
+    &--main
+        background-color: rgba($violet1, 20%)
+        color: $violet1
+        &-active
+            background-color: $violet1
+
+
     &__wrap
         margin-top: var(--gapLg)
         margin-bottom: var(--gapLg)
@@ -42,3 +49,10 @@
 
         +maw($sm)
             justify-content: center
+
+
+.favorite, .search, .menu__toggler
+    border: none
+    background: transparent
+    color: inherit
+    padding: 0

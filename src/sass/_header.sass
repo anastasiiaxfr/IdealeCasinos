@@ -1,0 +1,102 @@
+.header
+    +ps(fixed, (t, 0), (l, 0))
+    z-index: 100
+    +flex(flex, center, space-between, nowrap)
+    +sz(100%, var(--headerH))
+    +theme(main)
+    // padding-top: var(--gap)
+    // padding-bottom: var(--gap)
+
+    ul
+        list-style-type: none
+        margin: 0
+        padding: 0
+
+    &__inner
+        +flex(flex, center, space-between, nowrap)
+        gap: var(--gapSm)
+
+    &-logo
+        +flex(inline-flex, center, center, nowrap)
+        gap: var(--gap)
+        margin-right: auto
+
+    &-cta
+        +flex(flex, center, space-between, nowrap)
+        gap: var(--gap)
+
+        button
+            transition: $trs
+            &:hover, &:active, &:focus
+                color: $pink
+
+    &-menu
+        position: relative
+        width: auto
+        overflow: hidden
+        +flex(flex, center, flex-start, nowrap)
+        gap: var(--gap)
+
+        +maw($sm)
+            display: none
+
+        &__item
+
+            +miw($lg)
+                &:hover
+                    opacity: 1
+                    & > :first-child
+                        span::before
+                            transform-origin: left
+                            transform: scaleX(1)
+                    & > :last-child
+                        display: block
+
+
+        &__link
+            +flex(flex, center, center, nowrap)
+            gap: var(--gapXs)
+            height: var(--headerH)
+            +ft(12, 12, 700)
+            white-space: nowrap
+
+            span
+                display: block
+                text-overflow: ellipsis
+                @extend %hover-link
+
+        &__submenu
+            position: absolute
+            position: fixed
+            left: 0
+            top: var(--headerH)
+            z-index: 1
+            padding: var(--gapSm) var(--gap)
+            +theme(dark)
+            flex: 1
+            width: 100%
+            display: none
+           
+            .container
+                +flex(flex, flex-start, flex-start, wrap)
+                gap: var(--gapLg)
+                //padding: 0
+
+            a
+                display: inline-block
+                @extend %hover
+
+            &-link
+                margin-top: var(--gapXs)
+                margin-bottom: var(--gapXs)
+                text-align: left
+                +ft(14, 20, 400)
+
+                &:last-child
+                    margin-bottom: 0
+
+            &-title
+                margin-bottom: var(--gap)
+                +ft(12, 16, 700)
+                text-transform: uppercase
+                letter-spacing: 0.05em

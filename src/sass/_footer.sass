@@ -1,0 +1,95 @@
+.footer
+    +theme(main)
+    +ft(12, 16, 400)
+    
+    p
+        margin: 0
+
+    &__top
+        padding: var(--gapMd) 0
+
+        +maw($md)
+            .logo__wrap
+                width: 100%
+
+    &__btm
+        padding: var(--gapMd) 0
+        +ft(14, 20, 400)
+
+        &-inner
+            @extend .d-flex, .align-items-center, .flex-wrap
+            justify-content: space-between
+            gap: var(--gap)
+
+            +maw($sm)
+                justify-content: center
+                text-align: center
+
+
+
+    &__middle
+        padding: var(--gapSm) 0
+        +theme(primary)
+
+        address
+            margin-top: var(--gapSm)
+            margin-bottom: 0
+            +ft(14, 20, 600)
+        
+        +maw($xs)
+            text-align: center
+
+    &-logo
+        +flex(inline-flex, center, center, wrap)
+        gap: var(--gap)
+        +maw($md)
+            width: 100%
+
+    &-menu
+        &__wrap
+            +flex(flex, flex-start, space-between, wrap)
+            margin-top: var(--gapMd)
+            gap: var(--gapMd)
+            display: grid
+            grid-template-columns: repeat(5, auto)
+
+            +maw($md)
+                & > :first-child
+                    flex: 1 0 auto
+                    width: 100%
+                    grid-column: 1/-1
+
+            +maw($sm)
+                display: grid
+                grid-template-columns: auto auto
+                justify-content: center
+
+                & > :first-child
+                    grid-column: 1/-1
+
+            +maw($xs)
+                grid-template-columns: auto
+                justify-content: center
+                text-align: center
+
+        &__title
+            margin-bottom: var(--gap)
+            text-transform: uppercase
+            +ft(16, 16, 700)
+            letter-spacing: 0.05em
+
+        ul
+            list-style-type: none
+            margin: 0
+            padding: 0
+
+        li
+            +ft(14, 20, 400)
+            margin-top: var(--gapXs)
+            margin-bottom: var(--gapXs)
+
+            a
+                transition: $trs
+                @extend %hover
+                opacity: 0.9
+              
