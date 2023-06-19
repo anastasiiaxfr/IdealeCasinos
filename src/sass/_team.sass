@@ -1,0 +1,56 @@
+.team
+    &__wrap
+        display: grid
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr))
+        column-gap: var(--gapMd)
+        row-gap: var(--gap)
+
+    &__item
+        overflow: hidden
+        margin-bottom: 0
+        background-color: $white
+        border-radius: $brs1
+        border: $bd2
+        color: $grey2
+        transition: $trs
+        &:hover
+            box-shadow: $bxsd1
+
+    &__img
+        position: relative
+        width: 100%
+        padding-top: 75%
+        overflow: hidden
+        img, picture
+            display: block
+            object-fit: cover
+            +ps(absolute, (t, 0), (l, 0))
+            max-width: 100%
+            +sz(100%, 100%)
+
+    &__caption
+        +flex(flex, flex-start, flex-start, nowrap)
+        flex-direction: column
+        gap: 12px
+        padding: var(--gapXs) var(--gapXs) var(--gap)
+        +ft(14, 20, 400)
+
+    &__name
+        +ft(16, 24, 700)
+
+    &__job
+        +ft(14, 20, 400)
+        color: $grey3
+
+    &__overlay
+        +ps(absolute, (t, 0), (l, 0))
+        +flex(flex, center, center, nowrap)
+        +sz(100%, 100%)
+        backdrop-filter: blur(5px)
+        background-color: rgba($violet1, 0.5)
+        color: $white
+        transition: $trs
+        opacity: 0
+        cursor: pointer
+        &:hover
+            opacity: 1

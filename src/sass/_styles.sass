@@ -66,6 +66,66 @@ a
         padding-top: calc(var(--gapSm) + var(--headerH))
         padding-bottom: var(--gapSm)
 
+    &__meta
+        +flex(flex, center, flex-start, wrap)
+        gap: var(--gap)
+        margin-bottom: var(--gapSm)
+        +ft(12, 16, 400)
+
+    &__inner
+        height: 100%
+        padding-top: calc(var(--gapXmd) + var(--headerH))
+        padding-bottom: var(--gapXmd)
+        +theme(light)
+
+        section
+            margin-top: var(--gapLg)
+
+            &:first-child
+                margin-top: 0
+
+        h1, h2
+            margin-bottom: var(--gapSm)
+      
+        h3, h4, h5, h6
+            margin-bottom: var(--gap)
+
+        h2
+            @extend .h2
+        p
+            +ft(16, 24, 400)
+
+        ul
+            padding: 0
+            margin: 0
+
+            li
+                position: relative
+                list-style-type: none
+                +flex(flex, flex-start, flex-start, nowrap)
+                gap: 12px
+                margin-top: var(--gap)
+                &:first-of-type
+                    margin-top: 0
+                &::before
+                    content: ''
+                    +flex(flex, flex-start, flex-start, nowrap)
+                    +sz(8px, 8px)
+                    min-width: var(--gapXs)
+                    margin: 8px
+                    line-height: 24px
+                    border-radius: 50%
+                    background-color: $red
+
+        +maw($xsm)
+            padding-top: calc(var(--gap) + var(--headerH))
+
+            p, li
+                +ft(14, 20, 400)
+        
+
+
+
 .logos
     +flex(inline-flex, center, center, wrap)
     gap: var(--gap)

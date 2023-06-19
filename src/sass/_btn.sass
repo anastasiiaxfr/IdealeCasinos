@@ -34,8 +34,19 @@
     &--main
         background-color: rgba($violet1, 20%)
         color: $violet1
-        &-active
+        &.active
             background-color: $violet1
+
+    &--grey
+        +ft(14, 20, 600)
+        background-color: $grey5
+        color: $grey2
+        &.active
+            background-color: $grey2
+            color: $white
+        &:hover, &:active, &:focus
+            background-color: darken($grey2, 5%)
+            color: $white
 
 
     &__wrap

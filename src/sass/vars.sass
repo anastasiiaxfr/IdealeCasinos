@@ -14,7 +14,6 @@ $grey5: #E4E5ED
 $grey6: #F6F7FC
 
 
-
 $ffHeading: 'Inter'
 $ffText: 'Inter'
 $ffBack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
@@ -64,6 +63,12 @@ $grad1: linear-gradient(180deg, #FF4EA3 0%, #B8008F 100%)
         background-color: $violet3
         color: $white
 
+    @if $theme == light
+        background-color: $grey6
+        color: $grey3
+
+        h1, h2, h3, h4, h5, h6
+            color: $grey2
 
 
 =sz($w, $h)
@@ -251,6 +256,7 @@ $i: 0
     --gapXs: 8px
     --gapSm: 24px
     --gapMd: 32px
+    --gapXmd: 40px
     --gapLg: 48px
     +maw($md)
         --sectionMy: 50px
