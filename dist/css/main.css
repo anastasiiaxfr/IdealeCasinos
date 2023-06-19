@@ -8986,12 +8986,12 @@ body {
 }
 
 *::-moz-selection {
-  background-color: #dc3545;
+  background-color: #2C32BF;
   color: #fff;
 }
 
 *::selection {
-  background-color: #dc3545;
+  background-color: #2C32BF;
   color: #fff;
 }
 
@@ -9164,6 +9164,7 @@ h4, .h4 {
           backdrop-filter: blur(16px);
   font: 400 0.875rem/1.4285714286 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   text-align: center;
+  text-decoration: none;
   transition: all 0.45s ease-in-out;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -9936,6 +9937,12 @@ a:hover, a:focus, a:active, a:focus-visible {
 }
 .page__inner p {
   font: 400 1rem/1.5 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.page__inner p > a {
+  text-decoration: underline;
+}
+.page__inner p > a:hover, .page__inner p > a:active, .page__inner p > a:focus {
+  text-decoration: none;
 }
 .page__inner ul {
   padding: 0;

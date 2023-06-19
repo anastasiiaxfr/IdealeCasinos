@@ -34,7 +34,7 @@
                     </div>
 
                     <p>
-                        Red Ventures (includes “us,” “we,” or “our”) is a portfolio of brands and digital platforms
+                        Red <a href="#">Ventures</a> (includes “us,” “we,” or “our”) is a portfolio of brands and digital platforms
                         (such as mobile and/or TV applications) that connect people with information to help make some
                         of life’s most important decisions. Some examples of Red Ventures’ brands are Allconnect,
                         Bankrate, CNET, MyMove, Online MBA, and The Points Guy. For the purposes of this Privacy Policy,
