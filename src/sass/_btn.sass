@@ -1,4 +1,5 @@
 .btn
+    +flex(flex, center, center, nowrap)
     &__top
         +ps(fixed, (b, 10px), (r, 10px))
         +sz(40px, 40px)
@@ -6,6 +7,34 @@
         border: none
         background-color: $red
         color: $white
+    
+    &-blur, &-main
+        min-width: 144px
+        height: 40px
+        @extend .btn
+        border-radius: $brs1
+        text-align: center
+        +ft(14, 16, 700)
+        transition: $trs
+       
+    &-main
+        background-color: $pink
+        color: $white
+        &:hover, &:active, &:focus
+            background: darken($pink, 10%)
+            color: $white
+
+    &-blur
+        background: $grad2
+        border: 1px solid $white
+        color: $white
+        &:hover, &:active, &:focus
+            background-color: $white
+            color: $pink
+  
+            
+
+
 
 .chip
     +flex(flex, center, center, nowrap)

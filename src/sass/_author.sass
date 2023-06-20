@@ -1,0 +1,109 @@
+.author
+    background-color: $white
+    border-radius: var(--gapXs)
+    border: $bd4
+    overflow: hidden
+    
+    &__header
+        +flex(flex, center, space-between, wrap)
+        padding: var(--gapSm)
+        gap: var(--gapSm)
+        background-color: $violet1
+        color: $white
+        & *
+            color: $white
+
+    &__footer
+        padding: var(--gapSm)
+
+    &__show-more
+        display: block
+        margin-top: var(--gap)
+        padding: 0
+        background: transparent
+        border: none
+        color: $violet1
+        +ft(14, 16, 700)
+        +miw($sm)
+            display: none
+    
+    &__content
+        flex: 1
+        padding: var(--gapSm) var(--gapSm) 0
+        +ft(16, 24, 400)
+        color: $grey2
+
+        &.active
+            display: block
+
+        +maw($sm)
+            display: none
+    
+    &__inner
+        flex: 1 0 auto
+    
+    &__posts
+        margin: 16px auto 0
+        p
+            margin: 0
+        a
+            color: $violet1
+            &:hover, &:active, &:focus
+                text-decoration: none
+                color: $violet1
+    
+    &__btn
+        padding: 12px 16px
+        +flex(flex, center, center, nowrap)
+        text-transform: capitalize
+        +ft(14, 16, 600)
+        letter-spacing: 0.01em
+        border-radius: 8px
+        border: 1px solid $white
+        box-shadow: $bxsd2
+        backdrop-filter: blur(16px)
+        background: $grad2
+        transition: $trs
+        &:hover, &:active, &:focus
+            background: transparent
+
+        +maw($sm)
+            display: none
+    
+    &__title
+        +flex(inline-flex, center, center, nowrap)
+        margin-bottom: var(--gapXs)
+        gap: var(--gap)
+        +ft(20, 24, 700)
+        text-transform: capitalize
+        span
+            width: auto
+            flex: 1 0 auto
+        svg
+            min-width: 24px
+        +maw($xxs)
+            svg
+                display: none
+
+    &__job
+        +ft(14, 20, 400)
+    
+    &__ava
+        position: relative
+        +sz(72px, 72px)
+        margin: 0
+        border-radius: $brs1
+
+        & *
+            display: block
+            object-fit: cover
+            +sz(100%, 100%)
+        
+        +maw($xs)
+            display: none
+
+    .socials
+        a
+            color: $grey3
+            &:hover, &:active, &:focus
+                color: $violet1
