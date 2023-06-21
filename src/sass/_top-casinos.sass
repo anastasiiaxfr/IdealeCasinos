@@ -1,0 +1,87 @@
+.top-casinos
+    display: grid
+    grid-template-columns: 65px auto
+    gap: var(--gapXs)
+    margin: 0
+    padding: 4px
+    background-color: $white
+    border-radius: $brs1
+    border: $bd2
+
+    &__wrap
+        width: 100%
+        margin: var(--gapXs) auto
+        border-radius: $brs1
+        color: $white
+
+        &.active
+            padding: 4px
+            background-color: $red
+            .top-casinos__header
+                display: block
+
+        &:hover
+            .top-casinos__overlay
+                opacity: 1
+            .top-casinos__text
+                opacity: 0
+
+    &__btn
+        @extend .btn-main
+        min-width: 0
+        +sz(100%, auto)
+        padding: 10px
+        border-radius: 4px
+
+    &__link
+        margin: 0
+        color: $grey3
+        text-decoration: underline
+        +ft(12, 14, 400)
+        &:hover, &:active, &:focus
+            text-decoration: none
+            color: $grey3
+
+    &__header
+        padding: 8px
+        text-transform: uppercase
+        +ft(12, 16, 700)
+        display: none
+
+        svg
+            margin-right: 5px
+
+    &__content
+        position: relative
+        +flex(flex, flex-start, center, nowrap)
+        flex-direction: column
+
+    &__overlay
+        +ps(absolute, (t, 0), (b, 0), (r, 0))
+        +flex(flex, center, center, nowrap)
+        flex-direction: column
+        gap: 6px
+        width: 100%
+        text-align: center
+        opacity: 0
+
+    &__title
+        +ft(16, 24, 700)
+        color: $grey2
+
+    &__img
+        position: relative
+        width: 100%
+        padding-top: 100%
+        background-color: $black
+        border-radius: $brs1
+        overflow: hidden
+
+        & * 
+            display: block
+            +ps(absolute, (t, 0), (l, 0))
+            +sz(100%, 100%)
+            object-fit: cover
+
+    .rating
+        @extend .rating--grey

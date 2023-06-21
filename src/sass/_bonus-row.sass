@@ -1,0 +1,74 @@
+.bonus-row
+    +flex(flex, center, flex-start, nowrap)
+    gap: 12px
+    margin: 0
+    padding: var(--gapXs)
+    @extend %card
+    color: $grey2
+    border-radius: 0
+
+    &:first-of-type
+        border-radius: $brs1 $brs1 0 0
+    &:not(:first-child)
+        border-top: none
+    &:last-of-type
+        border-radius: 0 0 $brs1 $brs1
+
+    &__title
+        flex: 0.75
+        +ft(16, 24, 700)
+        color: $grey2
+
+        +maw($xsm)
+            display: none
+
+    &__inner
+        +flex(flex, center, flex-start, nowrap)
+        flex: 1
+        gap: var(--gapXs)
+
+    &__sup
+        text-transform: uppercase
+        +ft(12, 16, 700)
+        color: $grey3
+        opacity: 0.5
+
+    &__info
+        +ft(16, 24, 700)
+
+    &__btn
+        @extend .btn-main
+
+    &__cta
+        text-align: center
+
+    &__link
+        display: inline-block
+        text-align: center
+        text-decoration: underline
+        +ft(12, 14, 400)
+        color: $grey3
+        
+    &__content
+        flex: auto
+
+    &__img
+        +flex(flex, center, center, wrap)
+        +sz(45px, 45px)
+        min-width: 45px
+        border-radius: 6px
+        overflow: hidden
+
+        & *
+            display: block
+            +sz(100%, 100%)
+            object-fit: cover
+
+    +maw($xs)
+        flex-wrap: wrap
+        justify-content: center
+
+        &__inner
+            flex: 1 0 auto
+            width: 100%
+

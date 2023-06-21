@@ -14,12 +14,7 @@
 
             <div class='card__header'>
 
-                <span class='rating'>
-                    <svg class='ratin__icon' width='15' height='15'>
-                        <use xlink:href='#star'></use>
-                    </svg>
-                    $rating
-                </span>
+                <?php include '../templates/_rating.php'; ?>
 
                 <a href='$url' class='card__label'>
                 $label

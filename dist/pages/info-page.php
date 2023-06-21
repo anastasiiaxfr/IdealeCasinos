@@ -16,7 +16,7 @@
     <main class="page__wrapper">
         <?php include '../templates/_header.php';?>
 
-        <article class="page__inner">
+        <article class="page page__inner">
             <div class="container">
 
                 <section>

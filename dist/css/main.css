@@ -2095,7 +2095,7 @@ textarea.form-control-lg {
   clip: rect(0, 0, 0, 0);
   pointer-events: none;
 }
-.btn-check[disabled] + .btn, .btn-check[disabled] + .btn-blur, .btn-check[disabled] + .btn-main, .btn-check:disabled + .btn, .btn-check:disabled + .btn-blur, .btn-check:disabled + .btn-main {
+.btn-check[disabled] + .btn, .btn-check[disabled] + .btn-blur, .btn-check[disabled] + .cat, .btn-check[disabled] + .btn-main, .btn-check[disabled] + .bonus-row__btn, .btn-check[disabled] + .top-casinos__btn, .btn-check:disabled + .btn, .btn-check:disabled + .btn-blur, .btn-check:disabled + .cat, .btn-check:disabled + .btn-main, .btn-check:disabled + .bonus-row__btn, .btn-check:disabled + .top-casinos__btn {
   pointer-events: none;
   filter: none;
   opacity: 0.65;
@@ -2273,11 +2273,11 @@ textarea.form-control-lg {
 .input-group > .form-select:focus {
   z-index: 3;
 }
-.input-group .btn, .input-group .btn-blur, .input-group .btn-main {
+.input-group .btn, .input-group .btn-blur, .input-group .cat, .input-group .btn-main, .input-group .bonus-row__btn, .input-group .top-casinos__btn {
   position: relative;
   z-index: 2;
 }
-.input-group .btn:focus, .input-group .btn-blur:focus, .input-group .btn-main:focus {
+.input-group .btn:focus, .input-group .btn-blur:focus, .input-group .cat:focus, .input-group .btn-main:focus, .input-group .bonus-row__btn:focus, .input-group .top-casinos__btn:focus {
   z-index: 3;
 }
 
@@ -2301,7 +2301,10 @@ textarea.form-control-lg {
 .input-group-lg > .input-group-text,
 .input-group-lg > .btn,
 .input-group-lg > .btn-blur,
-.input-group-lg > .btn-main {
+.input-group-lg > .cat,
+.input-group-lg > .btn-main,
+.input-group-lg > .bonus-row__btn,
+.input-group-lg > .top-casinos__btn {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   border-radius: 0.3rem;
@@ -2312,7 +2315,10 @@ textarea.form-control-lg {
 .input-group-sm > .input-group-text,
 .input-group-sm > .btn,
 .input-group-sm > .btn-blur,
-.input-group-sm > .btn-main {
+.input-group-sm > .cat,
+.input-group-sm > .btn-main,
+.input-group-sm > .bonus-row__btn,
+.input-group-sm > .top-casinos__btn {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   border-radius: 0.2rem;
@@ -2517,7 +2523,7 @@ textarea.form-control-lg {
   z-index: 3;
 }
 
-.btn, .btn-blur, .btn-main {
+.btn, .btn-blur, .cat, .btn-main, .bonus-row__btn, .top-casinos__btn {
   display: inline-block;
   font-weight: 400;
   line-height: 1.5;
@@ -2537,18 +2543,18 @@ textarea.form-control-lg {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
-  .btn, .btn-blur, .btn-main {
+  .btn, .btn-blur, .cat, .btn-main, .bonus-row__btn, .top-casinos__btn {
     transition: none;
   }
 }
-.btn:hover, .btn-blur:hover, .btn-main:hover {
+.btn:hover, .btn-blur:hover, .cat:hover, .btn-main:hover, .bonus-row__btn:hover, .top-casinos__btn:hover {
   color: #212529;
 }
-.btn-check:focus + .btn, .btn-check:focus + .btn-blur, .btn-check:focus + .btn-main, .btn:focus, .btn-blur:focus, .btn-main:focus {
+.btn-check:focus + .btn, .btn-check:focus + .btn-blur, .btn-check:focus + .cat, .btn-check:focus + .btn-main, .btn-check:focus + .bonus-row__btn, .btn-check:focus + .top-casinos__btn, .btn:focus, .btn-blur:focus, .cat:focus, .btn-main:focus, .bonus-row__btn:focus, .top-casinos__btn:focus {
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 }
-.btn:disabled, .btn-blur:disabled, .btn-main:disabled, .btn.disabled, .disabled.btn-blur, .disabled.btn-main, fieldset:disabled .btn, fieldset:disabled .btn-blur, fieldset:disabled .btn-main {
+.btn:disabled, .btn-blur:disabled, .cat:disabled, .btn-main:disabled, .bonus-row__btn:disabled, .top-casinos__btn:disabled, .btn.disabled, .disabled.btn-blur, .disabled.cat, .disabled.btn-main, .disabled.bonus-row__btn, .disabled.top-casinos__btn, fieldset:disabled .btn, fieldset:disabled .btn-blur, fieldset:disabled .cat, fieldset:disabled .btn-main, fieldset:disabled .bonus-row__btn, fieldset:disabled .top-casinos__btn {
   pointer-events: none;
   opacity: 0.65;
 }
@@ -3005,13 +3011,13 @@ textarea.form-control-lg {
   color: #6c757d;
 }
 
-.btn-lg, .btn-group-lg > .btn, .btn-group-lg > .btn-blur, .btn-group-lg > .btn-main {
+.btn-lg, .btn-group-lg > .btn, .btn-group-lg > .btn-blur, .btn-group-lg > .cat, .btn-group-lg > .btn-main, .btn-group-lg > .bonus-row__btn, .btn-group-lg > .top-casinos__btn {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   border-radius: 0.3rem;
 }
 
-.btn-sm, .btn-group-sm > .btn, .btn-group-sm > .btn-blur, .btn-group-sm > .btn-main {
+.btn-sm, .btn-group-sm > .btn, .btn-group-sm > .btn-blur, .btn-group-sm > .cat, .btn-group-sm > .btn-main, .btn-group-sm > .bonus-row__btn, .btn-group-sm > .top-casinos__btn {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   border-radius: 0.2rem;
@@ -3361,47 +3367,83 @@ textarea.form-control-lg {
   display: inline-flex;
   vertical-align: middle;
 }
-.btn-group > .btn, .btn-group > .btn-blur, .btn-group > .btn-main,
+.btn-group > .btn, .btn-group > .btn-blur, .btn-group > .cat, .btn-group > .btn-main, .btn-group > .bonus-row__btn, .btn-group > .top-casinos__btn,
 .btn-group-vertical > .btn,
 .btn-group-vertical > .btn-blur,
-.btn-group-vertical > .btn-main {
+.btn-group-vertical > .cat,
+.btn-group-vertical > .btn-main,
+.btn-group-vertical > .bonus-row__btn,
+.btn-group-vertical > .top-casinos__btn {
   position: relative;
   flex: 1 1 auto;
 }
-.btn-group > .btn-check:checked + .btn, .btn-group > .btn-check:checked + .btn-blur, .btn-group > .btn-check:checked + .btn-main,
+.btn-group > .btn-check:checked + .btn, .btn-group > .btn-check:checked + .btn-blur, .btn-group > .btn-check:checked + .cat, .btn-group > .btn-check:checked + .btn-main, .btn-group > .btn-check:checked + .bonus-row__btn, .btn-group > .btn-check:checked + .top-casinos__btn,
 .btn-group > .btn-check:focus + .btn,
 .btn-group > .btn-check:focus + .btn-blur,
+.btn-group > .btn-check:focus + .cat,
 .btn-group > .btn-check:focus + .btn-main,
+.btn-group > .btn-check:focus + .bonus-row__btn,
+.btn-group > .btn-check:focus + .top-casinos__btn,
 .btn-group > .btn:hover,
 .btn-group > .btn-blur:hover,
+.btn-group > .cat:hover,
 .btn-group > .btn-main:hover,
+.btn-group > .bonus-row__btn:hover,
+.btn-group > .top-casinos__btn:hover,
 .btn-group > .btn:focus,
 .btn-group > .btn-blur:focus,
+.btn-group > .cat:focus,
 .btn-group > .btn-main:focus,
+.btn-group > .bonus-row__btn:focus,
+.btn-group > .top-casinos__btn:focus,
 .btn-group > .btn:active,
 .btn-group > .btn-blur:active,
+.btn-group > .cat:active,
 .btn-group > .btn-main:active,
+.btn-group > .bonus-row__btn:active,
+.btn-group > .top-casinos__btn:active,
 .btn-group > .btn.active,
 .btn-group > .active.btn-blur,
+.btn-group > .active.cat,
 .btn-group > .active.btn-main,
+.btn-group > .active.bonus-row__btn,
+.btn-group > .active.top-casinos__btn,
 .btn-group-vertical > .btn-check:checked + .btn,
 .btn-group-vertical > .btn-check:checked + .btn-blur,
+.btn-group-vertical > .btn-check:checked + .cat,
 .btn-group-vertical > .btn-check:checked + .btn-main,
+.btn-group-vertical > .btn-check:checked + .bonus-row__btn,
+.btn-group-vertical > .btn-check:checked + .top-casinos__btn,
 .btn-group-vertical > .btn-check:focus + .btn,
 .btn-group-vertical > .btn-check:focus + .btn-blur,
+.btn-group-vertical > .btn-check:focus + .cat,
 .btn-group-vertical > .btn-check:focus + .btn-main,
+.btn-group-vertical > .btn-check:focus + .bonus-row__btn,
+.btn-group-vertical > .btn-check:focus + .top-casinos__btn,
 .btn-group-vertical > .btn:hover,
 .btn-group-vertical > .btn-blur:hover,
+.btn-group-vertical > .cat:hover,
 .btn-group-vertical > .btn-main:hover,
+.btn-group-vertical > .bonus-row__btn:hover,
+.btn-group-vertical > .top-casinos__btn:hover,
 .btn-group-vertical > .btn:focus,
 .btn-group-vertical > .btn-blur:focus,
+.btn-group-vertical > .cat:focus,
 .btn-group-vertical > .btn-main:focus,
+.btn-group-vertical > .bonus-row__btn:focus,
+.btn-group-vertical > .top-casinos__btn:focus,
 .btn-group-vertical > .btn:active,
 .btn-group-vertical > .btn-blur:active,
+.btn-group-vertical > .cat:active,
 .btn-group-vertical > .btn-main:active,
+.btn-group-vertical > .bonus-row__btn:active,
+.btn-group-vertical > .top-casinos__btn:active,
 .btn-group-vertical > .btn.active,
 .btn-group-vertical > .active.btn-blur,
-.btn-group-vertical > .active.btn-main {
+.btn-group-vertical > .active.cat,
+.btn-group-vertical > .active.btn-main,
+.btn-group-vertical > .active.bonus-row__btn,
+.btn-group-vertical > .active.top-casinos__btn {
   z-index: 1;
 }
 
@@ -3414,24 +3456,33 @@ textarea.form-control-lg {
   width: auto;
 }
 
-.btn-group > .btn:not(:first-child), .btn-group > .btn-blur:not(:first-child), .btn-group > .btn-main:not(:first-child),
+.btn-group > .btn:not(:first-child), .btn-group > .btn-blur:not(:first-child), .btn-group > .cat:not(:first-child), .btn-group > .btn-main:not(:first-child), .btn-group > .bonus-row__btn:not(:first-child), .btn-group > .top-casinos__btn:not(:first-child),
 .btn-group > .btn-group:not(:first-child) {
   margin-left: -1px;
 }
-.btn-group > .btn:not(:last-child):not(.dropdown-toggle), .btn-group > .btn-blur:not(:last-child):not(.dropdown-toggle), .btn-group > .btn-main:not(:last-child):not(.dropdown-toggle),
+.btn-group > .btn:not(:last-child):not(.dropdown-toggle), .btn-group > .btn-blur:not(:last-child):not(.dropdown-toggle), .btn-group > .cat:not(:last-child):not(.dropdown-toggle), .btn-group > .btn-main:not(:last-child):not(.dropdown-toggle), .btn-group > .bonus-row__btn:not(:last-child):not(.dropdown-toggle), .btn-group > .top-casinos__btn:not(:last-child):not(.dropdown-toggle),
 .btn-group > .btn-group:not(:last-child) > .btn,
 .btn-group > .btn-group:not(:last-child) > .btn-blur,
-.btn-group > .btn-group:not(:last-child) > .btn-main {
+.btn-group > .btn-group:not(:last-child) > .cat,
+.btn-group > .btn-group:not(:last-child) > .btn-main,
+.btn-group > .btn-group:not(:last-child) > .bonus-row__btn,
+.btn-group > .btn-group:not(:last-child) > .top-casinos__btn {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
-.btn-group > .btn:nth-child(n+3), .btn-group > .btn-blur:nth-child(n+3), .btn-group > .btn-main:nth-child(n+3),
+.btn-group > .btn:nth-child(n+3), .btn-group > .btn-blur:nth-child(n+3), .btn-group > .cat:nth-child(n+3), .btn-group > .btn-main:nth-child(n+3), .btn-group > .bonus-row__btn:nth-child(n+3), .btn-group > .top-casinos__btn:nth-child(n+3),
 .btn-group > :not(.btn-check) + .btn,
 .btn-group > :not(.btn-check) + .btn-blur,
+.btn-group > :not(.btn-check) + .cat,
 .btn-group > :not(.btn-check) + .btn-main,
+.btn-group > :not(.btn-check) + .bonus-row__btn,
+.btn-group > :not(.btn-check) + .top-casinos__btn,
 .btn-group > .btn-group:not(:first-child) > .btn,
 .btn-group > .btn-group:not(:first-child) > .btn-blur,
-.btn-group > .btn-group:not(:first-child) > .btn-main {
+.btn-group > .btn-group:not(:first-child) > .cat,
+.btn-group > .btn-group:not(:first-child) > .btn-main,
+.btn-group > .btn-group:not(:first-child) > .bonus-row__btn,
+.btn-group > .btn-group:not(:first-child) > .top-casinos__btn {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -3447,12 +3498,12 @@ textarea.form-control-lg {
   margin-right: 0;
 }
 
-.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, .btn-group-sm > .btn-blur + .dropdown-toggle-split, .btn-group-sm > .btn-main + .dropdown-toggle-split {
+.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, .btn-group-sm > .btn-blur + .dropdown-toggle-split, .btn-group-sm > .cat + .dropdown-toggle-split, .btn-group-sm > .btn-main + .dropdown-toggle-split, .btn-group-sm > .bonus-row__btn + .dropdown-toggle-split, .btn-group-sm > .top-casinos__btn + .dropdown-toggle-split {
   padding-right: 0.375rem;
   padding-left: 0.375rem;
 }
 
-.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .btn-group-lg > .btn-blur + .dropdown-toggle-split, .btn-group-lg > .btn-main + .dropdown-toggle-split {
+.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .btn-group-lg > .btn-blur + .dropdown-toggle-split, .btn-group-lg > .cat + .dropdown-toggle-split, .btn-group-lg > .btn-main + .dropdown-toggle-split, .btn-group-lg > .bonus-row__btn + .dropdown-toggle-split, .btn-group-lg > .top-casinos__btn + .dropdown-toggle-split {
   padding-right: 0.75rem;
   padding-left: 0.75rem;
 }
@@ -3462,25 +3513,31 @@ textarea.form-control-lg {
   align-items: flex-start;
   justify-content: center;
 }
-.btn-group-vertical > .btn, .btn-group-vertical > .btn-blur, .btn-group-vertical > .btn-main,
+.btn-group-vertical > .btn, .btn-group-vertical > .btn-blur, .btn-group-vertical > .cat, .btn-group-vertical > .btn-main, .btn-group-vertical > .bonus-row__btn, .btn-group-vertical > .top-casinos__btn,
 .btn-group-vertical > .btn-group {
   width: 100%;
 }
-.btn-group-vertical > .btn:not(:first-child), .btn-group-vertical > .btn-blur:not(:first-child), .btn-group-vertical > .btn-main:not(:first-child),
+.btn-group-vertical > .btn:not(:first-child), .btn-group-vertical > .btn-blur:not(:first-child), .btn-group-vertical > .cat:not(:first-child), .btn-group-vertical > .btn-main:not(:first-child), .btn-group-vertical > .bonus-row__btn:not(:first-child), .btn-group-vertical > .top-casinos__btn:not(:first-child),
 .btn-group-vertical > .btn-group:not(:first-child) {
   margin-top: -1px;
 }
-.btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .btn-blur:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .btn-main:not(:last-child):not(.dropdown-toggle),
+.btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .btn-blur:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .cat:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .btn-main:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .bonus-row__btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .top-casinos__btn:not(:last-child):not(.dropdown-toggle),
 .btn-group-vertical > .btn-group:not(:last-child) > .btn,
 .btn-group-vertical > .btn-group:not(:last-child) > .btn-blur,
-.btn-group-vertical > .btn-group:not(:last-child) > .btn-main {
+.btn-group-vertical > .btn-group:not(:last-child) > .cat,
+.btn-group-vertical > .btn-group:not(:last-child) > .btn-main,
+.btn-group-vertical > .btn-group:not(:last-child) > .bonus-row__btn,
+.btn-group-vertical > .btn-group:not(:last-child) > .top-casinos__btn {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
-.btn-group-vertical > .btn ~ .btn, .btn-group-vertical > .btn-blur ~ .btn, .btn-group-vertical > .btn-main ~ .btn, .btn-group-vertical > .btn ~ .btn-blur, .btn-group-vertical > .btn-blur ~ .btn-blur, .btn-group-vertical > .btn-main ~ .btn-blur, .btn-group-vertical > .btn ~ .btn-main, .btn-group-vertical > .btn-blur ~ .btn-main, .btn-group-vertical > .btn-main ~ .btn-main,
+.btn-group-vertical > .btn ~ .btn, .btn-group-vertical > .btn-blur ~ .btn, .btn-group-vertical > .cat ~ .btn, .btn-group-vertical > .btn-main ~ .btn, .btn-group-vertical > .bonus-row__btn ~ .btn, .btn-group-vertical > .top-casinos__btn ~ .btn, .btn-group-vertical > .btn ~ .btn-blur, .btn-group-vertical > .btn ~ .cat, .btn-group-vertical > .btn-blur ~ .btn-blur, .btn-group-vertical > .cat ~ .btn-blur, .btn-group-vertical > .btn-blur ~ .cat, .btn-group-vertical > .cat ~ .cat, .btn-group-vertical > .btn-main ~ .btn-blur, .btn-group-vertical > .bonus-row__btn ~ .btn-blur, .btn-group-vertical > .top-casinos__btn ~ .btn-blur, .btn-group-vertical > .btn-main ~ .cat, .btn-group-vertical > .bonus-row__btn ~ .cat, .btn-group-vertical > .top-casinos__btn ~ .cat, .btn-group-vertical > .btn ~ .btn-main, .btn-group-vertical > .btn ~ .bonus-row__btn, .btn-group-vertical > .btn ~ .top-casinos__btn, .btn-group-vertical > .btn-blur ~ .btn-main, .btn-group-vertical > .btn-blur ~ .bonus-row__btn, .btn-group-vertical > .btn-blur ~ .top-casinos__btn, .btn-group-vertical > .cat ~ .btn-main, .btn-group-vertical > .cat ~ .bonus-row__btn, .btn-group-vertical > .cat ~ .top-casinos__btn, .btn-group-vertical > .btn-main ~ .btn-main, .btn-group-vertical > .bonus-row__btn ~ .btn-main, .btn-group-vertical > .btn-main ~ .bonus-row__btn, .btn-group-vertical > .bonus-row__btn ~ .bonus-row__btn, .btn-group-vertical > .top-casinos__btn ~ .btn-main, .btn-group-vertical > .top-casinos__btn ~ .bonus-row__btn, .btn-group-vertical > .btn-main ~ .top-casinos__btn, .btn-group-vertical > .bonus-row__btn ~ .top-casinos__btn, .btn-group-vertical > .top-casinos__btn ~ .top-casinos__btn,
 .btn-group-vertical > .btn-group:not(:first-child) > .btn,
 .btn-group-vertical > .btn-group:not(:first-child) > .btn-blur,
-.btn-group-vertical > .btn-group:not(:first-child) > .btn-main {
+.btn-group-vertical > .btn-group:not(:first-child) > .cat,
+.btn-group-vertical > .btn-group:not(:first-child) > .btn-main,
+.btn-group-vertical > .btn-group:not(:first-child) > .bonus-row__btn,
+.btn-group-vertical > .btn-group:not(:first-child) > .top-casinos__btn {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
@@ -8992,11 +9049,18 @@ body::-webkit-scrollbar-thumb {
   transform: scaleX(1);
 }
 
+.bonus-row, .show-more {
+  background-color: #fff;
+  border: 1px solid #E4E5ED;
+  border-radius: 8px;
+}
+
 :root {
   --headerH: 64px;
   --sectionMy: 100px;
   --sectionSm: 50px;
   --headingMb: 16px;
+  --sidebarW: 224px;
   --gap: 16px;
   --gapXs: 8px;
   --gapSm: 24px;
@@ -9144,8 +9208,8 @@ h2, .h2, .page h2, .page .h2 {
 }
 
 .h2, .page h2, .page .h2 {
-  font: 700 2.0625rem/1.2121212121 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  letter-spacing: -0.01em;
+  font: 700 2.5rem/1.2 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  letter-spacing: -0.02em;
 }
 @media only screen and (max-width: 520px) {
   .h2, .page h2, .page .h2 {
@@ -9172,7 +9236,7 @@ h4, .h4 {
   }
 }
 
-.btn, .btn-blur, .btn-main {
+.btn, .btn-blur, .cat, .btn-main, .bonus-row__btn, .top-casinos__btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9189,10 +9253,10 @@ h4, .h4 {
   justify-content: center;
   flex-wrap: nowrap;
   border: none;
-  background-color: #dc3545;
+  background-color: #FC4747;
   color: #fff;
 }
-.btn-blur, .btn-main {
+.btn-blur, .cat, .btn-main, .bonus-row__btn, .top-casinos__btn {
   min-width: 144px;
   height: 40px;
   border-radius: 8px;
@@ -9200,20 +9264,21 @@ h4, .h4 {
   font: 700 0.875rem/1.1428571429 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   transition: all 0.45s ease-in-out;
 }
-.btn-main {
+.btn-main, .bonus-row__btn, .top-casinos__btn {
   background-color: #FF1A5E;
   color: #fff;
 }
-.btn-main:hover, .btn-main:active, .btn-main:focus {
+.btn-main:hover, .bonus-row__btn:hover, .top-casinos__btn:hover, .btn-main:active, .bonus-row__btn:active, .top-casinos__btn:active, .btn-main:focus, .bonus-row__btn:focus, .top-casinos__btn:focus {
   background: #e60044;
   color: #fff;
 }
-.btn-blur {
+.btn-blur, .cat {
   background: radial-gradient(100% 359.18% at 0% 0%, rgba(255, 255, 255, 0.18) 0%, rgba(255, 255, 255, 0.03) 100%);
-  border: 1px solid #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   color: #fff;
+  text-decoration: none;
 }
-.btn-blur:hover, .btn-blur:active, .btn-blur:focus {
+.btn-blur:hover, .cat:hover, .btn-blur:active, .cat:active, .btn-blur:focus, .cat:focus {
   background-color: #fff;
   color: #FF1A5E;
 }
@@ -9293,6 +9358,41 @@ h4, .h4 {
   background: transparent;
   color: inherit;
   padding: 0;
+}
+
+.show-more {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  gap: var(--gapXs);
+  margin: 16px auto;
+  padding: 12px 16px;
+  font: 700 0.875rem/1.1428571429 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.show-more:hover, .show-more:focus, .show-more:active {
+  color: #fff;
+  border-color: #FF1A5E;
+  background-color: #FF1A5E;
+}
+
+.cat {
+  font-weight: 600;
+}
+@media only screen and (max-width: 480px) {
+  .cat {
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+  }
+}
+.cat__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: var(--gapXs);
+  margin-top: 20px;
 }
 
 .header {
@@ -9587,6 +9687,11 @@ h4, .h4 {
   border: 1px solid #E4E5ED;
   display: none;
 }
+.tab__item--base {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
 .tab__item + .tab__item {
   margin-top: var(--gap);
 }
@@ -9652,9 +9757,14 @@ h4, .h4 {
   gap: 4px;
   padding: 4px 6px;
   border-radius: 8px;
+  border: none;
   background-color: #4B50C8;
   color: #fff;
   font: 700 0.75rem/1 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.rating--grey, .top-casinos .rating {
+  background-color: #F6F7FC;
+  color: #3A3F50;
 }
 
 .socials {
@@ -9928,7 +10038,7 @@ h4, .h4 {
   padding: var(--gap);
   padding-bottom: 0;
 }
-.box__icon {
+.box__icon, .box .rating {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9940,14 +10050,14 @@ h4, .h4 {
   border: none;
   color: #FF1A5E;
 }
-.box__icon b {
+.box__icon b, .box .rating b {
   color: #3A3F50;
 }
-.box__icon.likes {
+.box__icon.likes, .box .rating.likes {
   width: 32px;
   height: 32px;
 }
-.box__icon.likes.active, .box__icon.likes:hover, .box__icon.likes:focus, .box__icon.likes:active {
+.box__icon.likes.active, .box__icon.likes:hover, .box__icon.likes:focus, .box__icon.likes:active, .box .rating.likes.active, .box .rating.likes:hover, .box .rating.likes:focus, .box .rating.likes:active {
   fill: #FF1A5E;
 }
 .box__stat {
@@ -10188,6 +10298,195 @@ h4, .h4 {
   color: #4B50C8;
 }
 
+.top-casinos {
+  display: grid;
+  grid-template-columns: 65px auto;
+  gap: var(--gapXs);
+  margin: 0;
+  padding: 4px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #E4E5ED;
+}
+.top-casinos__wrap {
+  width: 100%;
+  margin: var(--gapXs) auto;
+  border-radius: 8px;
+  color: #fff;
+}
+.top-casinos__wrap.active {
+  padding: 4px;
+  background-color: #FC4747;
+}
+.top-casinos__wrap.active .top-casinos__header {
+  display: block;
+}
+.top-casinos__wrap:hover .top-casinos__overlay {
+  opacity: 1;
+}
+.top-casinos__wrap:hover .top-casinos__text {
+  opacity: 0;
+}
+.top-casinos__btn {
+  min-width: 0;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  border-radius: 4px;
+}
+.top-casinos__link {
+  margin: 0;
+  color: #777E90;
+  text-decoration: underline;
+  font: 400 0.75rem/1.1666666667 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.top-casinos__link:hover, .top-casinos__link:active, .top-casinos__link:focus {
+  text-decoration: none;
+  color: #777E90;
+}
+.top-casinos__header {
+  padding: 8px;
+  text-transform: uppercase;
+  font: 700 0.75rem/1.3333333333 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  display: none;
+}
+.top-casinos__header svg {
+  margin-right: 5px;
+}
+.top-casinos__content {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+.top-casinos__overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+}
+.top-casinos__title {
+  font: 700 1rem/1.5 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: #3A3F50;
+}
+.top-casinos__img {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+  background-color: #000;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.top-casinos__img * {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.bonus-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  gap: 12px;
+  margin: 0;
+  padding: var(--gapXs);
+  color: #3A3F50;
+  border-radius: 0;
+}
+.bonus-row:first-of-type {
+  border-radius: 8px 8px 0 0;
+}
+.bonus-row:not(:first-child) {
+  border-top: none;
+}
+.bonus-row:last-of-type {
+  border-radius: 0 0 8px 8px;
+}
+.bonus-row__title {
+  flex: 0.75;
+  font: 700 1rem/1.5 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: #3A3F50;
+}
+@media only screen and (max-width: 520px) {
+  .bonus-row__title {
+    display: none;
+  }
+}
+.bonus-row__inner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  flex: 1;
+  gap: var(--gapXs);
+}
+.bonus-row__sup {
+  text-transform: uppercase;
+  font: 700 0.75rem/1.3333333333 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: #777E90;
+  opacity: 0.5;
+}
+.bonus-row__info {
+  font: 700 1rem/1.5 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.bonus-row__cta {
+  text-align: center;
+}
+.bonus-row__link {
+  display: inline-block;
+  text-align: center;
+  text-decoration: underline;
+  font: 400 0.75rem/1.1666666667 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: #777E90;
+}
+.bonus-row__content {
+  flex: auto;
+}
+.bonus-row__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 45px;
+  height: 45px;
+  min-width: 45px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.bonus-row__img * {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media only screen and (max-width: 480px) {
+  .bonus-row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .bonus-row__inner {
+    flex: 1 0 auto;
+    width: 100%;
+  }
+}
+
 body {
   background-repeat: no-repeat;
   background-size: cover;
@@ -10265,7 +10564,7 @@ a:hover, a:focus, a:active, a:focus-visible {
   margin: 8px;
   line-height: 24px;
   border-radius: 50%;
-  background-color: #dc3545;
+  background-color: #FC4747;
 }
 @media only screen and (max-width: 520px) {
   .page p, .page li {
@@ -10299,9 +10598,22 @@ a:hover, a:focus, a:active, a:focus-visible {
           backdrop-filter: blur(15px);
   border-top: 1px solid rgba(44, 50, 191, 0.5);
 }
+.page__hero-meta {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: var(--gap);
+  margin-top: var(--gap);
+  margin-bottom: var(--gap);
+  font: 400 0.875rem/1.7142857143 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.page__hero .rating {
+  background: #2C32BF;
+}
 .page__hero h1, .page__hero .h1 {
   margin-bottom: var(--headingMb);
-  font: 600 3.625rem/1.1034482759 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font: 600 3rem/1.1666666667 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   letter-spacing: -0.02em;
 }
 @media only screen and (max-width: 480px) {
@@ -10313,11 +10625,11 @@ a:hover, a:focus, a:active, a:focus-visible {
   margin-bottom: 0;
   font: 400 1rem/1.5 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-.page__hero a {
+.page__hero p a {
   text-decoration: underline;
   transition: all 0.45s ease-in-out;
 }
-.page__hero a:hover, .page__hero a:focus, .page__hero a:active {
+.page__hero p a:hover, .page__hero p a:focus, .page__hero p a:active {
   text-decoration: none;
 }
 .page__container {
@@ -10353,6 +10665,66 @@ a:hover, a:focus, a:active, a:focus-visible {
   .page__inner {
     padding-top: calc(var(--gap) + var(--headerH));
   }
+}
+.page__main {
+  display: grid;
+  grid-template-columns: auto var(--sidebarW);
+  gap: var(--gapMd);
+}
+@media only screen and (max-width: 998px) {
+  .page__main {
+    grid-template-columns: 1fr;
+  }
+}
+.page__sidebar {
+  color: #3A3F50;
+}
+@media only screen and (max-width: 998px) {
+  .page__sidebar {
+    display: none;
+  }
+}
+.page__sidebar h3, .page__sidebar .h3 {
+  margin-bottom: var(--gapXs);
+  text-transform: uppercase;
+  font: 700 1rem/1 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  letter-spacing: 0.05em;
+}
+.page__sidebar section {
+  width: 100%;
+  margin: 0;
+}
+.page__sidebar-inner {
+  position: sticky;
+  top: calc(var(--headerH) + 10px);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  gap: var(--gapMd);
+}
+.page__sidebar-links {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px 12px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #E4E5ED;
+  color: #777E90;
+  font: 400 0.875rem/1.4285714286 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.page__sidebar-links a {
+  display: inline-flex;
+  transition: all 0.45s ease-in-out;
+}
+.page__sidebar-links a.active, .page__sidebar-links a:active, .page__sidebar-links a:hover, .page__sidebar-links a:focus {
+  color: #4B50C8;
+  text-decoration: underline;
 }
 
 .logos {
