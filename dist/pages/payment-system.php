@@ -22,6 +22,7 @@
         $author = 'Barry Bridges';
         $updated = 'September 8, 2022';
         $rating = '5.0';
+        $hero_img = '../img/payments/pp.png';
         ?>
 
         <?php include '../templates/_hero.php'; ?>
@@ -31,7 +32,11 @@
 
                 <div class="page__main">
                     <div class="page__data">
-
+                        <section>
+                            <h2>
+                                Top PayPal Casinos
+                            </h2>
+                        </section>
                         <section>
                             <?php include '../templates/_casino-row.php'; ?>
                         </section>

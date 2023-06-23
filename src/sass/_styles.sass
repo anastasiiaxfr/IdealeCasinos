@@ -113,6 +113,13 @@ a
                 transition: $trs
                 &:hover, &:focus, &:active
                     text-decoration: none
+        &-inner
+            display: grid
+            grid-template-columns: 2fr auto
+            gap: var(--gap)
+        &-img
+            +maw($sm)
+                display: none
 
     &__container
         +theme(white)
