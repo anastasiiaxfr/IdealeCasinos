@@ -1,0 +1,39 @@
+.payment
+    @extend %card
+    margin: 0
+    &__wrap
+        display: grid
+        grid-template-columns: repeat(auto-fill, minmax(200px,1fr))
+        gap: var(--gap)
+    &__img
+        position: relative
+        width: 100%
+        padding-top: 50%
+        & *
+            display: block
+            width: 100%
+            object-fit: cover
+    &__content
+        padding: 12px
+        margin-bottom: 0
+        text-align: center
+    &__title
+        +ft(16, 28, 600)
+        color: $grey2
+    &__description
+        margin-top: 12px
+        margin-bottom: 12px
+        +ft(14, 14*1.5, 400)
+        color: $grey3
+    &__cta
+        +flex(inline-flex, center, center, nowrap)
+        padding: 10px 15px
+        text-align: center
+        +ft(14, 14, 600)
+        border: 2px solid $violet1
+        border-radius: $brs1
+        color: $violet1
+        transition: $trs
+        &:hover, &:active, &:focus
+            background-color: $violet1
+            color: $white

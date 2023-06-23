@@ -28,3 +28,24 @@ h4
     +ft(24, 32, 700)
     +maw($xsm)
         +ft(16, 24, 700)
+
+ul.mark
+    position: relative
+    +ft(12, 12, 400)
+    list-style-type: none
+    background: transparent
+    margin: 0
+
+    li
+        +flex(flex, center, flex-start, nowrap)
+        gap: 4px
+        margin-bottom: 8px
+        &::before
+           content: ''
+           +flex(inline-flex, center, center, nowrap)
+           gap: var(--gapXs)
+           +sz(15px, 15px)
+           min-width: 15px
+           background-image: url('../img/icons/checked-pink.svg')
+           background-repeat: no-repeat
+           background-size: contain

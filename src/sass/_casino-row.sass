@@ -1,0 +1,119 @@
+.casino
+    @extend %card
+    +flex(flex, center, flex-start, nowrap)
+    flex: 1 0 auto
+    padding: var(--gapXs)
+    gap: var(--gapXs)
+    +ft(12, 12, 400)
+    color: $grey3
+    &__heading
+        +flex(flex, center, flex-start, nowrap)
+        gap: 8px
+        +ft(14, 14, 700)
+        margin-bottom: 8px
+        color: $grey2
+    .rating
+        background-color: $grey6
+        color: $grey2
+    &__cta
+        text-align: center
+    &__content
+        +flex(flex, center, flex-start, nowrap)
+        gap: var(--gapXs)
+        flex: 1
+    &__img
+        position: relative
+        max-width: 137px
+        width: 100%
+        border-radius: $brs1
+        overflow: hidden
+        & img
+            display: block
+            +sz(100%, 100%)
+            object-fit: cover
+    &__payments
+        margin-top: 6px
+        margin-bottom: 6px
+    &__overlay
+        +ps(absolute, (t, 0), (l, 0))
+        +flex(flex, flex-start, space-between, nowrap)
+        +sz(100%, 100%)
+        padding: 4px
+    &__num
+        +flex(inline-flex, center, center, nowrap)
+        padding: 4px 10px
+        +ft(12, 12, 600)
+        border-radius: 4px
+        background-color: $violet1
+        color: $white
+    &__geo
+        align-self: flex-end
+    &__info
+        +flex(flex, flex-start, flex-start, nowrap)
+        flex-direction: column
+        align-self: stretch
+        flex: 1
+        padding: 12px
+        background: $grey6
+        border-radius: $brs1
+        &-title
+            text-transform: uppercase
+            +ft(12, 16, 700)
+            color: $pink
+        &-desc
+            margin-top: 4px
+            margin-bottom: 4px
+            +ft(16, 24, 700)
+            color: $grey2
+        &-link
+            text-decoration: underline
+            +ft(12, 12, 400)
+            color: $grey3
+    &__btn
+        @extend .btn-main
+    &__note
+        margin-top: 10px
+        +ft(12, 12, 400)
+        color: $grey3
+    &__link
+        display: block
+        margin-top: 10px
+        +ft(12, 12, 400)
+        text-decoration: underline
+        text-align: center
+        color: $grey3
+    &__stat
+        +flex(flex, center, center, wrap)
+        gap: var(--gapXs)
+        padding: 12px
+        text-align: center
+        background: $grey6
+        border-radius: $brs1
+        &-desc
+            +ft(14, 14, 700)
+            margin-top: 5px
+            color: $grey2
+    &__list
+        +maw($md)
+            display: none
+
+    +maw($xsm)
+        flex-wrap: wrap
+        &__img
+            margin: 0 auto
+        &__note, &__payments
+            display: none
+        &__content
+            flex-wrap: wrap
+            flex: auto
+            justify-content: center
+            align-items: center
+            text-align: center
+        &__info
+            flex: auto
+            width: auto
+            align-items: center
+
+    +maw($xxs)
+        &__img
+            max-width: 100%

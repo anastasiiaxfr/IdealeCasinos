@@ -2095,7 +2095,7 @@ textarea.form-control-lg {
   clip: rect(0, 0, 0, 0);
   pointer-events: none;
 }
-.btn-check[disabled] + .btn, .btn-check[disabled] + .btn-blur, .btn-check[disabled] + .cat, .btn-check[disabled] + .btn-main, .btn-check[disabled] + .bonus-row__btn, .btn-check[disabled] + .top-casinos__btn, .btn-check:disabled + .btn, .btn-check:disabled + .btn-blur, .btn-check:disabled + .cat, .btn-check:disabled + .btn-main, .btn-check:disabled + .bonus-row__btn, .btn-check:disabled + .top-casinos__btn {
+.btn-check[disabled] + .btn, .btn-check[disabled] + .btn-blur, .btn-check[disabled] + .cat, .btn-check[disabled] + .btn-main, .btn-check[disabled] + .casino__btn, .btn-check[disabled] + .bonus-row__btn, .btn-check[disabled] + .top-casinos__btn, .btn-check:disabled + .btn, .btn-check:disabled + .btn-blur, .btn-check:disabled + .cat, .btn-check:disabled + .btn-main, .btn-check:disabled + .casino__btn, .btn-check:disabled + .bonus-row__btn, .btn-check:disabled + .top-casinos__btn {
   pointer-events: none;
   filter: none;
   opacity: 0.65;
@@ -2273,11 +2273,11 @@ textarea.form-control-lg {
 .input-group > .form-select:focus {
   z-index: 3;
 }
-.input-group .btn, .input-group .btn-blur, .input-group .cat, .input-group .btn-main, .input-group .bonus-row__btn, .input-group .top-casinos__btn {
+.input-group .btn, .input-group .btn-blur, .input-group .cat, .input-group .btn-main, .input-group .casino__btn, .input-group .bonus-row__btn, .input-group .top-casinos__btn {
   position: relative;
   z-index: 2;
 }
-.input-group .btn:focus, .input-group .btn-blur:focus, .input-group .cat:focus, .input-group .btn-main:focus, .input-group .bonus-row__btn:focus, .input-group .top-casinos__btn:focus {
+.input-group .btn:focus, .input-group .btn-blur:focus, .input-group .cat:focus, .input-group .btn-main:focus, .input-group .casino__btn:focus, .input-group .bonus-row__btn:focus, .input-group .top-casinos__btn:focus {
   z-index: 3;
 }
 
@@ -2303,6 +2303,7 @@ textarea.form-control-lg {
 .input-group-lg > .btn-blur,
 .input-group-lg > .cat,
 .input-group-lg > .btn-main,
+.input-group-lg > .casino__btn,
 .input-group-lg > .bonus-row__btn,
 .input-group-lg > .top-casinos__btn {
   padding: 0.5rem 1rem;
@@ -2317,6 +2318,7 @@ textarea.form-control-lg {
 .input-group-sm > .btn-blur,
 .input-group-sm > .cat,
 .input-group-sm > .btn-main,
+.input-group-sm > .casino__btn,
 .input-group-sm > .bonus-row__btn,
 .input-group-sm > .top-casinos__btn {
   padding: 0.25rem 0.5rem;
@@ -2523,7 +2525,7 @@ textarea.form-control-lg {
   z-index: 3;
 }
 
-.btn, .btn-blur, .cat, .btn-main, .bonus-row__btn, .top-casinos__btn {
+.btn, .btn-blur, .cat, .btn-main, .casino__btn, .bonus-row__btn, .top-casinos__btn {
   display: inline-block;
   font-weight: 400;
   line-height: 1.5;
@@ -2543,18 +2545,18 @@ textarea.form-control-lg {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
-  .btn, .btn-blur, .cat, .btn-main, .bonus-row__btn, .top-casinos__btn {
+  .btn, .btn-blur, .cat, .btn-main, .casino__btn, .bonus-row__btn, .top-casinos__btn {
     transition: none;
   }
 }
-.btn:hover, .btn-blur:hover, .cat:hover, .btn-main:hover, .bonus-row__btn:hover, .top-casinos__btn:hover {
+.btn:hover, .btn-blur:hover, .cat:hover, .btn-main:hover, .casino__btn:hover, .bonus-row__btn:hover, .top-casinos__btn:hover {
   color: #212529;
 }
-.btn-check:focus + .btn, .btn-check:focus + .btn-blur, .btn-check:focus + .cat, .btn-check:focus + .btn-main, .btn-check:focus + .bonus-row__btn, .btn-check:focus + .top-casinos__btn, .btn:focus, .btn-blur:focus, .cat:focus, .btn-main:focus, .bonus-row__btn:focus, .top-casinos__btn:focus {
+.btn-check:focus + .btn, .btn-check:focus + .btn-blur, .btn-check:focus + .cat, .btn-check:focus + .btn-main, .btn-check:focus + .casino__btn, .btn-check:focus + .bonus-row__btn, .btn-check:focus + .top-casinos__btn, .btn:focus, .btn-blur:focus, .cat:focus, .btn-main:focus, .casino__btn:focus, .bonus-row__btn:focus, .top-casinos__btn:focus {
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 }
-.btn:disabled, .btn-blur:disabled, .cat:disabled, .btn-main:disabled, .bonus-row__btn:disabled, .top-casinos__btn:disabled, .btn.disabled, .disabled.btn-blur, .disabled.cat, .disabled.btn-main, .disabled.bonus-row__btn, .disabled.top-casinos__btn, fieldset:disabled .btn, fieldset:disabled .btn-blur, fieldset:disabled .cat, fieldset:disabled .btn-main, fieldset:disabled .bonus-row__btn, fieldset:disabled .top-casinos__btn {
+.btn:disabled, .btn-blur:disabled, .cat:disabled, .btn-main:disabled, .casino__btn:disabled, .bonus-row__btn:disabled, .top-casinos__btn:disabled, .btn.disabled, .disabled.btn-blur, .disabled.cat, .disabled.btn-main, .disabled.casino__btn, .disabled.bonus-row__btn, .disabled.top-casinos__btn, fieldset:disabled .btn, fieldset:disabled .btn-blur, fieldset:disabled .cat, fieldset:disabled .btn-main, fieldset:disabled .casino__btn, fieldset:disabled .bonus-row__btn, fieldset:disabled .top-casinos__btn {
   pointer-events: none;
   opacity: 0.65;
 }
@@ -3011,13 +3013,13 @@ textarea.form-control-lg {
   color: #6c757d;
 }
 
-.btn-lg, .btn-group-lg > .btn, .btn-group-lg > .btn-blur, .btn-group-lg > .cat, .btn-group-lg > .btn-main, .btn-group-lg > .bonus-row__btn, .btn-group-lg > .top-casinos__btn {
+.btn-lg, .btn-group-lg > .btn, .btn-group-lg > .btn-blur, .btn-group-lg > .cat, .btn-group-lg > .btn-main, .btn-group-lg > .casino__btn, .btn-group-lg > .bonus-row__btn, .btn-group-lg > .top-casinos__btn {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   border-radius: 0.3rem;
 }
 
-.btn-sm, .btn-group-sm > .btn, .btn-group-sm > .btn-blur, .btn-group-sm > .cat, .btn-group-sm > .btn-main, .btn-group-sm > .bonus-row__btn, .btn-group-sm > .top-casinos__btn {
+.btn-sm, .btn-group-sm > .btn, .btn-group-sm > .btn-blur, .btn-group-sm > .cat, .btn-group-sm > .btn-main, .btn-group-sm > .casino__btn, .btn-group-sm > .bonus-row__btn, .btn-group-sm > .top-casinos__btn {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   border-radius: 0.2rem;
@@ -3367,81 +3369,93 @@ textarea.form-control-lg {
   display: inline-flex;
   vertical-align: middle;
 }
-.btn-group > .btn, .btn-group > .btn-blur, .btn-group > .cat, .btn-group > .btn-main, .btn-group > .bonus-row__btn, .btn-group > .top-casinos__btn,
+.btn-group > .btn, .btn-group > .btn-blur, .btn-group > .cat, .btn-group > .btn-main, .btn-group > .casino__btn, .btn-group > .bonus-row__btn, .btn-group > .top-casinos__btn,
 .btn-group-vertical > .btn,
 .btn-group-vertical > .btn-blur,
 .btn-group-vertical > .cat,
 .btn-group-vertical > .btn-main,
+.btn-group-vertical > .casino__btn,
 .btn-group-vertical > .bonus-row__btn,
 .btn-group-vertical > .top-casinos__btn {
   position: relative;
   flex: 1 1 auto;
 }
-.btn-group > .btn-check:checked + .btn, .btn-group > .btn-check:checked + .btn-blur, .btn-group > .btn-check:checked + .cat, .btn-group > .btn-check:checked + .btn-main, .btn-group > .btn-check:checked + .bonus-row__btn, .btn-group > .btn-check:checked + .top-casinos__btn,
+.btn-group > .btn-check:checked + .btn, .btn-group > .btn-check:checked + .btn-blur, .btn-group > .btn-check:checked + .cat, .btn-group > .btn-check:checked + .btn-main, .btn-group > .btn-check:checked + .casino__btn, .btn-group > .btn-check:checked + .bonus-row__btn, .btn-group > .btn-check:checked + .top-casinos__btn,
 .btn-group > .btn-check:focus + .btn,
 .btn-group > .btn-check:focus + .btn-blur,
 .btn-group > .btn-check:focus + .cat,
 .btn-group > .btn-check:focus + .btn-main,
+.btn-group > .btn-check:focus + .casino__btn,
 .btn-group > .btn-check:focus + .bonus-row__btn,
 .btn-group > .btn-check:focus + .top-casinos__btn,
 .btn-group > .btn:hover,
 .btn-group > .btn-blur:hover,
 .btn-group > .cat:hover,
 .btn-group > .btn-main:hover,
+.btn-group > .casino__btn:hover,
 .btn-group > .bonus-row__btn:hover,
 .btn-group > .top-casinos__btn:hover,
 .btn-group > .btn:focus,
 .btn-group > .btn-blur:focus,
 .btn-group > .cat:focus,
 .btn-group > .btn-main:focus,
+.btn-group > .casino__btn:focus,
 .btn-group > .bonus-row__btn:focus,
 .btn-group > .top-casinos__btn:focus,
 .btn-group > .btn:active,
 .btn-group > .btn-blur:active,
 .btn-group > .cat:active,
 .btn-group > .btn-main:active,
+.btn-group > .casino__btn:active,
 .btn-group > .bonus-row__btn:active,
 .btn-group > .top-casinos__btn:active,
 .btn-group > .btn.active,
 .btn-group > .active.btn-blur,
 .btn-group > .active.cat,
 .btn-group > .active.btn-main,
+.btn-group > .active.casino__btn,
 .btn-group > .active.bonus-row__btn,
 .btn-group > .active.top-casinos__btn,
 .btn-group-vertical > .btn-check:checked + .btn,
 .btn-group-vertical > .btn-check:checked + .btn-blur,
 .btn-group-vertical > .btn-check:checked + .cat,
 .btn-group-vertical > .btn-check:checked + .btn-main,
+.btn-group-vertical > .btn-check:checked + .casino__btn,
 .btn-group-vertical > .btn-check:checked + .bonus-row__btn,
 .btn-group-vertical > .btn-check:checked + .top-casinos__btn,
 .btn-group-vertical > .btn-check:focus + .btn,
 .btn-group-vertical > .btn-check:focus + .btn-blur,
 .btn-group-vertical > .btn-check:focus + .cat,
 .btn-group-vertical > .btn-check:focus + .btn-main,
+.btn-group-vertical > .btn-check:focus + .casino__btn,
 .btn-group-vertical > .btn-check:focus + .bonus-row__btn,
 .btn-group-vertical > .btn-check:focus + .top-casinos__btn,
 .btn-group-vertical > .btn:hover,
 .btn-group-vertical > .btn-blur:hover,
 .btn-group-vertical > .cat:hover,
 .btn-group-vertical > .btn-main:hover,
+.btn-group-vertical > .casino__btn:hover,
 .btn-group-vertical > .bonus-row__btn:hover,
 .btn-group-vertical > .top-casinos__btn:hover,
 .btn-group-vertical > .btn:focus,
 .btn-group-vertical > .btn-blur:focus,
 .btn-group-vertical > .cat:focus,
 .btn-group-vertical > .btn-main:focus,
+.btn-group-vertical > .casino__btn:focus,
 .btn-group-vertical > .bonus-row__btn:focus,
 .btn-group-vertical > .top-casinos__btn:focus,
 .btn-group-vertical > .btn:active,
 .btn-group-vertical > .btn-blur:active,
 .btn-group-vertical > .cat:active,
 .btn-group-vertical > .btn-main:active,
+.btn-group-vertical > .casino__btn:active,
 .btn-group-vertical > .bonus-row__btn:active,
 .btn-group-vertical > .top-casinos__btn:active,
 .btn-group-vertical > .btn.active,
 .btn-group-vertical > .active.btn-blur,
 .btn-group-vertical > .active.cat,
 .btn-group-vertical > .active.btn-main,
+.btn-group-vertical > .active.casino__btn,
 .btn-group-vertical > .active.bonus-row__btn,
 .btn-group-vertical > .active.top-casinos__btn {
   z-index: 1;
@@ -3456,31 +3470,34 @@ textarea.form-control-lg {
   width: auto;
 }
 
-.btn-group > .btn:not(:first-child), .btn-group > .btn-blur:not(:first-child), .btn-group > .cat:not(:first-child), .btn-group > .btn-main:not(:first-child), .btn-group > .bonus-row__btn:not(:first-child), .btn-group > .top-casinos__btn:not(:first-child),
+.btn-group > .btn:not(:first-child), .btn-group > .btn-blur:not(:first-child), .btn-group > .cat:not(:first-child), .btn-group > .btn-main:not(:first-child), .btn-group > .casino__btn:not(:first-child), .btn-group > .bonus-row__btn:not(:first-child), .btn-group > .top-casinos__btn:not(:first-child),
 .btn-group > .btn-group:not(:first-child) {
   margin-left: -1px;
 }
-.btn-group > .btn:not(:last-child):not(.dropdown-toggle), .btn-group > .btn-blur:not(:last-child):not(.dropdown-toggle), .btn-group > .cat:not(:last-child):not(.dropdown-toggle), .btn-group > .btn-main:not(:last-child):not(.dropdown-toggle), .btn-group > .bonus-row__btn:not(:last-child):not(.dropdown-toggle), .btn-group > .top-casinos__btn:not(:last-child):not(.dropdown-toggle),
+.btn-group > .btn:not(:last-child):not(.dropdown-toggle), .btn-group > .btn-blur:not(:last-child):not(.dropdown-toggle), .btn-group > .cat:not(:last-child):not(.dropdown-toggle), .btn-group > .btn-main:not(:last-child):not(.dropdown-toggle), .btn-group > .casino__btn:not(:last-child):not(.dropdown-toggle), .btn-group > .bonus-row__btn:not(:last-child):not(.dropdown-toggle), .btn-group > .top-casinos__btn:not(:last-child):not(.dropdown-toggle),
 .btn-group > .btn-group:not(:last-child) > .btn,
 .btn-group > .btn-group:not(:last-child) > .btn-blur,
 .btn-group > .btn-group:not(:last-child) > .cat,
 .btn-group > .btn-group:not(:last-child) > .btn-main,
+.btn-group > .btn-group:not(:last-child) > .casino__btn,
 .btn-group > .btn-group:not(:last-child) > .bonus-row__btn,
 .btn-group > .btn-group:not(:last-child) > .top-casinos__btn {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
-.btn-group > .btn:nth-child(n+3), .btn-group > .btn-blur:nth-child(n+3), .btn-group > .cat:nth-child(n+3), .btn-group > .btn-main:nth-child(n+3), .btn-group > .bonus-row__btn:nth-child(n+3), .btn-group > .top-casinos__btn:nth-child(n+3),
+.btn-group > .btn:nth-child(n+3), .btn-group > .btn-blur:nth-child(n+3), .btn-group > .cat:nth-child(n+3), .btn-group > .btn-main:nth-child(n+3), .btn-group > .casino__btn:nth-child(n+3), .btn-group > .bonus-row__btn:nth-child(n+3), .btn-group > .top-casinos__btn:nth-child(n+3),
 .btn-group > :not(.btn-check) + .btn,
 .btn-group > :not(.btn-check) + .btn-blur,
 .btn-group > :not(.btn-check) + .cat,
 .btn-group > :not(.btn-check) + .btn-main,
+.btn-group > :not(.btn-check) + .casino__btn,
 .btn-group > :not(.btn-check) + .bonus-row__btn,
 .btn-group > :not(.btn-check) + .top-casinos__btn,
 .btn-group > .btn-group:not(:first-child) > .btn,
 .btn-group > .btn-group:not(:first-child) > .btn-blur,
 .btn-group > .btn-group:not(:first-child) > .cat,
 .btn-group > .btn-group:not(:first-child) > .btn-main,
+.btn-group > .btn-group:not(:first-child) > .casino__btn,
 .btn-group > .btn-group:not(:first-child) > .bonus-row__btn,
 .btn-group > .btn-group:not(:first-child) > .top-casinos__btn {
   border-top-left-radius: 0;
@@ -3498,12 +3515,12 @@ textarea.form-control-lg {
   margin-right: 0;
 }
 
-.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, .btn-group-sm > .btn-blur + .dropdown-toggle-split, .btn-group-sm > .cat + .dropdown-toggle-split, .btn-group-sm > .btn-main + .dropdown-toggle-split, .btn-group-sm > .bonus-row__btn + .dropdown-toggle-split, .btn-group-sm > .top-casinos__btn + .dropdown-toggle-split {
+.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, .btn-group-sm > .btn-blur + .dropdown-toggle-split, .btn-group-sm > .cat + .dropdown-toggle-split, .btn-group-sm > .btn-main + .dropdown-toggle-split, .btn-group-sm > .casino__btn + .dropdown-toggle-split, .btn-group-sm > .bonus-row__btn + .dropdown-toggle-split, .btn-group-sm > .top-casinos__btn + .dropdown-toggle-split {
   padding-right: 0.375rem;
   padding-left: 0.375rem;
 }
 
-.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .btn-group-lg > .btn-blur + .dropdown-toggle-split, .btn-group-lg > .cat + .dropdown-toggle-split, .btn-group-lg > .btn-main + .dropdown-toggle-split, .btn-group-lg > .bonus-row__btn + .dropdown-toggle-split, .btn-group-lg > .top-casinos__btn + .dropdown-toggle-split {
+.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .btn-group-lg > .btn-blur + .dropdown-toggle-split, .btn-group-lg > .cat + .dropdown-toggle-split, .btn-group-lg > .btn-main + .dropdown-toggle-split, .btn-group-lg > .casino__btn + .dropdown-toggle-split, .btn-group-lg > .bonus-row__btn + .dropdown-toggle-split, .btn-group-lg > .top-casinos__btn + .dropdown-toggle-split {
   padding-right: 0.75rem;
   padding-left: 0.75rem;
 }
@@ -3513,29 +3530,31 @@ textarea.form-control-lg {
   align-items: flex-start;
   justify-content: center;
 }
-.btn-group-vertical > .btn, .btn-group-vertical > .btn-blur, .btn-group-vertical > .cat, .btn-group-vertical > .btn-main, .btn-group-vertical > .bonus-row__btn, .btn-group-vertical > .top-casinos__btn,
+.btn-group-vertical > .btn, .btn-group-vertical > .btn-blur, .btn-group-vertical > .cat, .btn-group-vertical > .btn-main, .btn-group-vertical > .casino__btn, .btn-group-vertical > .bonus-row__btn, .btn-group-vertical > .top-casinos__btn,
 .btn-group-vertical > .btn-group {
   width: 100%;
 }
-.btn-group-vertical > .btn:not(:first-child), .btn-group-vertical > .btn-blur:not(:first-child), .btn-group-vertical > .cat:not(:first-child), .btn-group-vertical > .btn-main:not(:first-child), .btn-group-vertical > .bonus-row__btn:not(:first-child), .btn-group-vertical > .top-casinos__btn:not(:first-child),
+.btn-group-vertical > .btn:not(:first-child), .btn-group-vertical > .btn-blur:not(:first-child), .btn-group-vertical > .cat:not(:first-child), .btn-group-vertical > .btn-main:not(:first-child), .btn-group-vertical > .casino__btn:not(:first-child), .btn-group-vertical > .bonus-row__btn:not(:first-child), .btn-group-vertical > .top-casinos__btn:not(:first-child),
 .btn-group-vertical > .btn-group:not(:first-child) {
   margin-top: -1px;
 }
-.btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .btn-blur:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .cat:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .btn-main:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .bonus-row__btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .top-casinos__btn:not(:last-child):not(.dropdown-toggle),
+.btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .btn-blur:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .cat:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .btn-main:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .casino__btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .bonus-row__btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .top-casinos__btn:not(:last-child):not(.dropdown-toggle),
 .btn-group-vertical > .btn-group:not(:last-child) > .btn,
 .btn-group-vertical > .btn-group:not(:last-child) > .btn-blur,
 .btn-group-vertical > .btn-group:not(:last-child) > .cat,
 .btn-group-vertical > .btn-group:not(:last-child) > .btn-main,
+.btn-group-vertical > .btn-group:not(:last-child) > .casino__btn,
 .btn-group-vertical > .btn-group:not(:last-child) > .bonus-row__btn,
 .btn-group-vertical > .btn-group:not(:last-child) > .top-casinos__btn {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
-.btn-group-vertical > .btn ~ .btn, .btn-group-vertical > .btn-blur ~ .btn, .btn-group-vertical > .cat ~ .btn, .btn-group-vertical > .btn-main ~ .btn, .btn-group-vertical > .bonus-row__btn ~ .btn, .btn-group-vertical > .top-casinos__btn ~ .btn, .btn-group-vertical > .btn ~ .btn-blur, .btn-group-vertical > .btn ~ .cat, .btn-group-vertical > .btn-blur ~ .btn-blur, .btn-group-vertical > .cat ~ .btn-blur, .btn-group-vertical > .btn-blur ~ .cat, .btn-group-vertical > .cat ~ .cat, .btn-group-vertical > .btn-main ~ .btn-blur, .btn-group-vertical > .bonus-row__btn ~ .btn-blur, .btn-group-vertical > .top-casinos__btn ~ .btn-blur, .btn-group-vertical > .btn-main ~ .cat, .btn-group-vertical > .bonus-row__btn ~ .cat, .btn-group-vertical > .top-casinos__btn ~ .cat, .btn-group-vertical > .btn ~ .btn-main, .btn-group-vertical > .btn ~ .bonus-row__btn, .btn-group-vertical > .btn ~ .top-casinos__btn, .btn-group-vertical > .btn-blur ~ .btn-main, .btn-group-vertical > .btn-blur ~ .bonus-row__btn, .btn-group-vertical > .btn-blur ~ .top-casinos__btn, .btn-group-vertical > .cat ~ .btn-main, .btn-group-vertical > .cat ~ .bonus-row__btn, .btn-group-vertical > .cat ~ .top-casinos__btn, .btn-group-vertical > .btn-main ~ .btn-main, .btn-group-vertical > .bonus-row__btn ~ .btn-main, .btn-group-vertical > .btn-main ~ .bonus-row__btn, .btn-group-vertical > .bonus-row__btn ~ .bonus-row__btn, .btn-group-vertical > .top-casinos__btn ~ .btn-main, .btn-group-vertical > .top-casinos__btn ~ .bonus-row__btn, .btn-group-vertical > .btn-main ~ .top-casinos__btn, .btn-group-vertical > .bonus-row__btn ~ .top-casinos__btn, .btn-group-vertical > .top-casinos__btn ~ .top-casinos__btn,
+.btn-group-vertical > .btn ~ .btn, .btn-group-vertical > .btn-blur ~ .btn, .btn-group-vertical > .cat ~ .btn, .btn-group-vertical > .btn-main ~ .btn, .btn-group-vertical > .casino__btn ~ .btn, .btn-group-vertical > .bonus-row__btn ~ .btn, .btn-group-vertical > .top-casinos__btn ~ .btn, .btn-group-vertical > .btn ~ .btn-blur, .btn-group-vertical > .btn ~ .cat, .btn-group-vertical > .btn-blur ~ .btn-blur, .btn-group-vertical > .cat ~ .btn-blur, .btn-group-vertical > .btn-blur ~ .cat, .btn-group-vertical > .cat ~ .cat, .btn-group-vertical > .btn-main ~ .btn-blur, .btn-group-vertical > .casino__btn ~ .btn-blur, .btn-group-vertical > .bonus-row__btn ~ .btn-blur, .btn-group-vertical > .top-casinos__btn ~ .btn-blur, .btn-group-vertical > .btn-main ~ .cat, .btn-group-vertical > .casino__btn ~ .cat, .btn-group-vertical > .bonus-row__btn ~ .cat, .btn-group-vertical > .top-casinos__btn ~ .cat, .btn-group-vertical > .btn ~ .btn-main, .btn-group-vertical > .btn ~ .casino__btn, .btn-group-vertical > .btn ~ .bonus-row__btn, .btn-group-vertical > .btn ~ .top-casinos__btn, .btn-group-vertical > .btn-blur ~ .btn-main, .btn-group-vertical > .btn-blur ~ .casino__btn, .btn-group-vertical > .btn-blur ~ .bonus-row__btn, .btn-group-vertical > .btn-blur ~ .top-casinos__btn, .btn-group-vertical > .cat ~ .btn-main, .btn-group-vertical > .cat ~ .casino__btn, .btn-group-vertical > .cat ~ .bonus-row__btn, .btn-group-vertical > .cat ~ .top-casinos__btn, .btn-group-vertical > .btn-main ~ .btn-main, .btn-group-vertical > .casino__btn ~ .btn-main, .btn-group-vertical > .btn-main ~ .casino__btn, .btn-group-vertical > .casino__btn ~ .casino__btn, .btn-group-vertical > .bonus-row__btn ~ .btn-main, .btn-group-vertical > .bonus-row__btn ~ .casino__btn, .btn-group-vertical > .btn-main ~ .bonus-row__btn, .btn-group-vertical > .casino__btn ~ .bonus-row__btn, .btn-group-vertical > .bonus-row__btn ~ .bonus-row__btn, .btn-group-vertical > .top-casinos__btn ~ .btn-main, .btn-group-vertical > .top-casinos__btn ~ .casino__btn, .btn-group-vertical > .top-casinos__btn ~ .bonus-row__btn, .btn-group-vertical > .btn-main ~ .top-casinos__btn, .btn-group-vertical > .casino__btn ~ .top-casinos__btn, .btn-group-vertical > .bonus-row__btn ~ .top-casinos__btn, .btn-group-vertical > .top-casinos__btn ~ .top-casinos__btn,
 .btn-group-vertical > .btn-group:not(:first-child) > .btn,
 .btn-group-vertical > .btn-group:not(:first-child) > .btn-blur,
 .btn-group-vertical > .btn-group:not(:first-child) > .cat,
 .btn-group-vertical > .btn-group:not(:first-child) > .btn-main,
+.btn-group-vertical > .btn-group:not(:first-child) > .casino__btn,
 .btn-group-vertical > .btn-group:not(:first-child) > .bonus-row__btn,
 .btn-group-vertical > .btn-group:not(:first-child) > .top-casinos__btn {
   border-top-left-radius: 0;
@@ -9049,7 +9068,7 @@ body::-webkit-scrollbar-thumb {
   transform: scaleX(1);
 }
 
-.bonus-row, .show-more {
+.casino, .payment, .bonus-row, .show-more {
   background-color: #fff;
   border: 1px solid #E4E5ED;
   border-radius: 8px;
@@ -9236,7 +9255,37 @@ h4, .h4 {
   }
 }
 
-.btn, .btn-blur, .cat, .btn-main, .bonus-row__btn, .top-casinos__btn {
+ul.mark {
+  position: relative;
+  font: 400 0.75rem/1 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  list-style-type: none;
+  background: transparent;
+  margin: 0;
+}
+ul.mark li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+ul.mark li::before {
+  content: "";
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: var(--gapXs);
+  width: 15px;
+  height: 15px;
+  min-width: 15px;
+  background-image: url("../img/icons/checked-pink.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.btn, .btn-blur, .cat, .btn-main, .casino__btn, .bonus-row__btn, .top-casinos__btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9256,7 +9305,7 @@ h4, .h4 {
   background-color: #FC4747;
   color: #fff;
 }
-.btn-blur, .cat, .btn-main, .bonus-row__btn, .top-casinos__btn {
+.btn-blur, .cat, .btn-main, .casino__btn, .bonus-row__btn, .top-casinos__btn {
   min-width: 144px;
   height: 40px;
   border-radius: 8px;
@@ -9264,11 +9313,11 @@ h4, .h4 {
   font: 700 0.875rem/1.1428571429 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   transition: all 0.45s ease-in-out;
 }
-.btn-main, .bonus-row__btn, .top-casinos__btn {
+.btn-main, .casino__btn, .bonus-row__btn, .top-casinos__btn {
   background-color: #FF1A5E;
   color: #fff;
 }
-.btn-main:hover, .bonus-row__btn:hover, .top-casinos__btn:hover, .btn-main:active, .bonus-row__btn:active, .top-casinos__btn:active, .btn-main:focus, .bonus-row__btn:focus, .top-casinos__btn:focus {
+.btn-main:hover, .casino__btn:hover, .bonus-row__btn:hover, .top-casinos__btn:hover, .btn-main:active, .casino__btn:active, .bonus-row__btn:active, .top-casinos__btn:active, .btn-main:focus, .casino__btn:focus, .bonus-row__btn:focus, .top-casinos__btn:focus {
   background: #e60044;
   color: #fff;
 }
@@ -10487,6 +10536,229 @@ h4, .h4 {
   }
 }
 
+.payment {
+  margin: 0;
+}
+.payment__wrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: var(--gap);
+}
+.payment__img {
+  position: relative;
+  width: 100%;
+  padding-top: 50%;
+}
+.payment__img * {
+  display: block;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.payment__content {
+  padding: 12px;
+  margin-bottom: 0;
+  text-align: center;
+}
+.payment__title {
+  font: 600 1rem/1.75 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: #3A3F50;
+}
+.payment__description {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  font: 400 0.875rem/1.5 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: #777E90;
+}
+.payment__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  padding: 10px 15px;
+  text-align: center;
+  font: 600 0.875rem/1 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  border: 2px solid #4B50C8;
+  border-radius: 8px;
+  color: #4B50C8;
+  transition: all 0.45s ease-in-out;
+}
+.payment__cta:hover, .payment__cta:active, .payment__cta:focus {
+  background-color: #4B50C8;
+  color: #fff;
+}
+
+.casino {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  flex: 1 0 auto;
+  padding: var(--gapXs);
+  gap: var(--gapXs);
+  font: 400 0.75rem/1 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: #777E90;
+}
+.casino__heading {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  gap: 8px;
+  font: 700 0.875rem/1 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  margin-bottom: 8px;
+  color: #3A3F50;
+}
+.casino .rating {
+  background-color: #F6F7FC;
+  color: #3A3F50;
+}
+.casino__cta {
+  text-align: center;
+}
+.casino__content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  gap: var(--gapXs);
+  flex: 1;
+}
+.casino__img {
+  position: relative;
+  max-width: 137px;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.casino__img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.casino__payments {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+.casino__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 100%;
+  padding: 4px;
+}
+.casino__num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  padding: 4px 10px;
+  font: 600 0.75rem/1 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  border-radius: 4px;
+  background-color: #4B50C8;
+  color: #fff;
+}
+.casino__geo {
+  align-self: flex-end;
+}
+.casino__info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-self: stretch;
+  flex: 1;
+  padding: 12px;
+  background: #F6F7FC;
+  border-radius: 8px;
+}
+.casino__info-title {
+  text-transform: uppercase;
+  font: 700 0.75rem/1.3333333333 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: #FF1A5E;
+}
+.casino__info-desc {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  font: 700 1rem/1.5 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: #3A3F50;
+}
+.casino__info-link {
+  text-decoration: underline;
+  font: 400 0.75rem/1 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: #777E90;
+}
+.casino__note {
+  margin-top: 10px;
+  font: 400 0.75rem/1 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: #777E90;
+}
+.casino__link {
+  display: block;
+  margin-top: 10px;
+  font: 400 0.75rem/1 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  text-decoration: underline;
+  text-align: center;
+  color: #777E90;
+}
+.casino__stat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--gapXs);
+  padding: 12px;
+  text-align: center;
+  background: #F6F7FC;
+  border-radius: 8px;
+}
+.casino__stat-desc {
+  font: 700 0.875rem/1 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  margin-top: 5px;
+  color: #3A3F50;
+}
+@media only screen and (max-width: 998px) {
+  .casino__list {
+    display: none;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .casino {
+    flex-wrap: wrap;
+  }
+  .casino__img {
+    margin: 0 auto;
+  }
+  .casino__note, .casino__payments {
+    display: none;
+  }
+  .casino__content {
+    flex-wrap: wrap;
+    flex: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .casino__info {
+    flex: auto;
+    width: auto;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .casino__img {
+    max-width: 100%;
+  }
+}
+
 body {
   background-repeat: no-repeat;
   background-size: cover;
@@ -10535,11 +10807,11 @@ a:hover, a:focus, a:active, a:focus-visible {
 .page p > a:hover, .page p > a:active, .page p > a:focus {
   text-decoration: none;
 }
-.page ul {
+.page ul:not([class]) {
   padding: 0;
   margin: 0;
 }
-.page ul li {
+.page ul:not([class]) li {
   position: relative;
   list-style-type: none;
   display: flex;
@@ -10549,10 +10821,10 @@ a:hover, a:focus, a:active, a:focus-visible {
   gap: 12px;
   margin-top: var(--gap);
 }
-.page ul li:first-of-type {
+.page ul:not([class]) li:first-of-type {
   margin-top: 0;
 }
-.page ul li::before {
+.page ul:not([class]) li::before {
   content: "";
   display: flex;
   align-items: flex-start;
