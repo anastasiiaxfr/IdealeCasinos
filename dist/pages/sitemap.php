@@ -6,45 +6,44 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <?php include '../templates/_seo.php';?>
+    <?php include '../templates/_seo.php'; ?>
     <link rel="stylesheet" href="css/main.css" />
 </head>
 
 <body class="page__body">
-    <?php include '../templates/_preloader.php';?>
+    <?php include '../templates/_preloader.php'; ?>
 
     <main class="page__wrapper">
-        <?php include '../templates/_header.php';?>
+        <?php include '../templates/_header.php'; ?>
 
         <?php
-$title = "Sitemap";
-$sub_title = '<a href="#">Casino’s met Ideal</a> maken dit gemakkelijk voor u, aangezien we deze casino’s vermelden op basis van de regio waaruit u het bezoek. Op deze manier, als je browst vanuit het Verenigd Koninkrijk, zullen we je alleen de juiste casino’s laten zien die zijn gelicentieerd door de United Kingdom Gambling Commission of Malta Gambling Commission en als u uit Nederland bezoekt degene die een licentie hebben in Nederland.';
-?>
+        $title = "Sitemap";
+        $sub_title = '<a href="#">Casino’s met Ideal</a> maken dit gemakkelijk voor u, aangezien we deze casino’s vermelden op basis van de regio waaruit u het bezoek. Op deze manier, als je browst vanuit het Verenigd Koninkrijk, zullen we je alleen de juiste casino’s laten zien die zijn gelicentieerd door de United Kingdom Gambling Commission of Malta Gambling Commission en als u uit Nederland bezoekt degene die een licentie hebben in Nederland.';
+        ?>
 
-        <?php include '../templates/_hero.php';?>
+        <?php include '../templates/_hero.php'; ?>
 
         <?php
-$tabs = array(
-    array("tab" => "Ontwikkelaars", "url" => "#"),
-    array("tab" => "Casino Types", "url" => "#"),
-    array("tab" => "Betaalmethoden", "url" => "#"),
-    array("tab" => "Roulette Types", "url" => "#"),
-    array("tab" => "Blackjack Types", "url" => "#"),
-    array("tab" => "Gokkast types", "url" => "#"),
-    array("tab" => "Online Casinos", "url" => "#"),
-    array("tab" => "Blog", "url" => "#"),
-)
-;?>
+        $tabs = array(
+            array("tab" => "Ontwikkelaars", "url" => "#"),
+            array("tab" => "Casino Types", "url" => "#"),
+            array("tab" => "Betaalmethoden", "url" => "#"),
+            array("tab" => "Roulette Types", "url" => "#"),
+            array("tab" => "Blackjack Types", "url" => "#"),
+            array("tab" => "Gokkast types", "url" => "#"),
+            array("tab" => "Online Casinos", "url" => "#"),
+            array("tab" => "Blog", "url" => "#"),
+        ); ?>
 
-        <article class="page__container">
+        <article class="page page__container">
             <div class="container">
 
                 <nav class="tab__wrap">
-                    <?php foreach ($tabs as $item) {?>
-                    <button class="tab">
-                        <?php echo $item['tab']; ?>
-                    </button>
-                    <?php }?>
+                    <?php foreach ($tabs as $item) { ?>
+                        <button class="tab">
+                            <?php echo $item['tab']; ?>
+                        </button>
+                    <?php } ?>
                 </nav>
                 <section class="tab__container">
                     <div class="tab__item">
@@ -373,9 +372,9 @@ $tabs = array(
         </article>
 
     </main>
-    <?php include '../templates/_btn-to-top.php';?>
-    <?php include '../templates/_footer.php';?>
-    <?php include '../templates/_svg.php';?>
+    <?php include '../templates/_btn-to-top.php'; ?>
+    <?php include '../templates/_footer.php'; ?>
+    <?php include '../templates/_svg.php'; ?>
 
 
     <script>
@@ -404,4 +403,5 @@ $tabs = array(
     </script>
 
 </body>
+
 </html>

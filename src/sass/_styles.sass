@@ -89,9 +89,18 @@ a
         background: url('../img/bg/bg-hero.svg') no-repeat 50%/cover
         backdrop-filter: blur(15px)
         border-top: $bd3
+        &-meta
+            +flex(flex, flex-start, flex-start, wrap)
+            gap: var(--gap)
+            margin-top: var(--gap)
+            margin-bottom: var(--gap)
+            +ft(14, 24, 400)
+        .rating
+            background: $violet3
         h1
             margin-bottom: var(--headingMb)
-            +ft(58, 64, 600)
+            //+ft(58, 64, 600)
+            +ft(48, 56, 600)
             letter-spacing: -0.02em
 
             +maw($xs)
@@ -99,11 +108,11 @@ a
         p
             margin-bottom: 0
             +ft(16, 24, 400)
-        a
-            text-decoration: underline
-            transition: $trs
-            &:hover, &:focus, &:active
-                text-decoration: none
+            a
+                text-decoration: underline
+                transition: $trs
+                &:hover, &:focus, &:active
+                    text-decoration: none
 
     &__container
         +theme(white)
@@ -128,6 +137,54 @@ a
 
         +maw($xsm)
             padding-top: calc(var(--gap) + var(--headerH))
+    
+    &__main
+        display: grid
+        grid-template-columns: auto var(--sidebarW)
+        gap: var(--gapMd)
+
+        +maw($md)
+            grid-template-columns: 1fr
+
+    &__sidebar
+        +maw($md)
+            display: none
+            
+        color: $grey2
+        h3
+            margin-bottom: var(--gapXs)
+            text-transform: uppercase
+            +ft(16, 16, 700)
+            letter-spacing: 0.05em
+
+        section
+            width: 100%
+            margin: 0
+        
+        &-inner
+            +ps(sticky, (t, calc(var(--headerH) + 10px)))
+            +flex(flex, flex-start, flex-start, nowrap)
+            flex-direction: column
+            gap: var(--gapMd)
+        
+        &-links
+            +flex(flex, flex-start, flex-start, nowrap)
+            flex-direction: column
+            gap: 10px
+            padding: 16px 12px
+            background-color: $white
+            border-radius: $brs1
+            border: $bd2
+            color: $grey3
+            +ft(14, 20, 400)
+
+            a
+                display: inline-flex
+                transition: $trs
+
+                &.active, &:active, &:hover, &:focus
+                    color: $violet1
+                    text-decoration: underline
 
 
 .logos

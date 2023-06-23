@@ -17,15 +17,11 @@
                     <svg width='20' height='20'>
                         <use xlink:href='#heart'></use>
                     </svg>
-                </button>
+                </button>";
 
-                <button class='box__icon rating'>
-                    <svg width='15' height='15'>
-                        <use xlink:href='#star'></use>
-                    </svg>
-                    <b>$rating</b>
-                </button>
-                </div>
+    include '../templates/_rating.php';
+
+    echo "</div>
 
                <div class='box__btns'>
                <button class='btn-main'>
@@ -61,7 +57,7 @@
                             Max Win
                         </div>
                         <div class='box__stat-val'>
-                            $max_win                        
+                            $max_win                     
                         </div>
                     </div>
                 </div>
