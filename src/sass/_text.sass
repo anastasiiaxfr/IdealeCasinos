@@ -5,7 +5,7 @@ h1
         +ft(33, 40, 700)
 
 h2
-    +ft(28, 32, 400)
+    +ft(28, 32, 700)
     letter-spacing: -0.01em
 
     +maw($xs)
@@ -34,9 +34,15 @@ h5
     +maw($xsm)
         +ft(16, 24, 700)
 
+// h1, h2, h3, h4, h5, h6
+//     color: $grey1
+
+p
+    color: $grey3
+
+
 ul.mark
     position: relative
-    +ft(12, 12, 400)
     list-style-type: none
     background: transparent
     margin: 0
@@ -45,6 +51,7 @@ ul.mark
         +flex(flex, center, flex-start, nowrap)
         gap: 4px
         margin-bottom: 8px
+        +ft(12, 12, 400)
         &::before
            content: ''
            +flex(inline-flex, center, center, nowrap)
@@ -54,6 +61,10 @@ ul.mark
            background-image: url('../img/icons/checked-pink.svg')
            background-repeat: no-repeat
            background-size: contain
+
+.text
+    &--link
+        text-decoration: underline
 
 .props-cons
     display: grid
@@ -69,6 +80,7 @@ ul.mark
         margin-top: 4px
         margin-bottom: 4px
         position: relative
+        color: $grey3
         
     &__pros, &__cons
         margin: 16px 0 0
@@ -87,21 +99,3 @@ ul.mark
             &::before
                 background: url('../img/icons/minus.svg')
    
-
-blockquote
-    margin: var(--gapLg) auto
-    padding-left: var(--gapMd)
-    +ft(16, 24, 400)
-    border-left: 16px solid $pink
-    color: $grey3
-    h5
-        +ft(20, 20, 700)
-        color: $grey2
-    ul
-        margin: var(--gapXs) auto
-    li
-        margin: 0
-        list-style-type: disc
-        list-style-position: outside
-        &::before
-            display: none

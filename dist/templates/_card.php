@@ -15,14 +15,14 @@
             <div class='card__header'>
 
                 <?php include '../templates/_rating.php'; ?>
-
+                
                 <a href='$url' class='card__label'>
                 $label
                 </a>
             </div>
             <div class='card__text'>
                 <a href='$url' class='card__title'>
-                $title
+                  $title
                 </a>
             </div>
             <div class='card__footer'>

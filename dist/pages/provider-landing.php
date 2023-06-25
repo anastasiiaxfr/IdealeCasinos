@@ -76,9 +76,9 @@
                         behalf of a client. In those situations, the privacy policy of the client will apply.
                     </p>
                 </section>
-
+                
                 <?php include '../templates/_author.php'; ?>
-
+                
 
             </div>
         </article>

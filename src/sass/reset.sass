@@ -29,14 +29,24 @@ button, a, input
         appearance: none
         outline: none
         box-shadow: none 
+p
+    a
+        font-weight: bold
+        text-decoration: underline
 
+div
+    p:last-child
+        margin-bottom: 0
 
-
+.container
+    & > :first-child
+        margin-top: 0
 
 .page
     &__body
         display: flex
         flex-direction: column
-        +theme(primary)
+        //+theme(primary)
+        +theme(white)
     &__wrapper
         flex: 1 0 auto

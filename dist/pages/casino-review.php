@@ -17,14 +17,14 @@
         <?php include '../templates/_header.php';?>
 
         <?php
-$title = "Payment System";
-$sub_title = 'Hoe maak je een storting in online casino iDEAL?Hoe maak je een storting in online casino iDEAL?';
-$author = 'Barry Bridges';
-$updated = 'September 8, 2022';
-$rating = '5.0';
-?>
+        $title = "Payment System";
+        $sub_title = 'Hoe maak je een storting in online casino iDEAL?Hoe maak je een storting in online casino iDEAL?';
+        $author = 'Barry Bridges';
+        $updated = 'September 8, 2022';
+        $rating = '5.0';
+        ?>
 
-        <?php include '../templates/_hero.php';?>
+        <?php include '../templates/_hero-casino-review.php';?>
 
         <article class="page page__container">
             <div class="container">
@@ -32,34 +32,7 @@ $rating = '5.0';
                     <div class="page__data">
 
                         <section>
-
-                        <div class="props-cons">
-                        
-                                <div>
-                                    <b>Pros</b>
-                                    <ul class="props-cons__pros">
-                                        <li> A wide selection of over 2000 casino games </li>
-                                        <li> 24/7 customer support services </li>
-                                        <li> 24/7 customer support services </li>
-                                        <li> 24/7 customer support services </li>
-                                    </ul>
-</div>
-                                <div>
-                                    <b>Cons</b>
-                                    <ul class="props-cons__cons">
-                                        <li> Some popular jackpots are not available </li>
-                                        <li> Some popular jackpots are not available </li>
-                                        <li> Wagering requirements higher than usual </li>
-                                        <li> Wagering requirements higher than usual </li>
-                                    </ul>
-</div>
-                         
-
-
-                        </section>
-
-                        <section>
-                            <div>
+                        <div>
                                 <h2>
                                     Boo Casino Review
                                 </h2>
@@ -76,6 +49,9 @@ $rating = '5.0';
                                     on both mobile and desktop. Read on to find out more about this ghost-themed casino.
                                 </p>
                             </div>
+                            <?php include '../templates/_table.php';?>
+                            <?php include '../templates/_pros-cons.php';?>
+                       
                             <div>
                                 <h2>
                                     Boo Bonus Offers
@@ -296,16 +272,16 @@ $rating = '5.0';
                                 </p>
                             </div>
                             <?php
-$list = array(
-    array("title" => "Link 1", "url" => "#", "icon" => "game"),
-    array("title" => "Link 1", "url" => "#", "icon" => "game"),
-    array("title" => "Link 1", "url" => "#", "icon" => "game"),
-    array("title" => "Link 1", "url" => "#", "icon" => "game"),
-    array("title" => "Link 1", "url" => "#", "icon" => "game"),
-    array("title" => "Link 1", "url" => "#", "icon" => "game"),
-);
-$class = "chip__wrap--sm";
-$type = "link"?>
+                            $list = array(
+                                array("title" => "Link 1", "url" => "#", "icon" => "game"),
+                                array("title" => "Link 1", "url" => "#", "icon" => "game"),
+                                array("title" => "Link 1", "url" => "#", "icon" => "game"),
+                                array("title" => "Link 1", "url" => "#", "icon" => "game"),
+                                array("title" => "Link 1", "url" => "#", "icon" => "game"),
+                                array("title" => "Link 1", "url" => "#", "icon" => "game"),
+                            );
+                            $class = "chip__wrap--sm";
+                            $type = "link"?>
 
                             <?php include '../templates/_chip.php';?>
 
@@ -351,32 +327,32 @@ $type = "link"?>
 
                             </div>
                             <?php $cards = array(
-    array("icon" =>
-        "../img/box/box-1.png", "title" => "Pragmatic play", "url" =>
-        "#"), array("icon" => "../img/box/box-2.png", "title" =>
-        "Playngo", "url" => "#"), array("icon" =>
-        "../img/box/box-2.png", "title" => "Playngo", "url" => "#"),
-    array("icon" => "../img/box/box-3.png", "title" => "Evolution",
-        "url" => "#"), array("icon" => "../img/box/box-2.png", "title" => "Playngo", "url" => "#"));?>
+                            array("icon" =>
+                            "../img/box/box-1.png", "title" => "Pragmatic play", "url" =>
+                            "#"), array("icon" => "../img/box/box-2.png", "title" =>
+                            "Playngo", "url" => "#"), array("icon" =>
+                            "../img/box/box-2.png", "title" => "Playngo", "url" => "#"),
+                            array("icon" => "../img/box/box-3.png", "title" => "Evolution",
+                            "url" => "#"), array("icon" => "../img/box/box-2.png", "title" => "Playngo", "url" => "#"));?>
 
                             <div class="box-card__wrap box-card-providers">
                                 <?php include '../templates/_box.php';?>
                             </div>
 
                             <?php $cards = array(
-    array("icon" =>
-        "../img/box/img1.svg", "title" => "Casino Website Security", "url" => "#"), array("icon" => "../img/box/img2.svg", "title" =>
-        "Bonuses and promotions", "url" => "#"), array("icon" =>
-        "../img/box/img3.svg", "title" => "Player reviews", "url" => "#"),
-    array("icon" => "../img/box/img4.svg", "title" => "Choice of
-              payment methods", "url" => "#"), array("icon" =>
-        "../img/box/img5.svg", "title" => "Payout speed", "url" => "#"),
-    array("icon" => "../img/box/img6.svg", "title" => "Customer
-              support", "url" => "#"), array("icon" => "../img/box/img7.svg",
-        "title" => "Mobile-friendliness", "url" => "#"), array("icon" =>
-        "../img/box/img8.svg", "title" => "Clearness of terms and
-              conditions", "url" => "#"), array("icon" => "../img/box/img9.svg",
-        "title" => "Fair bonus terms", "url" => "#"));?>
+                            array("icon" =>
+                            "../img/box/img1.svg", "title" => "Casino Website Security", "url" => "#"), array("icon" => "../img/box/img2.svg", "title" =>
+                            "Bonuses and promotions", "url" => "#"), array("icon" =>
+                            "../img/box/img3.svg", "title" => "Player reviews", "url" => "#"),
+                            array("icon" => "../img/box/img4.svg", "title" => "Choice of
+                                    payment methods", "url" => "#"), array("icon" =>
+                            "../img/box/img5.svg", "title" => "Payout speed", "url" => "#"),
+                            array("icon" => "../img/box/img6.svg", "title" => "Customer
+                                    support", "url" => "#"), array("icon" => "../img/box/img7.svg",
+                            "title" => "Mobile-friendliness", "url" => "#"), array("icon" =>
+                            "../img/box/img8.svg", "title" => "Clearness of terms and
+                                    conditions", "url" => "#"), array("icon" => "../img/box/img9.svg",
+                            "title" => "Fair bonus terms", "url" => "#"));?>
 
 
                             <h2>
@@ -387,23 +363,23 @@ $type = "link"?>
                             </div>
 
                             <?php $faq = array(
-    array("title" =>
-        "Zijn online iDEAL casino’s veilig?", "description" => "Quisque
-              rutrum. Aenean imperdi. Etiam ultricies nisi vel augue.
-              Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
-              Maecenas tempus, tellus eget.", ), array("title" => "Kun je alleen
-              in Nederlandse casino’s gokken met iDEAL?", "description" =>
-        "Quisque rutrum. Aenean imperdi. Etiam ultricies nisi vel augue.
-              Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
-              Maecenas tempus, tellus eget.", ), array("title" => "Zijn er
-              kosten verbonden aan iDEAL betalingen?", "description" => "Quisque
-              rutrum. Aenean imperdi. Etiam ultricies nisi vel augue.
-              Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
-              Maecenas tempus, tellus eget.", ), array("title" => "Kun je bij
-              ieder online casino met iDEAL betalen?", "description" => "Quisque
-              rutrum. Aenean imperdi. Etiam ultricies nisi vel augue.
-              Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
-              Maecenas tempus, tellus eget.", ));?>
+                            array("title" =>
+                            "Zijn online iDEAL casino’s veilig?", "description" => "Quisque
+                            rutrum. Aenean imperdi. Etiam ultricies nisi vel augue.
+                            Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
+                            Maecenas tempus, tellus eget.", ), array("title" => "Kun je alleen
+                            in Nederlandse casino’s gokken met iDEAL?", "description" =>
+                            "Quisque rutrum. Aenean imperdi. Etiam ultricies nisi vel augue.
+                            Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
+                            Maecenas tempus, tellus eget.", ), array("title" => "Zijn er
+                            kosten verbonden aan iDEAL betalingen?", "description" => "Quisque
+                            rutrum. Aenean imperdi. Etiam ultricies nisi vel augue.
+                            Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
+                            Maecenas tempus, tellus eget.", ), array("title" => "Kun je bij
+                            ieder online casino met iDEAL betalen?", "description" => "Quisque
+                            rutrum. Aenean imperdi. Etiam ultricies nisi vel augue.
+                            Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
+                            Maecenas tempus, tellus eget.", ));?>
 
                             <h2>
                                 Veelgestelde Vragen

@@ -1,0 +1,52 @@
+blockquote
+    margin: var(--gapLg) auto
+    padding-left: var(--gapMd)
+    +ft(16, 24, 400)
+    border-left: 16px solid $pink
+    color: $grey3
+    h5
+        +ft(20, 20, 700)
+        color: $grey2
+    ul
+        margin: var(--gapXs) auto
+    li
+        margin: 0
+        list-style-type: disc
+        list-style-position: outside
+        &::before
+            display: none
+
+.cite
+    padding-top: var(--sectionMd)
+    padding-bottom: var(--sectionMd)
+    +theme(primary)
+    text-align: center
+    &__wrap
+        max-width: 750px
+        margin: 0 auto
+    &__title
+        margin-top: var(--gapXmd)
+        margin-bottom: var(--gapXmd)
+        +ft(40, 48, 700)
+        color: $white
+    &__auth
+        +flex(flex, center, center, nowrap)
+        gap: var(--gap)
+        text-align: left
+        &-text
+            & > *
+                color: $white
+            p
+                margin: 0
+                &:last-child
+                    opacity: 0.5
+        &-img
+            +sz(56px, 56px)
+            border-radius: 50%
+            & * 
+                display: block
+                max-width: 100%
+                object-fit: cover
+    +maw($sm)
+        &__title
+            +ft(24, 24*1.4, 700)

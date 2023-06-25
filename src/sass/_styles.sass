@@ -15,16 +15,21 @@ a
     max-width: 1144px
     
 .section
-    padding-top: var(--sectionMy)
-    padding-bottom: var(--sectionMy)
+    padding-top: var(--sectionMd)
+    padding-bottom: var(--sectionMd)
 
 .page
+    padding-top: var(--gapMd)
+    padding-bottom: var(--gapMd)
     section
-        //margin-top: var(--gapLg)
         margin-top: var(--gapMd)
+        margin-bottom: var(--gapMd)
+        //margin-top: var(--gapMd)
 
         &:first-child
-            margin-top: 0
+            //margin-top: 0
+            & > :first-child
+                margin-top: 0
 
     h1, h2
         margin-bottom: var(--gapSm)
@@ -35,19 +40,15 @@ a
     h1, h2, h3, h4, h5, h6
         margin-top: var( --headingMt)
 
-
     h2
         @extend .h2
     p, li
-        color: $grey3
-
         +ft(16, 24, 400)
 
         & > a
             text-decoration: underline
             &:hover, &:active, &:focus
                 text-decoration: none
-
    
     ul:not([class]), ol:not([class]), ol.order
         padding: 0
@@ -92,7 +93,55 @@ a
                 border-radius: 50%
                 counter-increment: section
                 content: counter(section)
-    
+
+    &__section
+        @extend .my-0
+        padding-top: var(--sectionSm)
+        padding-bottom: var(--sectionSm)
+        +theme(primary)
+        background-image: url(../img/bg/bg2.svg)
+        background-repeat: no-repeat
+        background-size: cover
+        &-inner
+            display: grid
+            grid-template-columns: 1fr 2fr
+            gap: var(--gapXlg)
+            align-items: center
+
+            +maw($sm)
+                grid-template-columns: 1fr 
+                & > :first-child
+                    margin-left: auto
+                    margin-right: auto
+                img
+                    max-width: 300px
+
+        &--reverse
+            background-image: url(../img/bg/bg3.svg)
+            .page__section-inner
+                grid-template-columns: 2fr 1fr
+                & > :first-child
+                    order: 2
+                +maw($sm)
+                    grid-template-columns: 1fr 
+                    & > :first-child
+                        order: 0
+
+        & *
+            color: $white
+
+        h2
+            margin-top: 0
+ 
+
+    &__data
+        & > :first-child 
+            @extend .mt-0
+            & > :first-child 
+                @extend .mt-0
+                & > :first-child
+                    @extend .mt-0
+
 
     &__error
         display: flex
@@ -109,52 +158,14 @@ a
                 &:first-child
                     flex: initial
 
-    &__hero
-        padding-top: calc(var(--gapSm) + var(--headerH))
-        padding-bottom: var(--gapSm)
-        background: url('../img/bg/bg-hero.svg') no-repeat 50%/cover
-        backdrop-filter: blur(15px)
-        border-top: $bd3
-        &-meta
-            +flex(flex, flex-start, flex-start, wrap)
-            gap: var(--gap)
-            margin-top: var(--gap)
-            margin-bottom: var(--gap)
-            +ft(14, 24, 400)
-        .rating
-            background: $violet3
-        h1
-            margin-bottom: var(--headingMb)
-            //+ft(58, 64, 600)
-            +ft(48, 56, 600)
-            letter-spacing: -0.02em
-
-            +maw($xs)
-                +ft(28, 32, 600)
-        p
-            margin-bottom: 0
-            +ft(16, 24, 400)
-            a
-                text-decoration: underline
-                transition: $trs
-                &:hover, &:focus, &:active
-                    text-decoration: none
-        &-inner
-            display: grid
-            grid-template-columns: 2fr auto
-            gap: var(--gap)
-        &-img
-            +maw($sm)
-                display: none
-
     &__container
         +theme(white)
-        height: 100%
-        padding: var(--gapMd) 0
+        // padding-top: var(--sectionMd)
+        // padding-bottom: var(--sectionMd)
 
     &__content
         padding-top: calc(var(--gapSm) + var(--headerH))
-        padding-bottom: var(--gapSm)
+        //padding-bottom: var(--gapSm)
 
     &__meta
         +flex(flex, center, flex-start, wrap)
@@ -175,7 +186,7 @@ a
         display: grid
         grid-template-columns: auto var(--sidebarW)
         gap: var(--gapMd)
-
+        
         +maw($md)
             grid-template-columns: 1fr
 
@@ -185,6 +196,7 @@ a
             
         color: $grey2
         h3
+            margin-top: 0
             margin-bottom: var(--gapXs)
             text-transform: uppercase
             +ft(16, 16, 700)
@@ -236,3 +248,5 @@ a
             max-width: 40px
             transform: scale(1.2)
 
+.related
+    +theme(primary)

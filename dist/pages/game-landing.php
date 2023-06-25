@@ -71,9 +71,7 @@
 
                                 </div>
                             </div>
-                        </section>
-
-                        <section>
+                       
                             <h2>
                                 Text Block
                             </h2>

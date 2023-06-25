@@ -40,7 +40,7 @@
     padding: 12px 16px
     background: rgba($white, 0.2)
     border: 1px solid rgba($white, 0.2)
-    border-radius: 20pc
+    border-radius: $brs1
     box-shadow: $bxsd1
     backdrop-filter: blur(16px)
     +ft(14, 20, 400)
@@ -90,7 +90,8 @@
         +flex(flex, center, flex-start, wrap)
         gap: var(--gap)
         &--sm
-            margin-top: var(--gaap)
+            margin-top: var(--gap)
+            margin-bottom: var(--gap)
         &:last-child
             margin-bottom: 0
 
@@ -119,6 +120,12 @@
 .cat
     @extend .btn-blur
     font-weight: 600
+    +flex(inline-flex, center, center, wrap)
+    min-width: 0
+    // background-color: $grey6
+    // color: $grey2
+    color: inherit
+    border: 1px solid $grey5
 
     +maw($xs)
         text-transform: uppercase

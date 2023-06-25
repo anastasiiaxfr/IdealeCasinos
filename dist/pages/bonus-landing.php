@@ -64,15 +64,17 @@
                             <p>
                                 Online gokken is leuk. Maar om geld te winnen, moet je ook geld inzetten. Betalen in een casino met iDEAL is heel eenvoudig. Binnen een paar klikken staat het geld dat je in een online casino gewonnen hebt op je bankrekening. En geld storten van je bankrekening in een iDEAL casino is in een mum van tijd gebeurd. Betalen met iDEAL is dus heel gemakkelijk en een online casino met iDEAL vinden is een fluitje van een cent. iDEAL casino sites zijn daarom erg populair en het aantal casino’s groeit snel. Steeds meer mensen ontdekken deze handige betaalmethode en maken gebruik van een iDEAL betaling. Zeker als je er een kiest uit onze lijst iDEAL casino’s 2023. Betalen met iDEAL werkt precies hetzelfde als bij een ‘gewone’ online aankoop en met onze lijst van casino’s zorgen we ervoor dat je een betrouwbaar casino in Nederland vindt. iDEAL casino’s zijn ook nog eens erg veilig. Helemaal als je er een van onze lijst iDEAL casino 2023 uitzoekt. Betalen met iDEAL werkt precies hetzelfde als bij een ‘gewone’ online aankoop en we zorgen er met onze lijst van casino’s ook nog eens voor dat je als speler in een betrouwbaar casino iDEAL Nederland terecht komt.
                             </p>
-                        </section>
-                        <?php $bonuses = array(
-                            array("url" => "#", "img" => "../img/casinos/top-casinos/casino-1.png", "name" => "Kansino", "deposit" => "1st deposit", "info" => "150% tot €300 + 5% CashBack + 100 Gratis Spins", "review" => "#", "demo" => "#"),
-                            array("url" => "#", "img" => "../img/casinos/top-casinos/casino-1.png", "name" => "Kansino", "deposit" => "1st deposit", "info" => "150% tot €300 + 5% CashBack + 100 Gratis Spins", "review" => "#", "demo" => "#"),
-                            array("url" => "#", "img" => "../img/casinos/top-casinos/casino-1.png", "name" => "Kansino", "deposit" => "1st deposit", "info" => "150% tot €300 + 5% CashBack + 100 Gratis Spins", "review" => "#", "demo" => "#"),
-                        ); ?>
-                        <section>
-                            <?php include '../templates/_bonus-row.php'; ?>
-                            <?php include '../templates/_btn-show-more.php'; ?>
+
+                            <?php $bonuses = array(
+                                array("url" => "#", "img" => "../img/casinos/top-casinos/casino-1.png", "name" => "Kansino", "deposit" => "1st deposit", "info" => "150% tot €300 + 5% CashBack + 100 Gratis Spins", "review" => "#", "demo" => "#"),
+                                array("url" => "#", "img" => "../img/casinos/top-casinos/casino-1.png", "name" => "Kansino", "deposit" => "1st deposit", "info" => "150% tot €300 + 5% CashBack + 100 Gratis Spins", "review" => "#", "demo" => "#"),
+                                array("url" => "#", "img" => "../img/casinos/top-casinos/casino-1.png", "name" => "Kansino", "deposit" => "1st deposit", "info" => "150% tot €300 + 5% CashBack + 100 Gratis Spins", "review" => "#", "demo" => "#"),
+                            ); ?>
+                            <div class="mt-5">
+                                <?php include '../templates/_bonus-row.php'; ?>
+                                <?php include '../templates/_btn-show-more.php'; ?>
+                            </div>
+
                         </section>
                     </div>
 
@@ -89,6 +91,7 @@
     <?php include '../templates/_footer.php'; ?>
     <?php include '../templates/_svg.php'; ?>
 
-    
+
 </body>
+
 </html>

@@ -1,8 +1,13 @@
 .author
+    margin-top: var(--gapMd)
+    margin-bottom: var(--gapMd)
     background-color: $white
     border-radius: var(--gapXs)
     border: $bd4
     overflow: hidden
+
+    &:last-of-type
+        margin-bottom: 0
     
     &__header
         +flex(flex, center, space-between, wrap)

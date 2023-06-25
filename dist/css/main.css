@@ -2095,7 +2095,7 @@ textarea.form-control-lg {
   clip: rect(0, 0, 0, 0);
   pointer-events: none;
 }
-.btn-check[disabled] + .btn, .btn-check[disabled] + .btn-blur, .btn-check[disabled] + .cat, .btn-check[disabled] + .btn-main, .btn-check[disabled] + .casino__btn, .btn-check[disabled] + .bonus-banner__btn, .btn-check[disabled] + .bonus-row__btn, .btn-check[disabled] + .top-casinos__btn, .btn-check:disabled + .btn, .btn-check:disabled + .btn-blur, .btn-check:disabled + .cat, .btn-check:disabled + .btn-main, .btn-check:disabled + .casino__btn, .btn-check:disabled + .bonus-banner__btn, .btn-check:disabled + .bonus-row__btn, .btn-check:disabled + .top-casinos__btn {
+.btn-check[disabled] + .btn, .btn-check[disabled] + .btn-blur, .btn-check[disabled] + .cat, .btn-check[disabled] + .btn-main, .btn-check[disabled] + .casino__btn, .btn-check[disabled] + .bonus-banner__btn, .btn-check[disabled] + .bonus-row__btn, .btn-check[disabled] + .top-casinos__btn, .btn-check[disabled] + .hero-review__btn, .btn-check:disabled + .btn, .btn-check:disabled + .btn-blur, .btn-check:disabled + .cat, .btn-check:disabled + .btn-main, .btn-check:disabled + .casino__btn, .btn-check:disabled + .bonus-banner__btn, .btn-check:disabled + .bonus-row__btn, .btn-check:disabled + .top-casinos__btn, .btn-check:disabled + .hero-review__btn {
   pointer-events: none;
   filter: none;
   opacity: 0.65;
@@ -2273,11 +2273,11 @@ textarea.form-control-lg {
 .input-group > .form-select:focus {
   z-index: 3;
 }
-.input-group .btn, .input-group .btn-blur, .input-group .cat, .input-group .btn-main, .input-group .casino__btn, .input-group .bonus-banner__btn, .input-group .bonus-row__btn, .input-group .top-casinos__btn {
+.input-group .btn, .input-group .btn-blur, .input-group .cat, .input-group .btn-main, .input-group .casino__btn, .input-group .bonus-banner__btn, .input-group .bonus-row__btn, .input-group .top-casinos__btn, .input-group .hero-review__btn {
   position: relative;
   z-index: 2;
 }
-.input-group .btn:focus, .input-group .btn-blur:focus, .input-group .cat:focus, .input-group .btn-main:focus, .input-group .casino__btn:focus, .input-group .bonus-banner__btn:focus, .input-group .bonus-row__btn:focus, .input-group .top-casinos__btn:focus {
+.input-group .btn:focus, .input-group .btn-blur:focus, .input-group .cat:focus, .input-group .btn-main:focus, .input-group .casino__btn:focus, .input-group .bonus-banner__btn:focus, .input-group .bonus-row__btn:focus, .input-group .top-casinos__btn:focus, .input-group .hero-review__btn:focus {
   z-index: 3;
 }
 
@@ -2306,7 +2306,8 @@ textarea.form-control-lg {
 .input-group-lg > .casino__btn,
 .input-group-lg > .bonus-banner__btn,
 .input-group-lg > .bonus-row__btn,
-.input-group-lg > .top-casinos__btn {
+.input-group-lg > .top-casinos__btn,
+.input-group-lg > .hero-review__btn {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   border-radius: 0.3rem;
@@ -2322,7 +2323,8 @@ textarea.form-control-lg {
 .input-group-sm > .casino__btn,
 .input-group-sm > .bonus-banner__btn,
 .input-group-sm > .bonus-row__btn,
-.input-group-sm > .top-casinos__btn {
+.input-group-sm > .top-casinos__btn,
+.input-group-sm > .hero-review__btn {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   border-radius: 0.2rem;
@@ -2527,7 +2529,7 @@ textarea.form-control-lg {
   z-index: 3;
 }
 
-.btn, .btn-blur, .cat, .btn-main, .casino__btn, .bonus-banner__btn, .bonus-row__btn, .top-casinos__btn {
+.btn, .btn-blur, .cat, .btn-main, .casino__btn, .bonus-banner__btn, .bonus-row__btn, .top-casinos__btn, .hero-review__btn {
   display: inline-block;
   font-weight: 400;
   line-height: 1.5;
@@ -2547,18 +2549,18 @@ textarea.form-control-lg {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
-  .btn, .btn-blur, .cat, .btn-main, .casino__btn, .bonus-banner__btn, .bonus-row__btn, .top-casinos__btn {
+  .btn, .btn-blur, .cat, .btn-main, .casino__btn, .bonus-banner__btn, .bonus-row__btn, .top-casinos__btn, .hero-review__btn {
     transition: none;
   }
 }
-.btn:hover, .btn-blur:hover, .cat:hover, .btn-main:hover, .casino__btn:hover, .bonus-banner__btn:hover, .bonus-row__btn:hover, .top-casinos__btn:hover {
+.btn:hover, .btn-blur:hover, .cat:hover, .btn-main:hover, .casino__btn:hover, .bonus-banner__btn:hover, .bonus-row__btn:hover, .top-casinos__btn:hover, .hero-review__btn:hover {
   color: #212529;
 }
-.btn-check:focus + .btn, .btn-check:focus + .btn-blur, .btn-check:focus + .cat, .btn-check:focus + .btn-main, .btn-check:focus + .casino__btn, .btn-check:focus + .bonus-banner__btn, .btn-check:focus + .bonus-row__btn, .btn-check:focus + .top-casinos__btn, .btn:focus, .btn-blur:focus, .cat:focus, .btn-main:focus, .casino__btn:focus, .bonus-banner__btn:focus, .bonus-row__btn:focus, .top-casinos__btn:focus {
+.btn-check:focus + .btn, .btn-check:focus + .btn-blur, .btn-check:focus + .cat, .btn-check:focus + .btn-main, .btn-check:focus + .casino__btn, .btn-check:focus + .bonus-banner__btn, .btn-check:focus + .bonus-row__btn, .btn-check:focus + .top-casinos__btn, .btn-check:focus + .hero-review__btn, .btn:focus, .btn-blur:focus, .cat:focus, .btn-main:focus, .casino__btn:focus, .bonus-banner__btn:focus, .bonus-row__btn:focus, .top-casinos__btn:focus, .hero-review__btn:focus {
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 }
-.btn:disabled, .btn-blur:disabled, .cat:disabled, .btn-main:disabled, .casino__btn:disabled, .bonus-banner__btn:disabled, .bonus-row__btn:disabled, .top-casinos__btn:disabled, .btn.disabled, .disabled.btn-blur, .disabled.cat, .disabled.btn-main, .disabled.casino__btn, .disabled.bonus-banner__btn, .disabled.bonus-row__btn, .disabled.top-casinos__btn, fieldset:disabled .btn, fieldset:disabled .btn-blur, fieldset:disabled .cat, fieldset:disabled .btn-main, fieldset:disabled .casino__btn, fieldset:disabled .bonus-banner__btn, fieldset:disabled .bonus-row__btn, fieldset:disabled .top-casinos__btn {
+.btn:disabled, .btn-blur:disabled, .cat:disabled, .btn-main:disabled, .casino__btn:disabled, .bonus-banner__btn:disabled, .bonus-row__btn:disabled, .top-casinos__btn:disabled, .hero-review__btn:disabled, .btn.disabled, .disabled.btn-blur, .disabled.cat, .disabled.btn-main, .disabled.casino__btn, .disabled.bonus-banner__btn, .disabled.bonus-row__btn, .disabled.top-casinos__btn, .disabled.hero-review__btn, fieldset:disabled .btn, fieldset:disabled .btn-blur, fieldset:disabled .cat, fieldset:disabled .btn-main, fieldset:disabled .casino__btn, fieldset:disabled .bonus-banner__btn, fieldset:disabled .bonus-row__btn, fieldset:disabled .top-casinos__btn, fieldset:disabled .hero-review__btn {
   pointer-events: none;
   opacity: 0.65;
 }
@@ -3015,13 +3017,13 @@ textarea.form-control-lg {
   color: #6c757d;
 }
 
-.btn-lg, .btn-group-lg > .btn, .btn-group-lg > .btn-blur, .btn-group-lg > .cat, .btn-group-lg > .btn-main, .btn-group-lg > .casino__btn, .btn-group-lg > .bonus-banner__btn, .btn-group-lg > .bonus-row__btn, .btn-group-lg > .top-casinos__btn {
+.btn-lg, .btn-group-lg > .btn, .btn-group-lg > .btn-blur, .btn-group-lg > .cat, .btn-group-lg > .btn-main, .btn-group-lg > .casino__btn, .btn-group-lg > .bonus-banner__btn, .btn-group-lg > .bonus-row__btn, .btn-group-lg > .top-casinos__btn, .btn-group-lg > .hero-review__btn {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   border-radius: 0.3rem;
 }
 
-.btn-sm, .btn-group-sm > .btn, .btn-group-sm > .btn-blur, .btn-group-sm > .cat, .btn-group-sm > .btn-main, .btn-group-sm > .casino__btn, .btn-group-sm > .bonus-banner__btn, .btn-group-sm > .bonus-row__btn, .btn-group-sm > .top-casinos__btn {
+.btn-sm, .btn-group-sm > .btn, .btn-group-sm > .btn-blur, .btn-group-sm > .cat, .btn-group-sm > .btn-main, .btn-group-sm > .casino__btn, .btn-group-sm > .bonus-banner__btn, .btn-group-sm > .bonus-row__btn, .btn-group-sm > .top-casinos__btn, .btn-group-sm > .hero-review__btn {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   border-radius: 0.2rem;
@@ -3371,7 +3373,7 @@ textarea.form-control-lg {
   display: inline-flex;
   vertical-align: middle;
 }
-.btn-group > .btn, .btn-group > .btn-blur, .btn-group > .cat, .btn-group > .btn-main, .btn-group > .casino__btn, .btn-group > .bonus-banner__btn, .btn-group > .bonus-row__btn, .btn-group > .top-casinos__btn,
+.btn-group > .btn, .btn-group > .btn-blur, .btn-group > .cat, .btn-group > .btn-main, .btn-group > .casino__btn, .btn-group > .bonus-banner__btn, .btn-group > .bonus-row__btn, .btn-group > .top-casinos__btn, .btn-group > .hero-review__btn,
 .btn-group-vertical > .btn,
 .btn-group-vertical > .btn-blur,
 .btn-group-vertical > .cat,
@@ -3379,11 +3381,12 @@ textarea.form-control-lg {
 .btn-group-vertical > .casino__btn,
 .btn-group-vertical > .bonus-banner__btn,
 .btn-group-vertical > .bonus-row__btn,
-.btn-group-vertical > .top-casinos__btn {
+.btn-group-vertical > .top-casinos__btn,
+.btn-group-vertical > .hero-review__btn {
   position: relative;
   flex: 1 1 auto;
 }
-.btn-group > .btn-check:checked + .btn, .btn-group > .btn-check:checked + .btn-blur, .btn-group > .btn-check:checked + .cat, .btn-group > .btn-check:checked + .btn-main, .btn-group > .btn-check:checked + .casino__btn, .btn-group > .btn-check:checked + .bonus-banner__btn, .btn-group > .btn-check:checked + .bonus-row__btn, .btn-group > .btn-check:checked + .top-casinos__btn,
+.btn-group > .btn-check:checked + .btn, .btn-group > .btn-check:checked + .btn-blur, .btn-group > .btn-check:checked + .cat, .btn-group > .btn-check:checked + .btn-main, .btn-group > .btn-check:checked + .casino__btn, .btn-group > .btn-check:checked + .bonus-banner__btn, .btn-group > .btn-check:checked + .bonus-row__btn, .btn-group > .btn-check:checked + .top-casinos__btn, .btn-group > .btn-check:checked + .hero-review__btn,
 .btn-group > .btn-check:focus + .btn,
 .btn-group > .btn-check:focus + .btn-blur,
 .btn-group > .btn-check:focus + .cat,
@@ -3392,6 +3395,7 @@ textarea.form-control-lg {
 .btn-group > .btn-check:focus + .bonus-banner__btn,
 .btn-group > .btn-check:focus + .bonus-row__btn,
 .btn-group > .btn-check:focus + .top-casinos__btn,
+.btn-group > .btn-check:focus + .hero-review__btn,
 .btn-group > .btn:hover,
 .btn-group > .btn-blur:hover,
 .btn-group > .cat:hover,
@@ -3400,6 +3404,7 @@ textarea.form-control-lg {
 .btn-group > .bonus-banner__btn:hover,
 .btn-group > .bonus-row__btn:hover,
 .btn-group > .top-casinos__btn:hover,
+.btn-group > .hero-review__btn:hover,
 .btn-group > .btn:focus,
 .btn-group > .btn-blur:focus,
 .btn-group > .cat:focus,
@@ -3408,6 +3413,7 @@ textarea.form-control-lg {
 .btn-group > .bonus-banner__btn:focus,
 .btn-group > .bonus-row__btn:focus,
 .btn-group > .top-casinos__btn:focus,
+.btn-group > .hero-review__btn:focus,
 .btn-group > .btn:active,
 .btn-group > .btn-blur:active,
 .btn-group > .cat:active,
@@ -3416,6 +3422,7 @@ textarea.form-control-lg {
 .btn-group > .bonus-banner__btn:active,
 .btn-group > .bonus-row__btn:active,
 .btn-group > .top-casinos__btn:active,
+.btn-group > .hero-review__btn:active,
 .btn-group > .btn.active,
 .btn-group > .active.btn-blur,
 .btn-group > .active.cat,
@@ -3424,6 +3431,7 @@ textarea.form-control-lg {
 .btn-group > .active.bonus-banner__btn,
 .btn-group > .active.bonus-row__btn,
 .btn-group > .active.top-casinos__btn,
+.btn-group > .active.hero-review__btn,
 .btn-group-vertical > .btn-check:checked + .btn,
 .btn-group-vertical > .btn-check:checked + .btn-blur,
 .btn-group-vertical > .btn-check:checked + .cat,
@@ -3432,6 +3440,7 @@ textarea.form-control-lg {
 .btn-group-vertical > .btn-check:checked + .bonus-banner__btn,
 .btn-group-vertical > .btn-check:checked + .bonus-row__btn,
 .btn-group-vertical > .btn-check:checked + .top-casinos__btn,
+.btn-group-vertical > .btn-check:checked + .hero-review__btn,
 .btn-group-vertical > .btn-check:focus + .btn,
 .btn-group-vertical > .btn-check:focus + .btn-blur,
 .btn-group-vertical > .btn-check:focus + .cat,
@@ -3440,6 +3449,7 @@ textarea.form-control-lg {
 .btn-group-vertical > .btn-check:focus + .bonus-banner__btn,
 .btn-group-vertical > .btn-check:focus + .bonus-row__btn,
 .btn-group-vertical > .btn-check:focus + .top-casinos__btn,
+.btn-group-vertical > .btn-check:focus + .hero-review__btn,
 .btn-group-vertical > .btn:hover,
 .btn-group-vertical > .btn-blur:hover,
 .btn-group-vertical > .cat:hover,
@@ -3448,6 +3458,7 @@ textarea.form-control-lg {
 .btn-group-vertical > .bonus-banner__btn:hover,
 .btn-group-vertical > .bonus-row__btn:hover,
 .btn-group-vertical > .top-casinos__btn:hover,
+.btn-group-vertical > .hero-review__btn:hover,
 .btn-group-vertical > .btn:focus,
 .btn-group-vertical > .btn-blur:focus,
 .btn-group-vertical > .cat:focus,
@@ -3456,6 +3467,7 @@ textarea.form-control-lg {
 .btn-group-vertical > .bonus-banner__btn:focus,
 .btn-group-vertical > .bonus-row__btn:focus,
 .btn-group-vertical > .top-casinos__btn:focus,
+.btn-group-vertical > .hero-review__btn:focus,
 .btn-group-vertical > .btn:active,
 .btn-group-vertical > .btn-blur:active,
 .btn-group-vertical > .cat:active,
@@ -3464,6 +3476,7 @@ textarea.form-control-lg {
 .btn-group-vertical > .bonus-banner__btn:active,
 .btn-group-vertical > .bonus-row__btn:active,
 .btn-group-vertical > .top-casinos__btn:active,
+.btn-group-vertical > .hero-review__btn:active,
 .btn-group-vertical > .btn.active,
 .btn-group-vertical > .active.btn-blur,
 .btn-group-vertical > .active.cat,
@@ -3471,7 +3484,8 @@ textarea.form-control-lg {
 .btn-group-vertical > .active.casino__btn,
 .btn-group-vertical > .active.bonus-banner__btn,
 .btn-group-vertical > .active.bonus-row__btn,
-.btn-group-vertical > .active.top-casinos__btn {
+.btn-group-vertical > .active.top-casinos__btn,
+.btn-group-vertical > .active.hero-review__btn {
   z-index: 1;
 }
 
@@ -3484,11 +3498,11 @@ textarea.form-control-lg {
   width: auto;
 }
 
-.btn-group > .btn:not(:first-child), .btn-group > .btn-blur:not(:first-child), .btn-group > .cat:not(:first-child), .btn-group > .btn-main:not(:first-child), .btn-group > .casino__btn:not(:first-child), .btn-group > .bonus-banner__btn:not(:first-child), .btn-group > .bonus-row__btn:not(:first-child), .btn-group > .top-casinos__btn:not(:first-child),
+.btn-group > .btn:not(:first-child), .btn-group > .btn-blur:not(:first-child), .btn-group > .cat:not(:first-child), .btn-group > .btn-main:not(:first-child), .btn-group > .casino__btn:not(:first-child), .btn-group > .bonus-banner__btn:not(:first-child), .btn-group > .bonus-row__btn:not(:first-child), .btn-group > .top-casinos__btn:not(:first-child), .btn-group > .hero-review__btn:not(:first-child),
 .btn-group > .btn-group:not(:first-child) {
   margin-left: -1px;
 }
-.btn-group > .btn:not(:last-child):not(.dropdown-toggle), .btn-group > .btn-blur:not(:last-child):not(.dropdown-toggle), .btn-group > .cat:not(:last-child):not(.dropdown-toggle), .btn-group > .btn-main:not(:last-child):not(.dropdown-toggle), .btn-group > .casino__btn:not(:last-child):not(.dropdown-toggle), .btn-group > .bonus-banner__btn:not(:last-child):not(.dropdown-toggle), .btn-group > .bonus-row__btn:not(:last-child):not(.dropdown-toggle), .btn-group > .top-casinos__btn:not(:last-child):not(.dropdown-toggle),
+.btn-group > .btn:not(:last-child):not(.dropdown-toggle), .btn-group > .btn-blur:not(:last-child):not(.dropdown-toggle), .btn-group > .cat:not(:last-child):not(.dropdown-toggle), .btn-group > .btn-main:not(:last-child):not(.dropdown-toggle), .btn-group > .casino__btn:not(:last-child):not(.dropdown-toggle), .btn-group > .bonus-banner__btn:not(:last-child):not(.dropdown-toggle), .btn-group > .bonus-row__btn:not(:last-child):not(.dropdown-toggle), .btn-group > .top-casinos__btn:not(:last-child):not(.dropdown-toggle), .btn-group > .hero-review__btn:not(:last-child):not(.dropdown-toggle),
 .btn-group > .btn-group:not(:last-child) > .btn,
 .btn-group > .btn-group:not(:last-child) > .btn-blur,
 .btn-group > .btn-group:not(:last-child) > .cat,
@@ -3496,11 +3510,12 @@ textarea.form-control-lg {
 .btn-group > .btn-group:not(:last-child) > .casino__btn,
 .btn-group > .btn-group:not(:last-child) > .bonus-banner__btn,
 .btn-group > .btn-group:not(:last-child) > .bonus-row__btn,
-.btn-group > .btn-group:not(:last-child) > .top-casinos__btn {
+.btn-group > .btn-group:not(:last-child) > .top-casinos__btn,
+.btn-group > .btn-group:not(:last-child) > .hero-review__btn {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
-.btn-group > .btn:nth-child(n+3), .btn-group > .btn-blur:nth-child(n+3), .btn-group > .cat:nth-child(n+3), .btn-group > .btn-main:nth-child(n+3), .btn-group > .casino__btn:nth-child(n+3), .btn-group > .bonus-banner__btn:nth-child(n+3), .btn-group > .bonus-row__btn:nth-child(n+3), .btn-group > .top-casinos__btn:nth-child(n+3),
+.btn-group > .btn:nth-child(n+3), .btn-group > .btn-blur:nth-child(n+3), .btn-group > .cat:nth-child(n+3), .btn-group > .btn-main:nth-child(n+3), .btn-group > .casino__btn:nth-child(n+3), .btn-group > .bonus-banner__btn:nth-child(n+3), .btn-group > .bonus-row__btn:nth-child(n+3), .btn-group > .top-casinos__btn:nth-child(n+3), .btn-group > .hero-review__btn:nth-child(n+3),
 .btn-group > :not(.btn-check) + .btn,
 .btn-group > :not(.btn-check) + .btn-blur,
 .btn-group > :not(.btn-check) + .cat,
@@ -3509,6 +3524,7 @@ textarea.form-control-lg {
 .btn-group > :not(.btn-check) + .bonus-banner__btn,
 .btn-group > :not(.btn-check) + .bonus-row__btn,
 .btn-group > :not(.btn-check) + .top-casinos__btn,
+.btn-group > :not(.btn-check) + .hero-review__btn,
 .btn-group > .btn-group:not(:first-child) > .btn,
 .btn-group > .btn-group:not(:first-child) > .btn-blur,
 .btn-group > .btn-group:not(:first-child) > .cat,
@@ -3516,7 +3532,8 @@ textarea.form-control-lg {
 .btn-group > .btn-group:not(:first-child) > .casino__btn,
 .btn-group > .btn-group:not(:first-child) > .bonus-banner__btn,
 .btn-group > .btn-group:not(:first-child) > .bonus-row__btn,
-.btn-group > .btn-group:not(:first-child) > .top-casinos__btn {
+.btn-group > .btn-group:not(:first-child) > .top-casinos__btn,
+.btn-group > .btn-group:not(:first-child) > .hero-review__btn {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -3532,12 +3549,12 @@ textarea.form-control-lg {
   margin-right: 0;
 }
 
-.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, .btn-group-sm > .btn-blur + .dropdown-toggle-split, .btn-group-sm > .cat + .dropdown-toggle-split, .btn-group-sm > .btn-main + .dropdown-toggle-split, .btn-group-sm > .casino__btn + .dropdown-toggle-split, .btn-group-sm > .bonus-banner__btn + .dropdown-toggle-split, .btn-group-sm > .bonus-row__btn + .dropdown-toggle-split, .btn-group-sm > .top-casinos__btn + .dropdown-toggle-split {
+.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, .btn-group-sm > .btn-blur + .dropdown-toggle-split, .btn-group-sm > .cat + .dropdown-toggle-split, .btn-group-sm > .btn-main + .dropdown-toggle-split, .btn-group-sm > .casino__btn + .dropdown-toggle-split, .btn-group-sm > .bonus-banner__btn + .dropdown-toggle-split, .btn-group-sm > .bonus-row__btn + .dropdown-toggle-split, .btn-group-sm > .top-casinos__btn + .dropdown-toggle-split, .btn-group-sm > .hero-review__btn + .dropdown-toggle-split {
   padding-right: 0.375rem;
   padding-left: 0.375rem;
 }
 
-.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .btn-group-lg > .btn-blur + .dropdown-toggle-split, .btn-group-lg > .cat + .dropdown-toggle-split, .btn-group-lg > .btn-main + .dropdown-toggle-split, .btn-group-lg > .casino__btn + .dropdown-toggle-split, .btn-group-lg > .bonus-banner__btn + .dropdown-toggle-split, .btn-group-lg > .bonus-row__btn + .dropdown-toggle-split, .btn-group-lg > .top-casinos__btn + .dropdown-toggle-split {
+.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .btn-group-lg > .btn-blur + .dropdown-toggle-split, .btn-group-lg > .cat + .dropdown-toggle-split, .btn-group-lg > .btn-main + .dropdown-toggle-split, .btn-group-lg > .casino__btn + .dropdown-toggle-split, .btn-group-lg > .bonus-banner__btn + .dropdown-toggle-split, .btn-group-lg > .bonus-row__btn + .dropdown-toggle-split, .btn-group-lg > .top-casinos__btn + .dropdown-toggle-split, .btn-group-lg > .hero-review__btn + .dropdown-toggle-split {
   padding-right: 0.75rem;
   padding-left: 0.75rem;
 }
@@ -3547,15 +3564,15 @@ textarea.form-control-lg {
   align-items: flex-start;
   justify-content: center;
 }
-.btn-group-vertical > .btn, .btn-group-vertical > .btn-blur, .btn-group-vertical > .cat, .btn-group-vertical > .btn-main, .btn-group-vertical > .casino__btn, .btn-group-vertical > .bonus-banner__btn, .btn-group-vertical > .bonus-row__btn, .btn-group-vertical > .top-casinos__btn,
+.btn-group-vertical > .btn, .btn-group-vertical > .btn-blur, .btn-group-vertical > .cat, .btn-group-vertical > .btn-main, .btn-group-vertical > .casino__btn, .btn-group-vertical > .bonus-banner__btn, .btn-group-vertical > .bonus-row__btn, .btn-group-vertical > .top-casinos__btn, .btn-group-vertical > .hero-review__btn,
 .btn-group-vertical > .btn-group {
   width: 100%;
 }
-.btn-group-vertical > .btn:not(:first-child), .btn-group-vertical > .btn-blur:not(:first-child), .btn-group-vertical > .cat:not(:first-child), .btn-group-vertical > .btn-main:not(:first-child), .btn-group-vertical > .casino__btn:not(:first-child), .btn-group-vertical > .bonus-banner__btn:not(:first-child), .btn-group-vertical > .bonus-row__btn:not(:first-child), .btn-group-vertical > .top-casinos__btn:not(:first-child),
+.btn-group-vertical > .btn:not(:first-child), .btn-group-vertical > .btn-blur:not(:first-child), .btn-group-vertical > .cat:not(:first-child), .btn-group-vertical > .btn-main:not(:first-child), .btn-group-vertical > .casino__btn:not(:first-child), .btn-group-vertical > .bonus-banner__btn:not(:first-child), .btn-group-vertical > .bonus-row__btn:not(:first-child), .btn-group-vertical > .top-casinos__btn:not(:first-child), .btn-group-vertical > .hero-review__btn:not(:first-child),
 .btn-group-vertical > .btn-group:not(:first-child) {
   margin-top: -1px;
 }
-.btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .btn-blur:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .cat:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .btn-main:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .casino__btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .bonus-banner__btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .bonus-row__btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .top-casinos__btn:not(:last-child):not(.dropdown-toggle),
+.btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .btn-blur:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .cat:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .btn-main:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .casino__btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .bonus-banner__btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .bonus-row__btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .top-casinos__btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .hero-review__btn:not(:last-child):not(.dropdown-toggle),
 .btn-group-vertical > .btn-group:not(:last-child) > .btn,
 .btn-group-vertical > .btn-group:not(:last-child) > .btn-blur,
 .btn-group-vertical > .btn-group:not(:last-child) > .cat,
@@ -3563,11 +3580,12 @@ textarea.form-control-lg {
 .btn-group-vertical > .btn-group:not(:last-child) > .casino__btn,
 .btn-group-vertical > .btn-group:not(:last-child) > .bonus-banner__btn,
 .btn-group-vertical > .btn-group:not(:last-child) > .bonus-row__btn,
-.btn-group-vertical > .btn-group:not(:last-child) > .top-casinos__btn {
+.btn-group-vertical > .btn-group:not(:last-child) > .top-casinos__btn,
+.btn-group-vertical > .btn-group:not(:last-child) > .hero-review__btn {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
-.btn-group-vertical > .btn ~ .btn, .btn-group-vertical > .btn-blur ~ .btn, .btn-group-vertical > .cat ~ .btn, .btn-group-vertical > .btn-main ~ .btn, .btn-group-vertical > .casino__btn ~ .btn, .btn-group-vertical > .bonus-banner__btn ~ .btn, .btn-group-vertical > .bonus-row__btn ~ .btn, .btn-group-vertical > .top-casinos__btn ~ .btn, .btn-group-vertical > .btn ~ .btn-blur, .btn-group-vertical > .btn ~ .cat, .btn-group-vertical > .btn-blur ~ .btn-blur, .btn-group-vertical > .cat ~ .btn-blur, .btn-group-vertical > .btn-blur ~ .cat, .btn-group-vertical > .cat ~ .cat, .btn-group-vertical > .btn-main ~ .btn-blur, .btn-group-vertical > .casino__btn ~ .btn-blur, .btn-group-vertical > .bonus-banner__btn ~ .btn-blur, .btn-group-vertical > .bonus-row__btn ~ .btn-blur, .btn-group-vertical > .top-casinos__btn ~ .btn-blur, .btn-group-vertical > .btn-main ~ .cat, .btn-group-vertical > .casino__btn ~ .cat, .btn-group-vertical > .bonus-banner__btn ~ .cat, .btn-group-vertical > .bonus-row__btn ~ .cat, .btn-group-vertical > .top-casinos__btn ~ .cat, .btn-group-vertical > .btn ~ .btn-main, .btn-group-vertical > .btn ~ .casino__btn, .btn-group-vertical > .btn ~ .bonus-banner__btn, .btn-group-vertical > .btn ~ .bonus-row__btn, .btn-group-vertical > .btn ~ .top-casinos__btn, .btn-group-vertical > .btn-blur ~ .btn-main, .btn-group-vertical > .btn-blur ~ .casino__btn, .btn-group-vertical > .btn-blur ~ .bonus-banner__btn, .btn-group-vertical > .btn-blur ~ .bonus-row__btn, .btn-group-vertical > .btn-blur ~ .top-casinos__btn, .btn-group-vertical > .cat ~ .btn-main, .btn-group-vertical > .cat ~ .casino__btn, .btn-group-vertical > .cat ~ .bonus-banner__btn, .btn-group-vertical > .cat ~ .bonus-row__btn, .btn-group-vertical > .cat ~ .top-casinos__btn, .btn-group-vertical > .btn-main ~ .btn-main, .btn-group-vertical > .casino__btn ~ .btn-main, .btn-group-vertical > .btn-main ~ .casino__btn, .btn-group-vertical > .casino__btn ~ .casino__btn, .btn-group-vertical > .bonus-banner__btn ~ .btn-main, .btn-group-vertical > .bonus-banner__btn ~ .casino__btn, .btn-group-vertical > .btn-main ~ .bonus-banner__btn, .btn-group-vertical > .casino__btn ~ .bonus-banner__btn, .btn-group-vertical > .bonus-banner__btn ~ .bonus-banner__btn, .btn-group-vertical > .bonus-row__btn ~ .btn-main, .btn-group-vertical > .bonus-row__btn ~ .casino__btn, .btn-group-vertical > .bonus-row__btn ~ .bonus-banner__btn, .btn-group-vertical > .btn-main ~ .bonus-row__btn, .btn-group-vertical > .casino__btn ~ .bonus-row__btn, .btn-group-vertical > .bonus-banner__btn ~ .bonus-row__btn, .btn-group-vertical > .bonus-row__btn ~ .bonus-row__btn, .btn-group-vertical > .top-casinos__btn ~ .btn-main, .btn-group-vertical > .top-casinos__btn ~ .casino__btn, .btn-group-vertical > .top-casinos__btn ~ .bonus-banner__btn, .btn-group-vertical > .top-casinos__btn ~ .bonus-row__btn, .btn-group-vertical > .btn-main ~ .top-casinos__btn, .btn-group-vertical > .casino__btn ~ .top-casinos__btn, .btn-group-vertical > .bonus-banner__btn ~ .top-casinos__btn, .btn-group-vertical > .bonus-row__btn ~ .top-casinos__btn, .btn-group-vertical > .top-casinos__btn ~ .top-casinos__btn,
+.btn-group-vertical > .btn ~ .btn, .btn-group-vertical > .btn-blur ~ .btn, .btn-group-vertical > .cat ~ .btn, .btn-group-vertical > .btn-main ~ .btn, .btn-group-vertical > .casino__btn ~ .btn, .btn-group-vertical > .bonus-banner__btn ~ .btn, .btn-group-vertical > .bonus-row__btn ~ .btn, .btn-group-vertical > .top-casinos__btn ~ .btn, .btn-group-vertical > .hero-review__btn ~ .btn, .btn-group-vertical > .btn ~ .btn-blur, .btn-group-vertical > .btn ~ .cat, .btn-group-vertical > .btn-blur ~ .btn-blur, .btn-group-vertical > .cat ~ .btn-blur, .btn-group-vertical > .btn-blur ~ .cat, .btn-group-vertical > .cat ~ .cat, .btn-group-vertical > .btn-main ~ .btn-blur, .btn-group-vertical > .casino__btn ~ .btn-blur, .btn-group-vertical > .bonus-banner__btn ~ .btn-blur, .btn-group-vertical > .bonus-row__btn ~ .btn-blur, .btn-group-vertical > .top-casinos__btn ~ .btn-blur, .btn-group-vertical > .hero-review__btn ~ .btn-blur, .btn-group-vertical > .btn-main ~ .cat, .btn-group-vertical > .casino__btn ~ .cat, .btn-group-vertical > .bonus-banner__btn ~ .cat, .btn-group-vertical > .bonus-row__btn ~ .cat, .btn-group-vertical > .top-casinos__btn ~ .cat, .btn-group-vertical > .hero-review__btn ~ .cat, .btn-group-vertical > .btn ~ .btn-main, .btn-group-vertical > .btn ~ .casino__btn, .btn-group-vertical > .btn ~ .bonus-banner__btn, .btn-group-vertical > .btn ~ .bonus-row__btn, .btn-group-vertical > .btn ~ .top-casinos__btn, .btn-group-vertical > .btn ~ .hero-review__btn, .btn-group-vertical > .btn-blur ~ .btn-main, .btn-group-vertical > .btn-blur ~ .casino__btn, .btn-group-vertical > .btn-blur ~ .bonus-banner__btn, .btn-group-vertical > .btn-blur ~ .bonus-row__btn, .btn-group-vertical > .btn-blur ~ .top-casinos__btn, .btn-group-vertical > .btn-blur ~ .hero-review__btn, .btn-group-vertical > .cat ~ .btn-main, .btn-group-vertical > .cat ~ .casino__btn, .btn-group-vertical > .cat ~ .bonus-banner__btn, .btn-group-vertical > .cat ~ .bonus-row__btn, .btn-group-vertical > .cat ~ .top-casinos__btn, .btn-group-vertical > .cat ~ .hero-review__btn, .btn-group-vertical > .btn-main ~ .btn-main, .btn-group-vertical > .casino__btn ~ .btn-main, .btn-group-vertical > .btn-main ~ .casino__btn, .btn-group-vertical > .casino__btn ~ .casino__btn, .btn-group-vertical > .bonus-banner__btn ~ .btn-main, .btn-group-vertical > .bonus-banner__btn ~ .casino__btn, .btn-group-vertical > .btn-main ~ .bonus-banner__btn, .btn-group-vertical > .casino__btn ~ .bonus-banner__btn, .btn-group-vertical > .bonus-banner__btn ~ .bonus-banner__btn, .btn-group-vertical > .bonus-row__btn ~ .btn-main, .btn-group-vertical > .bonus-row__btn ~ .casino__btn, .btn-group-vertical > .bonus-row__btn ~ .bonus-banner__btn, .btn-group-vertical > .btn-main ~ .bonus-row__btn, .btn-group-vertical > .casino__btn ~ .bonus-row__btn, .btn-group-vertical > .bonus-banner__btn ~ .bonus-row__btn, .btn-group-vertical > .bonus-row__btn ~ .bonus-row__btn, .btn-group-vertical > .top-casinos__btn ~ .btn-main, .btn-group-vertical > .top-casinos__btn ~ .casino__btn, .btn-group-vertical > .top-casinos__btn ~ .bonus-banner__btn, .btn-group-vertical > .top-casinos__btn ~ .bonus-row__btn, .btn-group-vertical > .btn-main ~ .top-casinos__btn, .btn-group-vertical > .casino__btn ~ .top-casinos__btn, .btn-group-vertical > .bonus-banner__btn ~ .top-casinos__btn, .btn-group-vertical > .bonus-row__btn ~ .top-casinos__btn, .btn-group-vertical > .top-casinos__btn ~ .top-casinos__btn, .btn-group-vertical > .hero-review__btn ~ .btn-main, .btn-group-vertical > .hero-review__btn ~ .casino__btn, .btn-group-vertical > .hero-review__btn ~ .bonus-banner__btn, .btn-group-vertical > .hero-review__btn ~ .bonus-row__btn, .btn-group-vertical > .hero-review__btn ~ .top-casinos__btn, .btn-group-vertical > .btn-main ~ .hero-review__btn, .btn-group-vertical > .casino__btn ~ .hero-review__btn, .btn-group-vertical > .bonus-banner__btn ~ .hero-review__btn, .btn-group-vertical > .bonus-row__btn ~ .hero-review__btn, .btn-group-vertical > .top-casinos__btn ~ .hero-review__btn, .btn-group-vertical > .hero-review__btn ~ .hero-review__btn,
 .btn-group-vertical > .btn-group:not(:first-child) > .btn,
 .btn-group-vertical > .btn-group:not(:first-child) > .btn-blur,
 .btn-group-vertical > .btn-group:not(:first-child) > .cat,
@@ -3575,7 +3593,8 @@ textarea.form-control-lg {
 .btn-group-vertical > .btn-group:not(:first-child) > .casino__btn,
 .btn-group-vertical > .btn-group:not(:first-child) > .bonus-banner__btn,
 .btn-group-vertical > .btn-group:not(:first-child) > .bonus-row__btn,
-.btn-group-vertical > .btn-group:not(:first-child) > .top-casinos__btn {
+.btn-group-vertical > .btn-group:not(:first-child) > .top-casinos__btn,
+.btn-group-vertical > .btn-group:not(:first-child) > .hero-review__btn {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
@@ -5790,7 +5809,7 @@ textarea.form-control-lg {
   margin-left: auto !important;
 }
 
-.my-0 {
+.my-0, .page__section, .payment__wrap {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
 }
@@ -5825,7 +5844,7 @@ textarea.form-control-lg {
   margin-bottom: auto !important;
 }
 
-.mt-0 {
+.mt-0, .page__data > :first-child > :first-child > :first-child, .page__data > :first-child > :first-child, .page__data > :first-child {
   margin-top: 0 !important;
 }
 
@@ -5881,7 +5900,7 @@ textarea.form-control-lg {
   margin-right: auto !important;
 }
 
-.mb-0 {
+.mb-0, .tab__container {
   margin-bottom: 0 !important;
 }
 
@@ -9099,6 +9118,7 @@ body::-webkit-scrollbar-thumb {
 :root {
   --headerH: 64px;
   --sectionMy: 100px;
+  --sectionMd: 75px;
   --sectionSm: 50px;
   --headingMb: 16px;
   --headingMt: 32px;
@@ -9109,10 +9129,13 @@ body::-webkit-scrollbar-thumb {
   --gapMd: 32px;
   --gapXmd: 40px;
   --gapLg: 48px;
+  --gapXlg: 100px;
 }
 @media only screen and (max-width: 998px) {
   :root {
+    --gapXlg: 50px;
     --sectionMy: 50px;
+    --sectionMd: 25px;
     --sectionSm: 25px;
     --gapLg: 24px;
   }
@@ -9162,11 +9185,24 @@ button:hover, button:active, button:focus, a:hover, a:active, a:focus, input:hov
   box-shadow: none;
 }
 
+p a {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+div p:last-child {
+  margin-bottom: 0;
+}
+
+.container > :first-child {
+  margin-top: 0;
+}
+
 .page__body {
   display: flex;
   flex-direction: column;
-  background-color: #2C32BF;
-  color: #fff;
+  background-color: #F6F7FC;
+  color: #3A3F50;
 }
 .page__wrapper {
   flex: 1 0 auto;
@@ -9240,7 +9276,7 @@ h1, .h1 {
 }
 
 h2, .h2, .page h2, .page .h2 {
-  font: 400 1.75rem/1.1428571429 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font: 700 1.75rem/1.1428571429 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   letter-spacing: -0.01em;
 }
 @media only screen and (max-width: 480px) {
@@ -9287,9 +9323,12 @@ h5, .h5 {
   }
 }
 
+p {
+  color: #777E90;
+}
+
 ul.mark {
   position: relative;
-  font: 400 0.75rem/1 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   list-style-type: none;
   background: transparent;
   margin: 0;
@@ -9301,6 +9340,7 @@ ul.mark li {
   flex-wrap: nowrap;
   gap: 4px;
   margin-bottom: 8px;
+  font: 400 0.75rem/1 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 ul.mark li::before {
   content: "";
@@ -9315,6 +9355,10 @@ ul.mark li::before {
   background-image: url("../img/icons/checked-pink.svg");
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.text--link {
+  text-decoration: underline;
 }
 
 .props-cons {
@@ -9337,6 +9381,7 @@ ul.mark li::before {
   margin-top: 4px;
   margin-bottom: 4px;
   position: relative;
+  color: #777E90;
 }
 .props-cons__pros, .props-cons__cons {
   margin: 16px 0 0;
@@ -9361,30 +9406,7 @@ ul.mark li::before {
   background: url("../img/icons/minus.svg");
 }
 
-blockquote {
-  margin: var(--gapLg) auto;
-  padding-left: var(--gapMd);
-  font: 400 1rem/1.5 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  border-left: 16px solid #FF1A5E;
-  color: #777E90;
-}
-blockquote h5, blockquote .h5 {
-  font: 700 1.25rem/1 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  color: #3A3F50;
-}
-blockquote ul {
-  margin: var(--gapXs) auto;
-}
-blockquote li {
-  margin: 0;
-  list-style-type: disc;
-  list-style-position: outside;
-}
-blockquote li::before {
-  display: none;
-}
-
-.btn, .btn-blur, .cat, .btn-main, .casino__btn, .bonus-banner__btn, .bonus-row__btn, .top-casinos__btn {
+.btn, .btn-blur, .cat, .btn-main, .casino__btn, .bonus-banner__btn, .bonus-row__btn, .top-casinos__btn, .hero-review__btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9404,7 +9426,7 @@ blockquote li::before {
   background-color: #FC4747;
   color: #fff;
 }
-.btn-blur, .cat, .btn-main, .casino__btn, .bonus-banner__btn, .bonus-row__btn, .top-casinos__btn {
+.btn-blur, .cat, .btn-main, .casino__btn, .bonus-banner__btn, .bonus-row__btn, .top-casinos__btn, .hero-review__btn {
   min-width: 144px;
   height: 40px;
   border-radius: 8px;
@@ -9412,11 +9434,11 @@ blockquote li::before {
   font: 700 0.875rem/1.1428571429 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   transition: all 0.45s ease-in-out;
 }
-.btn-main, .casino__btn, .bonus-banner__btn, .bonus-row__btn, .top-casinos__btn {
+.btn-main, .casino__btn, .bonus-banner__btn, .bonus-row__btn, .top-casinos__btn, .hero-review__btn {
   background-color: #FF1A5E;
   color: #fff;
 }
-.btn-main:hover, .casino__btn:hover, .bonus-banner__btn:hover, .bonus-row__btn:hover, .top-casinos__btn:hover, .btn-main:active, .casino__btn:active, .bonus-banner__btn:active, .bonus-row__btn:active, .top-casinos__btn:active, .btn-main:focus, .casino__btn:focus, .bonus-banner__btn:focus, .bonus-row__btn:focus, .top-casinos__btn:focus {
+.btn-main:hover, .casino__btn:hover, .bonus-banner__btn:hover, .bonus-row__btn:hover, .top-casinos__btn:hover, .hero-review__btn:hover, .btn-main:active, .casino__btn:active, .bonus-banner__btn:active, .bonus-row__btn:active, .top-casinos__btn:active, .hero-review__btn:active, .btn-main:focus, .casino__btn:focus, .bonus-banner__btn:focus, .bonus-row__btn:focus, .top-casinos__btn:focus, .hero-review__btn:focus {
   background: #e60044;
   color: #fff;
 }
@@ -9440,7 +9462,7 @@ blockquote li::before {
   padding: 12px 16px;
   background: rgba(255, 255, 255, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 20pc;
+  border-radius: 8px;
   box-shadow: 0px 40px 64px -32px rgba(15, 15, 15, 0.1);
   -webkit-backdrop-filter: blur(16px);
           backdrop-filter: blur(16px);
@@ -9502,7 +9524,8 @@ blockquote li::before {
   gap: var(--gap);
 }
 .chip__wrap--sm {
-  margin-top: var(--gaap);
+  margin-top: var(--gap);
+  margin-bottom: var(--gap);
 }
 .chip__wrap:last-child {
   margin-bottom: 0;
@@ -9538,6 +9561,13 @@ blockquote li::before {
 
 .cat {
   font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-width: 0;
+  color: inherit;
+  border: 1px solid #E4E5ED;
 }
 @media only screen and (max-width: 480px) {
   .cat {
@@ -9694,6 +9724,7 @@ blockquote li::before {
 }
 .footer p {
   margin: 0;
+  color: inherit;
 }
 .footer__top {
   padding: var(--gapMd) 0;
@@ -9944,11 +9975,15 @@ blockquote li::before {
 .hero {
   display: flex;
   align-items: center;
+  background-color: #2C32BF;
   background-image: url(../img/bg/bg1.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
   overflow: hidden;
+}
+.hero * {
+  color: #fff;
 }
 .hero__subtitle {
   margin-top: 0;
@@ -9993,6 +10028,302 @@ blockquote li::before {
 @media only screen and (min-width: 1200px) {
   .hero__img * {
     transform: scale(1.2);
+  }
+}
+
+.hero-review__header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  gap: var(--gapXs);
+  margin-bottom: 16px;
+  width: 100%;
+}
+.hero-review__header h1, .hero-review__header .h1 {
+  margin: 0;
+  font: 700 2.5rem/1.2 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+@media only screen and (max-width: 772px) {
+  .hero-review__header {
+    justify-content: center;
+  }
+}
+.hero-review__subtitle {
+  color: #FF1A5E;
+  text-transform: uppercase;
+  font: 700 0.75rem/1.3333333333 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.hero-review__link {
+  text-decoration: underline;
+  font: 400 0.75rem/1.3333333333 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.hero-review__sup {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: var(--gapXs);
+}
+@media only screen and (max-width: 772px) {
+  .hero-review__sup {
+    text-align: center;
+    justify-content: center;
+  }
+}
+.hero-review__title {
+  margin-top: var(--gapXs);
+  font: 700 1.25rem/1 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.hero-review__text {
+  text-align: left;
+  flex: 1 0 auto;
+}
+@media only screen and (max-width: 772px) {
+  .hero-review__text {
+    flex: 1;
+    text-align: center;
+    justify-content: center;
+  }
+}
+.hero-review__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 16px;
+  gap: var(--gapXs);
+  border-radius: 8px;
+  background-color: #2C32BF;
+}
+@media only screen and (max-width: 772px) {
+  .hero-review__footer {
+    justify-content: center;
+  }
+}
+.hero-review__content {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+}
+.hero-review__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 162px;
+  height: 162px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.hero-review__logo * {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media only screen and (max-width: 772px) {
+  .hero-review__logo {
+    flex: 1 0 auto;
+    width: 100%;
+  }
+}
+.hero-review__row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+.hero-review__row:not(:first-child) {
+  margin-top: var(--gap);
+}
+.hero-review__row:last-child {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: stretch;
+}
+@media only screen and (max-width: 998px) {
+  .hero-review__row:last-child {
+    grid-template-columns: 1fr;
+  }
+}
+.hero-review__data {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  border-radius: 8px;
+  background-color: #2C32BF;
+  text-align: center;
+}
+.hero-review__data div {
+  padding: var(--gap);
+  border-right: 1px solid #222796;
+}
+.hero-review__data div, .hero-review__data div p {
+  font: 400 0.75rem/1.3333333333 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.hero-review__data div p {
+  margin-top: 4px;
+}
+.hero-review__data div:last-child {
+  border-right: 0;
+}
+@media only screen and (max-width: 520px) {
+  .hero-review__data {
+    grid-template-columns: 1fr 1fr;
+  }
+  .hero-review__data div {
+    border-bottom: 1px solid #222796;
+  }
+  .hero-review__data div:nth-child(4), .hero-review__data div:nth-child(3) {
+    border-bottom: 0;
+  }
+  .hero-review__data div:nth-child(2) {
+    border-right: 0;
+  }
+}
+.hero-review__stat {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap);
+  padding: var(--gap);
+  border-radius: 8px;
+  background-color: #2C32BF;
+}
+@media only screen and (max-width: 520px) {
+  .hero-review__stat {
+    grid-template-columns: 1fr;
+  }
+}
+
+.stat__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--gap);
+  font: 700 0.75rem/1.3333333333 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.stat__title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+.stat__slider {
+  margin-top: 10px;
+}
+.stat__slider * {
+  display: block;
+  width: 100%;
+}
+
+.page__hero, .home__hero {
+  padding-top: calc(var(--gapSm) + var(--headerH));
+  padding-bottom: var(--gapSm);
+  background: url("../img/bg/bg-hero.svg") no-repeat 50%/cover;
+  background-color: #2C32BF;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  border-top: 1px solid rgba(44, 50, 191, 0.5);
+  color: #fff;
+}
+.page__hero p, .home__hero p {
+  color: inherit;
+}
+.page__hero-meta {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: var(--gap);
+  margin-top: var(--gap);
+  margin-bottom: var(--gap);
+  font: 400 0.875rem/1.7142857143 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.page__hero .rating, .home__hero .rating {
+  background: #2C32BF;
+}
+.page__hero h1, .home__hero h1, .page__hero .h1, .home__hero .h1 {
+  margin-bottom: var(--headingMb);
+  font: 600 3rem/1.1666666667 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  letter-spacing: -0.02em;
+}
+@media only screen and (max-width: 480px) {
+  .page__hero h1, .home__hero h1, .page__hero .h1, .home__hero .h1 {
+    font: 600 1.75rem/1.1428571429 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+}
+.page__hero p, .home__hero p {
+  margin-bottom: 0;
+  font: 400 1rem/1.5 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.page__hero p a, .home__hero p a {
+  text-decoration: underline;
+  transition: all 0.45s ease-in-out;
+}
+.page__hero p a:hover, .home__hero p a:hover, .page__hero p a:focus, .home__hero p a:focus, .page__hero p a:active, .home__hero p a:active {
+  text-decoration: none;
+}
+.page__hero-inner {
+  display: grid;
+  grid-template-columns: 2fr auto;
+  gap: var(--gap);
+}
+@media only screen and (max-width: 772px) {
+  .page__hero-img {
+    display: none;
+  }
+}
+
+.home__hero {
+  padding-bottom: 0;
+  overflow: hidden;
+}
+.home__hero-inner {
+  display: grid;
+  grid-template-columns: 60% auto;
+  align-items: center;
+}
+.home__hero-img {
+  z-index: -1;
+}
+.home__hero-content {
+  max-width: 90vw;
+}
+@media only screen and (max-width: 998px) {
+  .home__hero-inner {
+    grid-template-columns: 1fr;
+  }
+  .home__hero-content {
+    flex: 1;
+  }
+  .home__hero-img * {
+    max-width: 100%;
+  }
+  .home__hero .chip__wrap {
+    justify-content: flex-start;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .home__hero {
+    padding-bottom: var(--gap);
+  }
+  .home__hero-inner {
+    text-align: center;
+  }
+  .home__hero-img {
+    order: -1;
+    margin-bottom: var(--gap);
+  }
+  .home__hero .chip__wrap {
+    justify-content: center;
   }
 }
 
@@ -10241,6 +10572,13 @@ blockquote li::before {
   color: #3A3F50;
 }
 
+.team {
+  margin-top: var(--gapMd);
+  margin-bottom: var(--gapMd);
+}
+.team:last-child {
+  margin-bottom: 0;
+}
 .team__wrap {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -10317,10 +10655,15 @@ blockquote li::before {
 }
 
 .author {
+  margin-top: var(--gapMd);
+  margin-bottom: var(--gapMd);
   background-color: #fff;
   border-radius: var(--gapXs);
   border: 1px solid #E6E8EC;
   overflow: hidden;
+}
+.author:last-of-type {
+  margin-bottom: 0;
 }
 .author__header {
   display: flex;
@@ -10889,6 +11232,9 @@ blockquote li::before {
   border-radius: 8px;
   align-items: center;
 }
+.casino__stat svg {
+  color: #4B50C8;
+}
 .casino__stat div:first-child {
   padding-right: 12px;
   border-right: 1px solid #d0d5ef;
@@ -10897,6 +11243,9 @@ blockquote li::before {
   font: 700 0.875rem/1 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   margin-top: 5px;
   color: #3A3F50;
+}
+.casino__stat-title {
+  margin-top: 4px;
 }
 @media only screen and (max-width: 998px) {
   .casino__list {
@@ -10943,13 +11292,16 @@ blockquote li::before {
   }
 }
 
+.faq:last-of-type {
+  margin-bottom: 0;
+}
 .faq__title {
   display: block;
   font: 600 1.25rem/1 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   color: #3A3F50;
 }
 .faq__body {
-  padding: 16px 18px 24px;
+  padding: 16px 24px 24px;
   font: 400 1rem/1.5 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   color: #777E90;
   display: none;
@@ -10984,6 +11336,8 @@ blockquote li::before {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: var(--gap);
+  margin-top: var(--gapMd);
+  margin-bottom: var(--gapMd);
 }
 .box-card-providers {
   gap: var(--gapSm);
@@ -11026,6 +11380,204 @@ blockquote li::before {
   margin: 0 auto;
 }
 
+table, .table {
+  width: 100%;
+  margin: var(--gapSm) auto;
+  background-color: #fff;
+}
+table td, table th, .table td, .table th {
+  padding: 5px;
+  border: 1px solid #E4E5ED;
+}
+table a, .table a {
+  font-weight: bold;
+  text-decoration: underline;
+}
+table a:hover, table a:active, table a:focus, .table a:hover, .table a:active, .table a:focus {
+  text-decoration: none;
+}
+
+table {
+  outline: 1px solid #E4E5ED;
+  border-radius: 8px;
+  overflow: hidden;
+}
+table tr:first-child th, table tr:first-child td {
+  border-top: 0;
+}
+table tr:last-child td, table tr:last-child th {
+  border-bottom: 0;
+}
+table th, table td {
+  border-right: 0;
+  border-left: 0;
+}
+
+blockquote {
+  margin: var(--gapLg) auto;
+  padding-left: var(--gapMd);
+  font: 400 1rem/1.5 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  border-left: 16px solid #FF1A5E;
+  color: #777E90;
+}
+blockquote h5, blockquote .h5 {
+  font: 700 1.25rem/1 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: #3A3F50;
+}
+blockquote ul {
+  margin: var(--gapXs) auto;
+}
+blockquote li {
+  margin: 0;
+  list-style-type: disc;
+  list-style-position: outside;
+}
+blockquote li::before {
+  display: none;
+}
+
+.cite {
+  padding-top: var(--sectionMd);
+  padding-bottom: var(--sectionMd);
+  background-color: #2C32BF;
+  color: #fff;
+  text-align: center;
+}
+.cite__wrap {
+  max-width: 750px;
+  margin: 0 auto;
+}
+.cite__title {
+  margin-top: var(--gapXmd);
+  margin-bottom: var(--gapXmd);
+  font: 700 2.5rem/1.2 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: #fff;
+}
+.cite__auth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: var(--gap);
+  text-align: left;
+}
+.cite__auth-text > * {
+  color: #fff;
+}
+.cite__auth-text p {
+  margin: 0;
+}
+.cite__auth-text p:last-child {
+  opacity: 0.5;
+}
+.cite__auth-img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+}
+.cite__auth-img * {
+  display: block;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media only screen and (max-width: 772px) {
+  .cite__title {
+    font: 700 1.5rem/1.4 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+}
+
+.str {
+  padding-top: var(--sectionMd);
+  padding-bottom: var(--sectionMd);
+  margin: 0;
+  background-color: #2C32BF;
+  color: #fff;
+}
+.str * {
+  color: #fff;
+}
+.str h2, .str .h2 {
+  margin: 0;
+}
+.str__meta {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: var(--gap);
+  margin-top: var(--gapSm);
+  margin-bottom: var(--gapSm);
+}
+.str__card {
+  margin: 0;
+  background: radial-gradient(100% 359.18% at 0% 0%, rgba(255, 255, 255, 0.18) 0%, rgba(255, 255, 255, 0.03) 100%);
+  color: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  font: 400 0.75rem/1.3333333333 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  transition: all 0.45s ease-in-out;
+}
+.str__card:hover, .str__card:active, .str__card:focus {
+  box-shadow: 0px 40px 64px -32px rgba(15, 15, 15, 0.1);
+}
+.str__card-img {
+  position: relative;
+  width: 100%;
+  padding-top: 75%;
+  border-radius: 16px;
+  box-shadow: 0px 40px 64px -32px rgba(15, 15, 15, 0.1);
+  overflow: hidden;
+}
+.str__card-img * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.str__card-content {
+  padding: 12px 24px 24px;
+}
+.str__card-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  gap: var(--gap);
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  font: 700 1rem/1.5 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.str__card-num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  background-color: #2C32BF;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+}
+.str__card-wrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: var(--gapSm);
+}
+@media only screen and (max-width: 548px) {
+  .str__card {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
 body {
   background-repeat: no-repeat;
   background-size: cover;
@@ -11049,14 +11601,19 @@ a:hover, a:focus, a:active, a:focus-visible {
 }
 
 .section {
-  padding-top: var(--sectionMy);
-  padding-bottom: var(--sectionMy);
+  padding-top: var(--sectionMd);
+  padding-bottom: var(--sectionMd);
 }
 
+.page {
+  padding-top: var(--gapMd);
+  padding-bottom: var(--gapMd);
+}
 .page section {
   margin-top: var(--gapMd);
+  margin-bottom: var(--gapMd);
 }
-.page section:first-child {
+.page section:first-child > :first-child {
   margin-top: 0;
 }
 .page h1, .page .h1, .page h2, .page .h2 {
@@ -11069,7 +11626,6 @@ a:hover, a:focus, a:active, a:focus-visible {
   margin-top: var(--headingMt);
 }
 .page p, .page li {
-  color: #777E90;
   font: 400 1rem/1.5 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 .page p > a, .page li > a {
@@ -11133,6 +11689,56 @@ a:hover, a:focus, a:active, a:focus-visible {
   counter-increment: section;
   content: counter(section);
 }
+.page__section {
+  padding-top: var(--sectionSm);
+  padding-bottom: var(--sectionSm);
+  background-color: #2C32BF;
+  color: #fff;
+  background-image: url(../img/bg/bg2.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.page__section-inner {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: var(--gapXlg);
+  align-items: center;
+}
+@media only screen and (max-width: 772px) {
+  .page__section-inner {
+    grid-template-columns: 1fr;
+  }
+  .page__section-inner > :first-child {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .page__section-inner img {
+    max-width: 300px;
+  }
+}
+.page__section--reverse {
+  background-image: url(../img/bg/bg3.svg);
+}
+.page__section--reverse .page__section-inner {
+  grid-template-columns: 2fr 1fr;
+}
+.page__section--reverse .page__section-inner > :first-child {
+  order: 2;
+}
+@media only screen and (max-width: 772px) {
+  .page__section--reverse .page__section-inner {
+    grid-template-columns: 1fr;
+  }
+  .page__section--reverse .page__section-inner > :first-child {
+    order: 0;
+  }
+}
+.page__section * {
+  color: #fff;
+}
+.page__section h2, .page__section .h2 {
+  margin-top: 0;
+}
 .page__error {
   display: flex;
   flex-direction: column;
@@ -11152,67 +11758,12 @@ a:hover, a:focus, a:active, a:focus-visible {
     flex: initial;
   }
 }
-.page__hero {
-  padding-top: calc(var(--gapSm) + var(--headerH));
-  padding-bottom: var(--gapSm);
-  background: url("../img/bg/bg-hero.svg") no-repeat 50%/cover;
-  -webkit-backdrop-filter: blur(15px);
-          backdrop-filter: blur(15px);
-  border-top: 1px solid rgba(44, 50, 191, 0.5);
-}
-.page__hero-meta {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  gap: var(--gap);
-  margin-top: var(--gap);
-  margin-bottom: var(--gap);
-  font: 400 0.875rem/1.7142857143 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-.page__hero .rating {
-  background: #2C32BF;
-}
-.page__hero h1, .page__hero .h1 {
-  margin-bottom: var(--headingMb);
-  font: 600 3rem/1.1666666667 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  letter-spacing: -0.02em;
-}
-@media only screen and (max-width: 480px) {
-  .page__hero h1, .page__hero .h1 {
-    font: 600 1.75rem/1.1428571429 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  }
-}
-.page__hero p {
-  margin-bottom: 0;
-  font: 400 1rem/1.5 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-.page__hero p a {
-  text-decoration: underline;
-  transition: all 0.45s ease-in-out;
-}
-.page__hero p a:hover, .page__hero p a:focus, .page__hero p a:active {
-  text-decoration: none;
-}
-.page__hero-inner {
-  display: grid;
-  grid-template-columns: 2fr auto;
-  gap: var(--gap);
-}
-@media only screen and (max-width: 772px) {
-  .page__hero-img {
-    display: none;
-  }
-}
 .page__container {
   background-color: #F6F7FC;
   color: #3A3F50;
-  height: 100%;
-  padding: var(--gapMd) 0;
 }
 .page__content {
   padding-top: calc(var(--gapSm) + var(--headerH));
-  padding-bottom: var(--gapSm);
 }
 .page__meta {
   display: flex;
@@ -11257,6 +11808,7 @@ a:hover, a:focus, a:active, a:focus-visible {
   }
 }
 .page__sidebar h3, .page__sidebar .h3 {
+  margin-top: 0;
   margin-bottom: var(--gapXs);
   text-transform: uppercase;
   font: 700 1rem/1 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -11321,4 +11873,9 @@ a:hover, a:focus, a:active, a:focus-visible {
     max-width: 40px;
     transform: scale(1.2);
   }
+}
+
+.related {
+  background-color: #2C32BF;
+  color: #fff;
 }

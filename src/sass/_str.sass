@@ -1,0 +1,69 @@
+.str    
+    padding-top: var(--sectionMd)
+    padding-bottom: var(--sectionMd)
+    margin: 0
+    +theme(primary)
+    & *
+        color: $white
+    h2
+        margin: 0
+
+    &__meta
+        +flex(flex, center, flex-start, wrap)
+        gap: var(--gap)
+        margin-top: var(--gapSm)
+        margin-bottom: var(--gapSm)
+
+    &__card
+        margin: 0
+        background: $grad2
+        color: $white
+        border-radius: $brs2
+        overflow: hidden
+        +ft(12, 16, 400)
+        transition: $trs
+        &:hover, &:active, &:focus
+            box-shadow: $bxsd1
+        &-img
+            position: relative
+            width: 100%
+            padding-top: 75%
+            border-radius: $brs2
+            box-shadow: $bxsd1
+            overflow: hidden
+            & *
+                +ps(absolute, (t, 0), (l, 0))
+                display: block
+                max-width: 100%
+                +sz(100%, 100%)
+                object-fit: cover
+
+        &-content
+            padding: 12px 24px 24px
+
+        &-header
+            +flex(flex, center, flex-start, nowrap)
+            gap: var(--gap)
+            margin-bottom: 24px
+            padding-bottom: 12px
+            border-bottom: 1px solid rgba($white, 0.1)
+            +ft(16, 24, 700)
+
+        &-num
+            +flex(flex, center, center, nowrap)
+            background-color: $violet3
+            //background: linear-gradient(45deg, $violet2, $violet1)
+            border-radius: 50%
+            +sz(30px, 30px)
+            min-width: 30px
+
+        &-wrap
+            display: grid
+            grid-template-columns: repeat(auto-fill,minmax(250px, 1fr))
+            gap: var(--gapSm)
+
+        +maw(548)
+            max-width: 300px
+            width: 100%
+            margin: 0 auto
+                

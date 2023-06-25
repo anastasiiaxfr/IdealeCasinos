@@ -1,0 +1,29 @@
+table, .table
+    width: 100%
+    margin: var(--gapSm) auto
+    background-color: $white
+    td, th
+        padding: 5px
+        border: 1px solid $grey5
+    a
+        font-weight: bold
+        text-decoration: underline
+        &:hover, &:active, &:focus
+            text-decoration: none
+
+table
+    outline: 1px solid $grey5
+    border-radius: $brs1
+    overflow: hidden
+    tr
+        &:first-child
+            th, td
+                border-top: 0
+        &:last-child
+            td, th
+                border-bottom: 0
+    th, td
+        border-right: 0
+        border-left: 0
+  
+        
