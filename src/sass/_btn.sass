@@ -64,6 +64,15 @@
         &.active
             background-color: $violet1
 
+    &--white
+        gap: var(--gapXs)
+        padding: 12px 16px
+        +ft(12, 12, 700)
+        color: $grey1
+        background-color: $white
+        border-radius: $brs1
+        border: 1px solid $grey5
+
     &--grey
         +ft(14, 20, 600)
         background-color: $grey5
@@ -80,7 +89,8 @@
         margin-bottom: var(--gapLg)
         +flex(flex, center, flex-start, wrap)
         gap: var(--gap)
-
+        &--sm
+            margin-top: var(--gaap)
         &:last-child
             margin-bottom: 0
 

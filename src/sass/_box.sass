@@ -1,0 +1,36 @@
+.box-card
+    padding: var(--gapSm)
+    @extend %card
+    text-align: center
+    overflow: hidden
+    &__wrap
+        display: grid
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr))
+        gap: var(--gap)
+    &-providers
+        gap: var(--gapSm)
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr))
+        .box-card
+            padding: 0
+            &__img
+                padding-bottom: 50%
+                background: $grey5
+                & *
+                    +ps(absolute, (t, 0), (b, 0), (l, 0), (r, 0))
+                    margin: auto
+            &__content
+                padding: 8px 12px
+                margin-top: 0
+    &__content
+        margin-top: var(--gap)
+        text-align: center
+        +ft(16, 24, 700)
+    &__img
+        position: relative
+        margin-bottom: 0
+        padding: 0
+        width: 100%
+        & *
+            display: block
+            object-fit: contain
+            margin: 0 auto 

@@ -72,3 +72,44 @@
             flex: 1 0 auto
             width: 100%
 
+.bonus-banner
+    +flex(flex, center, flex-start, wrap)
+    margin: var(--gap) auto
+    padding: var(--gapSm)
+    gap: var(--gap)
+    background-color: $violet1
+    border-radius: $brs1
+    color: $white
+    +ft(16, 24, 400)
+    &__sup
+        margin-bottom: var(--gapXs)
+        text-transform: uppercase
+        +ft(12, 16, 700)
+        color: $white
+        opacity: 0.5
+    &__title
+        +ft(16, 24, 700)
+    &__btn
+        @extend .btn-main
+    &__link
+        display: block
+        +ft(12, 12, 400)
+        &:hover, &:active, &:focus
+            text-decoration: underline
+    &__cta
+        +flex(flex, center, center, wrap)
+        flex-direction: column
+        text-align: center
+        gap: var(--gapXs)
+    &__content
+        +flex(flex, center, space-between, wrap)
+        gap: var(--gapXs)
+        width: 100%
+        flex: 1
+    +maw($xs)
+        justify-content: center
+        text-align: center    
+        &__content
+            flex: 1 0 auto
+            justify-content: center
+

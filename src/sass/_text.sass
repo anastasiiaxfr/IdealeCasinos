@@ -29,6 +29,11 @@ h4
     +maw($xsm)
         +ft(16, 24, 700)
 
+h5
+    +ft(20, 20*1.4, 700)
+    +maw($xsm)
+        +ft(16, 24, 700)
+
 ul.mark
     position: relative
     +ft(12, 12, 400)
@@ -49,3 +54,54 @@ ul.mark
            background-image: url('../img/icons/checked-pink.svg')
            background-repeat: no-repeat
            background-size: contain
+
+.props-cons
+    display: grid
+    grid-template-columns: 1fr 1fr
+    gap: var(--gapSm)
+    +maw($sm)
+        grid-template-columns: 1fr
+      
+    li
+        +flex(flex, center, flex-start, nowrap)
+        width: 100%
+        gap: var(--gapXs)
+        margin-top: 4px
+        margin-bottom: 4px
+        position: relative
+        
+    &__pros, &__cons
+        margin: 16px 0 0
+        padding: 0
+        li
+            list-style-type: none
+            &::before
+                content: ''
+                +flex(inline-flex, center, center, nowrap)
+                +sz(24px, 24px)
+                min-width: 24px
+                background: url('../img/icons/plus.svg')
+                background-repeat: no-repeat
+    &__cons
+        li
+            &::before
+                background: url('../img/icons/minus.svg')
+   
+
+blockquote
+    margin: var(--gapLg) auto
+    padding-left: var(--gapMd)
+    +ft(16, 24, 400)
+    border-left: 16px solid $pink
+    color: $grey3
+    h5
+        +ft(20, 20, 700)
+        color: $grey2
+    ul
+        margin: var(--gapXs) auto
+    li
+        margin: 0
+        list-style-type: disc
+        list-style-position: outside
+        &::before
+            display: none

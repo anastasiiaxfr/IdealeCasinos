@@ -32,9 +32,15 @@ a
     h3, h4, h5, h6
         margin-bottom: var(--gap)
 
+    h1, h2, h3, h4, h5, h6
+        margin-top: var( --headingMt)
+
+
     h2
         @extend .h2
-    p
+    p, li
+        color: $grey3
+
         +ft(16, 24, 400)
 
         & > a
@@ -42,32 +48,52 @@ a
             &:hover, &:active, &:focus
                 text-decoration: none
 
-    ul:not([class]) 
+   
+    ul:not([class]), ol:not([class]), ol.order
         padding: 0
         margin: 0
+        counter-reset: section
 
         li
             position: relative
             list-style-type: none
             +flex(flex, flex-start, flex-start, nowrap)
             gap: 12px
-            margin-top: var(--gap)
+            color: $grey3
             &:first-of-type
                 margin-top: 0
+
+    ul:not([class]) 
+        li
+            //margin-top: var(--gap)
+            margin-top: 10px
             &::before
                 content: ''
                 +flex(flex, flex-start, flex-start, nowrap)
                 +sz(8px, 8px)
+                min-width: 8px
                 min-width: var(--gapXs)
                 margin: 8px
                 line-height: 24px
                 border-radius: 50%
                 background-color: $red
 
-    +maw($xsm)
-        p, li
-            +ft(14, 20, 400)
+    ol:not([class]), ol.order
+        li
+            margin-top: 10px
+            list-style-type: none
+            &::before
+                +flex(flex, center, center, nowrap)
+                +sz(24px, 24px)
+                min-width: 24px
+                +ft(12, 12, 700)
+                background: $pink30
+                color: $red
+                border-radius: 50%
+                counter-increment: section
+                content: counter(section)
     
+
     &__error
         display: flex
         flex-direction: column

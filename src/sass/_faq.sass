@@ -1,0 +1,22 @@
+.faq
+    @extend %card
+    &__title
+        display: block
+        +ft(20, 20, 600)
+        color: $grey2
+    &__body
+        padding: 16px 18px 24px
+        +ft(16, 24, 400)
+        color: $grey3
+        display: none
+    &__header
+        +flex(flex, center, space-between, nowrap)
+        width: 100%
+        padding: 18px 24px
+        user-select: none
+        cursor: pointer
+        svg
+            +sz(12px, 12px)
+            color: $pink
+            &.active
+                transform: rotate(-90deg)
