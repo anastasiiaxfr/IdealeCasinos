@@ -36,6 +36,15 @@ gulp.task('favicon', function () {
         .pipe(browserSync.stream());
 });
 
+// Copy lib
+gulp.task('lib', function () {
+    return gulp
+        .src('src/lib/**/*')
+        .pipe(gulp.dest('dist/lib'))
+        .pipe(browserSync.stream());
+});
+
+
 // Copy fonts
 gulp.task('fonts', function () {
     return gulp
@@ -80,7 +89,8 @@ gulp.task('watch', function () {
     gulp.watch('src/img/*', gulp.series('img'));
     //gulp.watch('src/img/*', gulp.series('svg'));
     gulp.watch('src/fav/*', gulp.series('favicon'));
+    gulp.watch('src/lib/*', gulp.series('lib'));
     gulp.watch('src/fonts/*', gulp.series('fonts'));
 });
 
-gulp.task('default', gulp.series('sass', 'img', 'svg', 'favicon', 'fonts', 'serve', 'watch'));
+gulp.task('default', gulp.series('sass', 'img', 'svg', 'favicon', 'lib', 'fonts', 'serve', 'watch'));

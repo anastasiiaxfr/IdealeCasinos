@@ -1,7 +1,7 @@
-<section class="blog__wrap">
-
+<section class="blog__wrap swiper">
+<div class="swiper-wrapper">
 <?php foreach ($blogs as $i => $item) {?>
-    <a class="blog" href="<?php echo $item['url']; ?>">
+    <a class="blog swiper-slide" href="<?php echo $item['url']; ?>">
 
         <div class="blog__img">
             <img src="<?php echo $item['img']; ?>" alt="<?php echo $item['cat']; ?>" width="300" height="150">
@@ -41,9 +41,9 @@
             </div>
 
         </div>
-
     </a>
     <?php }?>
-
-
+</div>
 </section>
+
+
