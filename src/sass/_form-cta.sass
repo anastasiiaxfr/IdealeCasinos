@@ -1,0 +1,58 @@
+.form
+    color: $grey2
+    &__wrap
+        max-width: 600px
+        margin: var(--gapMd) auto
+    &__row
+        display: grid
+        grid-template-columns: 1fr 1fr
+        gap: var(--gapSm)
+    &__caption
+        margin-bottom: 20px
+        +ft(40, 48, 700)
+        letter-spacing: 0.02em
+    &__field
+        &:last-child
+            grid-column: 1/-1
+    &__btn
+        @extend .btn-main
+        width: 100%
+    &__input
+        width: 100%
+        +flex(flex, center, center, nowrap)
+        padding: 8px 9px
+        border-radius: $brs1
+        border: 1px solid $grey5
+        resize: none
+        &:not(textarea)
+            height: 40px
+        &:hover, &:active, &:focus
+            appearance: none
+            box-shadow: none
+            outline: none
+            
+    &__error
+        margin-top: 4px
+        +ft(12, 16, 400)
+        color: $red
+    &__note
+        margin-top: var(--gapSm)
+        margin-bottom: var(--gapSm)
+        +ft(12, 16, 400)
+        color: $grey3
+
+        a
+            text-decoration: underline
+            &:hover
+                text-decoration: none
+
+    label
+        display: block
+        +ft(14, 20, 400)
+        margin-bottom: 4px
+
+    +maw($xs)
+        &__row
+            grid-template-columns: 1fr 
+        &__caption
+            +ft(28, 28*1.4, 700)    

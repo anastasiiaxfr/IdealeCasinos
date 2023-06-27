@@ -19,11 +19,11 @@ a
     padding-bottom: var(--sectionMd)
 
 .page
-    padding-top: var(--gapMd)
-    padding-bottom: var(--gapMd)
+    padding-top: var(--gapLg)
+    padding-bottom: var(--gapLg)
     section
-        margin-top: var(--gapMd)
-        margin-bottom: var(--gapMd)
+        margin-top: var(--gapLg)
+        margin-bottom: var(--gapLg)
         //margin-top: var(--gapMd)
 
         &:first-child
@@ -162,6 +162,10 @@ a
         +theme(white)
         // padding-top: var(--sectionMd)
         // padding-bottom: var(--sectionMd)
+        & > :first-of-type
+            & > :first-of-type
+                @extend .mt-0
+            
 
     &__content
         padding-top: calc(var(--gapSm) + var(--headerH))
