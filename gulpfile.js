@@ -6,6 +6,7 @@ const php = require('gulp-connect-php');
 const tinypng = require('gulp-tinypng-extended');
 const plumber = require('gulp-plumber');
 
+
 // Minify images
 gulp.task('img', function () {
     return gulp
@@ -19,6 +20,29 @@ gulp.task('img', function () {
         .pipe(gulp.dest('dist/img'))
         .pipe(browserSync.stream());
 });
+
+
+// Sprite 
+const spritesmith = require('gulp.spritesmith');
+gulp.task('sprite', function () {
+    var spriteData = gulp.src('src/img/sprite/*.png').pipe(spritesmith({
+      imgName: 'sprite/sprite.png',
+      cssName: 'sprite/sprite.sass',
+      cssFormat: 'sass',
+      algorithm: 'top-down',
+      padding: 5
+    }));
+    return spriteData.pipe(gulp.dest('src/img/sprite/'));
+});
+
+// Copy js
+gulp.task('js', function () {
+    return gulp
+        .src('src/js/*')
+        .pipe(gulp.dest('dist/js'))
+        .pipe(browserSync.stream());
+});
+
 
 // Copy svg
 gulp.task('svg', function () {
@@ -90,7 +114,8 @@ gulp.task('watch', function () {
     //gulp.watch('src/img/*', gulp.series('svg'));
     gulp.watch('src/fav/*', gulp.series('favicon'));
     gulp.watch('src/lib/*', gulp.series('lib'));
+    gulp.watch('src/js/*', gulp.series('js'));
     gulp.watch('src/fonts/*', gulp.series('fonts'));
 });
 
-gulp.task('default', gulp.series('sass', 'img', 'svg', 'favicon', 'lib', 'fonts', 'serve', 'watch'));
+gulp.task('default', gulp.series('sass', 'img', 'svg', 'favicon', 'lib', 'js', 'fonts', 'serve', 'watch'));

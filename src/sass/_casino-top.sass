@@ -1,0 +1,88 @@
+.casino-top
+    @extend %card
+    overflow: hidden
+    text-align: center
+    margin: 0
+    +ft(12, 12, 400)
+
+    &__overlay
+        margin: 0
+        &-header
+            +flex(flex, center, flex-start, nowrap)
+            gap: var(--gapXs)
+            padding: 6px 8px
+            text-transform: uppercase
+            +ft(12, 16, 700)
+            color: $white
+            display: none
+        &.active
+            padding: 4px 
+            background-color: $red
+            border-radius: $brs1
+            .casino-top__overlay-header
+                display: block
+
+    &__wrap
+        display: grid
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr))
+        align-items: flex-end
+        gap: var(--gap)
+        margin: var(--gap) auto 
+
+    &__inner
+        padding: 16px 12px
+
+    &__img
+        position: relative
+        width: 100%
+        padding-top: 50%
+        background-color: $grey5
+
+        & *
+            display: block
+            +ps(absolute, (t, 0), (l, 0))
+            +sz(100%, 100%)
+            object-fit: cover
+
+    &__icon
+        +ps(absolute, (t, 0), (l, 0))
+        +sz(48px, 48px)
+
+    &__header
+        +flex(flex, center, flex-start, nowrap)
+        gap: var(--gapXs)
+        +ft(16, 24, 700)
+        text-align: left
+    
+    &__description
+        +flex(flex, center, center, nowrap)
+        flex-direction: column
+        gap: var(--gapXs)
+        padding: var(--gap)
+        background-color: $grey6
+        border-radius: $brs1
+
+    &__body
+        +flex(flex, center, center, nowrap)
+        flex-direction: column
+        margin-top: var(--gap)
+        gap: 12px
+
+    &__subtitle
+        text-transform: uppercase
+        +ft(12, 16, 700)
+        color: $pink
+
+    &__title
+        +ft(16, 24, 700)
+
+    &__link
+        text-decoration: underline
+        +ft(12, 12, 400)
+
+        &:hover, &:active, &:focus
+            text-decoration: none
+
+    &__btn
+        @extend .btn-main
+        width: 100%

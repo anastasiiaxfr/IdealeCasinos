@@ -1,4 +1,4 @@
-- npm install gulp gulp-connect-php sass gulp-sass gulp-autoprefixer browser-sync gulp-tinypng-extended gulp-plumber --save-dev
+- npm install gulp gulp-connect-php sass gulp-sass gulp-autoprefixer browser-sync gulp-tinypng-extended gulp-plumber gulp.spritesmith --save-dev
 - npm start
 
 (for VScode install PHP Extension Pack and start php -S localhost:8000 -t dist)

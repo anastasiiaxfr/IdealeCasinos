@@ -113,25 +113,7 @@
 <link rel="stylesheet" href="../lib/swiper/swiper-bundle.css"/>
 <script src="../lib/swiper/swiper-bundle.js"></script>
 
-<script>
-const swiper = new Swiper(".swiper", {
-  slidesPerView: 4,
-  spaceBetween: 16,
-  loop: true,
-  breakpoints: {
-    0: {
-      slidesPerView: 1.5,
-    },
-    520: {
-      slidesPerView: 2,
-    },
-    640: {
-      slidesPerView: 3,
-    },
-    998: {
-      slidesPerView: 4,
-    },
-  },
-});
-</script>
+<script src="../js/main.js"></script>
+
+
 
