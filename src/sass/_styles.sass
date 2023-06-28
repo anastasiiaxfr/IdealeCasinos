@@ -42,57 +42,13 @@ a
 
     h2
         @extend .h2
-    p, li
+    p
         +ft(16, 24, 400)
 
         & > a
             text-decoration: underline
             &:hover, &:active, &:focus
                 text-decoration: none
-   
-    ul:not([class]), ol:not([class]), ol.order
-        padding: 0
-        margin: 0
-        counter-reset: section
-
-        li
-            position: relative
-            list-style-type: none
-            +flex(flex, flex-start, flex-start, nowrap)
-            gap: 12px
-            color: $grey3
-            &:first-of-type
-                margin-top: 0
-
-    ul:not([class]) 
-        li
-            //margin-top: var(--gap)
-            margin-top: 10px
-            &::before
-                content: ''
-                +flex(flex, flex-start, flex-start, nowrap)
-                +sz(8px, 8px)
-                min-width: 8px
-                min-width: var(--gapXs)
-                margin: 8px
-                line-height: 24px
-                border-radius: 50%
-                background-color: $red
-
-    ol:not([class]), ol.order
-        li
-            margin-top: 10px
-            list-style-type: none
-            &::before
-                +flex(flex, center, center, nowrap)
-                +sz(24px, 24px)
-                min-width: 24px
-                +ft(12, 12, 700)
-                background: $pink30
-                color: $red
-                border-radius: 50%
-                counter-increment: section
-                content: counter(section)
 
     &__section
         @extend .my-0
@@ -162,8 +118,8 @@ a
         +theme(white)
         // padding-top: var(--sectionMd)
         // padding-bottom: var(--sectionMd)
-        & > :first-of-type
-            & > :first-of-type
+        & > :first-child
+            & > :first-child
                 @extend .mt-0
             
 
@@ -254,3 +210,17 @@ a
 
 .related
     +theme(primary)
+
+.item
+    +flex(flex, flex-start, space-between, nowrap)
+    padding:  var(--gap)
+    gap: var(--gapXs)
+    @extend %card
+    +ft(15, 15*1.5, 600)
+    &__wrap
+        display: grid
+        grid-template-columns: repeat(auto-fill, minmax(calc(250px), 1fr))
+        gap: var(--gapMd)
+    svg
+        color: $pink
+        min-width: 15px

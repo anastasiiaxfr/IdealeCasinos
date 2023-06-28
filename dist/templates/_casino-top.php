@@ -35,7 +35,7 @@
                         View Bonuses
                     </a>
                     <div class="casino-top__list">
-                        <ul class="mark">
+                        <ul class="list-mark">
                             <li>
                                 iDEAL, Astropay, Volt beschikbaar
                             </li>
@@ -102,7 +102,7 @@
                         View Bonuses
                     </a>
                     <div class="casino-top__list">
-                        <ul class="mark">
+                        <ul class="list-mark">
                             <li>
                                 iDEAL, Astropay, Volt beschikbaar
                             </li>
@@ -169,7 +169,7 @@
                         View Bonuses
                     </a>
                     <div class="casino-top__list">
-                        <ul class="mark">
+                        <ul class="list-mark">
                             <li>
                                 iDEAL, Astropay, Volt beschikbaar
                             </li>

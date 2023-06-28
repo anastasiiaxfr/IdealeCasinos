@@ -1,7 +1,9 @@
 .faq
     @extend %card
-    &:last-of-type
+    &:last-children
         margin-bottom: 0
+    &__wrap
+        margin: var(--gapSm) auto var(--gapLg) 
     &__title
         display: block
         +ft(20, 20, 600)
@@ -20,6 +22,7 @@
         cursor: pointer
         svg
             +sz(12px, 12px)
+            min-width: 12px
             color: $pink
             &.active
                 transform: rotate(-90deg)

@@ -146,7 +146,7 @@
                                     Registering on Boo casino is easy and only takes a few steps;
                                 </p>
 
-                                <ol class="order">
+                                <ol class="list-order">
                                     <li> Visit the casino website and click on the “Register” button </li>
                                     <li> Fill in your preferred username, email address, and password, and select your
                                         currency. You also need to tick the box that shows you’ve read the terms &
@@ -361,29 +361,7 @@
                             <div class="box-card__wrap">
                                 <?php include '../templates/_box.php';?>
                             </div>
-
-                            <?php $faq = array(
-                            array("title" =>
-                            "Zijn online iDEAL casino’s veilig?", "description" => "Quisque
-                            rutrum. Aenean imperdi. Etiam ultricies nisi vel augue.
-                            Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
-                            Maecenas tempus, tellus eget.", ), array("title" => "Kun je alleen
-                            in Nederlandse casino’s gokken met iDEAL?", "description" =>
-                            "Quisque rutrum. Aenean imperdi. Etiam ultricies nisi vel augue.
-                            Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
-                            Maecenas tempus, tellus eget.", ), array("title" => "Zijn er
-                            kosten verbonden aan iDEAL betalingen?", "description" => "Quisque
-                            rutrum. Aenean imperdi. Etiam ultricies nisi vel augue.
-                            Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
-                            Maecenas tempus, tellus eget.", ), array("title" => "Kun je bij
-                            ieder online casino met iDEAL betalen?", "description" => "Quisque
-                            rutrum. Aenean imperdi. Etiam ultricies nisi vel augue.
-                            Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
-                            Maecenas tempus, tellus eget.", ));?>
-
-                            <h2>
-                                Veelgestelde Vragen
-                            </h2>
+                           
                             <?php include '../templates/_faq.php';?>
                         </section>
 

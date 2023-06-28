@@ -1,3 +1,26 @@
+<?php $faq = array(
+    array("title" =>
+        "Zijn online iDEAL casino’s veilig?", "description" => "Quisque
+    rutrum. Aenean imperdi. Etiam ultricies nisi vel augue.
+    Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
+    Maecenas tempus, tellus eget."), array("title" => "Kun je alleen
+    in Nederlandse casino’s gokken met iDEAL?", "description" =>
+        "Quisque rutrum. Aenean imperdi. Etiam ultricies nisi vel augue.
+    Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
+    Maecenas tempus, tellus eget."), array("title" => "Zijn er
+    kosten verbonden aan iDEAL betalingen?", "description" => "Quisque
+    rutrum. Aenean imperdi. Etiam ultricies nisi vel augue.
+    Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
+    Maecenas tempus, tellus eget."), array("title" => "Kun je bij
+    ieder online casino met iDEAL betalen?", "description" => "Quisque
+    rutrum. Aenean imperdi. Etiam ultricies nisi vel augue.
+    Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
+    Maecenas tempus, tellus eget."),
+);?>
+
+<h2>Veelgestelde Vragen</h2>
+
+<div class="faq__wrap">
 <?php foreach ($faq as $index => $item) {?>
 <figure class="faq">
     <div class="faq__header">
@@ -13,6 +36,7 @@
     </div>
 </figure>
 <?php }?>
+</div>
 
 <script>
     const faq_toggle = document.querySelectorAll('.faq__header');

@@ -40,18 +40,59 @@ h5
 p
     color: $grey3
 
+.page
+    ul:not([class]), ol:not([class])
+        @extend %list
 
-ul.mark
+    ul:not([class]), .list-dot
+        margin-top: var(--gapSm)
+        margin-bottom: var(--gapSm)
+        li
+            //margin-top: var(--gap)
+            list-style-type: none
+            margin-top: var(--gapXs)
+            &::before
+                content: ''
+                +flex(flex, flex-start, flex-start, nowrap)
+                +sz(8px, 8px)
+                min-width: 8px
+                min-width: var(--gapXs)
+                margin: 8px
+                line-height: 24px
+                border-radius: 50%
+                background-color: $red
+
+    ol:not([class]), .list-order, .list-order-default
+        margin-top: var(--gapSm)
+        margin-bottom: var(--gapSm)
+        li
+            margin-bottom: var(--gapXs)
+            list-style-type: none
+            &::before
+                +flex(flex, center, center, nowrap)
+                +sz(24px, 24px)
+                min-width: 24px
+                +ft(12, 12, 700)
+                border-radius: 50%
+                counter-increment: section
+                content: counter(section)
+
+    ol:not([class]), .list-order          
+        li::before
+            background: $pink30
+            color: $red
+                
+.list-mark
     position: relative
     list-style-type: none
     background: transparent
-    margin: 0
+    margin: var(--gapSm) 0
 
     li
         +flex(flex, center, flex-start, nowrap)
         gap: 4px
-        margin-bottom: 8px
-        +ft(12, 12, 400)
+        margin-bottom: var(--gapXs)
+        +ft(12, 12*1.4, 400)
         &::before
            content: ''
            +flex(inline-flex, center, center, nowrap)
@@ -61,10 +102,35 @@ ul.mark
            background-image: url('../img/icons/checked-pink.svg')
            background-repeat: no-repeat
            background-size: contain
+        &:last-of-type
+            margin-bottom: 0
+
+.list-dot, .list-order
+    @extend %list
+    li
+         margin: 0
+
+.list-check
+    @extend %list
+    @extend .list-mark
+    li
+        font-size: inherit
+        &::before
+            +sz(24px, 24px)
+            min-width: 24px
+
+.list-order-default
+    @extend %list
+    li::before
+        background: $pink
+        color: $white
 
 hgroup
     +flex(flex, center, flex-start, nowrap)
     gap: var(--gap)
+
+    h2
+        @extend .my-0
 
 
 .text
@@ -104,3 +170,24 @@ hgroup
             &::before
                 background: url('../img/icons/minus.svg')
    
+.quote
+    padding: var(--gapMd)
+    @extend %card
+    color: $grey2
+    svg
+        color: $violet3
+    &__text
+        display: block
+        margin-top: var(--gapSm)
+        margin-bottom: var(--gapSm)
+        +ft(20, 32, 400)
+        letter-spacing: 0.01em
+        font-style: italic
+    &__auth
+        &-name, &-job
+            +ft(16, 24, 400)
+        &-name
+            font-weight: bold
+        &-job
+            opacity: 0.65
+

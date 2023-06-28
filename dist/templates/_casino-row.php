@@ -20,7 +20,7 @@
                 <span>Fair Play Casino</span>
             </div>
 
-            <ul class="mark">
+            <ul class="list-mark">
                 <li>
                     iDEAL, Astropay, Volt beschikbaar
                 </li>
@@ -111,7 +111,7 @@
                 <span>Fair Play Casino</span>
             </div>
 
-            <ul class="mark">
+            <ul class="list-mark">
                 <li>
                     iDEAL, Astropay, Volt beschikbaar
                 </li>
@@ -203,7 +203,7 @@
                 <span>Fair Play Casino</span>
             </div>
 
-            <ul class="mark">
+            <ul class="list-mark">
                 <li>
                     iDEAL, Astropay, Volt beschikbaar
                 </li>
@@ -295,7 +295,7 @@
                 <span>Fair Play Casino</span>
             </div>
 
-            <ul class="mark">
+            <ul class="list-mark">
                 <li>
                     iDEAL, Astropay, Volt beschikbaar
                 </li>
