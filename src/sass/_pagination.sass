@@ -1,0 +1,22 @@
+.pagination
+    +flex(flex, center, flex-start, wrap)
+    gap: var(--gapXs)
+
+    button
+        +flex(flex, center, center, nowrap)
+        height: 40px
+        min-width: 40px
+        background-color: $white
+        border: 1px solid $grey5
+        border-radius: $brs1
+        color: $grey1
+        +ft(12, 12, 400)
+        transition: $trs
+        
+        &:hover, &:active, &:focus
+            border-color: $violet1
+            color: $violet1
+
+        &.active
+          background-color: $violet1
+          color: $white  

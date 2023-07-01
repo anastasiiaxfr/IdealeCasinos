@@ -1,0 +1,112 @@
+.blog-demo
+    position: relative
+    display: grid
+    grid-template-columns: 2fr 1fr
+    align-items: flex-start
+    gap: var(--gapMd)
+
+    +maw($md)
+        grid-template-columns: 1fr 
+
+    &__inner
+        position: relative
+        display: block
+        
+        &:hover, &:active, &:focus
+            .blog-demo__overlay-title
+                text-decoration: underline
+                color: $violet1
+
+    &__img
+        position: relative
+        padding-top: 50%
+        display: block
+        width: 100%
+        border-radius: 8px
+        overflow: hidden
+
+        & > img
+            object-fit: cover
+            +ps(absolute, (t, 0), (l, 0))
+            +sz(100%, 100%)
+
+    &__title
+        margin-bottom: var(--gapSm)
+        +ft(16, 16, 700)
+        color: $grey2
+
+    &__item
+        display: block
+        padding-bottom: var(--gap)
+        margin-bottom: var(--gap)
+        border-bottom: 1px solid $grey5
+        transition-delay: $trs
+        &:hover, &:active, &:focus
+            .blog-demo__item-title
+                text-decoration: underline
+                color: $violet1
+        &:last-of-type
+            border-bottom: none
+        &-title
+            +ft(16, 28, 700)
+            color: $grey2
+            transition: $trs
+        &-meta
+            +flex(flex, center, flex-start, wrap)
+            gap: var(--gap)
+            margin-top: var(--gap)
+            +ft(12, 16, 400)
+            color: $grey3
+
+    &__read, &__date
+        +flex(flex, center, flex-start, nowrap)
+        gap: var(--gapXs)
+
+    &__overlay
+        //+ps(absolute, (b, 0), (l, 0))
+        position: relative
+        z-index: 1
+        width: 100%
+        padding: 12px
+        &-inner
+            padding: var(--gapSm)
+            background-color: $white
+            border-radius: $brs1
+        &-title
+            margin-top: 20px
+            margin-bottom: 20px
+            +ft(33, 40, 700)
+            color: $grey2
+
+            +maw($xs)
+                +ft(18, 18*1.4, 700)
+        &-header, &-footer
+            +flex(flex, center, flex-start, nowrap)
+        &-footer
+            +ft(12, 16, 400)
+            gap: var(--gap)
+
+    &-author
+        +flex(flex, center, flex-start, nowrap)
+        gap: var(--gap)
+        &__img
+            +sz(20px, 20px)
+            border-radius: 50%
+            overflow: hidden
+            & *
+                display: block
+                +sz(100%, 100%)
+                object-fit: cover
+
+    &__cat, &__time
+        padding: 6px 8px
+        border-radius: 4px
+        text-transform: uppercase
+        +ft(12, 16, 700)
+        background-color: rgba($violet1, 0.2)
+        color: $violet1
+
+    &__time
+        background-color: $grey6
+        color: $grey2
+

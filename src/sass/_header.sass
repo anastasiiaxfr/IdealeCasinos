@@ -43,10 +43,11 @@
             display: none
 
         &__item
-
+            color: $white
             +miw($lg)
                 &:hover
                     opacity: 1
+                    color: $white
                     & > :first-child
                         span::before
                             transform-origin: left
@@ -61,10 +62,14 @@
             height: var(--headerH)
             +ft(12, 12, 700)
             white-space: nowrap
+            color: $white
+            svg
+                color: $white
 
             span
                 display: block
                 text-overflow: ellipsis
+                color: $white
                 @extend %hover-link
 
         &__submenu

@@ -190,6 +190,14 @@ a
                 &.active, &:active, &:hover, &:focus
                     color: $violet1
                     text-decoration: underline
+    
+    &__nav
+        +flex(flex, center, space-between, wrap)
+        gap: var(--gap)
+
+        +maw($sm)
+            &, & *
+                justify-content: center
 
 
 .logos

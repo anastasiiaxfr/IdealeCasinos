@@ -6,7 +6,6 @@
 )
 ?>
 <div>
-<?php if (isset( $blog_title)) { ?>
 <hgroup>
     <h2>
         <?php echo $blog_title; ?>
@@ -15,9 +14,7 @@
         <use xlink:href="#arr-rt"></use>
     </svg>
 </hgroup>
-<?php } ;?>
-
-<div class="blog__wrap swiper swiper-blog">
+<div class="blog__wrap swiper swiper-editor-choise">
     <div class="swiper-wrapper">
         <?php foreach ($blogs as $i => $item) { ?>
             <a class="blog swiper-slide" href="<?php echo $item['url']; ?>">

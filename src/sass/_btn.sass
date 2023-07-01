@@ -2,6 +2,7 @@
     +flex(flex, center, center, nowrap)
     &__top
         +ps(fixed, (b, 10px), (r, 10px))
+        z-index: 100500
         +sz(40px, 40px)
         +flex(flex, center, center, nowrap)
         border: none
@@ -105,9 +106,10 @@
     padding: 0
 
 .show-more
-    +flex(flex, center, flex-start, nowrap)
+    +flex(inline-flex, center, flex-start, nowrap)
     gap: var(--gapXs)
-    margin: 16px auto
+    margin-top: var(--gap)
+    margin-bottom: var(--gap)
     padding: 12px 16px
     @extend %card
     +ft(14, 16, 700)

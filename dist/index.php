@@ -5,30 +5,30 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <?php include './templates/_seo.php';?>
+    <?php include './templates/_seo.php'; ?>
     <link rel="stylesheet" href="css/main.css" />
 </head>
 
 <body class="page__body">
-    <?php include './templates/_preloader.php';?>
+    <?php include './templates/_preloader.php'; ?>
 
     <main class="page__wrapper">
-        <?php include './templates/_header.php';?>
+        <?php include './templates/_header.php'; ?>
         <?php
-$img = "../img/bg/hero-home.png";
-$title = "Online Casino’s Zonder Registratie";
-$sub_title = 'Hoe maak je een storting in online casino iDEAL?';
-$list = array(
-    array("title" => "Online Casinos", "icon" => "i1", "url" => "#"),
-    array("title" => "Games", "icon" => "i6", "url" => "#"),
-    array("title" => "Bonuses", "icon" => "i5", "url" => "#"),
-    array("title" => "Betaalmethodes", "icon" => "i4", "url" => "#"),
-    array("title" => "Guides", "icon" => "i2", "url" => "#"),
-    array("title" => "Blog", "icon" => "i2", "url" => "#"),
-)
-?>
+        $img = "../img/bg/hero-home.png";
+        $title = "Online Casino’s Zonder Registratie";
+        $sub_title = 'Hoe maak je een storting in online casino iDEAL?';
+        $list = array(
+            array("title" => "Online Casinos", "icon" => "i1", "url" => "#"),
+            array("title" => "Games", "icon" => "i6", "url" => "#"),
+            array("title" => "Bonuses", "icon" => "i5", "url" => "#"),
+            array("title" => "Betaalmethodes", "icon" => "i4", "url" => "#"),
+            array("title" => "Guides", "icon" => "i2", "url" => "#"),
+            array("title" => "Blog", "icon" => "i2", "url" => "#"),
+        )
+        ?>
 
-        <?php include './templates/_hero-home.php';?>
+        <?php include './templates/_hero-home.php'; ?>
 
         <div class="page page__container">
 
@@ -41,104 +41,104 @@ $list = array(
                         <p>
                             Our experts reviewed over 4,000 online casino sites and picked the best ones.
                         </p>
-                        <?php include './templates/_casino-top.php';?>
-                        <?php $show = true;?>
-                        <?php include './templates/_casino-row.php';?>
+                        <?php include './templates/_casino-top.php'; ?>
+                        <?php $show = true; ?>
+                        <?php include './templates/_casino-row.php'; ?>
                     </div>
                 </section>
 
                 <?php
-$section = array(
-    array(
-        "type" => "right", "img" => "../img/img-1.png", "title" => "Profitable Promotions", "text" => 'It’s impossible to imagine a reputable online casino, which doesn’t have generous promotions on offer. Gamblorium attentively monitors online casino bonuses to ensure that you get access to the most beneficial deals and offers. Luckily, there is a wide range of promotions waiting for gamblers, including welcome bonuses, free spins, no deposit bonuses  <a class="link-show-more" href="#">Show More</a>', "view-more" => "#",
-        "list" => array(
-            array("title" => "No Deposit Bonus", "icon" => "i9", "url" => "#"),
-            array("title" => "Free Spins Bonus", "icon" => "i6", "url" => "#"),
-            array("title" => "No Wagering Bonus", "icon" => "i5", "url" => "#"),
-            array("title" => "Welcome Bonus", "icon" => "i2", "url" => "#"),
-        ),
+                $section = array(
+                    array(
+                        "type" => "right", "img" => "../img/img-1.png", "title" => "Profitable Promotions", "text" => 'It’s impossible to imagine a reputable online casino, which doesn’t have generous promotions on offer. Gamblorium attentively monitors online casino bonuses to ensure that you get access to the most beneficial deals and offers. Luckily, there is a wide range of promotions waiting for gamblers, including welcome bonuses, free spins, no deposit bonuses  <a class="link-show-more" href="#">Show More</a>', "view-more" => "#",
+                        "list" => array(
+                            array("title" => "No Deposit Bonus", "icon" => "i9", "url" => "#"),
+                            array("title" => "Free Spins Bonus", "icon" => "i6", "url" => "#"),
+                            array("title" => "No Wagering Bonus", "icon" => "i5", "url" => "#"),
+                            array("title" => "Welcome Bonus", "icon" => "i2", "url" => "#"),
+                        ),
 
-    ),
+                    ),
 
-    array(
-        "type" => "left", "img" => "../img/img-2.png", "title" => "Payment Methods & Currency", "text" => 'It’s impossible to imagine a reputable online casino, which doesn’t have generous promotions on offer. Gamblorium attentively monitors online casino bonuses to ensure that you get access to the most beneficial deals and offers. Luckily, there is a wide range of promotions waiting for gamblers, including welcome bonuses, free spins, no deposit bonuses <a class="link-show-more" href="#">Show More</a>',
-        "view-more" => "#",
-        "list" => array(
-            array("title" => "Visa", "icon" => "visa", "url" => "#"),
-            array("title" => "Mastercard", "icon" => "mc", "url" => "#"),
-            array("title" => "Bitcoin", "icon" => "btc", "url" => "#"),
-            array("title" => "Apple Pay", "icon" => "pay", "url" => "#"),
-            array("title" => "Skrill", "icon" => "skrill", "url" => "#"),
-        ),
-    ),
+                    array(
+                        "type" => "left", "img" => "../img/img-2.png", "title" => "Payment Methods & Currency", "text" => 'It’s impossible to imagine a reputable online casino, which doesn’t have generous promotions on offer. Gamblorium attentively monitors online casino bonuses to ensure that you get access to the most beneficial deals and offers. Luckily, there is a wide range of promotions waiting for gamblers, including welcome bonuses, free spins, no deposit bonuses <a class="link-show-more" href="#">Show More</a>',
+                        "view-more" => "#",
+                        "list" => array(
+                            array("title" => "Visa", "icon" => "visa", "url" => "#"),
+                            array("title" => "Mastercard", "icon" => "mc", "url" => "#"),
+                            array("title" => "Bitcoin", "icon" => "btc", "url" => "#"),
+                            array("title" => "Apple Pay", "icon" => "pay", "url" => "#"),
+                            array("title" => "Skrill", "icon" => "skrill", "url" => "#"),
+                        ),
+                    ),
 
-    array(
-        "type" => "right", "img" => "../img/img-3.png", "title" => "Games from Trusted Software  Providers", "text" => 'It’s impossible to imagine a reputable online casino, which doesn’t have generous promotions on offer. Gamblorium attentively monitors online casino bonuses to ensure that you get access to the most beneficial deals and offers. Luckily, there is a wide range of promotions waiting for gamblers, including welcome bonuses, free spins, no deposit bonuses  <a class="link-show-more" href="#">Show More</a>',
-        "view-more" => "#",
-        "list" => array(
-            array("title" => "Blackjack", "icon" => "i15", "url" => "#"),
-            array("title" => "Roulette", "icon" => "i14", "url" => "#"),
-            array("title" => "Baccarat", "icon" => "i13", "url" => "#"),
-            array("title" => "Slots", "icon" => "i11", "url" => "#"),
-            array("title" => "Scratch Cards", "icon" => "i12", "url" => "#"),
-            array("title" => "Craps", "icon" => "i10", "url" => "#"),
-        ),
-    ),
+                    array(
+                        "type" => "right", "img" => "../img/img-3.png", "title" => "Games from Trusted Software  Providers", "text" => 'It’s impossible to imagine a reputable online casino, which doesn’t have generous promotions on offer. Gamblorium attentively monitors online casino bonuses to ensure that you get access to the most beneficial deals and offers. Luckily, there is a wide range of promotions waiting for gamblers, including welcome bonuses, free spins, no deposit bonuses  <a class="link-show-more" href="#">Show More</a>',
+                        "view-more" => "#",
+                        "list" => array(
+                            array("title" => "Blackjack", "icon" => "i15", "url" => "#"),
+                            array("title" => "Roulette", "icon" => "i14", "url" => "#"),
+                            array("title" => "Baccarat", "icon" => "i13", "url" => "#"),
+                            array("title" => "Slots", "icon" => "i11", "url" => "#"),
+                            array("title" => "Scratch Cards", "icon" => "i12", "url" => "#"),
+                            array("title" => "Craps", "icon" => "i10", "url" => "#"),
+                        ),
+                    ),
 
-    array("type" => "left", "img" => "../img/img-4.png", "title" => "Licensing", "text" => 'It’s impossible to imagine a reputable online casino, which doesn’t have generous promotions on offer. Gamblorium attentively monitors online casino bonuses to ensure that you get access to the most beneficial deals and offers. Luckily, there is a wide range of promotions waiting for gamblers, including welcome bonuses, free spins, no deposit bonuses <a class="link-show-more" href="#">Show More</a>', "view-more" => "#"),
+                    array("type" => "left", "img" => "../img/img-4.png", "title" => "Licensing", "text" => 'It’s impossible to imagine a reputable online casino, which doesn’t have generous promotions on offer. Gamblorium attentively monitors online casino bonuses to ensure that you get access to the most beneficial deals and offers. Luckily, there is a wide range of promotions waiting for gamblers, including welcome bonuses, free spins, no deposit bonuses <a class="link-show-more" href="#">Show More</a>', "view-more" => "#"),
 
-    array("type" => "right", "img" => "../img/img-5.png", "title" => "Security", "text" => 'It’s impossible to imagine a reputable online casino, which doesn’t have generous promotions on offer. Gamblorium attentively monitors online casino bonuses to ensure that you get access to the most beneficial deals and offers. Luckily, there is a wide range of promotions waiting for gamblers, including welcome bonuses, free spins, no deposit bonuses <a class="link-show-more" href="#">Show More</a>'),
+                    array("type" => "right", "img" => "../img/img-5.png", "title" => "Security", "text" => 'It’s impossible to imagine a reputable online casino, which doesn’t have generous promotions on offer. Gamblorium attentively monitors online casino bonuses to ensure that you get access to the most beneficial deals and offers. Luckily, there is a wide range of promotions waiting for gamblers, including welcome bonuses, free spins, no deposit bonuses <a class="link-show-more" href="#">Show More</a>'),
 
-    array("type" => "left", "img" => "../img/img-6.png", "title" => "Customer Support", "text" => 'It’s impossible to imagine a reputable online casino, which doesn’t have generous promotions on offer. Gamblorium attentively monitors online casino bonuses to ensure that you get access to the most beneficial deals and offers. Luckily, there is a wide range of promotions waiting for gamblers, including welcome bonuses, free spins, no deposit bonuses <a class="link-show-more" href="#">Show More</a>'),
+                    array("type" => "left", "img" => "../img/img-6.png", "title" => "Customer Support", "text" => 'It’s impossible to imagine a reputable online casino, which doesn’t have generous promotions on offer. Gamblorium attentively monitors online casino bonuses to ensure that you get access to the most beneficial deals and offers. Luckily, there is a wide range of promotions waiting for gamblers, including welcome bonuses, free spins, no deposit bonuses <a class="link-show-more" href="#">Show More</a>'),
 
-);
-?>
-                <?php foreach ($section as $index => $item) {?>
-                <section class="page__section <?php if (isset($item['type']) && $item['type'] === 'right') {
-    echo 'page__section--reverse';
-}
-    ?>">
-                    <div class="container">
-                        <div class="page__section-inner">
+                );
+                ?>
+                <?php foreach ($section as $index => $item) { ?>
+                    <section class="page__section <?php if (isset($item['type']) && $item['type'] === 'right') {
+                                                        echo 'page__section--reverse';
+                                                    }
+                                                    ?>">
+                        <div class="container">
+                            <div class="page__section-inner">
 
-                            <div>
-                                <img src="<?php echo $item['img']; ?>" alt="<?php echo $item['title']; ?> ">
+                                <div>
+                                    <img src="<?php echo $item['img']; ?>" alt="<?php echo $item['title']; ?> ">
+                                </div>
+                                <div>
+                                    <h2>
+                                        <?php echo $item['title']; ?>
+                                    </h2>
+                                    <p>
+                                        <?php echo $item['text']; ?>
+                                    </p>
+
+
+                                    <?php if (isset($item['list'])) {
+                                        $list = $item['list'];
+                                        include './templates/_chip.php';
+                                    } ?>
+
+
+                                    <?php if (isset($item['view-more'])) { ?>
+                                        <a href="#" class="text--link">View More</a>
+                                    <?php } ?>
+
+                                </div>
+
                             </div>
-                            <div>
-                                <h2>
-                                    <?php echo $item['title']; ?>
-                                </h2>
-                                <p>
-                                    <?php echo $item['text']; ?>
-                                </p>
-
-
-                                <?php if (isset($item['list'])) {
-        $list = $item['list'];
-        include './templates/_chip.php';
-    }?>
-
-
-                                <?php if (isset($item['view-more'])) {?>
-                                <a href="#" class="text--link">View More</a>
-                                <?php }?>
-
-                            </div>
-
                         </div>
-                    </div>
-                </section>
-                <?php }?>
+                    </section>
+                <?php } ?>
 
 
                 <?php
-$table = array(
-    array("col1" => "<b>⭐ <a href='#'>Aantal Casino’s</a></b>", "col2" => "17"),
-    array("col1" => "<b>⭐ <a href='#'>Beste iDEAL Casino</a></b>", "col2" => "Betcity.nl"),
-    array("col1" => "<b>⭐ <a href='#'>Beste iDEAL Bonus</a></b>", "col2" => "€ 200 bij Betcity.nl"),
-    array("col1" => "<b>⭐ <a href='#'>Aantal Live iDEAL casino’s</a></b>", "col2" => "14"),
+                $table = array(
+                    array("col1" => "<b>⭐ <a href='#'>Aantal Casino’s</a></b>", "col2" => "17"),
+                    array("col1" => "<b>⭐ <a href='#'>Beste iDEAL Casino</a></b>", "col2" => "Betcity.nl"),
+                    array("col1" => "<b>⭐ <a href='#'>Beste iDEAL Bonus</a></b>", "col2" => "€ 200 bij Betcity.nl"),
+                    array("col1" => "<b>⭐ <a href='#'>Aantal Live iDEAL casino’s</a></b>", "col2" => "14"),
 
-);?>
+                ); ?>
                 <section>
                     <div class="container">
                         <h2>
@@ -160,7 +160,7 @@ $table = array(
                             ook nog eens voor dat je als speler in een betrouwbaar casino iDEAL Nederland terecht komt.
                         </p>
 
-                        <?php include './templates/_table-default.php';?>
+                        <?php include './templates/_table-default.php'; ?>
                     </div>
                 </section>
 
@@ -182,13 +182,13 @@ $table = array(
                             </div>
                         </div>
                         <?php $str = array(
-    array("img" => "../img/img-7.png", "num" => "1", "title" => "Choose a casino", "desc" => "Choose a casino site that accepts iDEAL"),
-    array("img" => "../img/img-8.png", "num" => "2", "title" => "Choose payment method", "desc" => "Create an account and go to the payment page of the chosen casino and choose iDEAL as the payment method."),
-    array("img" => "../img/img-9.png", "num" => "3", "title" => "Enter the amount", "desc" => "Enter the desired amount and choose your bank. You can make a deposit of 5 euros."),
-    array("img" => "../img/img-10.png", "num" => "4", "title" => "Complete the payment", "desc" => "You will now be redirected to your own familiar banking environment. Depending on your bank, you must confirm the payment using a box, your telephone or a special code."),
-)?>
+                            array("img" => "../img/img-7.png", "num" => "1", "title" => "Choose a casino", "desc" => "Choose a casino site that accepts iDEAL"),
+                            array("img" => "../img/img-8.png", "num" => "2", "title" => "Choose payment method", "desc" => "Create an account and go to the payment page of the chosen casino and choose iDEAL as the payment method."),
+                            array("img" => "../img/img-9.png", "num" => "3", "title" => "Enter the amount", "desc" => "Enter the desired amount and choose your bank. You can make a deposit of 5 euros."),
+                            array("img" => "../img/img-10.png", "num" => "4", "title" => "Complete the payment", "desc" => "You will now be redirected to your own familiar banking environment. Depending on your bank, you must confirm the payment using a box, your telephone or a special code."),
+                        ) ?>
                         <div class="str__card-wrap">
-                            <?php include './templates/_str.php';?>
+                            <?php include './templates/_str.php'; ?>
                         </div>
                     </div>
                 </section>
@@ -219,35 +219,35 @@ $table = array(
                         </p>
 
                         <?php
-$table = array(
-    array("col1" => "<b>#</b>", "col2" => "<b>Online Casino iDeal</b>", "col3" => "<b>iDeal Bonus 2023</b>"),
-    array("col1" => "1", "col2" => "<a href='#'> BetCity Casino</a>", "col3" => "€ 200"),
-    array("col1" => "2", "col2" => "<a href='#'>Holland Casino</a>", "col3" => "€ 200"),
-    array("col1" => "3", "col2" => "<a href='#'>Bet365</a>", "col3" => "Geen Bonus"),
-    array("col1" => "4", "col2" => "<a href='#'>Bingoal</a>", "col3" => " tot € 500"),
-    array("col1" => "5", "col2" => "<a href='#'>GGPoker Casino</a>", "col3" => "Geen Bonus"),
-    array("col1" => "6", "col2" => "<a href='#'>Fairplay Casino</a>", "col3" => "Geen Bonus"),
-    array("col1" => "7", "col2" => "<a href='#'>LiveScore Bet</a>", "col3" => "tot € 20"),
-);?>
-                        <?php include './templates/_table-default.php';?>
+                        $table = array(
+                            array("col1" => "<b>#</b>", "col2" => "<b>Online Casino iDeal</b>", "col3" => "<b>iDeal Bonus 2023</b>"),
+                            array("col1" => "1", "col2" => "<a href='#'> BetCity Casino</a>", "col3" => "€ 200"),
+                            array("col1" => "2", "col2" => "<a href='#'>Holland Casino</a>", "col3" => "€ 200"),
+                            array("col1" => "3", "col2" => "<a href='#'>Bet365</a>", "col3" => "Geen Bonus"),
+                            array("col1" => "4", "col2" => "<a href='#'>Bingoal</a>", "col3" => " tot € 500"),
+                            array("col1" => "5", "col2" => "<a href='#'>GGPoker Casino</a>", "col3" => "Geen Bonus"),
+                            array("col1" => "6", "col2" => "<a href='#'>Fairplay Casino</a>", "col3" => "Geen Bonus"),
+                            array("col1" => "7", "col2" => "<a href='#'>LiveScore Bet</a>", "col3" => "tot € 20"),
+                        ); ?>
+                        <?php include './templates/_table-default.php'; ?>
 
                         <h2>
                             Banken die iDEAL Casino betalingen ondersteunen
                         </h2>
 
                         <?php
-$list = array(
-    array("title" => "Link 1", "url" => "#", "icon" => "game"),
-    array("title" => "Link 1", "url" => "#", "icon" => "game"),
-    array("title" => "Link 1", "url" => "#", "icon" => "game"),
-    array("title" => "Link 1", "url" => "#", "icon" => "game"),
-    array("title" => "Link 1", "url" => "#", "icon" => "game"),
-    array("title" => "Link 1", "url" => "#", "icon" => "game"),
-);
-$class = "chip__wrap--sm";
-$type = "link"?>
+                        $list = array(
+                            array("title" => "Link 1", "url" => "#", "icon" => "game"),
+                            array("title" => "Link 1", "url" => "#", "icon" => "game"),
+                            array("title" => "Link 1", "url" => "#", "icon" => "game"),
+                            array("title" => "Link 1", "url" => "#", "icon" => "game"),
+                            array("title" => "Link 1", "url" => "#", "icon" => "game"),
+                            array("title" => "Link 1", "url" => "#", "icon" => "game"),
+                        );
+                        $class = "chip__wrap--sm";
+                        $type = "link" ?>
 
-                        <?php include './templates/_chip.php';?>
+                        <?php include './templates/_chip.php'; ?>
 
                         <div>
                             <h3>
@@ -384,8 +384,8 @@ $type = "link"?>
                                 zijn er bepaalde regels om overmatig gokken te voorkomen. Verantwoord gokken doe je op
                                 deze manier:
                             </p>
-  
-                            <?php include './templates/_table-review.php';?>
+
+                            <?php include './templates/_table-review.php'; ?>
                             <p>
                                 Wij proberen mee te helpen aan verantwoord spelen. Zo proberen we voorlichting te geven
                                 en tips te geven om het gokken zo verantwoord mogelijk te houden.
@@ -395,35 +395,35 @@ $type = "link"?>
                 </section>
 
                 <?php $cite = array(
-    "cite" => "This is the best product we used for our work and we can’t thank you enough", "author" => "Elliot Rosenberg", "job" => "Product Lead", "ava" => "../img/authors/author-2.png",
-);
-?>
+                    "cite" => "This is the best product we used for our work and we can’t thank you enough", "author" => "Elliot Rosenberg", "job" => "Product Lead", "ava" => "../img/authors/author-2.png",
+                );
+                ?>
                 <section>
-                    <?php include './templates/_quote.php';?>
+                    <?php include './templates/_quote.php'; ?>
                 </section>
 
                 <section>
                     <div class="container">
-                       
-                        <?php include './templates/_faq.php';?>
 
-                        <?php include './templates/_blog.php';?>
+                        <?php include './templates/_faq.php'; ?>
+
+                        <?php $blog_title = "Blog" ?>
+                        <?php include './templates/_blog.php'; ?>
 
                     </div>
                 </section>
                 <section class="bg--circle row_1">
                     <div class="container">
-                        <?php include './templates/_form-cta.php';?>
+                        <?php include './templates/_form-cta.php'; ?>
                     </div>
 
                 </section>
-                <?php include './templates/_btn-to-top.php';?>
+                <?php include './templates/_btn-to-top.php'; ?>
             </article>
         </div>
     </main>
-    <?php include './templates/_footer.php';?>
-    <?php include './templates/_svg.php';?>
+    <?php include './templates/_footer.php'; ?>
+    <?php include './templates/_svg.php'; ?>
 
 </body>
-
 </html>
