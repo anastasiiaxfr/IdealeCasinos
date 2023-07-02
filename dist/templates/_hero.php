@@ -1,4 +1,5 @@
-<section class="page__hero">
+<section class="page__hero <?php echo isset($hero_class) ? $hero_class : ''; ?>">
+    
     <div class="container">
 
         <div class="page__hero-inner">

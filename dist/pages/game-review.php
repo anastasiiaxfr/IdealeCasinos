@@ -15,8 +15,13 @@
 
     <main class="page__wrapper">
         <?php include '../templates/_header.php'; ?>
+        <div class="breadcrumbs__wrap breadcrumbs-dark">
+            <div class="container">
+                <?php include '../templates/_breadcrumbs.php'; ?>
+            </div>
+        </div>
 
-            <section class="page__hero">
+            <section class="page__hero default">
                 <div class="container">
                     <?php include '../templates/_game-demo.php'; ?>
                 </div>

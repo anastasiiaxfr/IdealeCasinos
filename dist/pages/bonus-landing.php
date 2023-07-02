@@ -15,6 +15,12 @@
 
     <main class="page__wrapper">
         <?php include '../templates/_header.php'; ?>
+        <div class="breadcrumbs__wrap breadcrumbs-dark">
+            <div class="container">
+                <?php include '../templates/_breadcrumbs.php'; ?>
+            </div>
+        </div>
+        <?php include '../templates/_bonus-topline.php'; ?>
 
         <?php
         $title = "Bonuses";
@@ -30,6 +36,7 @@
             array("cat" => "welcome bonus", "url" => "#"),
         ); ?>
 
+        <?php $hero_class = "default"; ?>
         <?php include '../templates/_hero.php'; ?>
 
         <?php

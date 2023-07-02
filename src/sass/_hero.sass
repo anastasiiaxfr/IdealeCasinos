@@ -176,11 +176,11 @@
     &__hero
         padding-top: calc(var(--gapSm) + var(--headerH))
         padding-bottom: var(--gapSm)
-        background: url('../img/bg/bg-hero.svg') no-repeat 50%/cover
-        background-color: $violet3
-        backdrop-filter: blur(15px)
-        border-top: $bd3
-        color: $white
+        @extend %hero
+
+        &.default
+           padding-top: var(--gapSm)
+
         & p
             color: inherit
         &-meta

@@ -1,4 +1,4 @@
-<section class="page__hero">
+<section class="page__hero default">
     <div class="container">
         <div class="hero-review">
             <div class="hero-review__row">

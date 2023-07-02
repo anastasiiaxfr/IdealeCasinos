@@ -39,7 +39,7 @@ $bd4: 1px solid #E6E8EC
 
 
 $bxsd1: 0px 40px 64px -32px rgba(15, 15, 15, 0.1)
-$bxsd2: 0px 40px 64px -32px rgba(15, 15, 15, 0.1)
+$bxsd2: 0px 4px 4px rgba(0, 0, 0, 0.05)
 $bxsd3: 0px 4px 4px rgba(0, 0, 0, 0.25)
 
 $brs1: 8px
@@ -269,6 +269,13 @@ $i: 0
     &:hover
         box-shadow: $bxsd1
 
+%hero
+    background: url('../img/bg/bg-hero.svg') no-repeat 50%/cover
+    background-color: $violet3
+    backdrop-filter: blur(15px)
+    border-top: $bd3
+    color: $white
+
 %list
     padding: 0
     //margin: 0
@@ -291,6 +298,8 @@ $i: 0
 
 \:root
     --headerH: 64px
+    --topLineH: 70px
+    --breadcrumbH: 65px
     --sectionMy: 100px
     --sectionMd: 75px
     --sectionSm: 50px

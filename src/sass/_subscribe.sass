@@ -1,0 +1,90 @@
+.subscribe
+    padding: var(--gapLg) 0
+    +theme(primary)
+    text-align: center
+    +ft(16, 24, 400)
+
+    & *
+        color: inherit
+
+    a
+        text-decoration: underline
+
+    &__title
+        margin-bottom: var(--gap)
+        +ft(28, 32, 700)
+
+    &__inner
+        @extend .container
+
+    &-form
+        &__field
+            width: 100%
+            max-width: 810px
+            margin: var(--gapSm) auto
+            +flex(flex, center, center, nowrap)
+
+            input[type="submit"]
+                background-color: $pink
+                border-radius: 0 $brs1 $brs1 0
+
+            input:not([type="checkbox"])
+                padding: 12px 16px
+                appearance: none
+                outline: none
+                box-shadow: none
+                border: none
+
+            input:not([type="submit"])
+                flex: 1
+                border-radius: $brs1 0 0 $brs1
+                color: $grey2
+
+
+        &__checkbox
+            input
+                padding: 0
+                +sz(initial, initial)
+                margin-bottom: 0
+                display: none
+                cursor: pointer
+
+                &:checked + label:after 
+                    content: ''
+                    display: block
+                    +ps(absolute, (t, 5px), (l, 5px))
+                    +sz(10px, 10px)
+                    background-color: $pink
+                    border-radius: 50%
+                    line-height: 1
+
+            label 
+                position: relative
+                cursor: pointer
+                display: block
+                flex-direction: column
+                gap: var(--gapXs)
+                line-height: 1.4
+                text-align: left
+                padding-left: 28px
+                &:before 
+                    content:''
+                    +ps(absolute, (t, 0), (l, 0))
+                    +flex(inline-flex, center, center, nowrap)
+                    +sz(20px, 20px)
+                    min-width: 20px
+                    cursor: pointer
+                    background-color: transparent
+                    border: 2px solid $white
+                    border-radius: 50%
+                    line-height: 1
+                   
+
+
+    +maw($xs)
+        &-form__field
+            flex-wrap: wrap
+            gap: var(--gap)
+            input:not([type="checkbox"])
+                width: 100%
+                border-radius: $brs1 $brs1 $brs1 $brs1

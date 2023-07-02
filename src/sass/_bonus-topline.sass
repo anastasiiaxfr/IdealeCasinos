@@ -1,0 +1,59 @@
+.bonus-topline
+    width: 100%
+    height: var(--topLineH)
+    @extend .container
+    +flex(flex, center, flex-start, wrap)
+    gap: var(--gap)
+
+    &__sticky
+        position: sticky
+        top: var(--headerH)
+        z-index: 1000
+
+    &__wrap
+        // padding-top: var(--gapXs)
+        // padding-bottom: var(--gapXs)
+        background-color: $violet3
+        color: $white
+
+    &__content
+        flex: 1 
+
+    &__img
+        display: block
+        +sz(40px, 40px)
+        border-radius: $brs1
+        overflow: hidden
+        & *
+            display: block
+            +sz(100%, 100%)
+            object-fit: cover
+
+    &__title, &__text
+        +ft(16, 24, 700)
+    &__sup
+        +ft(12, 16, 400)
+        color: $grey3
+        text-transform: uppercase
+
+    &__cta
+        +flex(flex, center, flex-start, wrap)
+        column-gap: var(--gap)
+        row-gap: var(--gapXs)
+       
+    .btn-text
+        +ft(12, 12, 400)
+
+    +maw($sm)
+        &__content
+            display: none
+        &__cta
+            flex: 1
+            justify-content: center
+        .btn-text, .btn-main
+            flex: 1 0 auto
+            text-align: center
+
+    +maw($xs)
+        .rating
+            display: none

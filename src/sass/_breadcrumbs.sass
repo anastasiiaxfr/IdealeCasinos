@@ -18,5 +18,16 @@
         position: relative
         +flex(flex, center, center, wrap)
         margin-top: var(--headerH) 
-        margin-bottom: var(--gapSm)
+        padding-bottom: var(--gapSm)
         padding-top: var(--gapSm)
+
+    &-dark
+        padding-bottom: var(--gapSm)
+        @extend %hero
+        a
+            color: $white
+            opacity: 0.8
+            &:hover, &:active, &:focus, &.active
+                color: $white
+                opacity: 1
+

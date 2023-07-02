@@ -1,3 +1,4 @@
+<div class="bonus-row__wrap">
 <?php foreach ($bonuses as $item) { ?>
     <figure class="bonus-row">
         <div class="bonus-row__inner">
@@ -23,3 +24,4 @@
         </div>
     </figure>
 <?php } ?>
+</div>

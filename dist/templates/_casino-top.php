@@ -1,4 +1,4 @@
-<div class="casino-top__wrap">
+<div class="casino-top__wrap <?php echo isset($col) ? 'casino-top__wrap-' . $col : ''; ?>">
     <figure class="casino-top__overlay">
         <div class="casino-top__overlay-header">
             <svg class="icon" width="20" height="20">

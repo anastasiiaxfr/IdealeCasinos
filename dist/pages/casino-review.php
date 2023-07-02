@@ -15,6 +15,14 @@
 
     <main class="page__wrapper">
         <?php include '../templates/_header.php';?>
+        <div class="breadcrumbs__wrap breadcrumbs-dark">
+            <div class="container">
+                <?php include '../templates/_breadcrumbs.php'; ?>
+            </div>
+        </div>
+        <?php include '../templates/_toc.php'; ?>
+        <?php include '../templates/_bonus-topline.php'; ?>
+
 
         <?php
         $title = "Payment System";

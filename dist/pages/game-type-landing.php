@@ -15,6 +15,12 @@
 
     <main class="page__wrapper">
         <?php include '../templates/_header.php'; ?>
+        <div class="breadcrumbs__wrap breadcrumbs-dark">
+            <div class="container">
+                <?php include '../templates/_breadcrumbs.php'; ?>
+            </div>
+        </div>
+
 
         <?php
         $title = "Roulette";
@@ -30,7 +36,8 @@
             array("title" => "VoltSlot", "subtitle" => "250% up to NZ$ 480 + 80 FS", "img" => "../img/casinos/top-casinos/casino-1.png", "url" => "#"),
             array("title" => "VoltSlot", "subtitle" => "250% up to NZ$ 480 + 80 FS", "img" => "../img/casinos/top-casinos/casino-1.png", "url" => "#"),
         ); ?>
-
+        
+        <?php $hero_class = "default"; ?>
         <?php include '../templates/_hero.php'; ?>
 
 
@@ -54,9 +61,7 @@
                     <div class="box__wrap box__wrap--md">
                         <?php include '../templates/_card-game.php'; ?>
                     </div>
-                    <div class="text-center">
-                        <?php include '../templates/_btn-show-more.php'; ?>
-                    </div>
+                    <?php include '../templates/_btn-show-more.php'; ?>
                 </section>
 
                 <section>

@@ -15,13 +15,24 @@
 
     <main class="page__wrapper">
         <?php include '../templates/_header.php'; ?>
+        <div class="breadcrumbs__wrap breadcrumbs-dark">
+            <div class="container">
+                <?php include '../templates/_breadcrumbs.php'; ?>
+            </div>
+        </div>
+
 
         <?php
         $title = "Provider";
         $sub_title = 'Hoe maak je een storting in online casino iDEAL?Hoe maak je een storting in online casino iDEAL?';
+        $author = 'Barry Bridges';
+        $updated = 'September 8, 2022';
+        $rating = '5.0';
+        $hero_img = '../img/casinos/playngo.png';
         ?>
-
+        <?php $hero_class = "default"; ?>
         <?php include '../templates/_hero.php'; ?>
+
         <article class="page page__container">
             <div class="container">
 
@@ -40,6 +51,8 @@
                     <div class="box__wrap">
                         <?php include '../templates/_card-game.php'; ?>
                     </div>
+                    <?php include '../templates/_btn-show-more.php'; ?>
+
                 </section>
 
                 <section>
@@ -49,6 +62,8 @@
                     <div class="box__wrap">
                         <?php include '../templates/_card-game.php'; ?>
                     </div>
+                    <?php include '../templates/_btn-show-more.php'; ?>
+                  
                 </section>
 
                 <section>
