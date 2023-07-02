@@ -17,7 +17,7 @@
 </hgroup>
 <?php } ;?>
 
-<div class="blog__wrap swiper swiper-blog">
+<div class="blog__wrap swiper <?php if (isset($blog_class)) { echo $blog_class ; } else { echo 'swiper-blog'; } ?>">
     <div class="swiper-wrapper">
         <?php foreach ($blogs as $i => $item) { ?>
             <a class="blog swiper-slide" href="<?php echo $item['url']; ?>">

@@ -6009,7 +6009,7 @@ textarea.form-control-lg {
   margin-left: 3rem !important;
 }
 
-.ms-auto {
+.ms-auto, .blog-demo__overlay .share {
   margin-left: auto !important;
 }
 
@@ -9717,6 +9717,11 @@ hgroup svg {
   margin-top: 20px;
 }
 
+.share {
+  border: none;
+  background: transparent;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -10816,7 +10821,7 @@ hgroup svg {
   border: 1px solid #E6E8EC;
   overflow: hidden;
 }
-.author:last-of-type {
+.author:last-child {
   margin-bottom: 0;
 }
 .author__header {
@@ -12100,7 +12105,7 @@ blockquote li::before {
   width: 100%;
 }
 
-.blog-demo {
+.blog-demo__wrapper {
   position: relative;
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -12108,7 +12113,7 @@ blockquote li::before {
   gap: var(--gapMd);
 }
 @media only screen and (max-width: 998px) {
-  .blog-demo {
+  .blog-demo__wrapper {
     grid-template-columns: 1fr;
   }
 }
@@ -12438,6 +12443,36 @@ a:hover, a:focus, a:active, a:focus-visible {
   .page__main {
     grid-template-columns: 1fr;
   }
+}
+.page__img {
+  position: relative;
+  display: block;
+  max-width: 100%;
+  margin: var(--gapSm) auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.page__img-wrapper {
+  position: relative;
+  display: block;
+  padding-top: 50%;
+  margin: 0;
+}
+.page__img-wrapper > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+}
+.page__img figcaption {
+  height: auto;
+  background-color: #E4E5ED;
+  padding: 10px 15px;
 }
 .page__sidebar {
   color: #3A3F50;

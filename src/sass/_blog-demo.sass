@@ -1,13 +1,13 @@
 .blog-demo
-    position: relative
-    display: grid
-    grid-template-columns: 2fr 1fr
-    align-items: flex-start
-    gap: var(--gapMd)
+    &__wrapper
+        position: relative
+        display: grid
+        grid-template-columns: 2fr 1fr
+        align-items: flex-start
+        gap: var(--gapMd)
 
-    +maw($md)
-        grid-template-columns: 1fr 
-
+        +maw($md)
+            grid-template-columns: 1fr 
     &__inner
         position: relative
         display: block
@@ -85,6 +85,9 @@
         &-footer
             +ft(12, 16, 400)
             gap: var(--gap)
+
+        .share
+            @extend .ms-auto
 
     &-author
         +flex(flex, center, flex-start, nowrap)

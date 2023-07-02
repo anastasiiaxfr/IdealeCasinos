@@ -150,6 +150,36 @@ a
         +maw($md)
             grid-template-columns: 1fr
 
+    // &__slider
+    //     max-width: 864px
+    //     max-width: calc(100vw - var(--sidebarW)) //FIXME
+
+    &__img
+        position: relative
+        display: block
+        max-width: 100%
+        margin: var(--gapSm) auto
+        border-radius: $brs1
+        overflow: hidden
+        &-wrapper
+            position: relative
+            display: block
+            padding-top: 50%
+            margin: 0
+
+            & > *
+                +ps(absolute, (t, 0), (l, 0))
+                display: block
+                object-fit: cover
+                +sz(100%, 100%)
+                max-width: 100%
+
+        figcaption
+            height: auto
+            background-color: $grey5
+            padding: 10px 15px
+
+
     &__sidebar
         +maw($md)
             display: none
