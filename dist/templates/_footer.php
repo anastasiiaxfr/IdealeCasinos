@@ -110,7 +110,6 @@
     </div>
 </footer>
 
-<link rel="stylesheet" href="../lib/swiper/swiper-bundle.css"/>
 <script src="../lib/swiper/swiper-bundle.js"></script>
 
 <script src="../js/main.js"></script>

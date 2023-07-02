@@ -7,6 +7,7 @@
     background-color: $white
     border-radius: $brs1
     border: $bd2
+    color: $grey2
 
     &__wrap
         width: 100%
@@ -35,12 +36,12 @@
 
     &__link
         margin: 0
-        color: $grey3
+        //color: $grey3
         text-decoration: underline
         +ft(12, 14, 400)
         &:hover, &:active, &:focus
             text-decoration: none
-            color: $grey3
+            c//olor: $grey3
 
     &__header
         padding: 8px
@@ -67,8 +68,7 @@
 
     &__title
         +ft(16, 24, 700)
-        color: $grey2
-
+       
     &__img
         position: relative
         width: 100%
@@ -85,3 +85,4 @@
 
     .rating
         @extend .rating--grey
+        color: inherit

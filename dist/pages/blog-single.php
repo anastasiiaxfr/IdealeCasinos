@@ -63,7 +63,7 @@
                 <section class="page__slider">
                     <?php $blog_title = "More Posts"; ?>
                     <?php $blog_class = "slider-3"; ?>
-                    <?php include '../templates/_blog.php'; ?>
+                    <?php include '../templates/_blogs.php'; ?>
                 </section>
 
             </div>

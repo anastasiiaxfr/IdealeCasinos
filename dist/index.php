@@ -94,10 +94,7 @@
                 );
                 ?>
                 <?php foreach ($section as $index => $item) { ?>
-                    <section class="page__section <?php if (isset($item['type']) && $item['type'] === 'right') {
-                                                        echo 'page__section--reverse';
-                                                    }
-                                                    ?>">
+                    <section class="page__section <?php if (isset($item['type']) && $item['type'] === 'right') { echo 'page__section--reverse'; } ?>">
                         <div class="container">
                             <div class="page__section-inner">
 
@@ -408,7 +405,7 @@
                         <?php include './templates/_faq.php'; ?>
 
                         <?php $blog_title = "Blog" ?>
-                        <?php include './templates/_blog.php'; ?>
+                        <?php include './templates/_blogs.php'; ?>
 
                     </div>
                 </section>
@@ -426,4 +423,5 @@
     <?php include './templates/_svg.php'; ?>
 
 </body>
+
 </html>

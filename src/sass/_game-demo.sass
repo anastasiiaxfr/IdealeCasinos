@@ -1,0 +1,166 @@
+.game-demo
+    display: grid
+    grid-template-columns: auto var(--sidebarW) 
+    gap: var(--gapSm)
+
+    +maw($sm)
+        grid-template-columns: auto
+
+
+    &__wrapper
+        +theme(primary)
+
+    &__sidebar
+        +flex(flex, flex-start, center, nowrap)
+        flex-direction: column
+        gap: var(--gapSm)
+        width: 100%
+
+        +maw($sm)
+            display: grid
+            grid-template-columns: 1fr 1fr
+
+        +maw($xs)
+            grid-template-columns: 1fr
+
+        section
+            width: 100%
+
+        h1, h2, h3, h4, h5, h6
+            color: $white
+            text-transform: uppercase
+            +ft(16, 16, 700)
+            margin-bottom: var(--gap)
+
+        .top-casinos
+            background: $violet1
+            color: $white
+            border-color: lighten($violet1, 5%)
+
+
+    &__view
+        position: relative
+        border-radius: $brs1
+        overflow: hidden
+
+    &__img
+        position: relative
+        max-width: 100%
+        width: 100%
+        //padding-top: 50%
+        border-radius: $brs1
+        overflow: hidden
+
+        +ps(absolute, (t, 0), (l, 0))
+        +sz(100%, 100%)
+        z-index: 0
+
+        & img, & picture
+            +ps(absolute, (t, 0), (l, 0))
+            +sz(100%, 100%)
+            display: block
+            object-fit: cover
+
+    &-overlay
+        position: relative
+        z-index: 1
+        +sz(100%, 100%)
+        flex: 1
+        +flex(flex, center, space-between, nowrap)
+        flex-direction: column
+        gap: var(--gap)
+        padding: var(--gap)
+        background: rgba($black, 0.2)
+        backdrop-filter: blur(5px)
+
+        &__footer
+            width: 100%
+
+    &-cta
+        +flex(flex, center,  center, wrap)
+        flex-direction: column
+        gap: var(--gap)
+        text-align: center
+
+        button
+            max-width: 265px
+            +sz(100%, 48px)
+
+        &__note
+            +ft(12, 16, 400)
+            a
+                font-weight: 400
+                &:hover, &:active, &:focus
+                    color: $white
+                    text-decoration: none
+
+    &__title, h1
+        +ft(28, 32, 700)
+        flex: 1
+        margin: 0
+
+        +maw($xsm)
+            +ft(20, 20*1.4, 700)
+        +maw($xs)
+            order: 2
+            width: 100%
+            flex: 1 0 auto
+        
+
+    &-info
+        position: relative
+        flex: 1
+        text-align: center
+        +ft(16, 24, 700)
+
+        &__title
+            +ft(12, 16, 400)
+            opacity: 0.5
+
+        &:not(:last-child)
+            border-right: 1px solid lighten($violet1, 2%)
+        
+        +maw($md)
+            border: 1px solid lighten($violet1, 2%)
+
+    &-info__wrapper
+        padding: var(--gap)
+        +theme(primary)
+        border-radius: $brs1
+        +flex(flex, center, space-around, nowrap)
+        gap: 0
+
+        +maw($md)
+            flex-wrap: wrap
+            display: grid
+            grid-template-columns: 1fr 1fr 1fr
+            justify-content: center
+
+        +maw($xsm)
+            grid-template-columns: 1fr 1fr
+
+
+    &-overlay-header
+        width: 100%
+        padding: var(--gap)
+        +theme(primary)
+        border-radius: $brs1
+        +ft(12, 16, 400)
+
+        .rating
+            background-color: lighten($violet1, 5%)
+            color: $white
+
+        &__inner
+            +flex(flex, center, flex-start, nowrap)
+            gap: var(--gap)
+            margin-bottom: var(--gapXs)
+
+            +maw($xsm)
+                flex-wrap: wrap
+                justify-content: space-between
+
+           
+
+   
+    

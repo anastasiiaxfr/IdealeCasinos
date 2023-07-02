@@ -19,13 +19,15 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
-const swiper_slide_3 = new Swiper(".slider-3", {
-  slidesPerView: 'auto',
+
+
+const swiper_editor_choise = new Swiper(".swiper-editor-choise", {
+  slidesPerView: 1,
   spaceBetween: 16,
   loop: true,
   breakpoints: {
     0: {
-      slidesPerView: 1.5,
+      slidesPerView: 1,
     },
     520: {
       slidesPerView: 2,
@@ -39,13 +41,33 @@ const swiper_slide_3 = new Swiper(".slider-3", {
   },
 });
 
-const swiper_editor_choise = new Swiper(".swiper-editor-choise", {
-  slidesPerView: 1,
+const swiper_slide_5 = new Swiper(".slider-5", {
+  slidesPerView: 5,
   spaceBetween: 16,
   loop: true,
   breakpoints: {
     0: {
-      slidesPerView: 1,
+      slidesPerView: 1.5,
+    },
+    520: {
+      slidesPerView: 2,
+    },
+    640: {
+      slidesPerView: 3,
+    },
+    998: {
+      slidesPerView: 5,
+    },
+  },
+});
+
+const swiper_slide_3 = new Swiper(".slider-3", {
+  slidesPerView: 'auto',
+  spaceBetween: 16,
+  loop: true,
+  breakpoints: {
+    0: {
+      slidesPerView: 1.5,
     },
     520: {
       slidesPerView: 2,

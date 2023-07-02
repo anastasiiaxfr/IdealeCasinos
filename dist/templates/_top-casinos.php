@@ -1,5 +1,5 @@
 <?php foreach ($casinos as $i => $item) { ?>
-<div class="top-casinos__wrap <?php echo ($item['top'] === true) ? 'active' : ''; ?>">
+<div class="top-casinos__wrap <?php if ($item['top'] === true && (isset($active) && $active)) echo 'active'; ?>">
     <div class="top-casinos__header">
         <svg class="icon" width="20" height="20">
             <use xlink:href="#trophy"></use>

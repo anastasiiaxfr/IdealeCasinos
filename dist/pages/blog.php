@@ -61,17 +61,18 @@
 
                 <section>
                     <?php $blog_title = "Category Name"; ?>
-                    <?php include '../templates/_blog.php'; ?>
+                    <?php include '../templates/_blogs.php'; ?>
                 </section>
 
                 <section>
                     <?php $blog_title = "Editor Choise"; ?>
-                    <?php include '../templates/_editor.php'; ?>
-                </section>
+                    <?php $blog_class = "slider-3"; ?>
+                    <?php include '../templates/_blogs.php'; ?>                </section>
 
                 <section>
                     <?php $blog_title = "Category Name"; ?>
-                    <?php include '../templates/_blog.php'; ?>
+                    <?php $blog_class = "slider-4"; ?>
+                    <?php include '../templates/_blogs.php'; ?>
                 </section>
 
 
