@@ -1,0 +1,22 @@
+.breadcrumbs
+    +flex(flex, center, flex-start, wrap)
+    column-gap: var(--gap)
+    row-gap: var(--gapXs)
+    color: $grey4
+    a
+        +flex(flex, center, center, nowrap)
+        gap: var(--gap)
+        +ft(14, 16, 600)
+
+        &:hover, &:active, &:focus, &.active
+            color: $violet1
+            
+        &:last-of-type
+            svg
+                display: none
+    &__wrap
+        position: relative
+        +flex(flex, center, center, wrap)
+        margin-top: var(--headerH) 
+        margin-bottom: var(--gapSm)
+        padding-top: var(--gapSm)

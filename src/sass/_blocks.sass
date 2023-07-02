@@ -1,0 +1,17 @@
+.blocks
+    +flex(flex, center, flex-start, nowrap)
+    width: auto
+    gap: var(--gapXs)
+    padding: 4px 8px 4px 4px
+    background-color: $violet3
+    color: $white
+    border-radius: $brs1
+    +ft(12, 16, 700)
+    &__subtitle
+        color: $pink
+    &__wrap
+        +flex(flex, flex-start, flex-start, wrap)
+        display: grid
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr))
+        gap: var(--gap)
+        margin: var(--gapSm) auto

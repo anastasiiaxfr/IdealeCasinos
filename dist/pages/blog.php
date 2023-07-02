@@ -16,7 +16,14 @@
     <main class="page__wrapper">
         <?php include '../templates/_header.php'; ?>
 
-        <article class="page page__inner">
+        <div class="breadcrumbs__wrap">
+            <div class="container">
+                <?php include '../templates/_breadcrumbs.php'; ?>
+            </div>
+        </div>
+
+        <article class="page page-with-breadcrumbs">
+
             <div class="container">
 
                 <section class="blog-demo__wrapper">

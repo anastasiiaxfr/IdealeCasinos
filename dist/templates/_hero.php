@@ -32,6 +32,26 @@
                 <?php }?>
             </div>
             <?php }?>
+
+            <?php if (isset($hero_items)) {?>
+                <div class="blocks__wrap">
+                <?php foreach ($hero_items as $item) {?>
+                <a class="blocks" href="<?php echo $item['url']; ?>">
+                    <div class="blocks__img">
+                        <img src="<?php echo $item['img']; ?>" alt="<?php echo $item['title']; ?>">
+                    </div>
+                    <div class="blocks__content">
+                        <div class="blocks__title">
+                            <?php echo $item['title']; ?>
+                        </div>
+                        <div class="blocks__subtitle">
+                            <?php echo $item['subtitle']; ?>
+                        </div>
+                    </div>
+                </a>
+                <?php }?>
+            </div>
+            <?php }?>
         </div>
 
         <?php if (isset($hero_img)) {?>

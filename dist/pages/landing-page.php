@@ -383,7 +383,7 @@ $tabs = array(
 
                 <?php include '../templates/_author.php';?>
 
-                <?php include '../templates/_blog.php';?>
+                <?php include '../templates/_blogs.php';?>
 
                 SUBSCRIBE THERE
 
