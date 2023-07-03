@@ -178,9 +178,17 @@ const get_cookie = getCookie("policy");
     }
 })();
 
+//DRAWER menu
+const menu_toggle = document.querySelector('.menu__toggler');
+const drawer = document.querySelector('.drawer__wrap');
+
+menu_toggle.addEventListener('click', function(){
+  drawer.classList.toggle('d-flex');
+  this.classList.toggle('active');
+});
+
 //SEARCH
 const favorite = document.querySelector('.favorite');
-const menu_toggle = document.querySelector('.menu__toggler')
 const search_toggle = document.querySelector('.search__toggle');
 const search_overlay = document.querySelector('.search');
 search_toggle.addEventListener('click', function(){
@@ -188,3 +196,4 @@ search_toggle.addEventListener('click', function(){
     //favorite.classList.toggle('d-none');
     //menu_toggle.classList.toggle('d-none');
 });
+

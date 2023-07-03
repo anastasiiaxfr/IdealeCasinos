@@ -266,6 +266,9 @@
         </div>
     </div>
 </header>
+
+<?php include $_SERVER['DOCUMENT_ROOT'] . '/templates/_drawer.php'; ?>
+
 <link rel="stylesheet" href="../lib/swiper/swiper-bundle.css"/>
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/templates/_search.php'; ?>
 

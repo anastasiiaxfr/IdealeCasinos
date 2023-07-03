@@ -2,3 +2,8 @@
     &__toggler
         & > :last-child
             display: none
+        &.active
+            & > :first-child
+                display: none
+            & > :last-child
+                display: block

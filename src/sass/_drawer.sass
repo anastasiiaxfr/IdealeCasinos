@@ -1,0 +1,74 @@
+.drawer
+    +flex(flex, flex-start, flex-start, nowrap)
+    flex-direction: column
+    gap: var(--gap)
+    padding: 0
+    margin: 0
+    +maw($xs)
+        gap: 4px
+
+    li
+        list-style-type: none
+    &__wrap
+        +ps(fixed, (r, 0))
+        top: var(--headerH)
+        z-index: 100500 + 1
+        flex: 1
+        height: 100%
+        height: calc(100vh - var(--headerH))
+        max-width: var(--drawerW)
+        width: 90%
+        box-shadow: $bxsd3
+        background-color: $violet2
+        color: $white
+        overflow: hidden
+        overflow-y: scroll
+        @extend %scroll
+
+        display: none
+
+
+    &-menu
+        &__toggle
+            min-width: 15px
+        &__link
+            +flex(flex, center, flex-start, nowrap)
+            gap: var(--gapXs)
+            padding: 8px 16px
+            +ft(16, 24, 700)
+            border-left: 4px solid transparent
+            &:first-child
+                margin-top: 0
+            &:last-child
+                margin-bottom: 0
+
+        &__item
+            transition: $trs
+            &:first-child
+                margin-top: var(--gap)
+            &:last-child
+                margin-bottom: var(--gap)
+
+            &:hover
+                .drawer-menu__toggle
+                    transform: rotate(180deg)
+                .drawer-menu__link
+                    border-color: $pink
+                .drawer-menu__submenu
+                    display: block
+           
+        &__submenu
+            display: none
+            margin: var(--gap) 0
+            ul
+                padding: 4px 48px
+            li
+                display: inline-block
+                margin-top: var(--gapXs)
+                margin-bottom: var(--gapXs)
+                +ft(14, 14, 400)
+                @extend %hover
+                &::first-letter
+                    text-transform: uppercase
+
+    
