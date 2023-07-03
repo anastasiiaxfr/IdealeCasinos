@@ -173,8 +173,8 @@ cookie_btn.forEach(i => {
 const get_cookie = getCookie("policy");
 
 (function () {
-    if (get_cookie) {
-        cookie.classList.add('d-none');
+    if (!get_cookie) {
+        cookie.classList.add('d-block');
     }
 })();
 

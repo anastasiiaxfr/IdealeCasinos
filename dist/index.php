@@ -99,7 +99,7 @@
                             <div class="page__section-inner">
 
                                 <div>
-                                    <img src="<?php echo $item['img']; ?>" alt="<?php echo $item['title']; ?> ">
+                                    <img src="<?php echo $item['img']; ?>" alt="<?php echo $item['title']; ?>">
                                 </div>
                                 <div>
                                     <h2>

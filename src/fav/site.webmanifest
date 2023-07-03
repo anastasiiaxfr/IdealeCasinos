@@ -1,7 +1,6 @@
 {
     "name": "Ideale",
     "short_name": "Ideale",
-    "start_url": "https://ideale-production.up.railway.app/",
     "icons": [
         {
             "src": "/fav/android-chrome-36x36.png",

@@ -20,8 +20,6 @@
                 <?php include '../templates/_breadcrumbs.php'; ?>
             </div>
         </div>
-        <?php include '../templates/_toc.php'; ?>
-        <?php include '../templates/_bonus-topline.php'; ?>
 
 
         <?php
@@ -33,6 +31,9 @@
         ?>
 
         <?php include '../templates/_hero-casino-review.php';?>
+        <?php include '../templates/_toc.php'; ?>
+        <?php include '../templates/_bonus-topline.php'; ?>
+
 
         <article class="page page__container">
             <div class="container">

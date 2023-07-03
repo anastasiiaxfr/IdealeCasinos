@@ -9,6 +9,7 @@
 
     li
         list-style-type: none
+
     &__wrap
         +ps(fixed, (r, 0))
         top: var(--headerH)
@@ -17,7 +18,7 @@
         height: 100%
         height: calc(100vh - var(--headerH))
         max-width: var(--drawerW)
-        width: 90%
+        //width: 90%
         box-shadow: $bxsd3
         background-color: $violet2
         color: $white
@@ -26,7 +27,6 @@
         @extend %scroll
 
         display: none
-
 
     &-menu
         &__toggle

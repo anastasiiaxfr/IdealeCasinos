@@ -1,0 +1,147 @@
+.casino-review
+    display: grid
+    grid-template-columns: 0.5fr 2fr
+    
+    border: 2px solid $pink
+    border-radius: $brs1
+    background-color: $white
+    overflow: hidden
+
+    +maw($md)
+        grid-template-columns: 1fr
+        .casino__stat
+            display: grid
+            grid-template-columns: 1fr 1fr 1fr 1fr
+    +maw($xsm)
+        .casino__stat
+            grid-template-columns: 1fr 1fr 
+    +maw($xs)
+        .btn-main
+            min-width: 0
+            width: 90%
+            margin: 0 auto
+
+    &, p
+        +ft(14, 14*1.4, 400)
+
+    .casino__stat
+        height: 100%
+        align-self: stretch
+        +ft(12, 16, 400)
+            
+        & > div
+            border: 0
+            padding: var(--gap) var(--gapXs)
+        &--sm
+            grid-template-columns: 1fr 1fr 1fr
+            
+            & > div
+                border: 1px solid darken($grey5, 2%)
+           
+
+
+    &__providers
+        +flex(inline-flex, center, flex-start, wrap)
+        gap: var(--gapXs)
+        margin-top: var(--gap)
+        a
+            +flex(inline-flex, center, center, nowrap)
+            padding: 6px 8px
+            border: 1px solid $grey5
+            border-radius: 4px
+            +ft(12, 12, 400)
+            transition: $trs
+            &:hover, &:active, &:focus
+                border-color: $violet1
+                color: $violet1
+
+
+    &__subtitle
+        margin-bottom: var(--gap)
+        text-transform: uppercase
+        +ft(16, 24, 700)
+
+    &__img
+        +flex(flex, center, center, nowrap)
+        background-color: $black
+
+        img, picture
+            display: block
+            max-width: 100%
+            object-fit: contain
+
+    &__content
+        padding: var(--gap)
+        display: grid
+        gap: var(--gap)
+
+    &__label
+        +flex(inline-flex, center, center, nowrap)
+        gap: var(--gapXs)
+        padding: 8px 16px
+        border-radius: $brs1
+        background-color: $red
+        color: $white
+        text-transform: uppercase
+        +ft(12, 16, 600)
+    &__title
+        +ft(32, 32, 700)
+    &__header
+        +flex(flex, center, flex-start, wrap)
+        gap: var(--gap)
+    &__row
+        &-top
+            display: grid
+            grid-template-columns: 1fr 1fr
+            gap: var(--gap)
+            +maw($lg)
+                & > div
+                    &:last-child
+                        grid-column: 1/-1
+            +maw($xsm)
+                grid-template-columns: 1fr
+
+           
+            +miw($lg)
+                grid-template-columns: 1fr 1fr 0.5fr
+
+
+
+            
+        &-middle
+            display: grid
+            grid-template-columns: 1fr 
+            gap: var(--gap)
+            align-items: stretch
+            +miw($lg)
+                grid-template-columns: 1fr 1fr 
+        &-after
+            display: grid
+            grid-template-columns: 1fr 
+            gap: var(--gap)
+    &__cta
+        text-align: center
+
+    &__box
+        align-self: stretch
+        align-items: center
+        padding: var(--gapXs)
+        background-color: $grey6
+        border-radius: $brs1
+
+        ul
+            margin: 0
+
+        &-subtitle
+            margin-bottom: var(--gap)
+            text-transform: uppercase
+            color: $pink
+            letter-spacing: 0.05em
+            +ft(12, 16, 700)
+
+        &-title
+            +ft(16, 24, 700)
+
+        a
+            text-decoration: underline
+            +ft(12, 12, 400)
