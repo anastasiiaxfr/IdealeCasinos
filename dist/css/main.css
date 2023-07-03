@@ -12931,6 +12931,7 @@ blockquote li::before {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
   background-color: #fff;
   color: #3A3F50;
+  display: none;
 }
 .cookie__inner {
   display: flex;
@@ -13309,6 +13310,186 @@ blockquote li::before {
 }
 .drawer-menu__submenu li::first-letter {
   text-transform: uppercase;
+}
+
+.casino-review {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr;
+  border: 2px solid #FF1A5E;
+  border-radius: 8px;
+  background-color: #fff;
+  overflow: hidden;
+}
+@media only screen and (max-width: 998px) {
+  .casino-review {
+    grid-template-columns: 1fr;
+  }
+  .casino-review .casino__stat {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .casino-review .casino__stat {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .casino-review .btn-main, .casino-review .hero-review__btn, .casino-review .top-casinos__btn, .casino-review .bonus-row__btn, .casino-review .bonus-banner__btn, .casino-review .casino__btn, .casino-review .table-review__btn, .casino-review .form__btn, .casino-review .casino-top__btn {
+    min-width: 0;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+.casino-review, .casino-review p {
+  font: 400 0.875rem/1.4 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.casino-review .casino__stat {
+  height: 100%;
+  align-self: stretch;
+  font: 400 0.75rem/1.3333333333 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.casino-review .casino__stat > div {
+  border: 0;
+  padding: var(--gap) var(--gapXs);
+}
+.casino-review .casino__stat--sm {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.casino-review .casino__stat--sm > div {
+  border: 1px solid #dedfe9;
+}
+.casino-review__providers {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: var(--gapXs);
+  margin-top: var(--gap);
+}
+.casino-review__providers a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  padding: 6px 8px;
+  border: 1px solid #E4E5ED;
+  border-radius: 4px;
+  font: 400 0.75rem/1 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  transition: all 0.45s ease-in-out;
+}
+.casino-review__providers a:hover, .casino-review__providers a:active, .casino-review__providers a:focus {
+  border-color: #4B50C8;
+  color: #4B50C8;
+}
+.casino-review__subtitle {
+  margin-bottom: var(--gap);
+  text-transform: uppercase;
+  font: 700 1rem/1.5 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.casino-review__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  background-color: #000;
+}
+.casino-review__img img, .casino-review__img picture {
+  display: block;
+  max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.casino-review__content {
+  padding: var(--gap);
+  display: grid;
+  gap: var(--gap);
+}
+.casino-review__label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: var(--gapXs);
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: #FC4747;
+  color: #fff;
+  text-transform: uppercase;
+  font: 600 0.75rem/1.3333333333 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.casino-review__title {
+  font: 700 2rem/1 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.casino-review__header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+.casino-review__row-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap);
+}
+@media only screen and (max-width: 1200px) {
+  .casino-review__row-top > div:last-child {
+    grid-column: 1/-1;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .casino-review__row-top {
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .casino-review__row-top {
+    grid-template-columns: 1fr 1fr 0.5fr;
+  }
+}
+.casino-review__row-middle {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--gap);
+  align-items: stretch;
+}
+@media only screen and (min-width: 1200px) {
+  .casino-review__row-middle {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.casino-review__row-after {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--gap);
+}
+.casino-review__cta {
+  text-align: center;
+}
+.casino-review__box {
+  align-self: stretch;
+  align-items: center;
+  padding: var(--gapXs);
+  background-color: #F6F7FC;
+  border-radius: 8px;
+}
+.casino-review__box ul {
+  margin: 0;
+}
+.casino-review__box-subtitle {
+  margin-bottom: var(--gap);
+  text-transform: uppercase;
+  color: #FF1A5E;
+  letter-spacing: 0.05em;
+  font: 700 0.75rem/1.3333333333 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.casino-review__box-title {
+  font: 700 1rem/1.5 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.casino-review__box a {
+  text-decoration: underline;
+  font: 400 0.75rem/1 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 body {
