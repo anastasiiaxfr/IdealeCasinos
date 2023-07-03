@@ -109,6 +109,7 @@
         </div>
     </div>
 </footer>
+<?php include '_cookie.php'; ?>
 
 <script src="../lib/swiper/swiper-bundle.js"></script>
 

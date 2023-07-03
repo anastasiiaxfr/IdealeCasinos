@@ -617,7 +617,7 @@ progress {
   color: #6c757d;
 }
 
-.container, .subscribe__inner, .toc__inner, .bonus-topline,
+.container, .cookie, .subscribe__inner, .toc__inner, .bonus-topline,
 .container-fluid,
 .container-xxl,
 .container-xl,
@@ -632,27 +632,27 @@ progress {
 }
 
 @media (min-width: 576px) {
-  .container-sm, .container, .subscribe__inner, .toc__inner, .bonus-topline {
+  .container-sm, .container, .cookie, .subscribe__inner, .toc__inner, .bonus-topline {
     max-width: 540px;
   }
 }
 @media (min-width: 768px) {
-  .container-md, .container-sm, .container, .subscribe__inner, .toc__inner, .bonus-topline {
+  .container-md, .container-sm, .container, .cookie, .subscribe__inner, .toc__inner, .bonus-topline {
     max-width: 720px;
   }
 }
 @media (min-width: 992px) {
-  .container-lg, .container-md, .container-sm, .container, .subscribe__inner, .toc__inner, .bonus-topline {
+  .container-lg, .container-md, .container-sm, .container, .cookie, .subscribe__inner, .toc__inner, .bonus-topline {
     max-width: 960px;
   }
 }
 @media (min-width: 1200px) {
-  .container-xl, .container-lg, .container-md, .container-sm, .container, .subscribe__inner, .toc__inner, .bonus-topline {
+  .container-xl, .container-lg, .container-md, .container-sm, .container, .cookie, .subscribe__inner, .toc__inner, .bonus-topline {
     max-width: 1140px;
   }
 }
 @media (min-width: 1400px) {
-  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container, .subscribe__inner, .toc__inner, .bonus-topline {
+  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container, .cookie, .subscribe__inner, .toc__inner, .bonus-topline {
     max-width: 1320px;
   }
 }
@@ -2095,7 +2095,7 @@ textarea.form-control-lg {
   clip: rect(0, 0, 0, 0);
   pointer-events: none;
 }
-.btn-check[disabled] + .btn, .btn-check[disabled] + .btn-blur, .btn-check[disabled] + .cat, .btn-check[disabled] + .btn-main, .btn-check[disabled] + .casino-top__btn, .btn-check[disabled] + .form__btn, .btn-check[disabled] + .table-review__btn, .btn-check[disabled] + .casino__btn, .btn-check[disabled] + .bonus-banner__btn, .btn-check[disabled] + .bonus-row__btn, .btn-check[disabled] + .top-casinos__btn, .btn-check[disabled] + .hero-review__btn, .btn-check:disabled + .btn, .btn-check:disabled + .btn-blur, .btn-check:disabled + .cat, .btn-check:disabled + .btn-main, .btn-check:disabled + .casino-top__btn, .btn-check:disabled + .form__btn, .btn-check:disabled + .table-review__btn, .btn-check:disabled + .casino__btn, .btn-check:disabled + .bonus-banner__btn, .btn-check:disabled + .bonus-row__btn, .btn-check:disabled + .top-casinos__btn, .btn-check:disabled + .hero-review__btn {
+.btn-check[disabled] + .btn, .btn-check[disabled] + .btn-blur, .btn-check[disabled] + .cat, .btn-check[disabled] + .btn-main, .btn-check[disabled] + .casino-top__btn, .btn-check[disabled] + .form__btn, .btn-check[disabled] + .table-review__btn, .btn-check[disabled] + .casino__btn, .btn-check[disabled] + .bonus-banner__btn, .btn-check[disabled] + .bonus-row__btn, .btn-check[disabled] + .top-casinos__btn, .btn-check[disabled] + .hero-review__btn, .btn-check[disabled] + .btn-bd, .btn-check:disabled + .btn, .btn-check:disabled + .btn-blur, .btn-check:disabled + .cat, .btn-check:disabled + .btn-main, .btn-check:disabled + .casino-top__btn, .btn-check:disabled + .form__btn, .btn-check:disabled + .table-review__btn, .btn-check:disabled + .casino__btn, .btn-check:disabled + .bonus-banner__btn, .btn-check:disabled + .bonus-row__btn, .btn-check:disabled + .top-casinos__btn, .btn-check:disabled + .hero-review__btn, .btn-check:disabled + .btn-bd {
   pointer-events: none;
   filter: none;
   opacity: 0.65;
@@ -2273,11 +2273,11 @@ textarea.form-control-lg {
 .input-group > .form-select:focus {
   z-index: 3;
 }
-.input-group .btn, .input-group .btn-blur, .input-group .cat, .input-group .btn-main, .input-group .casino-top__btn, .input-group .form__btn, .input-group .table-review__btn, .input-group .casino__btn, .input-group .bonus-banner__btn, .input-group .bonus-row__btn, .input-group .top-casinos__btn, .input-group .hero-review__btn {
+.input-group .btn, .input-group .btn-blur, .input-group .cat, .input-group .btn-main, .input-group .casino-top__btn, .input-group .form__btn, .input-group .table-review__btn, .input-group .casino__btn, .input-group .bonus-banner__btn, .input-group .bonus-row__btn, .input-group .top-casinos__btn, .input-group .hero-review__btn, .input-group .btn-bd {
   position: relative;
   z-index: 2;
 }
-.input-group .btn:focus, .input-group .btn-blur:focus, .input-group .cat:focus, .input-group .btn-main:focus, .input-group .casino-top__btn:focus, .input-group .form__btn:focus, .input-group .table-review__btn:focus, .input-group .casino__btn:focus, .input-group .bonus-banner__btn:focus, .input-group .bonus-row__btn:focus, .input-group .top-casinos__btn:focus, .input-group .hero-review__btn:focus {
+.input-group .btn:focus, .input-group .btn-blur:focus, .input-group .cat:focus, .input-group .btn-main:focus, .input-group .casino-top__btn:focus, .input-group .form__btn:focus, .input-group .table-review__btn:focus, .input-group .casino__btn:focus, .input-group .bonus-banner__btn:focus, .input-group .bonus-row__btn:focus, .input-group .top-casinos__btn:focus, .input-group .hero-review__btn:focus, .input-group .btn-bd:focus {
   z-index: 3;
 }
 
@@ -2310,7 +2310,8 @@ textarea.form-control-lg {
 .input-group-lg > .bonus-banner__btn,
 .input-group-lg > .bonus-row__btn,
 .input-group-lg > .top-casinos__btn,
-.input-group-lg > .hero-review__btn {
+.input-group-lg > .hero-review__btn,
+.input-group-lg > .btn-bd {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   border-radius: 0.3rem;
@@ -2330,7 +2331,8 @@ textarea.form-control-lg {
 .input-group-sm > .bonus-banner__btn,
 .input-group-sm > .bonus-row__btn,
 .input-group-sm > .top-casinos__btn,
-.input-group-sm > .hero-review__btn {
+.input-group-sm > .hero-review__btn,
+.input-group-sm > .btn-bd {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   border-radius: 0.2rem;
@@ -2535,7 +2537,7 @@ textarea.form-control-lg {
   z-index: 3;
 }
 
-.btn, .btn-blur, .cat, .btn-main, .casino-top__btn, .form__btn, .table-review__btn, .casino__btn, .bonus-banner__btn, .bonus-row__btn, .top-casinos__btn, .hero-review__btn {
+.btn, .btn-blur, .cat, .btn-main, .casino-top__btn, .form__btn, .table-review__btn, .casino__btn, .bonus-banner__btn, .bonus-row__btn, .top-casinos__btn, .hero-review__btn, .btn-bd {
   display: inline-block;
   font-weight: 400;
   line-height: 1.5;
@@ -2555,18 +2557,18 @@ textarea.form-control-lg {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
-  .btn, .btn-blur, .cat, .btn-main, .casino-top__btn, .form__btn, .table-review__btn, .casino__btn, .bonus-banner__btn, .bonus-row__btn, .top-casinos__btn, .hero-review__btn {
+  .btn, .btn-blur, .cat, .btn-main, .casino-top__btn, .form__btn, .table-review__btn, .casino__btn, .bonus-banner__btn, .bonus-row__btn, .top-casinos__btn, .hero-review__btn, .btn-bd {
     transition: none;
   }
 }
-.btn:hover, .btn-blur:hover, .cat:hover, .btn-main:hover, .casino-top__btn:hover, .form__btn:hover, .table-review__btn:hover, .casino__btn:hover, .bonus-banner__btn:hover, .bonus-row__btn:hover, .top-casinos__btn:hover, .hero-review__btn:hover {
+.btn:hover, .btn-blur:hover, .cat:hover, .btn-main:hover, .casino-top__btn:hover, .form__btn:hover, .table-review__btn:hover, .casino__btn:hover, .bonus-banner__btn:hover, .bonus-row__btn:hover, .top-casinos__btn:hover, .hero-review__btn:hover, .btn-bd:hover {
   color: #212529;
 }
-.btn-check:focus + .btn, .btn-check:focus + .btn-blur, .btn-check:focus + .cat, .btn-check:focus + .btn-main, .btn-check:focus + .casino-top__btn, .btn-check:focus + .form__btn, .btn-check:focus + .table-review__btn, .btn-check:focus + .casino__btn, .btn-check:focus + .bonus-banner__btn, .btn-check:focus + .bonus-row__btn, .btn-check:focus + .top-casinos__btn, .btn-check:focus + .hero-review__btn, .btn:focus, .btn-blur:focus, .cat:focus, .btn-main:focus, .casino-top__btn:focus, .form__btn:focus, .table-review__btn:focus, .casino__btn:focus, .bonus-banner__btn:focus, .bonus-row__btn:focus, .top-casinos__btn:focus, .hero-review__btn:focus {
+.btn-check:focus + .btn, .btn-check:focus + .btn-blur, .btn-check:focus + .cat, .btn-check:focus + .btn-main, .btn-check:focus + .casino-top__btn, .btn-check:focus + .form__btn, .btn-check:focus + .table-review__btn, .btn-check:focus + .casino__btn, .btn-check:focus + .bonus-banner__btn, .btn-check:focus + .bonus-row__btn, .btn-check:focus + .top-casinos__btn, .btn-check:focus + .hero-review__btn, .btn-check:focus + .btn-bd, .btn:focus, .btn-blur:focus, .cat:focus, .btn-main:focus, .casino-top__btn:focus, .form__btn:focus, .table-review__btn:focus, .casino__btn:focus, .bonus-banner__btn:focus, .bonus-row__btn:focus, .top-casinos__btn:focus, .hero-review__btn:focus, .btn-bd:focus {
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 }
-.btn:disabled, .btn-blur:disabled, .cat:disabled, .btn-main:disabled, .casino-top__btn:disabled, .form__btn:disabled, .table-review__btn:disabled, .casino__btn:disabled, .bonus-banner__btn:disabled, .bonus-row__btn:disabled, .top-casinos__btn:disabled, .hero-review__btn:disabled, .btn.disabled, .disabled.btn-blur, .disabled.cat, .disabled.btn-main, .disabled.casino-top__btn, .disabled.form__btn, .disabled.table-review__btn, .disabled.casino__btn, .disabled.bonus-banner__btn, .disabled.bonus-row__btn, .disabled.top-casinos__btn, .disabled.hero-review__btn, fieldset:disabled .btn, fieldset:disabled .btn-blur, fieldset:disabled .cat, fieldset:disabled .btn-main, fieldset:disabled .casino-top__btn, fieldset:disabled .form__btn, fieldset:disabled .table-review__btn, fieldset:disabled .casino__btn, fieldset:disabled .bonus-banner__btn, fieldset:disabled .bonus-row__btn, fieldset:disabled .top-casinos__btn, fieldset:disabled .hero-review__btn {
+.btn:disabled, .btn-blur:disabled, .cat:disabled, .btn-main:disabled, .casino-top__btn:disabled, .form__btn:disabled, .table-review__btn:disabled, .casino__btn:disabled, .bonus-banner__btn:disabled, .bonus-row__btn:disabled, .top-casinos__btn:disabled, .hero-review__btn:disabled, .btn-bd:disabled, .btn.disabled, .disabled.btn-blur, .disabled.cat, .disabled.btn-main, .disabled.casino-top__btn, .disabled.form__btn, .disabled.table-review__btn, .disabled.casino__btn, .disabled.bonus-banner__btn, .disabled.bonus-row__btn, .disabled.top-casinos__btn, .disabled.hero-review__btn, .disabled.btn-bd, fieldset:disabled .btn, fieldset:disabled .btn-blur, fieldset:disabled .cat, fieldset:disabled .btn-main, fieldset:disabled .casino-top__btn, fieldset:disabled .form__btn, fieldset:disabled .table-review__btn, fieldset:disabled .casino__btn, fieldset:disabled .bonus-banner__btn, fieldset:disabled .bonus-row__btn, fieldset:disabled .top-casinos__btn, fieldset:disabled .hero-review__btn, fieldset:disabled .btn-bd {
   pointer-events: none;
   opacity: 0.65;
 }
@@ -3023,13 +3025,13 @@ textarea.form-control-lg {
   color: #6c757d;
 }
 
-.btn-lg, .btn-group-lg > .btn, .btn-group-lg > .btn-blur, .btn-group-lg > .cat, .btn-group-lg > .btn-main, .btn-group-lg > .casino-top__btn, .btn-group-lg > .form__btn, .btn-group-lg > .table-review__btn, .btn-group-lg > .casino__btn, .btn-group-lg > .bonus-banner__btn, .btn-group-lg > .bonus-row__btn, .btn-group-lg > .top-casinos__btn, .btn-group-lg > .hero-review__btn {
+.btn-lg, .btn-group-lg > .btn, .btn-group-lg > .btn-blur, .btn-group-lg > .cat, .btn-group-lg > .btn-main, .btn-group-lg > .casino-top__btn, .btn-group-lg > .form__btn, .btn-group-lg > .table-review__btn, .btn-group-lg > .casino__btn, .btn-group-lg > .bonus-banner__btn, .btn-group-lg > .bonus-row__btn, .btn-group-lg > .top-casinos__btn, .btn-group-lg > .hero-review__btn, .btn-group-lg > .btn-bd {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   border-radius: 0.3rem;
 }
 
-.btn-sm, .btn-group-sm > .btn, .btn-group-sm > .btn-blur, .btn-group-sm > .cat, .btn-group-sm > .btn-main, .btn-group-sm > .casino-top__btn, .btn-group-sm > .form__btn, .btn-group-sm > .table-review__btn, .btn-group-sm > .casino__btn, .btn-group-sm > .bonus-banner__btn, .btn-group-sm > .bonus-row__btn, .btn-group-sm > .top-casinos__btn, .btn-group-sm > .hero-review__btn {
+.btn-sm, .btn-group-sm > .btn, .btn-group-sm > .btn-blur, .btn-group-sm > .cat, .btn-group-sm > .btn-main, .btn-group-sm > .casino-top__btn, .btn-group-sm > .form__btn, .btn-group-sm > .table-review__btn, .btn-group-sm > .casino__btn, .btn-group-sm > .bonus-banner__btn, .btn-group-sm > .bonus-row__btn, .btn-group-sm > .top-casinos__btn, .btn-group-sm > .hero-review__btn, .btn-group-sm > .btn-bd {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   border-radius: 0.2rem;
@@ -3379,7 +3381,7 @@ textarea.form-control-lg {
   display: inline-flex;
   vertical-align: middle;
 }
-.btn-group > .btn, .btn-group > .btn-blur, .btn-group > .cat, .btn-group > .btn-main, .btn-group > .casino-top__btn, .btn-group > .form__btn, .btn-group > .table-review__btn, .btn-group > .casino__btn, .btn-group > .bonus-banner__btn, .btn-group > .bonus-row__btn, .btn-group > .top-casinos__btn, .btn-group > .hero-review__btn,
+.btn-group > .btn, .btn-group > .btn-blur, .btn-group > .cat, .btn-group > .btn-main, .btn-group > .casino-top__btn, .btn-group > .form__btn, .btn-group > .table-review__btn, .btn-group > .casino__btn, .btn-group > .bonus-banner__btn, .btn-group > .bonus-row__btn, .btn-group > .top-casinos__btn, .btn-group > .hero-review__btn, .btn-group > .btn-bd,
 .btn-group-vertical > .btn,
 .btn-group-vertical > .btn-blur,
 .btn-group-vertical > .cat,
@@ -3391,11 +3393,12 @@ textarea.form-control-lg {
 .btn-group-vertical > .bonus-banner__btn,
 .btn-group-vertical > .bonus-row__btn,
 .btn-group-vertical > .top-casinos__btn,
-.btn-group-vertical > .hero-review__btn {
+.btn-group-vertical > .hero-review__btn,
+.btn-group-vertical > .btn-bd {
   position: relative;
   flex: 1 1 auto;
 }
-.btn-group > .btn-check:checked + .btn, .btn-group > .btn-check:checked + .btn-blur, .btn-group > .btn-check:checked + .cat, .btn-group > .btn-check:checked + .btn-main, .btn-group > .btn-check:checked + .casino-top__btn, .btn-group > .btn-check:checked + .form__btn, .btn-group > .btn-check:checked + .table-review__btn, .btn-group > .btn-check:checked + .casino__btn, .btn-group > .btn-check:checked + .bonus-banner__btn, .btn-group > .btn-check:checked + .bonus-row__btn, .btn-group > .btn-check:checked + .top-casinos__btn, .btn-group > .btn-check:checked + .hero-review__btn,
+.btn-group > .btn-check:checked + .btn, .btn-group > .btn-check:checked + .btn-blur, .btn-group > .btn-check:checked + .cat, .btn-group > .btn-check:checked + .btn-main, .btn-group > .btn-check:checked + .casino-top__btn, .btn-group > .btn-check:checked + .form__btn, .btn-group > .btn-check:checked + .table-review__btn, .btn-group > .btn-check:checked + .casino__btn, .btn-group > .btn-check:checked + .bonus-banner__btn, .btn-group > .btn-check:checked + .bonus-row__btn, .btn-group > .btn-check:checked + .top-casinos__btn, .btn-group > .btn-check:checked + .hero-review__btn, .btn-group > .btn-check:checked + .btn-bd,
 .btn-group > .btn-check:focus + .btn,
 .btn-group > .btn-check:focus + .btn-blur,
 .btn-group > .btn-check:focus + .cat,
@@ -3408,6 +3411,7 @@ textarea.form-control-lg {
 .btn-group > .btn-check:focus + .bonus-row__btn,
 .btn-group > .btn-check:focus + .top-casinos__btn,
 .btn-group > .btn-check:focus + .hero-review__btn,
+.btn-group > .btn-check:focus + .btn-bd,
 .btn-group > .btn:hover,
 .btn-group > .btn-blur:hover,
 .btn-group > .cat:hover,
@@ -3420,6 +3424,7 @@ textarea.form-control-lg {
 .btn-group > .bonus-row__btn:hover,
 .btn-group > .top-casinos__btn:hover,
 .btn-group > .hero-review__btn:hover,
+.btn-group > .btn-bd:hover,
 .btn-group > .btn:focus,
 .btn-group > .btn-blur:focus,
 .btn-group > .cat:focus,
@@ -3432,6 +3437,7 @@ textarea.form-control-lg {
 .btn-group > .bonus-row__btn:focus,
 .btn-group > .top-casinos__btn:focus,
 .btn-group > .hero-review__btn:focus,
+.btn-group > .btn-bd:focus,
 .btn-group > .btn:active,
 .btn-group > .btn-blur:active,
 .btn-group > .cat:active,
@@ -3444,6 +3450,7 @@ textarea.form-control-lg {
 .btn-group > .bonus-row__btn:active,
 .btn-group > .top-casinos__btn:active,
 .btn-group > .hero-review__btn:active,
+.btn-group > .btn-bd:active,
 .btn-group > .btn.active,
 .btn-group > .active.btn-blur,
 .btn-group > .active.cat,
@@ -3456,6 +3463,7 @@ textarea.form-control-lg {
 .btn-group > .active.bonus-row__btn,
 .btn-group > .active.top-casinos__btn,
 .btn-group > .active.hero-review__btn,
+.btn-group > .active.btn-bd,
 .btn-group-vertical > .btn-check:checked + .btn,
 .btn-group-vertical > .btn-check:checked + .btn-blur,
 .btn-group-vertical > .btn-check:checked + .cat,
@@ -3468,6 +3476,7 @@ textarea.form-control-lg {
 .btn-group-vertical > .btn-check:checked + .bonus-row__btn,
 .btn-group-vertical > .btn-check:checked + .top-casinos__btn,
 .btn-group-vertical > .btn-check:checked + .hero-review__btn,
+.btn-group-vertical > .btn-check:checked + .btn-bd,
 .btn-group-vertical > .btn-check:focus + .btn,
 .btn-group-vertical > .btn-check:focus + .btn-blur,
 .btn-group-vertical > .btn-check:focus + .cat,
@@ -3480,6 +3489,7 @@ textarea.form-control-lg {
 .btn-group-vertical > .btn-check:focus + .bonus-row__btn,
 .btn-group-vertical > .btn-check:focus + .top-casinos__btn,
 .btn-group-vertical > .btn-check:focus + .hero-review__btn,
+.btn-group-vertical > .btn-check:focus + .btn-bd,
 .btn-group-vertical > .btn:hover,
 .btn-group-vertical > .btn-blur:hover,
 .btn-group-vertical > .cat:hover,
@@ -3492,6 +3502,7 @@ textarea.form-control-lg {
 .btn-group-vertical > .bonus-row__btn:hover,
 .btn-group-vertical > .top-casinos__btn:hover,
 .btn-group-vertical > .hero-review__btn:hover,
+.btn-group-vertical > .btn-bd:hover,
 .btn-group-vertical > .btn:focus,
 .btn-group-vertical > .btn-blur:focus,
 .btn-group-vertical > .cat:focus,
@@ -3504,6 +3515,7 @@ textarea.form-control-lg {
 .btn-group-vertical > .bonus-row__btn:focus,
 .btn-group-vertical > .top-casinos__btn:focus,
 .btn-group-vertical > .hero-review__btn:focus,
+.btn-group-vertical > .btn-bd:focus,
 .btn-group-vertical > .btn:active,
 .btn-group-vertical > .btn-blur:active,
 .btn-group-vertical > .cat:active,
@@ -3516,6 +3528,7 @@ textarea.form-control-lg {
 .btn-group-vertical > .bonus-row__btn:active,
 .btn-group-vertical > .top-casinos__btn:active,
 .btn-group-vertical > .hero-review__btn:active,
+.btn-group-vertical > .btn-bd:active,
 .btn-group-vertical > .btn.active,
 .btn-group-vertical > .active.btn-blur,
 .btn-group-vertical > .active.cat,
@@ -3527,7 +3540,8 @@ textarea.form-control-lg {
 .btn-group-vertical > .active.bonus-banner__btn,
 .btn-group-vertical > .active.bonus-row__btn,
 .btn-group-vertical > .active.top-casinos__btn,
-.btn-group-vertical > .active.hero-review__btn {
+.btn-group-vertical > .active.hero-review__btn,
+.btn-group-vertical > .active.btn-bd {
   z-index: 1;
 }
 
@@ -3540,11 +3554,11 @@ textarea.form-control-lg {
   width: auto;
 }
 
-.btn-group > .btn:not(:first-child), .btn-group > .btn-blur:not(:first-child), .btn-group > .cat:not(:first-child), .btn-group > .btn-main:not(:first-child), .btn-group > .casino-top__btn:not(:first-child), .btn-group > .form__btn:not(:first-child), .btn-group > .table-review__btn:not(:first-child), .btn-group > .casino__btn:not(:first-child), .btn-group > .bonus-banner__btn:not(:first-child), .btn-group > .bonus-row__btn:not(:first-child), .btn-group > .top-casinos__btn:not(:first-child), .btn-group > .hero-review__btn:not(:first-child),
+.btn-group > .btn:not(:first-child), .btn-group > .btn-blur:not(:first-child), .btn-group > .cat:not(:first-child), .btn-group > .btn-main:not(:first-child), .btn-group > .casino-top__btn:not(:first-child), .btn-group > .form__btn:not(:first-child), .btn-group > .table-review__btn:not(:first-child), .btn-group > .casino__btn:not(:first-child), .btn-group > .bonus-banner__btn:not(:first-child), .btn-group > .bonus-row__btn:not(:first-child), .btn-group > .top-casinos__btn:not(:first-child), .btn-group > .hero-review__btn:not(:first-child), .btn-group > .btn-bd:not(:first-child),
 .btn-group > .btn-group:not(:first-child) {
   margin-left: -1px;
 }
-.btn-group > .btn:not(:last-child):not(.dropdown-toggle), .btn-group > .btn-blur:not(:last-child):not(.dropdown-toggle), .btn-group > .cat:not(:last-child):not(.dropdown-toggle), .btn-group > .btn-main:not(:last-child):not(.dropdown-toggle), .btn-group > .casino-top__btn:not(:last-child):not(.dropdown-toggle), .btn-group > .form__btn:not(:last-child):not(.dropdown-toggle), .btn-group > .table-review__btn:not(:last-child):not(.dropdown-toggle), .btn-group > .casino__btn:not(:last-child):not(.dropdown-toggle), .btn-group > .bonus-banner__btn:not(:last-child):not(.dropdown-toggle), .btn-group > .bonus-row__btn:not(:last-child):not(.dropdown-toggle), .btn-group > .top-casinos__btn:not(:last-child):not(.dropdown-toggle), .btn-group > .hero-review__btn:not(:last-child):not(.dropdown-toggle),
+.btn-group > .btn:not(:last-child):not(.dropdown-toggle), .btn-group > .btn-blur:not(:last-child):not(.dropdown-toggle), .btn-group > .cat:not(:last-child):not(.dropdown-toggle), .btn-group > .btn-main:not(:last-child):not(.dropdown-toggle), .btn-group > .casino-top__btn:not(:last-child):not(.dropdown-toggle), .btn-group > .form__btn:not(:last-child):not(.dropdown-toggle), .btn-group > .table-review__btn:not(:last-child):not(.dropdown-toggle), .btn-group > .casino__btn:not(:last-child):not(.dropdown-toggle), .btn-group > .bonus-banner__btn:not(:last-child):not(.dropdown-toggle), .btn-group > .bonus-row__btn:not(:last-child):not(.dropdown-toggle), .btn-group > .top-casinos__btn:not(:last-child):not(.dropdown-toggle), .btn-group > .hero-review__btn:not(:last-child):not(.dropdown-toggle), .btn-group > .btn-bd:not(:last-child):not(.dropdown-toggle),
 .btn-group > .btn-group:not(:last-child) > .btn,
 .btn-group > .btn-group:not(:last-child) > .btn-blur,
 .btn-group > .btn-group:not(:last-child) > .cat,
@@ -3556,11 +3570,12 @@ textarea.form-control-lg {
 .btn-group > .btn-group:not(:last-child) > .bonus-banner__btn,
 .btn-group > .btn-group:not(:last-child) > .bonus-row__btn,
 .btn-group > .btn-group:not(:last-child) > .top-casinos__btn,
-.btn-group > .btn-group:not(:last-child) > .hero-review__btn {
+.btn-group > .btn-group:not(:last-child) > .hero-review__btn,
+.btn-group > .btn-group:not(:last-child) > .btn-bd {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
-.btn-group > .btn:nth-child(n+3), .btn-group > .btn-blur:nth-child(n+3), .btn-group > .cat:nth-child(n+3), .btn-group > .btn-main:nth-child(n+3), .btn-group > .casino-top__btn:nth-child(n+3), .btn-group > .form__btn:nth-child(n+3), .btn-group > .table-review__btn:nth-child(n+3), .btn-group > .casino__btn:nth-child(n+3), .btn-group > .bonus-banner__btn:nth-child(n+3), .btn-group > .bonus-row__btn:nth-child(n+3), .btn-group > .top-casinos__btn:nth-child(n+3), .btn-group > .hero-review__btn:nth-child(n+3),
+.btn-group > .btn:nth-child(n+3), .btn-group > .btn-blur:nth-child(n+3), .btn-group > .cat:nth-child(n+3), .btn-group > .btn-main:nth-child(n+3), .btn-group > .casino-top__btn:nth-child(n+3), .btn-group > .form__btn:nth-child(n+3), .btn-group > .table-review__btn:nth-child(n+3), .btn-group > .casino__btn:nth-child(n+3), .btn-group > .bonus-banner__btn:nth-child(n+3), .btn-group > .bonus-row__btn:nth-child(n+3), .btn-group > .top-casinos__btn:nth-child(n+3), .btn-group > .hero-review__btn:nth-child(n+3), .btn-group > .btn-bd:nth-child(n+3),
 .btn-group > :not(.btn-check) + .btn,
 .btn-group > :not(.btn-check) + .btn-blur,
 .btn-group > :not(.btn-check) + .cat,
@@ -3573,6 +3588,7 @@ textarea.form-control-lg {
 .btn-group > :not(.btn-check) + .bonus-row__btn,
 .btn-group > :not(.btn-check) + .top-casinos__btn,
 .btn-group > :not(.btn-check) + .hero-review__btn,
+.btn-group > :not(.btn-check) + .btn-bd,
 .btn-group > .btn-group:not(:first-child) > .btn,
 .btn-group > .btn-group:not(:first-child) > .btn-blur,
 .btn-group > .btn-group:not(:first-child) > .cat,
@@ -3584,7 +3600,8 @@ textarea.form-control-lg {
 .btn-group > .btn-group:not(:first-child) > .bonus-banner__btn,
 .btn-group > .btn-group:not(:first-child) > .bonus-row__btn,
 .btn-group > .btn-group:not(:first-child) > .top-casinos__btn,
-.btn-group > .btn-group:not(:first-child) > .hero-review__btn {
+.btn-group > .btn-group:not(:first-child) > .hero-review__btn,
+.btn-group > .btn-group:not(:first-child) > .btn-bd {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -3600,12 +3617,12 @@ textarea.form-control-lg {
   margin-right: 0;
 }
 
-.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, .btn-group-sm > .btn-blur + .dropdown-toggle-split, .btn-group-sm > .cat + .dropdown-toggle-split, .btn-group-sm > .btn-main + .dropdown-toggle-split, .btn-group-sm > .casino-top__btn + .dropdown-toggle-split, .btn-group-sm > .form__btn + .dropdown-toggle-split, .btn-group-sm > .table-review__btn + .dropdown-toggle-split, .btn-group-sm > .casino__btn + .dropdown-toggle-split, .btn-group-sm > .bonus-banner__btn + .dropdown-toggle-split, .btn-group-sm > .bonus-row__btn + .dropdown-toggle-split, .btn-group-sm > .top-casinos__btn + .dropdown-toggle-split, .btn-group-sm > .hero-review__btn + .dropdown-toggle-split {
+.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, .btn-group-sm > .btn-blur + .dropdown-toggle-split, .btn-group-sm > .cat + .dropdown-toggle-split, .btn-group-sm > .btn-main + .dropdown-toggle-split, .btn-group-sm > .casino-top__btn + .dropdown-toggle-split, .btn-group-sm > .form__btn + .dropdown-toggle-split, .btn-group-sm > .table-review__btn + .dropdown-toggle-split, .btn-group-sm > .casino__btn + .dropdown-toggle-split, .btn-group-sm > .bonus-banner__btn + .dropdown-toggle-split, .btn-group-sm > .bonus-row__btn + .dropdown-toggle-split, .btn-group-sm > .top-casinos__btn + .dropdown-toggle-split, .btn-group-sm > .hero-review__btn + .dropdown-toggle-split, .btn-group-sm > .btn-bd + .dropdown-toggle-split {
   padding-right: 0.375rem;
   padding-left: 0.375rem;
 }
 
-.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .btn-group-lg > .btn-blur + .dropdown-toggle-split, .btn-group-lg > .cat + .dropdown-toggle-split, .btn-group-lg > .btn-main + .dropdown-toggle-split, .btn-group-lg > .casino-top__btn + .dropdown-toggle-split, .btn-group-lg > .form__btn + .dropdown-toggle-split, .btn-group-lg > .table-review__btn + .dropdown-toggle-split, .btn-group-lg > .casino__btn + .dropdown-toggle-split, .btn-group-lg > .bonus-banner__btn + .dropdown-toggle-split, .btn-group-lg > .bonus-row__btn + .dropdown-toggle-split, .btn-group-lg > .top-casinos__btn + .dropdown-toggle-split, .btn-group-lg > .hero-review__btn + .dropdown-toggle-split {
+.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .btn-group-lg > .btn-blur + .dropdown-toggle-split, .btn-group-lg > .cat + .dropdown-toggle-split, .btn-group-lg > .btn-main + .dropdown-toggle-split, .btn-group-lg > .casino-top__btn + .dropdown-toggle-split, .btn-group-lg > .form__btn + .dropdown-toggle-split, .btn-group-lg > .table-review__btn + .dropdown-toggle-split, .btn-group-lg > .casino__btn + .dropdown-toggle-split, .btn-group-lg > .bonus-banner__btn + .dropdown-toggle-split, .btn-group-lg > .bonus-row__btn + .dropdown-toggle-split, .btn-group-lg > .top-casinos__btn + .dropdown-toggle-split, .btn-group-lg > .hero-review__btn + .dropdown-toggle-split, .btn-group-lg > .btn-bd + .dropdown-toggle-split {
   padding-right: 0.75rem;
   padding-left: 0.75rem;
 }
@@ -3615,15 +3632,15 @@ textarea.form-control-lg {
   align-items: flex-start;
   justify-content: center;
 }
-.btn-group-vertical > .btn, .btn-group-vertical > .btn-blur, .btn-group-vertical > .cat, .btn-group-vertical > .btn-main, .btn-group-vertical > .casino-top__btn, .btn-group-vertical > .form__btn, .btn-group-vertical > .table-review__btn, .btn-group-vertical > .casino__btn, .btn-group-vertical > .bonus-banner__btn, .btn-group-vertical > .bonus-row__btn, .btn-group-vertical > .top-casinos__btn, .btn-group-vertical > .hero-review__btn,
+.btn-group-vertical > .btn, .btn-group-vertical > .btn-blur, .btn-group-vertical > .cat, .btn-group-vertical > .btn-main, .btn-group-vertical > .casino-top__btn, .btn-group-vertical > .form__btn, .btn-group-vertical > .table-review__btn, .btn-group-vertical > .casino__btn, .btn-group-vertical > .bonus-banner__btn, .btn-group-vertical > .bonus-row__btn, .btn-group-vertical > .top-casinos__btn, .btn-group-vertical > .hero-review__btn, .btn-group-vertical > .btn-bd,
 .btn-group-vertical > .btn-group {
   width: 100%;
 }
-.btn-group-vertical > .btn:not(:first-child), .btn-group-vertical > .btn-blur:not(:first-child), .btn-group-vertical > .cat:not(:first-child), .btn-group-vertical > .btn-main:not(:first-child), .btn-group-vertical > .casino-top__btn:not(:first-child), .btn-group-vertical > .form__btn:not(:first-child), .btn-group-vertical > .table-review__btn:not(:first-child), .btn-group-vertical > .casino__btn:not(:first-child), .btn-group-vertical > .bonus-banner__btn:not(:first-child), .btn-group-vertical > .bonus-row__btn:not(:first-child), .btn-group-vertical > .top-casinos__btn:not(:first-child), .btn-group-vertical > .hero-review__btn:not(:first-child),
+.btn-group-vertical > .btn:not(:first-child), .btn-group-vertical > .btn-blur:not(:first-child), .btn-group-vertical > .cat:not(:first-child), .btn-group-vertical > .btn-main:not(:first-child), .btn-group-vertical > .casino-top__btn:not(:first-child), .btn-group-vertical > .form__btn:not(:first-child), .btn-group-vertical > .table-review__btn:not(:first-child), .btn-group-vertical > .casino__btn:not(:first-child), .btn-group-vertical > .bonus-banner__btn:not(:first-child), .btn-group-vertical > .bonus-row__btn:not(:first-child), .btn-group-vertical > .top-casinos__btn:not(:first-child), .btn-group-vertical > .hero-review__btn:not(:first-child), .btn-group-vertical > .btn-bd:not(:first-child),
 .btn-group-vertical > .btn-group:not(:first-child) {
   margin-top: -1px;
 }
-.btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .btn-blur:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .cat:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .btn-main:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .casino-top__btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .form__btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .table-review__btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .casino__btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .bonus-banner__btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .bonus-row__btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .top-casinos__btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .hero-review__btn:not(:last-child):not(.dropdown-toggle),
+.btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .btn-blur:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .cat:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .btn-main:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .casino-top__btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .form__btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .table-review__btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .casino__btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .bonus-banner__btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .bonus-row__btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .top-casinos__btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .hero-review__btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .btn-bd:not(:last-child):not(.dropdown-toggle),
 .btn-group-vertical > .btn-group:not(:last-child) > .btn,
 .btn-group-vertical > .btn-group:not(:last-child) > .btn-blur,
 .btn-group-vertical > .btn-group:not(:last-child) > .cat,
@@ -3635,11 +3652,12 @@ textarea.form-control-lg {
 .btn-group-vertical > .btn-group:not(:last-child) > .bonus-banner__btn,
 .btn-group-vertical > .btn-group:not(:last-child) > .bonus-row__btn,
 .btn-group-vertical > .btn-group:not(:last-child) > .top-casinos__btn,
-.btn-group-vertical > .btn-group:not(:last-child) > .hero-review__btn {
+.btn-group-vertical > .btn-group:not(:last-child) > .hero-review__btn,
+.btn-group-vertical > .btn-group:not(:last-child) > .btn-bd {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
-.btn-group-vertical > .btn ~ .btn, .btn-group-vertical > .btn-blur ~ .btn, .btn-group-vertical > .cat ~ .btn, .btn-group-vertical > .btn-main ~ .btn, .btn-group-vertical > .casino-top__btn ~ .btn, .btn-group-vertical > .form__btn ~ .btn, .btn-group-vertical > .table-review__btn ~ .btn, .btn-group-vertical > .casino__btn ~ .btn, .btn-group-vertical > .bonus-banner__btn ~ .btn, .btn-group-vertical > .bonus-row__btn ~ .btn, .btn-group-vertical > .top-casinos__btn ~ .btn, .btn-group-vertical > .hero-review__btn ~ .btn, .btn-group-vertical > .btn ~ .btn-blur, .btn-group-vertical > .btn ~ .cat, .btn-group-vertical > .btn-blur ~ .btn-blur, .btn-group-vertical > .cat ~ .btn-blur, .btn-group-vertical > .btn-blur ~ .cat, .btn-group-vertical > .cat ~ .cat, .btn-group-vertical > .btn-main ~ .btn-blur, .btn-group-vertical > .casino-top__btn ~ .btn-blur, .btn-group-vertical > .form__btn ~ .btn-blur, .btn-group-vertical > .table-review__btn ~ .btn-blur, .btn-group-vertical > .casino__btn ~ .btn-blur, .btn-group-vertical > .bonus-banner__btn ~ .btn-blur, .btn-group-vertical > .bonus-row__btn ~ .btn-blur, .btn-group-vertical > .top-casinos__btn ~ .btn-blur, .btn-group-vertical > .hero-review__btn ~ .btn-blur, .btn-group-vertical > .btn-main ~ .cat, .btn-group-vertical > .casino-top__btn ~ .cat, .btn-group-vertical > .form__btn ~ .cat, .btn-group-vertical > .table-review__btn ~ .cat, .btn-group-vertical > .casino__btn ~ .cat, .btn-group-vertical > .bonus-banner__btn ~ .cat, .btn-group-vertical > .bonus-row__btn ~ .cat, .btn-group-vertical > .top-casinos__btn ~ .cat, .btn-group-vertical > .hero-review__btn ~ .cat, .btn-group-vertical > .btn ~ .btn-main, .btn-group-vertical > .btn ~ .casino-top__btn, .btn-group-vertical > .btn ~ .form__btn, .btn-group-vertical > .btn ~ .table-review__btn, .btn-group-vertical > .btn ~ .casino__btn, .btn-group-vertical > .btn ~ .bonus-banner__btn, .btn-group-vertical > .btn ~ .bonus-row__btn, .btn-group-vertical > .btn ~ .top-casinos__btn, .btn-group-vertical > .btn ~ .hero-review__btn, .btn-group-vertical > .btn-blur ~ .btn-main, .btn-group-vertical > .btn-blur ~ .casino-top__btn, .btn-group-vertical > .btn-blur ~ .form__btn, .btn-group-vertical > .btn-blur ~ .table-review__btn, .btn-group-vertical > .btn-blur ~ .casino__btn, .btn-group-vertical > .btn-blur ~ .bonus-banner__btn, .btn-group-vertical > .btn-blur ~ .bonus-row__btn, .btn-group-vertical > .btn-blur ~ .top-casinos__btn, .btn-group-vertical > .btn-blur ~ .hero-review__btn, .btn-group-vertical > .cat ~ .btn-main, .btn-group-vertical > .cat ~ .casino-top__btn, .btn-group-vertical > .cat ~ .form__btn, .btn-group-vertical > .cat ~ .table-review__btn, .btn-group-vertical > .cat ~ .casino__btn, .btn-group-vertical > .cat ~ .bonus-banner__btn, .btn-group-vertical > .cat ~ .bonus-row__btn, .btn-group-vertical > .cat ~ .top-casinos__btn, .btn-group-vertical > .cat ~ .hero-review__btn, .btn-group-vertical > .btn-main ~ .btn-main, .btn-group-vertical > .casino-top__btn ~ .btn-main, .btn-group-vertical > .btn-main ~ .casino-top__btn, .btn-group-vertical > .casino-top__btn ~ .casino-top__btn, .btn-group-vertical > .form__btn ~ .btn-main, .btn-group-vertical > .form__btn ~ .casino-top__btn, .btn-group-vertical > .btn-main ~ .form__btn, .btn-group-vertical > .casino-top__btn ~ .form__btn, .btn-group-vertical > .form__btn ~ .form__btn, .btn-group-vertical > .table-review__btn ~ .btn-main, .btn-group-vertical > .table-review__btn ~ .casino-top__btn, .btn-group-vertical > .table-review__btn ~ .form__btn, .btn-group-vertical > .btn-main ~ .table-review__btn, .btn-group-vertical > .casino-top__btn ~ .table-review__btn, .btn-group-vertical > .form__btn ~ .table-review__btn, .btn-group-vertical > .table-review__btn ~ .table-review__btn, .btn-group-vertical > .casino__btn ~ .btn-main, .btn-group-vertical > .casino__btn ~ .casino-top__btn, .btn-group-vertical > .casino__btn ~ .form__btn, .btn-group-vertical > .casino__btn ~ .table-review__btn, .btn-group-vertical > .btn-main ~ .casino__btn, .btn-group-vertical > .casino-top__btn ~ .casino__btn, .btn-group-vertical > .form__btn ~ .casino__btn, .btn-group-vertical > .table-review__btn ~ .casino__btn, .btn-group-vertical > .casino__btn ~ .casino__btn, .btn-group-vertical > .bonus-banner__btn ~ .btn-main, .btn-group-vertical > .bonus-banner__btn ~ .casino-top__btn, .btn-group-vertical > .bonus-banner__btn ~ .form__btn, .btn-group-vertical > .bonus-banner__btn ~ .table-review__btn, .btn-group-vertical > .bonus-banner__btn ~ .casino__btn, .btn-group-vertical > .btn-main ~ .bonus-banner__btn, .btn-group-vertical > .casino-top__btn ~ .bonus-banner__btn, .btn-group-vertical > .form__btn ~ .bonus-banner__btn, .btn-group-vertical > .table-review__btn ~ .bonus-banner__btn, .btn-group-vertical > .casino__btn ~ .bonus-banner__btn, .btn-group-vertical > .bonus-banner__btn ~ .bonus-banner__btn, .btn-group-vertical > .bonus-row__btn ~ .btn-main, .btn-group-vertical > .bonus-row__btn ~ .casino-top__btn, .btn-group-vertical > .bonus-row__btn ~ .form__btn, .btn-group-vertical > .bonus-row__btn ~ .table-review__btn, .btn-group-vertical > .bonus-row__btn ~ .casino__btn, .btn-group-vertical > .bonus-row__btn ~ .bonus-banner__btn, .btn-group-vertical > .btn-main ~ .bonus-row__btn, .btn-group-vertical > .casino-top__btn ~ .bonus-row__btn, .btn-group-vertical > .form__btn ~ .bonus-row__btn, .btn-group-vertical > .table-review__btn ~ .bonus-row__btn, .btn-group-vertical > .casino__btn ~ .bonus-row__btn, .btn-group-vertical > .bonus-banner__btn ~ .bonus-row__btn, .btn-group-vertical > .bonus-row__btn ~ .bonus-row__btn, .btn-group-vertical > .top-casinos__btn ~ .btn-main, .btn-group-vertical > .top-casinos__btn ~ .casino-top__btn, .btn-group-vertical > .top-casinos__btn ~ .form__btn, .btn-group-vertical > .top-casinos__btn ~ .table-review__btn, .btn-group-vertical > .top-casinos__btn ~ .casino__btn, .btn-group-vertical > .top-casinos__btn ~ .bonus-banner__btn, .btn-group-vertical > .top-casinos__btn ~ .bonus-row__btn, .btn-group-vertical > .btn-main ~ .top-casinos__btn, .btn-group-vertical > .casino-top__btn ~ .top-casinos__btn, .btn-group-vertical > .form__btn ~ .top-casinos__btn, .btn-group-vertical > .table-review__btn ~ .top-casinos__btn, .btn-group-vertical > .casino__btn ~ .top-casinos__btn, .btn-group-vertical > .bonus-banner__btn ~ .top-casinos__btn, .btn-group-vertical > .bonus-row__btn ~ .top-casinos__btn, .btn-group-vertical > .top-casinos__btn ~ .top-casinos__btn, .btn-group-vertical > .hero-review__btn ~ .btn-main, .btn-group-vertical > .hero-review__btn ~ .casino-top__btn, .btn-group-vertical > .hero-review__btn ~ .form__btn, .btn-group-vertical > .hero-review__btn ~ .table-review__btn, .btn-group-vertical > .hero-review__btn ~ .casino__btn, .btn-group-vertical > .hero-review__btn ~ .bonus-banner__btn, .btn-group-vertical > .hero-review__btn ~ .bonus-row__btn, .btn-group-vertical > .hero-review__btn ~ .top-casinos__btn, .btn-group-vertical > .btn-main ~ .hero-review__btn, .btn-group-vertical > .casino-top__btn ~ .hero-review__btn, .btn-group-vertical > .form__btn ~ .hero-review__btn, .btn-group-vertical > .table-review__btn ~ .hero-review__btn, .btn-group-vertical > .casino__btn ~ .hero-review__btn, .btn-group-vertical > .bonus-banner__btn ~ .hero-review__btn, .btn-group-vertical > .bonus-row__btn ~ .hero-review__btn, .btn-group-vertical > .top-casinos__btn ~ .hero-review__btn, .btn-group-vertical > .hero-review__btn ~ .hero-review__btn,
+.btn-group-vertical > .btn ~ .btn, .btn-group-vertical > .btn-blur ~ .btn, .btn-group-vertical > .cat ~ .btn, .btn-group-vertical > .btn-main ~ .btn, .btn-group-vertical > .casino-top__btn ~ .btn, .btn-group-vertical > .form__btn ~ .btn, .btn-group-vertical > .table-review__btn ~ .btn, .btn-group-vertical > .casino__btn ~ .btn, .btn-group-vertical > .bonus-banner__btn ~ .btn, .btn-group-vertical > .bonus-row__btn ~ .btn, .btn-group-vertical > .top-casinos__btn ~ .btn, .btn-group-vertical > .hero-review__btn ~ .btn, .btn-group-vertical > .btn-bd ~ .btn, .btn-group-vertical > .btn ~ .btn-blur, .btn-group-vertical > .btn ~ .cat, .btn-group-vertical > .btn-blur ~ .btn-blur, .btn-group-vertical > .cat ~ .btn-blur, .btn-group-vertical > .btn-blur ~ .cat, .btn-group-vertical > .cat ~ .cat, .btn-group-vertical > .btn-main ~ .btn-blur, .btn-group-vertical > .casino-top__btn ~ .btn-blur, .btn-group-vertical > .form__btn ~ .btn-blur, .btn-group-vertical > .table-review__btn ~ .btn-blur, .btn-group-vertical > .casino__btn ~ .btn-blur, .btn-group-vertical > .bonus-banner__btn ~ .btn-blur, .btn-group-vertical > .bonus-row__btn ~ .btn-blur, .btn-group-vertical > .top-casinos__btn ~ .btn-blur, .btn-group-vertical > .hero-review__btn ~ .btn-blur, .btn-group-vertical > .btn-main ~ .cat, .btn-group-vertical > .casino-top__btn ~ .cat, .btn-group-vertical > .form__btn ~ .cat, .btn-group-vertical > .table-review__btn ~ .cat, .btn-group-vertical > .casino__btn ~ .cat, .btn-group-vertical > .bonus-banner__btn ~ .cat, .btn-group-vertical > .bonus-row__btn ~ .cat, .btn-group-vertical > .top-casinos__btn ~ .cat, .btn-group-vertical > .hero-review__btn ~ .cat, .btn-group-vertical > .btn-bd ~ .btn-blur, .btn-group-vertical > .btn-bd ~ .cat, .btn-group-vertical > .btn ~ .btn-main, .btn-group-vertical > .btn ~ .casino-top__btn, .btn-group-vertical > .btn ~ .form__btn, .btn-group-vertical > .btn ~ .table-review__btn, .btn-group-vertical > .btn ~ .casino__btn, .btn-group-vertical > .btn ~ .bonus-banner__btn, .btn-group-vertical > .btn ~ .bonus-row__btn, .btn-group-vertical > .btn ~ .top-casinos__btn, .btn-group-vertical > .btn ~ .hero-review__btn, .btn-group-vertical > .btn-blur ~ .btn-main, .btn-group-vertical > .btn-blur ~ .casino-top__btn, .btn-group-vertical > .btn-blur ~ .form__btn, .btn-group-vertical > .btn-blur ~ .table-review__btn, .btn-group-vertical > .btn-blur ~ .casino__btn, .btn-group-vertical > .btn-blur ~ .bonus-banner__btn, .btn-group-vertical > .btn-blur ~ .bonus-row__btn, .btn-group-vertical > .btn-blur ~ .top-casinos__btn, .btn-group-vertical > .btn-blur ~ .hero-review__btn, .btn-group-vertical > .cat ~ .btn-main, .btn-group-vertical > .cat ~ .casino-top__btn, .btn-group-vertical > .cat ~ .form__btn, .btn-group-vertical > .cat ~ .table-review__btn, .btn-group-vertical > .cat ~ .casino__btn, .btn-group-vertical > .cat ~ .bonus-banner__btn, .btn-group-vertical > .cat ~ .bonus-row__btn, .btn-group-vertical > .cat ~ .top-casinos__btn, .btn-group-vertical > .cat ~ .hero-review__btn, .btn-group-vertical > .btn-main ~ .btn-main, .btn-group-vertical > .casino-top__btn ~ .btn-main, .btn-group-vertical > .btn-main ~ .casino-top__btn, .btn-group-vertical > .casino-top__btn ~ .casino-top__btn, .btn-group-vertical > .form__btn ~ .btn-main, .btn-group-vertical > .form__btn ~ .casino-top__btn, .btn-group-vertical > .btn-main ~ .form__btn, .btn-group-vertical > .casino-top__btn ~ .form__btn, .btn-group-vertical > .form__btn ~ .form__btn, .btn-group-vertical > .table-review__btn ~ .btn-main, .btn-group-vertical > .table-review__btn ~ .casino-top__btn, .btn-group-vertical > .table-review__btn ~ .form__btn, .btn-group-vertical > .btn-main ~ .table-review__btn, .btn-group-vertical > .casino-top__btn ~ .table-review__btn, .btn-group-vertical > .form__btn ~ .table-review__btn, .btn-group-vertical > .table-review__btn ~ .table-review__btn, .btn-group-vertical > .casino__btn ~ .btn-main, .btn-group-vertical > .casino__btn ~ .casino-top__btn, .btn-group-vertical > .casino__btn ~ .form__btn, .btn-group-vertical > .casino__btn ~ .table-review__btn, .btn-group-vertical > .btn-main ~ .casino__btn, .btn-group-vertical > .casino-top__btn ~ .casino__btn, .btn-group-vertical > .form__btn ~ .casino__btn, .btn-group-vertical > .table-review__btn ~ .casino__btn, .btn-group-vertical > .casino__btn ~ .casino__btn, .btn-group-vertical > .bonus-banner__btn ~ .btn-main, .btn-group-vertical > .bonus-banner__btn ~ .casino-top__btn, .btn-group-vertical > .bonus-banner__btn ~ .form__btn, .btn-group-vertical > .bonus-banner__btn ~ .table-review__btn, .btn-group-vertical > .bonus-banner__btn ~ .casino__btn, .btn-group-vertical > .btn-main ~ .bonus-banner__btn, .btn-group-vertical > .casino-top__btn ~ .bonus-banner__btn, .btn-group-vertical > .form__btn ~ .bonus-banner__btn, .btn-group-vertical > .table-review__btn ~ .bonus-banner__btn, .btn-group-vertical > .casino__btn ~ .bonus-banner__btn, .btn-group-vertical > .bonus-banner__btn ~ .bonus-banner__btn, .btn-group-vertical > .bonus-row__btn ~ .btn-main, .btn-group-vertical > .bonus-row__btn ~ .casino-top__btn, .btn-group-vertical > .bonus-row__btn ~ .form__btn, .btn-group-vertical > .bonus-row__btn ~ .table-review__btn, .btn-group-vertical > .bonus-row__btn ~ .casino__btn, .btn-group-vertical > .bonus-row__btn ~ .bonus-banner__btn, .btn-group-vertical > .btn-main ~ .bonus-row__btn, .btn-group-vertical > .casino-top__btn ~ .bonus-row__btn, .btn-group-vertical > .form__btn ~ .bonus-row__btn, .btn-group-vertical > .table-review__btn ~ .bonus-row__btn, .btn-group-vertical > .casino__btn ~ .bonus-row__btn, .btn-group-vertical > .bonus-banner__btn ~ .bonus-row__btn, .btn-group-vertical > .bonus-row__btn ~ .bonus-row__btn, .btn-group-vertical > .top-casinos__btn ~ .btn-main, .btn-group-vertical > .top-casinos__btn ~ .casino-top__btn, .btn-group-vertical > .top-casinos__btn ~ .form__btn, .btn-group-vertical > .top-casinos__btn ~ .table-review__btn, .btn-group-vertical > .top-casinos__btn ~ .casino__btn, .btn-group-vertical > .top-casinos__btn ~ .bonus-banner__btn, .btn-group-vertical > .top-casinos__btn ~ .bonus-row__btn, .btn-group-vertical > .btn-main ~ .top-casinos__btn, .btn-group-vertical > .casino-top__btn ~ .top-casinos__btn, .btn-group-vertical > .form__btn ~ .top-casinos__btn, .btn-group-vertical > .table-review__btn ~ .top-casinos__btn, .btn-group-vertical > .casino__btn ~ .top-casinos__btn, .btn-group-vertical > .bonus-banner__btn ~ .top-casinos__btn, .btn-group-vertical > .bonus-row__btn ~ .top-casinos__btn, .btn-group-vertical > .top-casinos__btn ~ .top-casinos__btn, .btn-group-vertical > .hero-review__btn ~ .btn-main, .btn-group-vertical > .hero-review__btn ~ .casino-top__btn, .btn-group-vertical > .hero-review__btn ~ .form__btn, .btn-group-vertical > .hero-review__btn ~ .table-review__btn, .btn-group-vertical > .hero-review__btn ~ .casino__btn, .btn-group-vertical > .hero-review__btn ~ .bonus-banner__btn, .btn-group-vertical > .hero-review__btn ~ .bonus-row__btn, .btn-group-vertical > .hero-review__btn ~ .top-casinos__btn, .btn-group-vertical > .btn-main ~ .hero-review__btn, .btn-group-vertical > .casino-top__btn ~ .hero-review__btn, .btn-group-vertical > .form__btn ~ .hero-review__btn, .btn-group-vertical > .table-review__btn ~ .hero-review__btn, .btn-group-vertical > .casino__btn ~ .hero-review__btn, .btn-group-vertical > .bonus-banner__btn ~ .hero-review__btn, .btn-group-vertical > .bonus-row__btn ~ .hero-review__btn, .btn-group-vertical > .top-casinos__btn ~ .hero-review__btn, .btn-group-vertical > .hero-review__btn ~ .hero-review__btn, .btn-group-vertical > .btn-bd ~ .btn-main, .btn-group-vertical > .btn-bd ~ .casino-top__btn, .btn-group-vertical > .btn-bd ~ .form__btn, .btn-group-vertical > .btn-bd ~ .table-review__btn, .btn-group-vertical > .btn-bd ~ .casino__btn, .btn-group-vertical > .btn-bd ~ .bonus-banner__btn, .btn-group-vertical > .btn-bd ~ .bonus-row__btn, .btn-group-vertical > .btn-bd ~ .top-casinos__btn, .btn-group-vertical > .btn-bd ~ .hero-review__btn, .btn-group-vertical > .btn ~ .btn-bd, .btn-group-vertical > .btn-blur ~ .btn-bd, .btn-group-vertical > .cat ~ .btn-bd, .btn-group-vertical > .btn-main ~ .btn-bd, .btn-group-vertical > .casino-top__btn ~ .btn-bd, .btn-group-vertical > .form__btn ~ .btn-bd, .btn-group-vertical > .table-review__btn ~ .btn-bd, .btn-group-vertical > .casino__btn ~ .btn-bd, .btn-group-vertical > .bonus-banner__btn ~ .btn-bd, .btn-group-vertical > .bonus-row__btn ~ .btn-bd, .btn-group-vertical > .top-casinos__btn ~ .btn-bd, .btn-group-vertical > .hero-review__btn ~ .btn-bd, .btn-group-vertical > .btn-bd ~ .btn-bd,
 .btn-group-vertical > .btn-group:not(:first-child) > .btn,
 .btn-group-vertical > .btn-group:not(:first-child) > .btn-blur,
 .btn-group-vertical > .btn-group:not(:first-child) > .cat,
@@ -3651,7 +3669,8 @@ textarea.form-control-lg {
 .btn-group-vertical > .btn-group:not(:first-child) > .bonus-banner__btn,
 .btn-group-vertical > .btn-group:not(:first-child) > .bonus-row__btn,
 .btn-group-vertical > .btn-group:not(:first-child) > .top-casinos__btn,
-.btn-group-vertical > .btn-group:not(:first-child) > .hero-review__btn {
+.btn-group-vertical > .btn-group:not(:first-child) > .hero-review__btn,
+.btn-group-vertical > .btn-group:not(:first-child) > .btn-bd {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
@@ -3761,7 +3780,7 @@ textarea.form-control-lg {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
-.navbar > .container, .navbar > .subscribe__inner, .navbar > .toc__inner, .navbar > .bonus-topline,
+.navbar > .container, .navbar > .cookie, .navbar > .subscribe__inner, .navbar > .toc__inner, .navbar > .bonus-topline,
 .navbar > .container-fluid,
 .navbar > .container-sm,
 .navbar > .container-md,
@@ -5901,7 +5920,7 @@ textarea.form-control-lg {
   margin-bottom: auto !important;
 }
 
-.mt-0, .container > :first-child, .bonus-topline > :first-child, .toc__inner > :first-child, .subscribe__inner > :first-child, .page__slider, .page__container > :first-child > :first-child, .page__data > :first-child > :first-child > :first-child, .page__data > :first-child > :first-child, .page__data > :first-child {
+.mt-0, .container > :first-child, .bonus-topline > :first-child, .toc__inner > :first-child, .subscribe__inner > :first-child, .cookie > :first-child, .page__slider, .page__container > :first-child > :first-child, .page__data > :first-child > :first-child > :first-child, .page__data > :first-child > :first-child, .page__data > :first-child {
   margin-top: 0 !important;
 }
 
@@ -9547,7 +9566,7 @@ hgroup svg {
   opacity: 0.65;
 }
 
-.btn, .btn-blur, .cat, .btn-main, .casino-top__btn, .form__btn, .table-review__btn, .casino__btn, .bonus-banner__btn, .bonus-row__btn, .top-casinos__btn, .hero-review__btn {
+.btn, .btn-blur, .cat, .btn-main, .casino-top__btn, .form__btn, .table-review__btn, .casino__btn, .bonus-banner__btn, .bonus-row__btn, .top-casinos__btn, .hero-review__btn, .btn-bd {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9568,13 +9587,27 @@ hgroup svg {
   background-color: #FC4747;
   color: #fff;
 }
-.btn-blur, .cat, .btn-main, .casino-top__btn, .form__btn, .table-review__btn, .casino__btn, .bonus-banner__btn, .bonus-row__btn, .top-casinos__btn, .hero-review__btn {
+.btn-blur, .cat, .btn-main, .casino-top__btn, .form__btn, .table-review__btn, .casino__btn, .bonus-banner__btn, .bonus-row__btn, .top-casinos__btn, .hero-review__btn, .btn-bd {
   min-width: 144px;
   height: 40px;
   border-radius: 8px;
   text-align: center;
   font: 700 0.875rem/1.1428571429 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   transition: all 0.45s ease-in-out;
+}
+.btn-bd {
+  background: transparent;
+  border: 1px solid #B1B5C3;
+  color: #B1B5C3;
+}
+.btn-bd:hover, .btn-bd:active, .btn-bd:focus {
+  color: #3A3F50;
+  border-color: #3A3F50;
+  outline: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 .btn-main, .casino-top__btn, .form__btn, .table-review__btn, .casino__btn, .bonus-banner__btn, .bonus-row__btn, .top-casinos__btn, .hero-review__btn {
   background-color: #FF1A5E;
@@ -9866,7 +9899,7 @@ hgroup svg {
   width: 100%;
   display: none;
 }
-.header-menu__submenu .container, .header-menu__submenu .subscribe__inner, .header-menu__submenu .toc__inner, .header-menu__submenu .bonus-topline {
+.header-menu__submenu .container, .header-menu__submenu .cookie, .header-menu__submenu .subscribe__inner, .header-menu__submenu .toc__inner, .header-menu__submenu .bonus-topline {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -12739,7 +12772,7 @@ blockquote li::before {
 }
 
 .subscribe {
-  padding: var(--gapMd) 0;
+  padding: var(--gapLg) 0;
   background-color: #2C32BF;
   color: #fff;
   text-align: center;
@@ -12844,6 +12877,100 @@ blockquote li::before {
   }
 }
 
+:root {
+  --imgSz: 115px;
+}
+@media only screen and (max-width: 520px) {
+  :root {
+    --imgSz: 65px;
+  }
+}
+
+.cookie {
+  position: fixed;
+  bottom: 16px;
+  left: 0;
+  right: 0;
+  z-index: 1001;
+  width: 90%;
+  margin: auto;
+  padding: var(--gapXs) var(--gap);
+  font: 400 0.875rem/1.4285714286 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  border-radius: 8px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+  color: #3A3F50;
+}
+.cookie__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  -moz-column-gap: var(--gap);
+       column-gap: var(--gap);
+  row-gap: var(--gap);
+}
+.cookie__img {
+  position: relative;
+  max-width: var(--imgSz);
+}
+.cookie__img * {
+  display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: auto;
+  min-width: var(--imgSz);
+  margin: 0 auto;
+}
+.cookie__content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  flex: 1;
+  gap: var(--gapXs);
+}
+.cookie__title {
+  font: 700 1rem/1.5 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: #3A3F50;
+}
+.cookie__cta {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+.cookie-dark {
+  background-color: #4B50C8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.cookie-dark, .cookie-dark * {
+  color: #fff;
+}
+@media only screen and (max-width: 900px) {
+  .cookie__content {
+    align-items: center;
+    text-align: center;
+    flex: 1 0 auto;
+    width: 100%;
+  }
+  .cookie__img {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .cookie__cta {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .cookie [class*=btn] {
+    min-width: 0;
+  }
+}
+
 body {
   background-repeat: no-repeat;
   background-size: cover;
@@ -12862,7 +12989,7 @@ a:hover, a:focus, a:active, a:focus-visible {
   box-shadow: none;
 }
 
-.container, .bonus-topline, .toc__inner, .subscribe__inner {
+.container, .bonus-topline, .toc__inner, .subscribe__inner, .cookie {
   max-width: 1144px;
 }
 
