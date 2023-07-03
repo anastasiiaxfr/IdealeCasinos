@@ -249,7 +249,7 @@
                         <use xlink:href="#heart"></use>
                     </svg>
                 </button>
-                <button class="search">
+                <button class="search__toggle">
                     <svg class="icon" width="20" height="20">
                         <use xlink:href="#search"></use>
                     </svg>
@@ -267,3 +267,5 @@
     </div>
 </header>
 <link rel="stylesheet" href="../lib/swiper/swiper-bundle.css"/>
+<?php include $_SERVER['DOCUMENT_ROOT'] . '/templates/_search.php'; ?>
+

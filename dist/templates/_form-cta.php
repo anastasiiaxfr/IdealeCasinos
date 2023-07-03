@@ -1,4 +1,4 @@
-<section class="">
+<section class="mb-0">
     <div class="form__wrap">
         <div class="form__caption">
             Love to hear from you, Get in touch 👋🏻

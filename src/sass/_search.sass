@@ -1,0 +1,175 @@
+%img
+    display: block
+    +sz(100%, 100%)
+    +ps(absolute, (t, 0), (l, 0))
+    z-index: 0
+    object-fit: cover
+
+    
+.search
+    +ps(fixed, (t, var(--headerH)), (l, 0))
+    z-index: 100500
+    +sz(100%, 100%)
+    height: calc(100% - var(--headerH))
+    padding: var(--gapLg) 0
+    background-color: $violet2
+    color: $white
+    overflow: hidden
+    overflow-y: scroll
+    @extend %scroll
+    display: none
+
+    &__toggle
+        border: none
+        background: transparent
+        color: inherit
+
+    &__inner
+        @extend .container
+        height: 100%
+
+    .tab
+        @extend .btn-blur
+        //border-radius: 20pc
+        font-weight: 500
+        letter-spacing: 0.05em
+        min-width: 0
+        &--active
+            background-color: $white
+            color: $grey2
+            
+        &__item
+            padding: 0
+            background-color: transparent
+            border: none
+
+    h1, h2, h3, h4, h5, h6
+        margin-bottom: var(--gapSm)
+        text-transform: uppercase
+        +ft(16, 16, 700)
+        
+  
+.form-search
+    &__btn
+        background-color: transparent
+        border: none
+        color: inherit
+    &__field
+        +flex(flex, center, flex-start, nowrap)
+        gap: var(--gap)
+    input
+        flex: 1
+        padding: 14px 24px
+        border-radius: $brs1
+        background: transparent
+        border: 1px solid $white
+        color: $white
+
+.search-casinos
+    +flex(flex, flex-start, flex-start, wrap)
+    display: grid
+    grid-template-columns: repeat(auto-fill, minmax(190px,1fr))
+    gap: var(--gap)
+    &-item
+        +flex(inline-flex, center, space-between, nowrap)
+        gap: var(--gapXs)
+        padding: 4px
+        background-color: $violet1
+        color: $white
+        border-radius: $brs1
+        +ft(16, 16, 400)
+        &:hover, &:active, &:focus
+            box-shadow: $bxsd2
+            outline: 5px solid $violet3
+
+        svg
+            margin-right: 8px
+            min-width: 15px
+
+        &__img
+            position: relative
+            width: 100px
+            padding-top: 50px
+            border-radius: $brs1
+            overflow: hidden
+            align-self: flex-start
+            & *
+                @extend %img
+
+$cardSz: 160px
+.search-games
+    +flex(flex, flex-start, flex-start, wrap)
+    display: grid
+    grid-template-columns: repeat(auto-fill, minmax($cardSz, 1fr))
+    gap: var(--gap)
+    &-item
+        position: relative
+        +flex(flex, center, center, nowrap)
+        position: relative
+        padding-top: 100%
+        border-radius: $brs1
+        overflow: hidden
+        &:hover, &:active, &:focus
+            box-shadow: $bxsd2
+            outline: 5px solid $violet3
+        &__img
+            &, & *
+                @extend %img
+        &__title
+            margin-bottom: 10px
+            z-index: 1
+            +ft(12, 14, 700)
+           
+           
+        
+.search-providers
+    +flex(flex, flex-start, flex-start, wrap)
+    gap: var(--gap)
+    &-item
+        position: relative
+        +flex(flex, center, center, nowrap)
+        position: relative
+        padding: 8px 16px
+        height: 40px
+        width: auto
+        border-radius: $brs1
+        background-color: $violet1
+        color: $white
+        overflow: hidden
+        transition: $trs
+
+        &:hover, &:active, &:focus
+            background-color: $pink
+
+.search-articles
+    +flex(flex, flex-start, flex-start, wrap)
+    display: grid
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr))
+    gap: var(--gap)
+    +maw($xs)
+        grid-template-columns: 1fr
+    &-item
+        @extend .search-providers-item
+        flex-wrap: wrap
+        height: auto
+        gap: var(--gap)
+    &__title
+        +ft(12, 12*1.4, 700)
+        flex: 1
+        width: 100%
+    &__read
+        +ft(10, 10, 400)
+        flex: 1 0 auto
+        width: 100%
+
+.search-error
+    text-align: center
+    +flex(flex, center, center, nowrap)
+    &__box
+        text-align: center
+        +flex(flex, center, center, wrap)
+        flex-direction: column
+        gap: var(--gap)
+        & *
+            color: $white
+

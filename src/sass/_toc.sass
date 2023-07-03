@@ -2,7 +2,8 @@
     width: 100%
     position: sticky
     z-index: 1001
-    top: calc(var(--headerH) + var(--topLineH))
+    height: var(--tocH)
+    top: calc(var(--headerH))
     padding: var(--gapXs) 0
     box-shadow: $bxsd3
     background-color: $white
@@ -22,12 +23,13 @@
         &::-webkit-scrollbar 
             display: none
 
-        &::after
-            content: ''
-            +ps(absolute, (t, 0), (r, 0))
-            display: block
-            +sz(10%, 100%)
-            background: linear-gradient(90deg, transparent, $white)
+        +miw($lg)
+            &::after
+                content: ''
+                +ps(absolute, (t, 0), (r, 0))
+                display: block
+                +sz(10%, 100%)
+                background: linear-gradient(90deg, transparent, $white)
 
     & *
         white-space: nowrap

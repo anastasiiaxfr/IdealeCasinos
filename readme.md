@@ -37,36 +37,41 @@
 
 ---
 
-https://ideale-production.up.railway.app/
+/
 
-https://ideale-production.up.railway.app/pages/landing-page.php
+/pages/landing-page.php
 
-https://ideale-production.up.railway.app/pages/casino-review.php
+/pages/casino-review.php
 
-https://ideale-production.up.railway.app/pages/bonus-landing.php
+/pages/bonus-landing.php
 
-https://ideale-production.up.railway.app/pages/game-landing.php
+/pages/game-landing.php
 
-https://ideale-production.up.railway.app/pages/game-review.php
+/pages/game-review.php
 
-https://ideale-production.up.railway.app/pages/game-type-landing.php
+/pages/game-type-landing.php
 
-https://ideale-production.up.railway.app/pages/game-type-landing-sidebar.php
+/pages/game-type-landing-sidebar.php
 
-https://ideale-production.up.railway.app/pages/payment-system.php
+/pages/payment-system.php
 
-https://ideale-production.up.railway.app/pages/payment-system-sidebar.php
+/pages/payment-system-sidebar.php
 
-https://ideale-production.up.railway.app/pages/provider-landing.php
+/pages/provider-landing.php
 
-https://ideale-production.up.railway.app/pages/info-page.php
+/pages/info-page.php
 
-https://ideale-production.up.railway.app/pages/blog.php
+/pages/blog.php
 
-https://ideale-production.up.railway.app/pages/blog-single.php
+/pages/blog-single.php
 
-https://ideale-production.up.railway.app/pages/category.php
+/pages/category.php
 
-https://ideale-production.up.railway.app/pages/author.php
+/pages/author.php
 
-https://ideale-production.up.railway.app/pages/sitemap.php
+/pages/sitemap.php
+
+/pages/404.php
+
+/pages/501.php
+

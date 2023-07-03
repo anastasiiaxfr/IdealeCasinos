@@ -16,9 +16,12 @@
     <main class="page__wrapper">
         <?php include '../templates/_header.php'; ?>
         <div class="breadcrumbs__wrap breadcrumbs-dark">
-            <div class="container">
-                <?php include '../templates/_breadcrumbs.php'; ?>
-            </div>
+        <div class="container">
+            <?php include '../templates/_breadcrumbs.php'; ?>
+        </div>
+        
+
+            
         </div>
 
         <?php
@@ -37,6 +40,7 @@
         <?php $hero_class = "default"; ?>
 
         <?php include '../templates/_hero.php'; ?>
+        <?php include '../templates/_toc.php'; ?>
 
         <?php
         $tabs = array(
