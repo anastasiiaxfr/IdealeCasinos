@@ -1,6 +1,6 @@
 // SWIPER slider
 const swiper = new Swiper(".swiper", {
-  slidesPerView: 4,
+  slidesPerView: 1,
   spaceBetween: 16,
   loop: true,
   breakpoints: {
@@ -60,6 +60,26 @@ const swiper_slide_5 = new Swiper(".slider-5", {
     },
   },
 });
+
+const swiper_slide_4 = new Swiper(".slider-4", {
+    slidesPerView: 5,
+    spaceBetween: 16,
+    loop: false,
+    breakpoints: {
+      0: {
+        slidesPerView: 1.5,
+      },
+      520: {
+        slidesPerView: 2,
+      },
+      640: {
+        slidesPerView: 3,
+      },
+      998: {
+        slidesPerView: 4,
+      },
+    },
+  });
 
 const swiper_slide_3 = new Swiper(".slider-3", {
   slidesPerView: 'auto',

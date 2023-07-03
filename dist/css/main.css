@@ -13215,6 +13215,25 @@ blockquote li::before {
   color: #fff;
 }
 
+.slider__wrap {
+  max-width: 1120px;
+}
+.slider__inner {
+  gap: var(--gap);
+}
+.slider__img {
+  position: relative;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.slider__img * {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+}
+
 body {
   background-repeat: no-repeat;
   background-size: cover;

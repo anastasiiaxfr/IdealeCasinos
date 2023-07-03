@@ -42,25 +42,25 @@
                             🔥 TRENDING
                         </div>
                         <?php foreach ($news as $i => $item) { ?>
-                        <a href="<?php echo $item['url']; ?>" class="blog-demo__item">
-                            <div class="blog-demo__item-title">
-                                <?php echo $item['title']; ?>
-                            </div>
-                            <div class="blog-demo__item-meta">
-                                <div class="blog-demo__date">
-                                <svg class="icon" width="20" height="20">
-                                    <use xlink:href="#calendar"></use>
-                                </svg>
-                                <?php echo $item['published']; ?>
+                            <a href="<?php echo $item['url']; ?>" class="blog-demo__item">
+                                <div class="blog-demo__item-title">
+                                    <?php echo $item['title']; ?>
                                 </div>
-                                <div class="blog-demo__read">
-                                <svg class="icon" width="20" height="20">
-                                    <use xlink:href="#clock"></use>
-                                </svg>
-                                    <?php echo $item['read']; ?>
+                                <div class="blog-demo__item-meta">
+                                    <div class="blog-demo__date">
+                                        <svg class="icon" width="20" height="20">
+                                            <use xlink:href="#calendar"></use>
+                                        </svg>
+                                        <?php echo $item['published']; ?>
+                                    </div>
+                                    <div class="blog-demo__read">
+                                        <svg class="icon" width="20" height="20">
+                                            <use xlink:href="#clock"></use>
+                                        </svg>
+                                        <?php echo $item['read']; ?>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
                         <?php } ?>
                     </div>
 
@@ -74,7 +74,8 @@
                 <section>
                     <?php $blog_title = "Editor Choise"; ?>
                     <?php $blog_class = "slider-3"; ?>
-                    <?php include '../templates/_blogs.php'; ?>                </section>
+                    <?php include '../templates/_blogs.php'; ?> 
+                </section>
 
                 <section>
                     <?php $blog_title = "Category Name"; ?>

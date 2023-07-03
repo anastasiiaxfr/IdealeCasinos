@@ -3,10 +3,12 @@
     array("url" => "#", "cat" => "Category", "img" => "../img/blog/blog-2.jpg", "title" => "Americans Expect a Comfortable Retirement Will Now Cost Them $1.25 MillionThem $1.25 Million", "read" => "5", "date" => "", "author" => "Terry Williams"),
     array("url" => "#", "cat" => "Category", "img" => "../img/blog/blog-3.jpg", "title" => "Americans Expect a Comfortable Retirement Will MillionThem $1.25 Million", "read" => "5", "date" => "", "author" => "Terry Williams"),
     array("url" => "#", "cat" => "Category", "img" => "../img/blog/blog-4.jpg", "title" => "Americans Expect a Comfortable Retirement Will Now Cost Them $1.25 MillionThem $1.25 Million", "read" => "5", "date" => "", "author" => "Terry Williams"),
+    array("url" => "#", "cat" => "Category", "img" => "../img/blog/blog-4.jpg", "title" => "Americans Expect a Comfortable Retirement Will Now Cost Them $1.25 MillionThem $1.25 Million", "read" => "5", "date" => "", "author" => "Terry Williams"),
+    array("url" => "#", "cat" => "Category", "img" => "../img/blog/blog-4.jpg", "title" => "Americans Expect a Comfortable Retirement Will Now Cost Them $1.25 MillionThem $1.25 Million", "read" => "5", "date" => "", "author" => "Terry Williams"),
 )
 ?>
 <div>
-<?php if (isset( $blog_title)) { ?>
+<?php if (isset($blog_title)) {?>
 <hgroup>
     <h2>
         <?php echo $blog_title; ?>
@@ -15,13 +17,14 @@
         <use xlink:href="#arr-rt"></use>
     </svg>
 </hgroup>
-<?php } ;?>
+<?php }
+;?>
 
-<div class="blog__wrap swiper <?php if (isset($blog_class)) { echo $blog_class ; } else { echo 'swiper-blog'; } ?>">
+<div class="blog__wrap swiper <?php if (isset($blog_class)) {echo $blog_class;} else {echo 'swiper-blog';}?>">
     <div class="swiper-wrapper">
-        <?php foreach ($blogs as $i => $item) { ?>
+        <?php foreach ($blogs as $i => $item) {?>
             <?php include '_blog.php';?>
-        <?php } ?>
+        <?php }?>
     </div>
-    </div>
+</div>
 </div>
