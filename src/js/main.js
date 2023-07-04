@@ -198,25 +198,30 @@ search_toggle.addEventListener('click', function(){
 });
 
 //TABS
-const tabs = document.querySelectorAll(".tab");
-const tabs_item = document.querySelectorAll(".tab__item");
+const tabWraps = document.querySelectorAll(".tab__wrap");
 
-tabs[0].classList.add('tab--active');
-tabs_item[0].classList.add('tab__item--active');
+tabWraps.forEach((tabWrap) => {
+  const tabs = tabWrap.querySelectorAll(".tab");
+  const tabsItems = tabWrap.nextElementSibling.querySelectorAll(".tab__item");
 
-for (let i = 0; i < tabs.length; i++) {
-    tabs[i].addEventListener("click", (event) => {
+  tabs[0].classList.add('tab--active');
+  tabsItems[0].classList.add('tab__item--active');
 
-        let tab = event.target.parentElement.children;
-        for (let c = 0; c < tab.length; c++) {
-            tab[c].classList.remove("tab--active");
-        }
-        tabs[i].classList.add("tab--active");
-        let tab_item = event.target.parentElement.nextElementSibling.children;
-        for (let j = 0; j < tab_item.length; j++) {
-            tab_item[j].classList.remove("tab__item--active");
-        }
-        tabs_item[i].classList.add("tab__item--active");
+  tabs.forEach((tab, index) => {
+    tab.addEventListener("click", (event) => {
+      event.preventDefault();
 
+      tabs.forEach((tab) => tab.classList.remove("tab--active"));
+      tabsItems.forEach((item) => item.classList.remove("tab__item--active"));
+
+      tab.classList.add("tab--active");
+      tabsItems[index].classList.add("tab__item--active");
     });
-}
+  });
+});
+
+
+
+
+
+

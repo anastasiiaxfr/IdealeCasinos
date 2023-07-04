@@ -65,7 +65,9 @@
                 </section>
 
                 <section class="page__nav">
-                    <?php include '../templates/_btn-show-more.php'; ?>
+                    <div class="m-0">
+                        <?php include '../templates/_btn-show-more.php'; ?>
+                    </div>
                     <?php include '../templates/_pagination.php'; ?>
                 </section>
 
