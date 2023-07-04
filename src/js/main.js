@@ -197,3 +197,26 @@ search_toggle.addEventListener('click', function(){
     //menu_toggle.classList.toggle('d-none');
 });
 
+//TABS
+const tabs = document.querySelectorAll(".tab");
+const tabs_item = document.querySelectorAll(".tab__item");
+
+tabs[0].classList.add('tab--active');
+tabs_item[0].classList.add('tab__item--active');
+
+for (let i = 0; i < tabs.length; i++) {
+    tabs[i].addEventListener("click", (event) => {
+
+        let tab = event.target.parentElement.children;
+        for (let c = 0; c < tab.length; c++) {
+            tab[c].classList.remove("tab--active");
+        }
+        tabs[i].classList.add("tab--active");
+        let tab_item = event.target.parentElement.nextElementSibling.children;
+        for (let j = 0; j < tab_item.length; j++) {
+            tab_item[j].classList.remove("tab__item--active");
+        }
+        tabs_item[i].classList.add("tab__item--active");
+
+    });
+}

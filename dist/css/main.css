@@ -12704,7 +12704,7 @@ blockquote li::before {
 }
 .bonus-topline__sticky {
   position: sticky;
-  top: calc(var(--headerH) + var(--tocH));
+  top: var(--headerH);
   z-index: 1000;
 }
 .bonus-topline__wrap {
