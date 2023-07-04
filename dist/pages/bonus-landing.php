@@ -20,7 +20,6 @@
                 <?php include '../templates/_breadcrumbs.php'; ?>
             </div>
         </div>
-        <?php include '../templates/_bonus-topline.php'; ?>
 
         <?php
         $title = "Bonuses";
@@ -38,6 +37,8 @@
 
         <?php $hero_class = "default"; ?>
         <?php include '../templates/_hero.php'; ?>
+        <?php include '../templates/_bonus-topline.php'; ?>
+
 
         <?php
         $tabs = array(

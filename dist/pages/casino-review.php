@@ -387,6 +387,11 @@
     <?php include '../templates/_btn-to-top.php';?>
     <?php include '../templates/_footer.php';?>
     <?php include '../templates/_svg.php';?>
-</body>
 
+    <style>
+        .toc {
+            top: calc(var(--headerH) + var(--topLineH));
+        }
+    </style>
+</body>
 </html>

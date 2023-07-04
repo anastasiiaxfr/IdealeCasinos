@@ -58,7 +58,7 @@
             array("title" => "Americans Expect a Comfortable Retirement Will Now Cost Them $1.25 Million", "url" => "#", "read" => "5 min"),
 
         ); ?>
-        <div class="mt-4">
+        <div class="py-4">
             <nav class="tab__wrap">
                 <?php foreach ($tabs as $item) { ?>
                     <button class="tab">

@@ -9878,16 +9878,6 @@ hgroup svg {
     display: none;
   }
 }
-.header-menu::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  right: 0;
-  top: 0;
-  background: linear-gradient(90deg, transparent 85%, #4B50C8);
-}
 .header-menu__item {
   color: #fff;
 }
@@ -12794,18 +12784,6 @@ blockquote li::before {
 .toc__inner::-webkit-scrollbar {
   display: none;
 }
-@media only screen and (min-width: 1200px) {
-  .toc__inner::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: block;
-    width: 10%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, #fff);
-  }
-}
 .toc * {
   white-space: nowrap;
 }
@@ -13096,6 +13074,7 @@ blockquote li::before {
   gap: var(--gap);
 }
 .form-search input {
+  min-width: 0;
   flex: 1;
   padding: 14px 24px;
   border-radius: 8px;

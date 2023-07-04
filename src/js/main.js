@@ -197,6 +197,7 @@ search_toggle.addEventListener('click', function(){
     //menu_toggle.classList.toggle('d-none');
 });
 
+
 //TABS
 const tabWraps = document.querySelectorAll(".tab__wrap");
 
