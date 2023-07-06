@@ -1,0 +1,18 @@
+.logo
+    display: block
+    +sz(132px, 32px)
+    background-image: url('../img/logo.svg')
+    background-repeat: no-repeat
+    background-size: contain
+    &-main
+        @extend .logo
+        background-image: url('../img/logo-blue.svg')
+    &-main-bd
+        @extend .logo
+        background-image: url('../img/logo-blue-bd.svg')
+    &-black
+        @extend .logo
+        background-image: url('../img/logo-dark.svg')
+    &-black-bd
+        @extend .logo
+        background-image: url('../img/logo-dark-bd.svg')

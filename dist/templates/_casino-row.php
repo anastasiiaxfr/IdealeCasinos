@@ -1,5 +1,5 @@
 <figure class="casino">
-    <div class="casino__img">
+    <a class="casino__img" href="#">
         <img src="../img/casinos/justbit.png" alt="ALT">
         <div class="casino__overlay">
             <div class="casino__num">
@@ -11,7 +11,7 @@
                   </svg>
             </div>
         </div>
-    </div>
+    </a>
     <div class="casino__content">
         <div class="casino__list">
             <div class="casino__heading">

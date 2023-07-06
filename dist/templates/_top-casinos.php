@@ -10,14 +10,14 @@
     </div>
 
     <figure class="top-casinos">
-        <div class="top-casinos__img">
+        <a class="top-casinos__img" href="<?php echo $item['review']; ?>">
             <img src="<?php echo $item['img']; ?>" alt="<?php echo $item['title']; ?>">
-        </div>
+        </a>
         <div class="top-casinos__content">
 
             <div class="top-casinos__text">
                 <div class="top-casinos__title">
-                    <?php echo $item['title']; ?>
+                    <?php echo $item['title']; ?> 
                 </div>
                 <?php $rating = $item['rating']; ?>
                 <?php include '../templates/_rating.php'; ?>

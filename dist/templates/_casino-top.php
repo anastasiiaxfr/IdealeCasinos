@@ -7,10 +7,10 @@
             <span> Casino Of The Month </span>
         </div>
         <div class="casino-top">
-            <div class="casino-top__img">
+            <a class="casino-top__img" href="#">
                 <img src="../img/casinos/top-main-casinos/casino-1.jpg" alt="ALT">
                 <img class="casino-top__icon" src="../img/sprite/medal-2.png" alt="ALT" width="48" height="48">
-            </div>
+            </a>
             <div class="casino-top__inner">
                 <div class="casino-top__header">
                     <?php $rating = "5.0";?>
@@ -74,10 +74,10 @@
             <span> Casino Of The Month </span>
         </div>
         <div class="casino-top">
-            <div class="casino-top__img">
+            <a class="casino-top__img" href="#">
                 <img src="../img/casinos/top-main-casinos/casino-2.jpg" alt="ALT">
                 <img class="casino-top__icon" src="../img/sprite/medal-1.png" alt="ALT" width="48" height="48">
-            </div>
+            </a>
             <div class="casino-top__inner">
                 <div class="casino-top__header">
                     <?php $rating = "5.0";?>
@@ -141,10 +141,10 @@
             <span> Casino Of The Month </span>
         </div>
         <div class="casino-top">
-            <div class="casino-top__img">
+            <a class="casino-top__img" href="#">
                 <img src="../img/casinos/top-main-casinos/casino-3.jpg" alt="ALT">
                 <img class="casino-top__icon" src="../img/sprite/medal-3.png" alt="ALT" width="48" height="48">
-            </div>
+            </a>
             <div class="casino-top__inner">
                 <div class="casino-top__header">
                     <?php $rating = "5.0";?>
