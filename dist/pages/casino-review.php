@@ -392,7 +392,7 @@
 
     <style>
         .toc {
-            top: calc(var(--headerH) + var(--topLineH));
+            top: calc(var(--headerH) + var(--topLineH) - 1px);
         }
     </style>
 </body>

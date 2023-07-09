@@ -15,11 +15,8 @@
             <div class="subscribe-form__checkbox">
                 <input type="checkbox" id="email_policy">
                 <label for="email_policy">I am 18+ and I agree to receiving emails on gambling news and offers. By subscribing you verify that you are aware of <a href="#">terms and conditions</a></label>
-
-                
-
+            </div>
         </form>
 
-    </div>
     </div>
 </section>

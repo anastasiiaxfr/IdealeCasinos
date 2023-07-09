@@ -9221,12 +9221,12 @@ body::-webkit-scrollbar-thumb, .drawer__wrap::-webkit-scrollbar-thumb, .search::
   transform: scaleX(1);
 }
 
-.item, .popup-applied, .popup-accept, .popup-age, .popup-want-accept, .popup-success, .casino-top, .blog, .box-card, .faq, .casino, .payment, .bonus-row, .show-more, .quote {
+.item, .review-stat, .review-form, .popup-applied, .popup-accept, .popup-age, .popup-want-accept, .popup-success, .casino-top, .blog, .box-card, .faq, .casino, .payment, .bonus-row, .show-more, .quote {
   background-color: #fff;
   border: 1px solid #E4E5ED;
   border-radius: 8px;
 }
-.item:hover, .popup-applied:hover, .popup-accept:hover, .popup-age:hover, .popup-want-accept:hover, .popup-success:hover, .casino-top:hover, .blog:hover, .box-card:hover, .faq:hover, .casino:hover, .payment:hover, .bonus-row:hover, .show-more:hover, .quote:hover {
+.item:hover, .review-stat:hover, .review-form:hover, .popup-applied:hover, .popup-accept:hover, .popup-age:hover, .popup-want-accept:hover, .popup-success:hover, .casino-top:hover, .blog:hover, .box-card:hover, .faq:hover, .casino:hover, .payment:hover, .bonus-row:hover, .show-more:hover, .quote:hover {
   box-shadow: 0px 40px 64px -32px rgba(15, 15, 15, 0.1);
 }
 
@@ -9360,23 +9360,33 @@ body::-webkit-scrollbar-thumb, .drawer__wrap::-webkit-scrollbar-thumb, .search::
   row-gap: 0;
 }
 
-.breadcrumbs-dark {
-  font: 700 6rem/1 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+.review__title {
+  font: 700 2.0625rem/1.2121212121 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+@media only screen and (max-width: 480px) {
+  .review__title {
+    font: 700 1.75rem/1 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
 }
 
-.popup-want-accept__title, .popup-success__title, .popup-accept__title, .popup-applied__title {
+.review-stat__val, .review-form__title, .popup-want-accept__title, .popup-success__title, .popup-accept__title, .popup-applied__title {
   font: 700 1.75rem/1.1428571429 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+@media only screen and (max-width: 480px) {
+  .review-stat__val, .review-form__title, .popup-want-accept__title, .popup-success__title, .popup-accept__title, .popup-applied__title {
+    font: 700 1.625rem/1 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
 }
 
 .review-comment__title, .popup-applied--sm .popup-applied__title {
   font: 400 1.25rem/1.6 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-.review-comment-item__content, .popup-want-accept, .popup-success, .popup-applied, .popup-accept, .rating--lg b {
+.review-form input:not([type=checkbox]), .review-form textarea, .review-comment-item__content, .popup-want-accept, .popup-success, .popup-applied, .popup-accept, .rating--lg b {
   font: 400 1rem/1.5 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-.review-comment__date, .review-comment-item__footer {
+.stat, .stat td, .review-stat__note, .review-stat__title, .review-form label, .review-comment__date, .review-comment-item__footer {
   font: 400 0.875rem/1.4285714286 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
@@ -9848,6 +9858,101 @@ hgroup svg {
 .share {
   border: none;
   background: transparent;
+}
+
+.review-form__checkbox input, .subscribe-form__checkbox input {
+  padding: 0;
+  width: initial;
+  height: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+.review-form__checkbox input:checked + label:after, .subscribe-form__checkbox input:checked + label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #FF1A5E;
+  border-radius: 50%;
+  line-height: 1;
+}
+.review-form__checkbox label, .subscribe-form__checkbox label {
+  position: relative;
+  cursor: pointer;
+  display: block;
+  flex-direction: column;
+  gap: var(--gapXs);
+  line-height: 1.4;
+  text-align: left;
+  padding-left: 28px;
+}
+.review-form__checkbox label:before, .subscribe-form__checkbox label:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  line-height: 1;
+}
+
+.slider {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 100%;
+  height: 6px;
+  background: #58C27D;
+  border-radius: 6px;
+  outline: none;
+  opacity: 0.7;
+  transition: all 0.45s ease-in-out;
+}
+.slider::-moz-range-thumb {
+  width: 6px;
+  height: 6px;
+  background: #58C27D;
+  cursor: pointer;
+}
+.slider:hover {
+  opacity: 1;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 6px;
+  height: 6px;
+  background: #58C27D;
+  cursor: pointer;
+}
+
+tr:nth-child(2) .slider, tr:nth-child(2) .slider::-webkit-slider-thumb {
+  background-color: #A5DA92;
+}
+
+tr:nth-child(3) .slider, tr:nth-child(3) .slider::-webkit-slider-thumb {
+  background-color: #CFE887;
+}
+
+tr:nth-child(4) .slider, tr:nth-child(4) .slider::-webkit-slider-thumb {
+  background-color: #FFD166;
+}
+
+tr:nth-child(5) .slider, tr:nth-child(5) .slider::-webkit-slider-thumb {
+  background-color: #FC4747;
 }
 
 .header {
@@ -12756,7 +12861,7 @@ blockquote li::before {
 }
 .bonus-topline__sticky {
   position: sticky;
-  top: var(--headerH);
+  top: calc(var(--headerH) - 1px);
   z-index: 1000;
 }
 .bonus-topline__wrap {
@@ -12913,54 +13018,6 @@ blockquote li::before {
   flex: 1;
   border-radius: 8px 0 0 8px;
   color: #3A3F50;
-}
-.subscribe-form__checkbox input {
-  padding: 0;
-  width: initial;
-  height: initial;
-  margin-bottom: 0;
-  display: none;
-  cursor: pointer;
-}
-.subscribe-form__checkbox input:checked + label:after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  width: 10px;
-  height: 10px;
-  background-color: #FF1A5E;
-  border-radius: 50%;
-  line-height: 1;
-}
-.subscribe-form__checkbox label {
-  position: relative;
-  cursor: pointer;
-  display: block;
-  flex-direction: column;
-  gap: var(--gapXs);
-  line-height: 1.4;
-  text-align: left;
-  padding-left: 28px;
-}
-.subscribe-form__checkbox label:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: nowrap;
-  width: 20px;
-  height: 20px;
-  min-width: 20px;
-  cursor: pointer;
-  background-color: transparent;
-  border: 2px solid #fff;
-  border-radius: 50%;
-  line-height: 1;
 }
 @media only screen and (max-width: 480px) {
   .subscribe-form__field {
@@ -13889,7 +13946,7 @@ blockquote li::before {
   display: block;
   flex: 1 0 auto;
   width: 100%;
-  margin-left: 32px;
+  padding-left: 32px;
 }
 .review-comment-item {
   margin: var(--gapSm) auto;
@@ -13941,6 +13998,174 @@ blockquote li::before {
 }
 .review-comment-item__content {
   color: #777E90;
+}
+
+.review-form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: var(--gap);
+  margin: var(--gapSm) auto;
+  padding: var(--gapSm);
+}
+.review-form__group, .review-form__row {
+  width: 100%;
+}
+.review-form__group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap);
+}
+@media only screen and (max-width: 480px) {
+  .review-form__group {
+    grid-template-columns: 1fr;
+  }
+}
+.review-form__row--inline {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  gap: var(--gap);
+}
+.review-form label {
+  color: #3A3F50;
+}
+.review-form input:not([type=checkbox]), .review-form textarea {
+  width: 100%;
+  min-height: 40px;
+  padding: 8px 10px;
+  margin: 4px auto;
+  resize: none;
+  border-radius: 8px;
+  border: 1px solid #E4E5ED;
+  background-color: #F6F7FC;
+  color: #B1B5C3;
+}
+.review-form input:not([type=checkbox]):focus, .review-form input:not([type=checkbox]):active, .review-form input:not([type=checkbox]):hover, .review-form textarea:focus, .review-form textarea:active, .review-form textarea:hover {
+  border-color: #4B50C8;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  box-shadow: none;
+  outline: none;
+}
+.review-form input[type=number] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  width: 70px;
+  height: 40px;
+  margin: 0;
+}
+.review-form__title {
+  color: #3A3F50;
+}
+.review-form__note {
+  font: 400 0.75rem/1 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: #777E90;
+  text-transform: lowercase;
+}
+.review-form__note::first-letter {
+  text-transform: uppercase;
+}
+.review-form__footer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: var(--gap);
+  justify-content: flex-end;
+}
+@media only screen and (max-width: 480px) {
+  .review-form__footer {
+    grid-template-columns: 1fr;
+  }
+}
+.review-form__checkbox label {
+  color: #3A3F50;
+}
+.review-form__checkbox label::before {
+  border-color: #FF1A5E;
+  background-color: #FF1A5E;
+  border-radius: 4px;
+}
+.review-form__checkbox input:checked + label:after {
+  background-color: #fff;
+}
+
+.review__header, .review__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+@media only screen and (max-width: 480px) {
+  .review__header button, .review__footer button {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+.review__title {
+  color: #3A3F50;
+}
+.review-stat {
+  margin: var(--gapSm) auto;
+  padding: var(--gapSm);
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: var(--gap);
+  align-items: center;
+  color: #3A3F50;
+}
+@media only screen and (min-width: 1200px) {
+  .review-stat > div:not(:last-of-type) {
+    border-right: 1px solid #E4E5ED;
+    margin-right: calc(33% - 1px);
+  }
+}
+@media only screen and (max-width: 998px) {
+  .review-stat {
+    grid-template-columns: 1fr 1fr;
+  }
+  .review-stat > div:last-child {
+    grid-column: 1/-1;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .review-stat {
+    grid-template-columns: 1fr;
+  }
+}
+.review-stat__title {
+  font-weight: bold;
+}
+.review-stat__note {
+  color: #777E90;
+}
+.review-stat__val {
+  margin: var(--gapXs) auto;
+}
+
+.stat {
+  margin: 0 auto;
+}
+.stat, .stat td {
+  outline: none;
+  border: none;
+  font-weight: bold;
+}
+.stat td:nth-of-type(1), .stat td:nth-of-type(2) {
+  width: 25px;
+}
+.stat td:nth-of-type(3) {
+  width: calc(100% - 50px);
+}
+.stat td:nth-of-type(4) {
+  width: 25px;
 }
 
 body {

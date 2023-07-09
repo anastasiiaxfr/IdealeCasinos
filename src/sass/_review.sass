@@ -18,7 +18,7 @@
         display: block
         flex: 1 0 auto
         width: 100%
-        margin-left: 32px
+        padding-left: 32px
 
 
     &-item
@@ -62,3 +62,155 @@
         &__content
             @extend %body2
             color: $grey3
+
+
+.review-form
+    +flex(flex, flex-start, center, wrap)
+    flex-direction: column
+    gap: var(--gap)
+    margin: var(--gapSm) auto
+    padding: var(--gapSm)
+    @extend %card
+
+    &__group, &__row
+        width: 100%
+
+    &__group
+        display: grid
+        grid-template-columns: 1fr 1fr
+        gap: var(--gap)
+
+        +maw($xs)
+            grid-template-columns: 1fr
+
+    &__row--inline
+        +flex(flex, center, flex-start, nowrap)
+        gap: var(--gap)
+        
+    label
+        @extend %caption
+        color: $grey2
+
+    input:not([type="checkbox"]), textarea
+        width: 100%
+        min-height: 40px
+        padding: 8px 10px
+        margin: 4px auto
+        resize: none
+
+        border-radius: 8px
+        border: 1px solid $grey5
+        background-color: $grey6
+        color: $grey4
+        @extend %body2
+
+        &:focus, &:active, &:hover
+            border-color: $violet1
+            appearance: none
+            box-shadow: none
+            outline: none
+
+    input[type="number"]
+        +flex(flex, center, center, nowrap)
+        +sz(70px, 40px)
+        margin: 0
+
+    &__title
+        @extend %h4
+        color: $grey2
+
+    &__note
+        +ft(12, 12, 400)
+        color: $grey3
+        text-transform: lowercase
+        &::first-letter
+            text-transform: uppercase
+
+    &__footer
+        width: 100%
+        display: grid
+        grid-template-columns: auto auto
+        gap: var(--gap)
+        justify-content: flex-end
+        +maw($xs)
+            grid-template-columns: 1fr
+
+    &__checkbox
+        @extend %checkbox
+
+        label
+            color: $grey2
+            &::before
+                border-color: $pink
+                background-color: $pink
+                border-radius: 4px
+
+        input:checked + label:after
+            background-color: $white
+
+
+.review
+    &__header, &__footer
+        +flex(flex, center, space-between, wrap)
+        gap: var(--gap)
+        +maw($xs)
+            button
+                max-width: 100%
+                width: 100%
+    &__title
+        @extend %h3  
+        color: $grey2      
+
+    &-stat
+        margin: var(--gapSm) auto
+        @extend %card
+        padding: var(--gapSm)
+        display: grid
+        grid-template-columns: auto auto auto
+        gap: var(--gap)
+        align-items: center
+        color: $grey2
+
+        +miw($lg)
+            & > div:not(:last-of-type)
+                border-right: 1px solid $grey5
+                margin-right: calc(33% - 1px)
+
+        +maw($md)
+            grid-template-columns: 1fr 1fr
+
+            & > div:last-child
+                grid-column: 1/-1 
+
+        +maw($xs)
+            grid-template-columns: 1fr 
+                
+
+        &__title
+            @extend %caption
+            font-weight: bold
+        &__note
+            @extend %caption
+            color: $grey3
+        &__val
+            @extend %h4
+            margin: var(--gapXs) auto
+
+.stat
+    margin: 0 auto
+    &, td
+        outline: none
+        border: none
+        @extend %caption
+        font-weight: bold
+    td
+        &:nth-of-type(1), &:nth-of-type(2)
+            width: 25px
+        &:nth-of-type(3)
+            width: calc(100% - 50px)
+        &:nth-of-type(4)
+            width: 25px
+            
+    
+
+

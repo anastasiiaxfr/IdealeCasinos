@@ -1,0 +1,37 @@
+.slider
+    appearance: none
+    +sz(100%, 6px)
+    background: $green
+    border-radius: 6px
+    outline: none 
+    opacity: 0.7 
+    transition: $trs
+    &::-moz-range-thumb
+        +sz(6px, 6px)
+        background: $green
+        cursor: pointer
+    &:hover
+        opacity: 1
+    &::-webkit-slider-thumb
+        -webkit-appearance: none 
+        appearance: none
+        +sz(6px, 6px)
+        background: $green
+        cursor: pointer 
+
+tr:nth-child(2) .slider
+   &, &::-webkit-slider-thumb
+    background-color: $green2
+   
+        
+tr:nth-child(3) .slider
+    &, &::-webkit-slider-thumb
+        background-color: $green3
+tr:nth-child(4) .slider
+    &, &::-webkit-slider-thumb
+        background-color: $yellow
+tr:nth-child(5) .slider
+    &, &::-webkit-slider-thumb
+        background-color: $red
+
+
