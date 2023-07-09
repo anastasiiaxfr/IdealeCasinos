@@ -1,0 +1,64 @@
+.review-comment
+    position: relative
+    &__header
+        position: relative
+        +flex(flex, center, space-between, wrap)
+    &__title
+        +flex(flex, center, flex-start, wrap)
+        gap: var(--gapXs)
+        @extend %body1
+        svg
+            +sz(24px, 24px)
+
+        a
+            +ft(14, 14, 400)
+            text-decoration: underline
+            color: $grey3
+    &__date
+        display: block
+        flex: 1 0 auto
+        width: 100%
+        margin-left: 32px
+
+
+    &-item
+        margin: var(--gapSm) auto
+        & > &
+            margin-left: 2.5vw
+        &__wrap
+            margin: var(--gapSm) auto
+        &__header
+            +flex(flex, center, flex-start, wrap)
+            gap: var(--gapXs)
+
+            & > span:first-of-type
+                flex: 1 
+        &__footer
+            margin-top: var(--gapSm)
+            color: $grey3
+            @extend %caption
+            &:hover, &:focus, &:active, &.active
+                color: $violet1
+
+    &--good::before, &--bad::before
+        content: ''
+        +flex(inline-flex, center, center, nowrap)
+        +sz(24px, 24px)
+        min-width: 24px
+        background: url('../img/icons/plus.svg')
+        background-repeat: no-repeat
+    &--bad::before
+        background: url('../img/icons/minus.svg')
+
+
+    &__date
+        @extend %caption
+        color: $grey3
+
+    &-item
+        &__header
+            margin-bottom: 12px
+            +ft(16, 16*1.4, 700)
+        &__content
+            @extend %body2
+            color: $grey3

@@ -9362,19 +9362,22 @@ body::-webkit-scrollbar-thumb, .drawer__wrap::-webkit-scrollbar-thumb, .search::
 
 .breadcrumbs-dark, .page__hero, .home__hero {
   font: 700 6rem/1 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  letter-spacing: 0.02em;
 }
 
 .popup-want-accept__title, .popup-success__title, .popup-accept__title, .popup-applied__title {
   font: 700 1.75rem/1.1428571429 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-.popup-applied--sm .popup-applied__title {
+.review-comment__title, .popup-applied--sm .popup-applied__title {
   font: 400 1.25rem/1.6 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-.popup-want-accept, .popup-success, .popup-applied, .popup-accept {
+.review-comment-item__content, .popup-want-accept, .popup-success, .popup-applied, .popup-accept, .rating--lg b {
   font: 400 1rem/1.5 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.review-comment__date, .review-comment-item__footer {
+  font: 400 0.875rem/1.4285714286 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .popup-accept__form label {
@@ -10242,7 +10245,7 @@ hgroup svg {
   background-color: #eef0f9;
 }
 
-.rating {
+.rating, .rating--lg {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -10256,9 +10259,17 @@ hgroup svg {
   color: #fff;
   font: 700 0.75rem/1 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-.rating--grey, .top-casinos .rating {
+.rating--grey, .top-casinos .rating, .top-casinos .rating--lg {
   background-color: #F6F7FC;
   color: #3A3F50;
+}
+.rating--lg {
+  background: transparent;
+  color: #3A3F50;
+}
+.rating--lg b {
+  margin-left: 4px;
+  font-weight: bold;
 }
 
 .socials {
@@ -10534,9 +10545,6 @@ hgroup svg {
 .page__hero.default, .default.home__hero {
   padding-top: var(--gapSm);
 }
-.page__hero p, .home__hero p {
-  color: inherit;
-}
 .page__hero-meta {
   display: flex;
   align-items: flex-start;
@@ -10547,7 +10555,7 @@ hgroup svg {
   margin-bottom: var(--gap);
   font: 400 0.875rem/1.7142857143 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-.page__hero .rating, .home__hero .rating {
+.page__hero .rating, .home__hero .rating, .page__hero .rating--lg, .home__hero .rating--lg {
   background: #2C32BF;
 }
 .page__hero h1, .home__hero h1, .page__hero .h1, .home__hero .h1 {
@@ -10562,6 +10570,8 @@ hgroup svg {
 }
 .page__hero p, .home__hero p {
   margin-bottom: 0;
+  color: inherit;
+  letter-spacing: 0;
   font: 400 1rem/1.5 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 .page__hero p a, .home__hero p a {
@@ -10827,7 +10837,7 @@ hgroup svg {
   padding: var(--gap);
   padding-bottom: 0;
 }
-.box__icon, .box .rating {
+.box__icon, .box .rating, .box .rating--lg {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10839,14 +10849,14 @@ hgroup svg {
   border: none;
   color: #FF1A5E;
 }
-.box__icon b, .box .rating b {
+.box__icon b, .box .rating b, .box .rating--lg b {
   color: #3A3F50;
 }
-.box__icon.likes, .box .rating.likes {
+.box__icon.likes, .box .rating.likes, .box .likes.rating--lg {
   width: 32px;
   height: 32px;
 }
-.box__icon.likes.active, .box__icon.likes:hover, .box__icon.likes:focus, .box__icon.likes:active, .box .rating.likes.active, .box .rating.likes:hover, .box .rating.likes:focus, .box .rating.likes:active {
+.box__icon.likes.active, .box__icon.likes:hover, .box__icon.likes:focus, .box__icon.likes:active, .box .rating.likes.active, .box .likes.active.rating--lg, .box .rating.likes:hover, .box .likes.rating--lg:hover, .box .rating.likes:focus, .box .likes.rating--lg:focus, .box .rating.likes:active, .box .likes.rating--lg:active {
   fill: #FF1A5E;
 }
 .box__stat {
@@ -11198,7 +11208,7 @@ hgroup svg {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.top-casinos .rating {
+.top-casinos .rating, .top-casinos .rating--lg {
   color: inherit;
 }
 
@@ -11426,7 +11436,7 @@ hgroup svg {
   margin-bottom: 8px;
   color: #3A3F50;
 }
-.casino .rating {
+.casino .rating, .casino .rating--lg {
   background-color: #F6F7FC;
   color: #3A3F50;
 }
@@ -11760,7 +11770,7 @@ table th, table td {
 .table-review a:not([class]) {
   color: #4B50C8;
 }
-.table-review .rating {
+.table-review .rating, .table-review .rating--lg {
   background-color: #E4E5ED;
   color: #3A3F50;
 }
@@ -12633,7 +12643,7 @@ blockquote li::before {
 .game-demo-overlay-header h1, .game-demo-overlay-header .h1, .game-demo-overlay-header h2, .game-demo-overlay-header .h2, .game-demo-overlay-header h3, .game-demo-overlay-header .h3, .game-demo-overlay-header h4, .game-demo-overlay-header .h4, .game-demo-overlay-header h5, .game-demo-overlay-header .h5, .game-demo-overlay-header h6, .game-demo-overlay-header .h6 {
   color: #fff;
 }
-.game-demo-overlay-header .rating {
+.game-demo-overlay-header .rating, .game-demo-overlay-header .rating--lg {
   background-color: #5f63ce;
   color: #fff;
 }
@@ -12794,7 +12804,7 @@ blockquote li::before {
   }
 }
 @media only screen and (max-width: 480px) {
-  .bonus-topline .rating {
+  .bonus-topline .rating, .bonus-topline .rating--lg {
     display: none;
   }
 }
@@ -13837,6 +13847,90 @@ blockquote li::before {
 }
 .popup--dark .popup-success__icon, .popup--dark .popup-success__icon * {
   color: #58C27D;
+}
+
+.review-comment {
+  position: relative;
+}
+.review-comment__header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.review-comment__title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: var(--gapXs);
+}
+.review-comment__title svg {
+  width: 24px;
+  height: 24px;
+}
+.review-comment__title a {
+  font: 400 0.875rem/1 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  text-decoration: underline;
+  color: #777E90;
+}
+.review-comment__date {
+  display: block;
+  flex: 1 0 auto;
+  width: 100%;
+  margin-left: 32px;
+}
+.review-comment-item {
+  margin: var(--gapSm) auto;
+}
+.review-comment-item > .review-comment-item {
+  margin-left: 2.5vw;
+}
+.review-comment-item__wrap {
+  margin: var(--gapSm) auto;
+}
+.review-comment-item__header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: var(--gapXs);
+}
+.review-comment-item__header > span:first-of-type {
+  flex: 1;
+}
+.review-comment-item__footer {
+  margin-top: var(--gapSm);
+  color: #777E90;
+}
+.review-comment-item__footer:hover, .review-comment-item__footer:focus, .review-comment-item__footer:active, .review-comment-item__footer.active {
+  color: #4B50C8;
+}
+.review-comment--good::before, .review-comment--bad::before {
+  content: "";
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  background: url("../img/icons/plus.svg");
+  background-repeat: no-repeat;
+}
+.review-comment--bad::before {
+  background: url("../img/icons/minus.svg");
+}
+.review-comment__date {
+  color: #777E90;
+}
+.review-comment-item__header {
+  margin-bottom: 12px;
+  font: 700 1rem/1.4 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.review-comment-item__content {
+  color: #777E90;
 }
 
 body {

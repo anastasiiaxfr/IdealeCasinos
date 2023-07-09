@@ -381,6 +381,8 @@
                         <?php include '../templates/_sidebar.php';?>
                     </aside>
                 </section>
+
+                <?php include '../templates/_review.php';?>
             </div>
         </article>
     </main>
