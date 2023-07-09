@@ -1,18 +1,12 @@
-%hero_bg
+.hero
+    display: flex
+    align-items: center
     background-color: $violet3
     background-image: url(../img/bg/bg1.svg)
     background-repeat: no-repeat
     background-size: cover
     background-position: 50%
-    color: $white
     overflow: hidden
-
- 
-    
-.hero
-    display: flex
-    align-items: center
-    @extend %hero_bg
 
     & *
         color: $white
@@ -182,12 +176,16 @@
     &__hero
         padding-top: calc(var(--gapSm) + var(--headerH))
         padding-bottom: var(--gapSm)
-        @extend %hero_bg
+        //@extend %hero
+        background-color: $violet3
+        background-image: url(../img/bg/bg1.svg)
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: 50%
+        overflow: hidden
+        color: $white
         &.default
            padding-top: 0
-
-        & p
-            color: inherit
         &-meta
             +flex(flex, flex-start, flex-start, wrap)
             gap: var(--gap)
@@ -206,6 +204,8 @@
                 +ft(28, 32, 600)
         p
             margin-bottom: 0
+            color: inherit
+            letter-spacing: 0
             +ft(16, 24, 400)
             a
                 text-decoration: underline
@@ -221,23 +221,20 @@
                 display: none
 
 .home__hero
-    padding-top: var(--headerH)
+    @extend .page__hero
     padding-bottom: 0
     overflow: hidden
-    @extend %hero_bg
-    // padding-top: calc(var(--gapXlg) + var(--headerH))
-    // padding-bottom: var(--gapXlg)
-
+    padding-top: calc(var(--gapXlg) + var(--headerH))
+    padding-bottom: var(--gapXlg)
     & *
         color: $white
-
     &-inner
         display: grid
         grid-template-columns: 60% auto
         align-items: center
     &-img
-        //+ps(absolute, (b, 0), (r, 0))
-        z-index: 0
+        +ps(absolute, (b, 0), (r, 0))
+        z-index: -1
     &-content   
         max-width: 90vw
 
@@ -261,3 +258,4 @@
             margin-bottom: var(--gap)
         .chip__wrap 
             justify-content: center
+

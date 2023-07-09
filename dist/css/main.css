@@ -9230,7 +9230,7 @@ body::-webkit-scrollbar-thumb, .drawer__wrap::-webkit-scrollbar-thumb, .search::
   box-shadow: 0px 40px 64px -32px rgba(15, 15, 15, 0.1);
 }
 
-.breadcrumbs-dark, .page__hero, .home__hero {
+.breadcrumbs-dark {
   background: url("../img/bg/bg-hero.svg") no-repeat 50%/cover;
   background-color: #2C32BF;
   -webkit-backdrop-filter: blur(15px);
@@ -9360,7 +9360,7 @@ body::-webkit-scrollbar-thumb, .drawer__wrap::-webkit-scrollbar-thumb, .search::
   row-gap: 0;
 }
 
-.breadcrumbs-dark, .page__hero, .home__hero {
+.breadcrumbs-dark {
   font: 700 6rem/1 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
@@ -10286,15 +10286,19 @@ hgroup svg {
   color: #FF1A5E;
 }
 
-.hero {
-  display: flex;
-  align-items: center;
+.home__hero, .page__hero, .hero {
   background-color: #2C32BF;
   background-image: url(../img/bg/bg1.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
+  color: #fff;
   overflow: hidden;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
 }
 .hero * {
   color: #fff;
@@ -10538,12 +10542,15 @@ hgroup svg {
   width: 100%;
 }
 
-.page__hero, .home__hero {
+.page__hero {
   padding-top: calc(var(--gapSm) + var(--headerH));
   padding-bottom: var(--gapSm);
 }
-.page__hero.default, .default.home__hero {
-  padding-top: var(--gapSm);
+.page__hero.default {
+  padding-top: 0;
+}
+.page__hero p {
+  color: inherit;
 }
 .page__hero-meta {
   display: flex;
@@ -10555,30 +10562,28 @@ hgroup svg {
   margin-bottom: var(--gap);
   font: 400 0.875rem/1.7142857143 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-.page__hero .rating, .home__hero .rating, .page__hero .rating--lg, .home__hero .rating--lg {
+.page__hero .rating, .page__hero .rating--lg {
   background: #2C32BF;
 }
-.page__hero h1, .home__hero h1, .page__hero .h1, .home__hero .h1 {
+.page__hero h1, .page__hero .h1 {
   margin-bottom: var(--headingMb);
   font: 600 3rem/1.1666666667 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   letter-spacing: -0.02em;
 }
 @media only screen and (max-width: 480px) {
-  .page__hero h1, .home__hero h1, .page__hero .h1, .home__hero .h1 {
+  .page__hero h1, .page__hero .h1 {
     font: 600 1.75rem/1.1428571429 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
 }
-.page__hero p, .home__hero p {
+.page__hero p {
   margin-bottom: 0;
-  color: inherit;
-  letter-spacing: 0;
   font: 400 1rem/1.5 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-.page__hero p a, .home__hero p a {
+.page__hero p a {
   text-decoration: underline;
   transition: all 0.45s ease-in-out;
 }
-.page__hero p a:hover, .home__hero p a:hover, .page__hero p a:focus, .home__hero p a:focus, .page__hero p a:active, .home__hero p a:active {
+.page__hero p a:hover, .page__hero p a:focus, .page__hero p a:active {
   text-decoration: none;
 }
 .page__hero-inner {
@@ -10592,8 +10597,12 @@ hgroup svg {
 }
 
 .home__hero {
+  padding-top: var(--headerH);
   padding-bottom: 0;
   overflow: hidden;
+}
+.home__hero * {
+  color: #fff;
 }
 .home__hero-inner {
   display: grid;
@@ -10601,7 +10610,7 @@ hgroup svg {
   align-items: center;
 }
 .home__hero-img {
-  z-index: -1;
+  z-index: 0;
 }
 .home__hero-content {
   max-width: 90vw;
@@ -12451,6 +12460,7 @@ blockquote li::before {
   display: grid;
   grid-template-columns: auto var(--sidebarW);
   gap: var(--gapSm);
+  color: #fff;
 }
 @media only screen and (max-width: 772px) {
   .game-demo {
