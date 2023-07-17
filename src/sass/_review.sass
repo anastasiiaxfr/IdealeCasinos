@@ -152,7 +152,7 @@
             background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTEiIHZpZXdCb3g9IjAgMCAxNCAxMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEgNS4zNDc2Nkw1IDkuMzQ3NjZMMTMgMS4zNDc2NiIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K")
             background-color: transparent
             background-repeat: no-repeat
-            background-size: 100%
+            background-size: contain
             background-position: center
 
             border-radius: 0
@@ -205,6 +205,9 @@
         &__val
             @extend %h4
             margin: var(--gapXs) auto
+            
+            svg
+                +sz(24px, 24px)
 
 .stat
     margin: 0 auto
@@ -220,6 +223,8 @@
             width: calc(100% - 50px)
         &:nth-of-type(4)
             width: 25px
+    svg
+        +sz(20px, 20px)
             
     
 

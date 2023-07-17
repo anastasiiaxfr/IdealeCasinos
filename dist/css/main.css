@@ -10372,6 +10372,10 @@ tr:nth-child(5) .slider, tr:nth-child(5) .slider::-webkit-slider-thumb {
   background: transparent;
   color: #3A3F50;
 }
+.rating--lg svg {
+  width: 20px;
+  height: 20px;
+}
 .rating--lg b {
   margin-left: 4px;
   font-weight: bold;
@@ -14101,7 +14105,7 @@ blockquote li::before {
   background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTEiIHZpZXdCb3g9IjAgMCAxNCAxMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEgNS4zNDc2Nkw1IDkuMzQ3NjZMMTMgMS4zNDc2NiIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K");
   background-color: transparent;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: contain;
   background-position: center;
   border-radius: 0;
 }
@@ -14159,6 +14163,10 @@ blockquote li::before {
 .review-stat__val {
   margin: var(--gapXs) auto;
 }
+.review-stat__val svg {
+  width: 24px;
+  height: 24px;
+}
 
 .stat {
   margin: 0 auto;
@@ -14176,6 +14184,10 @@ blockquote li::before {
 }
 .stat td:nth-of-type(4) {
   width: 25px;
+}
+.stat svg {
+  width: 20px;
+  height: 20px;
 }
 
 body {

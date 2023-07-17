@@ -17,19 +17,19 @@
             Rate
 
             <span>
-                <svg class="icon" width="15" height="15">
+                <svg class="icon" width="25" height="25">
                     <use xlink:href="#star"></use>
                 </svg>
-                <svg class="icon" width="15" height="15">
+                <svg class="icon" width="25" height="25">
                     <use xlink:href="#star"></use>
                 </svg>
-                <svg class="icon" width="15" height="15">
+                <svg class="icon" width="25" height="25">
                     <use xlink:href="#star"></use>
                 </svg>
-                <svg class="icon" width="15" height="15">
+                <svg class="icon" width="25" height="25">
                     <use xlink:href="#star"></use>
                 </svg>
-                <svg class="icon" width="15" height="15">
+                <svg class="icon" width="25" height="25">
                     <use xlink:href="#star"></use>
                 </svg>
             </span>
