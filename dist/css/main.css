@@ -11804,7 +11804,7 @@ tr:nth-child(5) .slider, tr:nth-child(5) .slider::-webkit-slider-thumb {
   margin-bottom: var(--gapMd);
 }
 .box-card-providers {
-  gap: var(--gapSm);
+  gap: var(--gapXs);
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
 }
 .box-card-providers .box-card {
