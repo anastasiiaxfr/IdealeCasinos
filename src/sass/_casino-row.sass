@@ -86,13 +86,14 @@
         display: grid
         grid-template-columns: 1fr 1fr
         align-self: stretch
-        padding: 12px
         text-align: center
         background: $grey6
         border-radius: $brs1
         align-items: center
         svg
             color: $violet1
+        & > div
+            padding: 12px
         div:first-child
             padding-right: 12px
             border-right: 1px solid darken($grey6, 10%)

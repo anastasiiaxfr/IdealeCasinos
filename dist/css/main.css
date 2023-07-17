@@ -11681,7 +11681,6 @@ tr:nth-child(5) .slider, tr:nth-child(5) .slider::-webkit-slider-thumb {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-self: stretch;
-  padding: 12px;
   text-align: center;
   background: #F6F7FC;
   border-radius: 8px;
@@ -11689,6 +11688,9 @@ tr:nth-child(5) .slider, tr:nth-child(5) .slider::-webkit-slider-thumb {
 }
 .casino__stat svg {
   color: #4B50C8;
+}
+.casino__stat > div {
+  padding: 12px;
 }
 .casino__stat div:first-child {
   padding-right: 12px;
