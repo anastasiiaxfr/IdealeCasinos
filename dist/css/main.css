@@ -14084,6 +14084,11 @@ blockquote li::before {
     grid-template-columns: 1fr;
   }
 }
+@media only screen and (min-width: 480px) {
+  .review-form__footer .btn-main, .review-form__footer .hero-review__btn, .review-form__footer .top-casinos__btn, .review-form__footer .bonus-row__btn, .review-form__footer .bonus-banner__btn, .review-form__footer .casino__btn, .review-form__footer .table-review__btn, .review-form__footer .form__btn, .review-form__footer .casino-top__btn, .review-form__footer .popup-age__cta button, .popup-age__cta .review-form__footer button {
+    width: 194px;
+  }
+}
 .review-form__checkbox label {
   color: #3A3F50;
 }
