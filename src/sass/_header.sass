@@ -12,6 +12,7 @@
         margin: 0
         padding: 0
 
+
     &__inner
         +flex(flex, center, space-between, nowrap)
         gap: var(--gapSm)
@@ -32,6 +33,21 @@
             &:hover, &:active, &:focus
                 color: $pink
 
+    &-menu__wrap
+        position: relative
+        overflow: hidden
+        overflow-x: scroll
+        scrollbar-width: none
+        &::-webkit-scrollbar 
+            display: none
+        &::after
+            content: ''
+            +sz(10%, 100%)
+            z-index: 1
+            background: linear-gradient(90deg, transparent, $violet1)
+            +ps(absolute, (t, 0), (r, 0))
+
+
     &-menu
         position: relative
         width: auto
@@ -47,14 +63,9 @@
 
         +maw($sm)
             display: none
+        
 
-        // &::after
-        //     content: ''
-        //     display: none
-        //     +sz(100%, 100%)
-        //     +ps(absolute, (r, 0), (t, 0))
-        //     background: linear-gradient(90deg, transparent 85%, $violet1)
-
+       
         &__item
             color: $white
             +miw($lg)

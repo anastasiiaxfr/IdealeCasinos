@@ -7,6 +7,15 @@
     padding: var(--gapXs) 0
     box-shadow: $bxsd3
     background-color: $white
+    &__wrapper
+        position: relative
+        @extend .container
+        &::after
+            content: ''
+            +ps(absolute, (t, 0), (r, 0))
+            display: block
+            +sz(10%, 100%)
+            background: linear-gradient(90deg, transparent, $white)
     &__inner
         position: relative
         @extend .container
@@ -23,13 +32,6 @@
         &::-webkit-scrollbar 
             display: none
 
-        // +miw($lg)
-        //     &::after
-        //         content: ''
-        //         +ps(absolute, (t, 0), (r, 0))
-        //         display: block
-        //         +sz(10%, 100%)
-        //         background: linear-gradient(90deg, transparent, $white)
 
     & *
         white-space: nowrap

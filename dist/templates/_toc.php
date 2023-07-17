@@ -12,6 +12,7 @@ $toc = array(
 ?>
 
 <section class="toc">
+    <div class="toc__wrapper">
     <div class="toc__inner">
         <b>Jump to</b>
         <?php foreach ($toc as $i => $item) { ?>
@@ -22,5 +23,6 @@ $toc = array(
         <?php echo $item['title']; ?>
         </a>
         <?php } ?>
+    </div>
     </div>
 </section>

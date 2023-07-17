@@ -193,54 +193,54 @@
                 ),
             );
             ?>
+            <div class="header-menu__wrap">
+                <ul class="header-menu">
+                    <?php foreach ($menu as $item) { ?>
+                        <li class="header-menu__item">
+                            <a href="<?php echo $item['url']; ?>" class="header-menu__link">
 
-            <ul class="header-menu">
-                <?php foreach ($menu as $item) { ?>
-                    <li class="header-menu__item">
-                        <a href="<?php echo $item['url']; ?>" class="header-menu__link">
+                                <?php if (isset($item['icon'])) { ?>
+                                    <svg class="header-menu__icon" width="20" height="20">
+                                        <use xlink:href="#<?php echo $item['icon']; ?>"></use>
+                                    </svg>
+                                <?php } ?>
 
-                            <?php if (isset($item['icon'])) { ?>
-                                <svg class="header-menu__icon" width="20" height="20">
-                                    <use xlink:href="#<?php echo $item['icon']; ?>"></use>
-                                </svg>
+                                <span> <?php echo $item['link']; ?> </span>
+                            </a>
+
+                            <?php if (isset($item['sub'])) { ?>
+                                <nav class="header-menu__submenu">
+                                    <div class="container">
+
+                                        <?php foreach ($item['sub'] as $subItem) { ?>
+                                            <ul>
+                                                <li>
+                                                    <a href="<?php echo $subItem['url']; ?>" class="header-menu__submenu-title">
+                                                        <?php echo $subItem['link']; ?>
+                                                    </a>
+                                                    <?php if (isset($subItem['sub'])) { ?>
+                                                        <ul>
+                                                            <?php foreach ($subItem['sub'] as $subSubItem) { ?>
+                                                                <li>
+                                                                    <a href="<?php echo $subSubItem['url']; ?>" class="header-menu__submenu-link">
+                                                                        <?php echo $subSubItem['link']; ?>
+                                                                    </a>
+                                                                </li>
+                                                            <?php } ?>
+                                                        </ul>
+                                                    <?php } ?>
+                                                </li>
+                                            </ul>
+                                        <?php } ?>
+                                    </div>
+                                </nav>
                             <?php } ?>
 
-                            <span> <?php echo $item['link']; ?> </span>
-                        </a>
+                        </li>
 
-                        <?php if (isset($item['sub'])) { ?>
-                            <nav class="header-menu__submenu">
-                                <div class="container">
-
-                                    <?php foreach ($item['sub'] as $subItem) { ?>
-                                        <ul>
-                                            <li>
-                                                <a href="<?php echo $subItem['url']; ?>" class="header-menu__submenu-title">
-                                                    <?php echo $subItem['link']; ?>
-                                                </a>
-                                                <?php if (isset($subItem['sub'])) { ?>
-                                                    <ul>
-                                                        <?php foreach ($subItem['sub'] as $subSubItem) { ?>
-                                                            <li>
-                                                                <a href="<?php echo $subSubItem['url']; ?>" class="header-menu__submenu-link">
-                                                                    <?php echo $subSubItem['link']; ?>
-                                                                </a>
-                                                            </li>
-                                                        <?php } ?>
-                                                    </ul>
-                                                <?php } ?>
-                                            </li>
-                                        </ul>
-                                    <?php } ?>
-                                </div>
-                            </nav>
-                        <?php } ?>
-
-                    </li>
-
-                <?php } ?>
-            </ul>
-
+                    <?php } ?>
+                </ul>
+            </div>
 
 
             <div class="header-cta">
@@ -269,6 +269,5 @@
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/templates/_drawer.php'; ?>
 
-<link rel="stylesheet" href="../lib/swiper/swiper-bundle.css"/>
+<link rel="stylesheet" href="../lib/swiper/swiper-bundle.css" />
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/templates/_search.php'; ?>
-
