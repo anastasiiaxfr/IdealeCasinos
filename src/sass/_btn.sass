@@ -81,7 +81,7 @@
         background-color: rgba($white, 0.3)
 
     +maw($sm)
-        padding: 0.75vh 4vw
+        padding: 0.75vh 3vw
         +ft(10, 10, 400)
         letter-spacing: 0.05em
         text-transform: uppercase
@@ -124,7 +124,10 @@
             margin-bottom: 0
 
         +maw($sm)
-            justify-content: center
+            gap: var(--gapXs)
+            .hero &
+                justify-content: center
+
 
 .favorite, .search, .menu__toggler
     border: none

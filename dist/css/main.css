@@ -9747,7 +9747,7 @@ hgroup svg {
 }
 @media only screen and (max-width: 772px) {
   .chip {
-    padding: 0.75vh 4vw;
+    padding: 0.75vh 3vw;
     font: 400 0.625rem/1 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     letter-spacing: 0.05em;
     text-transform: uppercase;
@@ -9800,6 +9800,9 @@ hgroup svg {
 }
 @media only screen and (max-width: 772px) {
   .chip__wrap {
+    gap: var(--gapXs);
+  }
+  .hero .chip__wrap {
     justify-content: center;
   }
 }
