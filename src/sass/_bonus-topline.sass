@@ -10,6 +10,9 @@
         top: calc(var(--headerH) - 1px)
         z-index: 1000
 
+        @media only screen and (max-width: $lg+px) and (orientation: landscape)
+            position: static
+
     &__wrap
         // padding-top: var(--gapXs)
         // padding-bottom: var(--gapXs)

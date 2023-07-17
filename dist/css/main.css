@@ -12887,6 +12887,11 @@ blockquote li::before {
   top: calc(var(--headerH) - 1px);
   z-index: 1000;
 }
+@media only screen and (max-width: 1200px) and (orientation: landscape) {
+  .bonus-topline__sticky {
+    position: static;
+  }
+}
 .bonus-topline__wrap {
   background-color: #2C32BF;
   color: #fff;
@@ -12964,6 +12969,11 @@ blockquote li::before {
   padding: var(--gapXs) 0;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: #fff;
+}
+@media only screen and (max-width: 1200px) and (orientation: landscape) {
+  .toc {
+    position: static;
+  }
 }
 .toc__wrapper {
   position: relative;
