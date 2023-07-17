@@ -9485,7 +9485,7 @@ p {
   margin-bottom: var(--gapSm);
 }
 .page ol:not([class]) li, .page .list-order li, .page .list-order-default li {
-  margin-bottom: var(--gapXs);
+  margin-bottom: var(--gap);
   list-style-type: none;
 }
 .page ol:not([class]) li::before, .page .list-order li::before, .page .list-order-default li::before {
@@ -11478,7 +11478,7 @@ tr:nth-child(5) .slider, tr:nth-child(5) .slider::-webkit-slider-thumb {
   flex-wrap: wrap;
   flex-direction: column;
   text-align: center;
-  gap: var(--gapXs);
+  gap: 12px;
 }
 .bonus-banner__content {
   display: flex;
