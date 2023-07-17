@@ -14587,6 +14587,7 @@ html, body {
 }
 
 body {
+  height: auto;
   background-color: #fff;
 }
 
