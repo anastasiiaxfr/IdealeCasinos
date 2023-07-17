@@ -9838,6 +9838,7 @@ hgroup svg {
   min-width: 0;
   color: inherit;
   border: 1px solid #E4E5ED;
+  margin: 3px 0;
 }
 @media only screen and (max-width: 480px) {
   .cat {
@@ -11732,6 +11733,7 @@ tr:nth-child(5) .slider, tr:nth-child(5) .slider::-webkit-slider-thumb {
     flex: auto;
     width: auto;
     align-items: center;
+    background-color: transparent;
   }
   .casino__stat {
     display: none;
@@ -12391,6 +12393,11 @@ blockquote li::before {
 }
 .casino-top__list li {
   font: 400 0.75rem/1 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+@media only screen and (max-width: 480px) {
+  .casino-top__list {
+    display: none;
+  }
 }
 .casino-top__subtitle {
   text-transform: uppercase;
