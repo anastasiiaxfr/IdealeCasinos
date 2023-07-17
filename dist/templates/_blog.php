@@ -20,7 +20,7 @@
             <svg class="icon" width="20" height="20">
                 <use xlink:href="#clock"></use>
             </svg>
-            <span><?php echo $item['read']; ?>read</span>
+            <span><?php echo $item['read']; ?>mins</span>
         </div>
     </div>
     <div class="blog__content">

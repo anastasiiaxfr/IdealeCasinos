@@ -12251,8 +12251,9 @@ blockquote li::before {
 .blog__meta {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
+  gap: var(--gap);
   padding-bottom: var(--gapXs);
   margin-bottom: var(--gapXs);
   border-bottom: 1px solid #E4E5ED;
