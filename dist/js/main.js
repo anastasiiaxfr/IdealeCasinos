@@ -101,6 +101,26 @@ const swiper_slide_3 = new Swiper(".slider-3", {
   },
 });
 
+const swiper_str = new Swiper(".swiper-str", {
+    slidesPerView: 1,
+    spaceBetween: 16,
+    loop: true,
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      520: {
+        slidesPerView: 2,
+      },
+      640: {
+        slidesPerView: 3,
+      },
+      998: {
+        slidesPerView: 3,
+      },
+    },
+});
+  
 
 //TABLE wrapper
 function updateTableLayout() {

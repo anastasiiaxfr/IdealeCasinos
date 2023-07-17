@@ -11864,7 +11864,7 @@ table__wrap--scroll, .table__wrap--scroll {
   overflow: auto;
 }
 table td, table th, .table td, .table th {
-  padding: 5px;
+  padding: var(--gap);
   border: 1px solid #E4E5ED;
 }
 table a, .table a {
@@ -11896,6 +11896,7 @@ table th, table td {
 }
 .table-review th, .table-review td {
   min-width: 180px;
+  padding: 14px 12px;
 }
 .table-review td {
   border: 1px solid #E4E5ED;
