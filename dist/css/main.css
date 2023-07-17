@@ -13947,7 +13947,6 @@ blockquote li::before {
   display: block;
   flex: 1 0 auto;
   width: 100%;
-  padding-left: 32px;
 }
 .review-comment-item {
   margin: var(--gapSm) auto;
