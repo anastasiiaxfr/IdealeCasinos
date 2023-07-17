@@ -12880,7 +12880,7 @@ blockquote li::before {
   align-items: center;
   justify-content: flex-start;
   flex-wrap: wrap;
-  gap: var(--gap);
+  gap: var(--gapXs);
 }
 .bonus-topline__sticky {
   position: sticky;
@@ -12911,9 +12911,17 @@ blockquote li::before {
 .bonus-topline__title, .bonus-topline__text {
   font: 700 1rem/1.5 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+.bonus-topline__title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: var(--gapXs);
+  flex: 0.5;
+}
 .bonus-topline__sup {
-  font: 400 0.75rem/1.3333333333 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  color: #777E90;
+  font: 700 0.75rem/1.3333333333 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: #FF1A5E;
   text-transform: uppercase;
 }
 .bonus-topline__cta {

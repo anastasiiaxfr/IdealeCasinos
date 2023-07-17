@@ -3,7 +3,7 @@
     height: var(--topLineH)
     @extend .container
     +flex(flex, center, flex-start, wrap)
-    gap: var(--gap)
+    gap: var(--gapXs)
 
     &__sticky
         position: sticky
@@ -31,9 +31,13 @@
 
     &__title, &__text
         +ft(16, 24, 700)
+    &__title
+        +flex(flex, center, flex-start, wrap)
+        gap: var(--gapXs)
+        flex: 0.5
     &__sup
-        +ft(12, 16, 400)
-        color: $grey3
+        +ft(12, 16, 700)
+        color: $pink
         text-transform: uppercase
 
     &__cta
