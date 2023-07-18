@@ -11952,6 +11952,10 @@ table th, table td {
   width: 100%;
 }
 
+.stat td, .stat th {
+  padding: 5px;
+}
+
 blockquote {
   margin: var(--gapLg) auto;
   padding-left: var(--gapMd);
