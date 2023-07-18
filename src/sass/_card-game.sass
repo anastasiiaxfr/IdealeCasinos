@@ -110,8 +110,14 @@
 
         &.likes
             +sz(32px, 32px)
+            color: transparent
+            transition: none
+            stroke: $pink
+            stroke-width: 2px
             &.active, &:hover, &:focus, &:active
                 fill: $pink
+                color: $pink
+                stroke: $pink
 
     &__stat
         margin-top: 12px

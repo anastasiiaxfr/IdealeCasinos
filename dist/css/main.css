@@ -9817,6 +9817,17 @@ hgroup svg {
   padding: 0;
 }
 
+.favorite {
+  color: transparent;
+}
+.favorite svg {
+  stroke: #fff;
+  stroke-width: 2px;
+}
+.favorite:hover svg, .favorite:active svg, .favorite:focus svg, .favorite.active svg {
+  stroke: #FF1A5E;
+}
+
 .show-more {
   display: flex;
   align-items: center;
@@ -11040,9 +11051,15 @@ tr:nth-child(5) .slider, tr:nth-child(5) .slider::-webkit-slider-thumb {
 .box__icon.likes, .box .rating.likes, .box .likes.rating--lg {
   width: 32px;
   height: 32px;
+  color: transparent;
+  transition: none;
+  stroke: #FF1A5E;
+  stroke-width: 2px;
 }
 .box__icon.likes.active, .box__icon.likes:hover, .box__icon.likes:focus, .box__icon.likes:active, .box .rating.likes.active, .box .likes.active.rating--lg, .box .rating.likes:hover, .box .likes.rating--lg:hover, .box .rating.likes:focus, .box .likes.rating--lg:focus, .box .rating.likes:active, .box .likes.rating--lg:active {
   fill: #FF1A5E;
+  color: #FF1A5E;
+  stroke: #FF1A5E;
 }
 .box__stat {
   margin-top: 12px;

@@ -137,6 +137,15 @@
     background: transparent
     color: inherit
     padding: 0
+.favorite
+    color: transparent
+    svg
+        stroke: $white
+        stroke-width: 2px
+    &:hover, &:active, &:focus, &.active
+        svg
+            stroke: $pink
+        
 
 .show-more
     +flex(flex, center, flex-start, nowrap)
