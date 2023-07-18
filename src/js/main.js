@@ -19,6 +19,13 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
+const swiper_toc = new Swiper(".swiper-toc", {
+    slidesPerView: 1,
+    slidesPerGroup: 6,
+    spaceBetween: 0,
+    loop: true,
+  });
+
 const swiper_editor_choise = new Swiper(".swiper-editor-choise", {
   slidesPerView: 1,
   spaceBetween: 16,
@@ -114,7 +121,7 @@ const swiper_str = new Swiper(".swiper-str", {
       slidesPerView: 3,
     },
     998: {
-      slidesPerView: 3,
+      slidesPerView: 4,
     },
   },
 });

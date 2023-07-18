@@ -82,6 +82,7 @@
 
                     <?php $slids_class = "slider-4"; ?>
                     <?php include '../templates/_slider.php'; ?>
+            
 
                     <h2>Headline 2</h2>
                     <p>

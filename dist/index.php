@@ -184,8 +184,10 @@
                             array("img" => "../img/img-9.png", "num" => "3", "title" => "Enter the amount", "desc" => "Enter the desired amount and choose your bank. You can make a deposit of 5 euros."),
                             array("img" => "../img/img-10.png", "num" => "4", "title" => "Complete the payment", "desc" => "You will now be redirected to your own familiar banking environment. Depending on your bank, you must confirm the payment using a box, your telephone or a special code."),
                         ) ?>
-                        <div class="str__card-wrap">
-                            <?php include './templates/_str.php'; ?>
+                        <div class="str__card-wrap swiper swiper-str">
+                            <div class="swiper-wrapper">
+                                <?php include './templates/_str.php'; ?>
+                            </div>
                         </div>
                     </div>
                 </section>

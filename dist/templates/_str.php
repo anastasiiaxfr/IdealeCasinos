@@ -1,5 +1,6 @@
+
 <?php foreach ($str as $i => $item) { ?>
-<figure class="str__card">
+<figure class="str__card swiper-slide">
     <div class="str__card-img">
         <img src="<?php echo $item['img']; ?>" alt="<?php echo $item['title']; ?>">
     </div>
