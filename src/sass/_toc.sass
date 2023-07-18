@@ -10,10 +10,22 @@
 
     @media only screen and (max-width: $lg+px) and (orientation: landscape)
         position: static
+
+    &__container
+        @extend .container
+        +flex(flex, center, flex-start, nowrap)
+        gap: var(--gap)
+
+    &__box
+        position: relative
+        width: 100%
+        flex: 1
+        overflow: hidden
     
     &__wrapper
         position: relative
-        @extend .container
+        +flex(flex, center, flex-start, nowrap)
+
         &::after
             content: ''
             +ps(absolute, (t, 0), (r, 0))
@@ -25,6 +37,7 @@
         @extend .container
         +flex(flex, center, flex-start, nowrap)
         gap: var(--gap)
+        padding: 0
         margin-left: auto
         margin-right: auto
 

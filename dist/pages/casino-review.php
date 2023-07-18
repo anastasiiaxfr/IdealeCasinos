@@ -34,7 +34,6 @@
         <?php include '../templates/_toc.php'; ?>
         <?php include '../templates/_bonus-topline.php'; ?>
 
-
         <article class="page page__container">
             <div class="container">
                 <section class="page__main">

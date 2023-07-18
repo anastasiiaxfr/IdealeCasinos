@@ -1,0 +1,68 @@
+.wrapper-nav {
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.wrapper-nav::-webkit-scrollbar {
+    display: none;
+}
+
+.list {
+    /* position: absolute;
+    left: 0;
+    top: 0;
+    min-width: 3500px;
+    margin-top: 0 */
+
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    min-width: 3500px;
+}
+
+.list li {
+    display: table-cell;
+    position: relative;
+    text-align: center;
+    cursor: grab;
+    cursor: -webkit-grab;
+    vertical-align: middle;
+}
+
+.scroller {
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 10;
+    opacity: 0;
+    width: 50px;
+}
+
+.scroller-left {
+    left: 0;
+    right: auto;
+    background: linear-gradient(90deg, $white 50%, transparent);
+    justify-content: flex-start;
+}
+
+.scroller-right {
+    right: 0;
+    left: auto;
+    background: linear-gradient(-90deg, $white 50%, transparent);
+    justify-content: flex-end;
+}
+
+.pointer {
+    cursor: pointer
+}
