@@ -19,6 +19,4 @@
             <use xlink:href="#im"></use>
         </svg>
     </a>
-   
-
 </div>

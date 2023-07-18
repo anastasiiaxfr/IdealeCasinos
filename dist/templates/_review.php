@@ -2,7 +2,16 @@
     <div class="review__title">
         Player Reviews 🎰
     </div>
-    <button class="btn-bd"> This Year </button>
+
+    <?php
+    $select = array(
+        array("title" => "This Year", "value" => "default"),
+        array("title" => "2023", "value" => "2023"),
+        array("title" => "2022", "value" => "2022"),
+    );
+    ?>
+
+    <?php include '../templates/_select.php'; ?>
 </div>
 
 <div class="review-stat">
@@ -137,7 +146,15 @@
 </div>
 
 <div class="review__footer">
-    <button class="btn-bd"> Sort By </button>
+<?php
+    $select = array(
+        array("title" => "Sort By", "value" => "Sort By"),
+        array("title" => "ASC", "value" => "ASC"),
+        array("title" => "DESC", "value" => "DESC"),
+    );
+    ?>
+
+    <?php include '../templates/_select.php'; ?>
     <button class="btn-main">
         Write A Review
     </button>

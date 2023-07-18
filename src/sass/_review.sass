@@ -160,13 +160,21 @@
 
 
 .review
-    &__header, &__footer
+    &__header
         +flex(flex, center, space-between, wrap)
         gap: var(--gap)
         +maw($xs)
             button
                 max-width: 100%
                 width: 100%
+    &__footer
+        display: grid
+        grid-template-columns: auto auto
+        justify-content: space-between
+        gap: var(--gap)
+        +maw($xs)
+            justify-content: inherit
+
     &__title
         @extend %h3  
         color: $grey2      

@@ -9221,12 +9221,12 @@ body::-webkit-scrollbar-thumb, .drawer__wrap::-webkit-scrollbar-thumb, .search::
   transform: scaleX(1);
 }
 
-.item, .review-stat, .review-form, .popup-applied, .popup-accept, .popup-age, .popup-want-accept, .popup-success, .casino-top, .blog, .box-card, .faq, .casino, .payment, .bonus-row, .show-more, .quote {
+.item, .review-stat, .review-form, .popup-applied, .popup-accept, .popup-age, .popup-want-accept, .popup-success, .casino-top, .blog, .box-card, .faq, .casino, .payment, .bonus-row, .select-list, .select, .show-more, .quote {
   background-color: #fff;
   border: 1px solid #E4E5ED;
   border-radius: 8px;
 }
-.item:hover, .review-stat:hover, .review-form:hover, .popup-applied:hover, .popup-accept:hover, .popup-age:hover, .popup-want-accept:hover, .popup-success:hover, .casino-top:hover, .blog:hover, .box-card:hover, .faq:hover, .casino:hover, .payment:hover, .bonus-row:hover, .show-more:hover, .quote:hover {
+.item:hover, .review-stat:hover, .review-form:hover, .popup-applied:hover, .popup-accept:hover, .popup-age:hover, .popup-want-accept:hover, .popup-success:hover, .casino-top:hover, .blog:hover, .box-card:hover, .faq:hover, .casino:hover, .payment:hover, .bonus-row:hover, .select-list:hover, .select:hover, .show-more:hover, .quote:hover {
   box-shadow: 0px 40px 64px -32px rgba(15, 15, 15, 0.1);
 }
 
@@ -9913,6 +9913,45 @@ hgroup svg {
   line-height: 1;
 }
 
+.select {
+  width: 100%;
+  padding: var(--gapXs);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  font: 400 1rem/1.5 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: #3A3F50;
+}
+.select-wrap {
+  position: relative;
+  min-width: 164px;
+}
+.select-icon.active {
+  transform: rotate(180deg);
+}
+.select-list {
+  position: absolute;
+  left: 0;
+  z-index: 100;
+  display: none;
+  width: 100%;
+  list-style-type: none;
+  margin-top: 4px;
+  padding: 0;
+  overflow: hidden;
+  font: 400 1rem/1.5 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.select-list.active {
+  display: block;
+}
+.select-list li {
+  padding: 4px 8px;
+}
+.select-list li:hover, .select-list li:active, .select-list li:focus {
+  background-color: #F6F7FC;
+}
+
 .slider {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -10016,6 +10055,7 @@ tr:nth-child(5) .slider, tr:nth-child(5) .slider::-webkit-slider-thumb {
   overflow: hidden;
   overflow-x: scroll;
   scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 .header-menu__wrap::-webkit-scrollbar {
   display: none;
@@ -13026,6 +13066,7 @@ blockquote li::before {
   max-width: 100vw;
   overflow-x: scroll;
   scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 .toc__inner::-webkit-scrollbar {
   display: none;
@@ -14185,7 +14226,7 @@ blockquote li::before {
   border-radius: 0;
 }
 
-.review__header, .review__footer {
+.review__header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -14193,9 +14234,20 @@ blockquote li::before {
   gap: var(--gap);
 }
 @media only screen and (max-width: 480px) {
-  .review__header button, .review__footer button {
+  .review__header button {
     max-width: 100%;
     width: 100%;
+  }
+}
+.review__footer {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  gap: var(--gap);
+}
+@media only screen and (max-width: 480px) {
+  .review__footer {
+    justify-content: inherit;
   }
 }
 .review__title {

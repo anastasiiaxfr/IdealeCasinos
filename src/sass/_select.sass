@@ -1,0 +1,36 @@
+.select
+    width: 100%
+    padding: var(--gapXs)
+    +flex(flex, center, space-between, nowrap)
+    @extend %card
+    +ft(16, 24, 400)
+    color: $grey2
+
+    &-wrap
+        position: relative
+        min-width: 164px
+     
+    &-icon
+        //transition: $trs
+        &.active
+            transform: rotate(180deg)
+    &-list
+        +ps(absolute, (l, 0))
+        z-index: 100
+        display: none
+        width: 100%
+        list-style-type: none
+        margin-top: 4px
+        padding: 0
+        overflow: hidden
+        @extend %card
+        +ft(16, 24, 400)
+
+        &.active
+            display: block
+
+        li
+            padding: 4px 8px
+            &:hover, &:active, &:focus
+                background-color: $grey6
+                

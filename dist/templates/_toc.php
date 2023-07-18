@@ -8,7 +8,6 @@ $toc = array(
     array("title" => "Fair Play Casino Bonuses", "url" => "#"),
     array("title" => "Fair Play Casino Bonuses", "url" => "#"),
 );
-
 ?>
 
 <section class="toc">
