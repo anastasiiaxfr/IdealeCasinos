@@ -11050,7 +11050,7 @@ tr:nth-child(5) .slider, tr:nth-child(5) .slider::-webkit-slider-thumb {
 .team__img {
   position: relative;
   width: 100%;
-  padding-top: 75%;
+  padding-top: 100%;
   overflow: hidden;
 }
 .team__img img, .team__img picture {
