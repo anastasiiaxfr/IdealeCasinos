@@ -9848,6 +9848,7 @@ hgroup svg {
     text-transform: uppercase;
     font-size: 10px;
     letter-spacing: 0.1em;
+    line-height: 1;
   }
 }
 .cat__wrap {
@@ -11908,6 +11909,11 @@ table__wrap--scroll, .table__wrap--scroll {
 table td, table th, .table td, .table th {
   padding: var(--gap);
   border: 1px solid #E4E5ED;
+}
+@media only screen and (max-width: 480px) {
+  table td, table th, .table td, .table th {
+    padding: var(--gapXs);
+  }
 }
 table a, .table a {
   font-weight: bold;
@@ -14248,6 +14254,7 @@ blockquote li::before {
 @media only screen and (max-width: 480px) {
   .review__footer {
     justify-content: inherit;
+    grid-template-columns: 1fr;
   }
 }
 .review__title {
@@ -14429,6 +14436,10 @@ a:hover, a:focus, a:active, a:focus-visible {
 .page__section h2, .page__section .h2 {
   margin-top: 0;
 }
+.page__data {
+  flex: 1;
+  width: 100%;
+}
 .page__error {
   display: flex;
   flex-direction: column;
@@ -14483,6 +14494,10 @@ a:hover, a:focus, a:active, a:focus-visible {
   display: grid;
   grid-template-columns: auto var(--sidebarW);
   gap: var(--gapMd);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 @media only screen and (max-width: 998px) {
   .page__main {
