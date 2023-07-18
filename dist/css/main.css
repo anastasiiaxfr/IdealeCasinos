@@ -11159,7 +11159,7 @@ tr:nth-child(5) .slider, tr:nth-child(5) .slider::-webkit-slider-thumb {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   padding: var(--gapSm);
   gap: var(--gapSm);
   background-color: #4B50C8;
@@ -11167,6 +11167,11 @@ tr:nth-child(5) .slider, tr:nth-child(5) .slider::-webkit-slider-thumb {
 }
 .author__header * {
   color: #fff;
+}
+@media only screen and (max-width: 480px) {
+  .author__header {
+    gap: var(--gap);
+  }
 }
 .author__footer {
   padding: var(--gapSm);
@@ -11200,7 +11205,7 @@ tr:nth-child(5) .slider, tr:nth-child(5) .slider::-webkit-slider-thumb {
   }
 }
 .author__inner {
-  flex: 1 0 auto;
+  flex: 1;
 }
 .author__posts {
   margin: 16px auto 0;
@@ -11253,10 +11258,15 @@ tr:nth-child(5) .slider, tr:nth-child(5) .slider::-webkit-slider-thumb {
 }
 .author__title span {
   width: auto;
-  flex: 1 0 auto;
+  flex: 1;
 }
 .author__title svg {
   min-width: 24px;
+}
+@media only screen and (max-width: 772px) {
+  .author__title {
+    font: 700 1rem/1.5 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
 }
 @media only screen and (max-width: 360px) {
   .author__title svg {
@@ -11270,6 +11280,7 @@ tr:nth-child(5) .slider, tr:nth-child(5) .slider::-webkit-slider-thumb {
   position: relative;
   width: 72px;
   height: 72px;
+  min-width: 72px;
   margin: 0;
   border-radius: 8px;
 }
@@ -11279,11 +11290,6 @@ tr:nth-child(5) .slider, tr:nth-child(5) .slider::-webkit-slider-thumb {
      object-fit: cover;
   width: 100%;
   height: 100%;
-}
-@media only screen and (max-width: 480px) {
-  .author__ava {
-    display: none;
-  }
 }
 .author .socials a {
   color: #777E90;

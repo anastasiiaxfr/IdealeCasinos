@@ -10,13 +10,15 @@
         margin-bottom: 0
     
     &__header
-        +flex(flex, center, space-between, wrap)
+        +flex(flex, center, space-between, nowrap)
         padding: var(--gapSm)
         gap: var(--gapSm)
         background-color: $violet1
         color: $white
         & *
             color: $white
+        +maw($xs)
+            gap: var(--gap)
 
     &__footer
         padding: var(--gapSm)
@@ -45,7 +47,7 @@
             display: none
     
     &__inner
-        flex: 1 0 auto
+        flex: 1 
     
     &__posts
         margin: 16px auto 0
@@ -84,9 +86,11 @@
         text-transform: capitalize
         span
             width: auto
-            flex: 1 0 auto
+            flex: 1 
         svg
             min-width: 24px
+        +maw($sm)
+            +ft(16, 24, 700)
         +maw($xxs)
             svg
                 display: none
@@ -97,6 +101,7 @@
     &__ava
         position: relative
         +sz(72px, 72px)
+        min-width: 72px
         margin: 0
         border-radius: $brs1
 
@@ -105,9 +110,7 @@
             object-fit: cover
             +sz(100%, 100%)
         
-        +maw($xs)
-            display: none
-
+       
     .socials
         a
             color: $grey3
