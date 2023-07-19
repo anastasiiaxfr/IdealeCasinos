@@ -112,9 +112,7 @@
 <?php include '_cookie.php'; ?>
 <script src="../lib/swiper/swiper-bundle.js"></script>
 
-
 <script src="../lib/tabs/move.min.js"></script>
-<script src="../lib/tabs/scrollable-tabs.min.js"></script>
 
 <script src="../js/main.js"></script>
 

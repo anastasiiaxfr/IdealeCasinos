@@ -393,6 +393,10 @@
         .toc {
             top: calc(var(--headerH) + var(--topLineH) - 1px);
         }
+
+        .page__sidebar-inner {
+            top: calc(var(--headerH) + var(--topLineH) +  var(--tocH) + 20px )
+        }
     </style>
 </body>
 </html>
