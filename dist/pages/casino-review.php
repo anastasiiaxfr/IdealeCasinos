@@ -391,11 +391,15 @@
 
     <style>
         .toc {
-            top: calc(var(--headerH) + var(--topLineH) - 1px);
+            top: var(--headerH);
         }
 
         .page__sidebar-inner {
             top: calc(var(--headerH) + var(--topLineH) +  var(--tocH) + 20px )
+        }
+        
+        .bonus-topline__sticky {
+            top: calc(var(--headerH) + var(--tocH));
         }
     </style>
 </body>

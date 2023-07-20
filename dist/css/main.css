@@ -9824,9 +9824,6 @@ hgroup svg {
   stroke: #fff;
   stroke-width: 2px;
 }
-.favorite:hover svg, .favorite:active svg, .favorite:focus svg, .favorite.active svg {
-  stroke: #FF1A5E;
-}
 
 .show-more {
   display: flex;
@@ -13204,9 +13201,14 @@ blockquote li::before {
 }
 
 :root {
-  --imgSz: 115px;
+  --imgSz: 60px;
 }
-@media only screen and (max-width: 520px) {
+@media only screen and (max-width: 900px) {
+  :root {
+    --imgSz: 115px;
+  }
+}
+@media only screen and (max-width: 360px) {
   :root {
     --imgSz: 65px;
   }
@@ -13217,7 +13219,7 @@ blockquote li::before {
   bottom: 16px;
   left: 0;
   right: 0;
-  z-index: 1001;
+  z-index: 100501;
   width: 90%;
   margin: auto;
   padding: var(--gapXs) var(--gap);
@@ -13278,6 +13280,9 @@ blockquote li::before {
   color: #fff;
 }
 @media only screen and (max-width: 900px) {
+  .cookie {
+    padding: var(--gap);
+  }
   .cookie__content {
     align-items: center;
     text-align: center;

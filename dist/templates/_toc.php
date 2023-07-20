@@ -47,3 +47,6 @@ $toc = array(
         </div>
     </div>
 </section>
+<!--Scrollable libs-->
+<script src="../lib/tabs/move.min.js"></script>
+<script src="../lib/tabs/scrollable-tabs.min.js"></script>

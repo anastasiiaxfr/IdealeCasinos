@@ -13,7 +13,7 @@ gulp.task('img', function () {
         .src('src/img/**/*.{png,jpg,jpeg}')
         .pipe(plumber())
         .pipe(tinypng({
-            key: '3B8F7mxVmX0d325mbKTRJ0FJLj05Rwjs',
+            key: '53d4slpMNsjWsf1gjdnb8cjBchD9KQGQ',
             sigFile: 'img/.tinypng-sigs',
             log: true
         }))
