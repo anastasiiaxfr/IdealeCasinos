@@ -9304,7 +9304,7 @@ body::-webkit-scrollbar-thumb, .drawer__wrap::-webkit-scrollbar-thumb, .search::
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 100500;
+  z-index: 100700;
   transition: all 0.45s ease-in-out;
   background-color: #4B50C8;
 }
@@ -11820,6 +11820,7 @@ tr:nth-child(5) .slider, tr:nth-child(5) .slider::-webkit-slider-thumb {
     justify-content: center;
     align-items: center;
     padding: 0 4px 8px;
+    gap: 12px;
     text-align: center;
   }
   .casino__info {
@@ -14559,6 +14560,7 @@ a:hover, a:focus, a:active, a:focus-visible {
 @media only screen and (max-width: 772px) {
   .page__section-inner {
     grid-template-columns: 1fr;
+    gap: var(--gapLg);
   }
   .page__section-inner > :first-child {
     margin-left: auto;

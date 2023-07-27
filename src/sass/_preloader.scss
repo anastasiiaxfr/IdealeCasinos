@@ -2,7 +2,7 @@
 	@include flex(flex, center, center, nowrap);
 	@include sz(100%, 100%);
 	@include ps(fixed, (t, 0), (l, 0));
-    z-index: 100500;
+    z-index: 100700;
 	transition: $trs;
 
 	background-color: $violet1;
