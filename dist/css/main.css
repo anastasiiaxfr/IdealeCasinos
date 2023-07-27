@@ -11504,12 +11504,19 @@ tr:nth-child(5) .slider, tr:nth-child(5) .slider::-webkit-slider-thumb {
 }
 @media only screen and (max-width: 480px) {
   .bonus-row {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
   }
   .bonus-row__inner {
-    flex: 1 0 auto;
     width: 100%;
+  }
+  .bonus-row__info {
+    font: 700 0.875rem/1.4285714286 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+  .bonus-row__btn {
+    width: 118px;
+    height: 32px;
+    min-width: 118px;
   }
 }
 

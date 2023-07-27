@@ -68,12 +68,18 @@
             object-fit: cover
 
     +maw($xs)
-        flex-wrap: wrap
+        flex-wrap: nowrap
         justify-content: center
 
         &__inner
-            flex: 1 0 auto
             width: 100%
+
+        &__info
+            +ft(14, 20, 700)
+
+        &__btn
+            +sz(118px, 32px)
+            min-width: 118px
 
 .bonus-banner
     +flex(flex, center, flex-start, wrap)
