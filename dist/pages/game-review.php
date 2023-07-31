@@ -57,12 +57,12 @@
                 <section class="page__slider">
                     <div>
                         <?php $slider_title = "Similar Games You Might Like"; ?>
-                        <?php $slider_class = "slider-5"; ?>
+                        <?php $slider_class = "box--default slider-5"; ?>
                         <?php include '../templates/_games.php'; ?>
                     </div>
                     <div>
                         <?php $slider_title = "Games by Provider"; ?>
-                        <?php $slider_class = "slider-5"; ?>
+                        <?php $slider_class = "box--default slider-5"; ?>
                         <?php include '../templates/_games.php'; ?>
                     </div>
                 </section>

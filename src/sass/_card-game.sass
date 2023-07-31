@@ -95,8 +95,14 @@
         +flex(flex, center, center, nowrap)
         flex-direction: column
         gap: var(--gapXs)
+        width: 80%
         opacity: 0
-      
+
+        button
+            height: auto
+            padding: 5% 1.25em
+            min-width: 150px
+            
     &__btn
         +flex(flex, center, center, nowrap)
         padding: 16px 24px
@@ -112,7 +118,7 @@
     &__cta
         +flex(flex, flex-start, space-between, nowrap)
         width: 100%
-        padding: var(--gap)
+        padding: var(--gapXs)
         padding-bottom: 0
 
     &__icon, .rating
@@ -169,6 +175,10 @@
     +maw($xs)
         &__img
             display: none
+
+        &--default
+            .box__img
+                display: block
 
         &__content
             &-img
