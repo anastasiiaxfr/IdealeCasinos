@@ -11629,6 +11629,9 @@ tr:nth-child(5) .slider, tr:nth-child(5) .slider::-webkit-slider-thumb {
     height: 32px;
     min-width: 118px;
   }
+  .bonus-row__img {
+    align-self: flex-start;
+  }
 }
 
 .bonus-banner {
