@@ -30,7 +30,14 @@
                 </div>
                 <div class="form__field">
                     <label for="user_req">*Subject </label>
-                    <input class="form__input" type="text" name="user_req" id="user_req" placeholder="Choose Subject" required>
+                    <?php
+                    $select = array(
+                        array("title" => "Subject", "value" => "default"),
+                        array("title" => "2023", "value" => "2023"),
+                        array("title" => "2022", "value" => "2022"),
+                    );
+                    ?>
+                    <?php include '_select.php'; ?>
                     <div class="form__error">
                         *Required field
                     </div>
@@ -54,4 +61,3 @@
         </form>
     </div>
 </section>
-
