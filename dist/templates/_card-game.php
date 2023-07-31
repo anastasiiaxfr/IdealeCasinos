@@ -23,27 +23,43 @@
 
     echo "</div>
 
-               <div class='box__btns'>
-               <button class='btn-main'>
-               Play Now
-           </button>
-           <button class='btn-blur'>
-               Play Demo
-           </button>
-               </div>
+            <div class='box__btns'>
+                <button class='btn-main'>
+                    Play Now
+                </button>
+                <button class='btn-blur'>
+                    Play Demo
+                </button>
+            </div>
             </div>
         </div>
         <figcaption class='box__content'>
-            <div class='box__text'>
-                <a href='$url' class='box__title'>
-                    $title
-                </a>
-                <a href='$url' class='box__info'> <i>by</i> 
-                    $provider
-                </a>
+
+            <div class='box__content-inner'>
+                <div class='box__content-img'>
+                    <img src='$img' alt='$title'>
+                </div>
+                <div class='box__text'>
+                    <a href='$url' class='box__title'>
+                        $title
+                    </a>
+                    <a href='$url' class='box__info'> <i>by</i> 
+                        $provider
+                    </a>
+                </div>
+
             </div>
+           
             <div class='box__footer'>
                 <div class='box__stat'>
+                    <div> 
+                        <div class='box__stat-header'>
+                            Rating
+                        </div>
+                        <div class='box__stat-val'>";
+                        include '../templates/_rating.php';
+                        echo "</div>
+                    </div>
                     <div> 
                         <div class='box__stat-header'>
                             Min Bet
@@ -61,6 +77,19 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class='box__footer-cta'>
+                <button class='box__icon likes'>
+                    <svg width='20' height='20'>
+                        <use xlink:href='#heart'></use>
+                    </svg>
+                </button>
+                <button class='btn-main-bd'>
+                    Demo Spelen
+                </button>
+                <button class='btn-main'>
+                    Echt Spelen
+                </button>
             </div>
         </figcaption>
     </figure>";
