@@ -10969,7 +10969,7 @@ tr:nth-child(5) .slider, tr:nth-child(5) .slider::-webkit-slider-thumb {
 }
 .box__wrap {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(256px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   justify-content: center;
   gap: var(--gapMd);
   margin: var(--gapMd) auto;
@@ -12610,6 +12610,9 @@ blockquote li::before {
 }
 .casino-top__list {
   width: 100%;
+}
+.casino-top__list ul {
+  margin: 0;
 }
 .casino-top__list li {
   font: 400 0.75rem/1 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
