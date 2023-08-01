@@ -253,7 +253,8 @@ tabWraps.forEach((tabWrap) => {
 const select = document.querySelectorAll(".select");
 
 select.forEach((i) =>
-    i.addEventListener("click", function () {
+    i.addEventListener("click", function (e) {
+        e.preventDefault();
         const select_list = i.parentNode.querySelector(".select-list");
         const select_icon = i.querySelector(".select-icon");
         if (select_list) {

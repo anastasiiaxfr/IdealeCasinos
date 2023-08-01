@@ -9,7 +9,7 @@
         background-color: $red
         color: $white
     
-    &-blur, &-main, &-bd
+    &-blur, &-main, &-main-bd, &-bd
         min-width: 144px
         height: 40px
         @extend .btn
@@ -36,6 +36,13 @@
         &:hover, &:active, &:focus
             background: darken($pink, 10%)
             color: $white
+        &-bd
+            background-color: $pink30
+            color: $pink
+            &:hover, &:active, &:focus
+                background: darken($pink30, 10%)
+                color: $pink
+
 
     &-blur
         background: $grad2

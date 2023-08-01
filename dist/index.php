@@ -50,7 +50,7 @@
                 <?php
                 $section = array(
                     array(
-                        "type" => "right", "img" => "../img/img-1.png", "title" => "Profitable Promotions", "text" => 'It’s impossible to imagine a reputable online casino, which doesn’t have generous promotions on offer. Gamblorium attentively monitors online casino bonuses to ensure that you get access to the most beneficial deals and offers. Luckily, there is a wide range of promotions waiting for gamblers, including welcome bonuses, free spins, no deposit bonuses  <a class="link-show-more" href="#">Show More</a>', "view-more" => "#",
+                        "type" => "right", "img" => "../img/img-1.svg", "title" => "Profitable Promotions", "text" => 'It’s impossible to imagine a reputable online casino, which doesn’t have generous promotions on offer. Gamblorium attentively monitors online casino bonuses to ensure that you get access to the most beneficial deals and offers. Luckily, there is a wide range of promotions waiting for gamblers, including welcome bonuses, free spins, no deposit bonuses  <a class="link-show-more" href="#">Show More</a>', "view-more" => "#",
                         "list" => array(
                             array("title" => "No Deposit Bonus", "icon" => "i9", "url" => "#"),
                             array("title" => "Free Spins Bonus", "icon" => "i6", "url" => "#"),
@@ -61,7 +61,7 @@
                     ),
 
                     array(
-                        "type" => "left", "img" => "../img/img-2.png", "title" => "Payment Methods & Currency", "text" => 'It’s impossible to imagine a reputable online casino, which doesn’t have generous promotions on offer. Gamblorium attentively monitors online casino bonuses to ensure that you get access to the most beneficial deals and offers. Luckily, there is a wide range of promotions waiting for gamblers, including welcome bonuses, free spins, no deposit bonuses <a class="link-show-more" href="#">Show More</a>',
+                        "type" => "left", "img" => "../img/img-2.svg", "title" => "Payment Methods & Currency", "text" => 'It’s impossible to imagine a reputable online casino, which doesn’t have generous promotions on offer. Gamblorium attentively monitors online casino bonuses to ensure that you get access to the most beneficial deals and offers. Luckily, there is a wide range of promotions waiting for gamblers, including welcome bonuses, free spins, no deposit bonuses <a class="link-show-more" href="#">Show More</a>',
                         "view-more" => "#",
                         "list" => array(
                             array("title" => "Visa", "icon" => "visa", "url" => "#"),
@@ -73,7 +73,7 @@
                     ),
 
                     array(
-                        "type" => "right", "img" => "../img/img-3.png", "title" => "Games from Trusted Software  Providers", "text" => 'It’s impossible to imagine a reputable online casino, which doesn’t have generous promotions on offer. Gamblorium attentively monitors online casino bonuses to ensure that you get access to the most beneficial deals and offers. Luckily, there is a wide range of promotions waiting for gamblers, including welcome bonuses, free spins, no deposit bonuses  <a class="link-show-more" href="#">Show More</a>',
+                        "type" => "right", "img" => "../img/img-3.svg", "title" => "Games from Trusted Software  Providers", "text" => 'It’s impossible to imagine a reputable online casino, which doesn’t have generous promotions on offer. Gamblorium attentively monitors online casino bonuses to ensure that you get access to the most beneficial deals and offers. Luckily, there is a wide range of promotions waiting for gamblers, including welcome bonuses, free spins, no deposit bonuses  <a class="link-show-more" href="#">Show More</a>',
                         "view-more" => "#",
                         "list" => array(
                             array("title" => "Blackjack", "icon" => "i15", "url" => "#"),
@@ -85,11 +85,11 @@
                         ),
                     ),
 
-                    array("type" => "left", "img" => "../img/img-4.png", "title" => "Licensing", "text" => 'It’s impossible to imagine a reputable online casino, which doesn’t have generous promotions on offer. Gamblorium attentively monitors online casino bonuses to ensure that you get access to the most beneficial deals and offers. Luckily, there is a wide range of promotions waiting for gamblers, including welcome bonuses, free spins, no deposit bonuses <a class="link-show-more" href="#">Show More</a>', "view-more" => "#"),
+                    array("type" => "left", "img" => "../img/img-4.svg", "title" => "Licensing", "text" => 'It’s impossible to imagine a reputable online casino, which doesn’t have generous promotions on offer. Gamblorium attentively monitors online casino bonuses to ensure that you get access to the most beneficial deals and offers. Luckily, there is a wide range of promotions waiting for gamblers, including welcome bonuses, free spins, no deposit bonuses <a class="link-show-more" href="#">Show More</a>', "view-more" => "#"),
 
-                    array("type" => "right", "img" => "../img/img-5.png", "title" => "Security", "text" => 'It’s impossible to imagine a reputable online casino, which doesn’t have generous promotions on offer. Gamblorium attentively monitors online casino bonuses to ensure that you get access to the most beneficial deals and offers. Luckily, there is a wide range of promotions waiting for gamblers, including welcome bonuses, free spins, no deposit bonuses <a class="link-show-more" href="#">Show More</a>'),
+                    array("type" => "right", "img" => "../img/img-5.svg", "title" => "Security", "text" => 'It’s impossible to imagine a reputable online casino, which doesn’t have generous promotions on offer. Gamblorium attentively monitors online casino bonuses to ensure that you get access to the most beneficial deals and offers. Luckily, there is a wide range of promotions waiting for gamblers, including welcome bonuses, free spins, no deposit bonuses <a class="link-show-more" href="#">Show More</a>'),
 
-                    array("type" => "left", "img" => "../img/img-6.png", "title" => "Customer Support", "text" => 'It’s impossible to imagine a reputable online casino, which doesn’t have generous promotions on offer. Gamblorium attentively monitors online casino bonuses to ensure that you get access to the most beneficial deals and offers. Luckily, there is a wide range of promotions waiting for gamblers, including welcome bonuses, free spins, no deposit bonuses <a class="link-show-more" href="#">Show More</a>'),
+                    array("type" => "left", "img" => "../img/img-6.svg", "title" => "Customer Support", "text" => 'It’s impossible to imagine a reputable online casino, which doesn’t have generous promotions on offer. Gamblorium attentively monitors online casino bonuses to ensure that you get access to the most beneficial deals and offers. Luckily, there is a wide range of promotions waiting for gamblers, including welcome bonuses, free spins, no deposit bonuses <a class="link-show-more" href="#">Show More</a>'),
 
                 );
                 ?>
