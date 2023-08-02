@@ -22,7 +22,7 @@
             </div>
         </div>
 
-        <article class="page">
+        <article class="page page-with-breadcrumbs">
             <div class="container">
 
                 <h1 class="h2">

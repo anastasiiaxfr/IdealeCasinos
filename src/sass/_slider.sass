@@ -1,0 +1,118 @@
+.slider
+    &__wrap
+        display: none
+        margin-top: var(--gapSm)
+    
+    &__group
+        margin-bottom: var(--gapLg)
+
+        &:last-of-type
+            margin-bottom: 0
+
+    &__slide
+        padding: 0 var(--gapXs)
+
+        .slider-str & 
+            padding: 0 var(--gap)
+
+    &__img
+        position: relative
+        width: 100%
+        padding-top: 50%
+        border-radius: 8px
+        overflow: hidden
+        & *
+            display: block
+            +sz(100%, 100%)
+            +ps(absolute, (t, 0), (l, 0))
+            object-fit: cover
+            border-radius: inherit
+
+.show
+    display: block
+
+
+.f-carousel
+    --f-carousel-spacing: 0
+    --f-button-hover-bg: #fff
+    --f-button-active-bg: #fff
+    --f-button-svg-width: 16px
+    --f-button-svg-height: 16px
+    --f-button-svg-stroke-width: 0
+    --f-button-next-pos: 8px
+    --f-button-prev-pos: 8px
+
+.slider-blog, .img-gallery,  .slider-3, .slider-5, .slider-str, .slider-news
+    --f-carousel-slide-width: 25%
+
+.slider-1, .slider-2
+    --f-carousel-slide-width: 20%
+    --f-button-next-pos: -20px
+    --f-button-prev-pos: -20px
+    +maw($md)
+        --f-button-next-pos: 8px
+        --f-button-prev-pos: 8px
+
+.slider-4, .slider-6
+    --f-carousel-slide-width: calc(100% / 3)
+
+[class*=slider-]
+    +maw($md)
+        --f-carousel-slide-width: calc(100% / 3)
+    +maw($sm)
+        --f-carousel-slide-width: 50%
+
+    +maw($xs)
+        --f-carousel-slide-width: 100%
+
+    .f-carousel__nav
+        display: none
+
+.slider-str
+    --f-button-hover-bg: transparent
+    --f-button-active-bg: transparent
+    --f-button-next-pos: -10px
+    --f-button-prev-pos: -10px
+
+    +maw($xs)
+        .f-carousel__nav
+            display: flex
+
+.slider-1, .slider-2
+    .f-carousel__nav
+        display: flex
+
+
+.f-carousel__viewport
+    width: calc(100% + 16px)
+    margin-left: -8px
+    margin-right: -8px
+
+    .slider-str &
+        width: calc(100% + 32px)
+        margin-left: -16px
+        margin-right: -16px
+
+        +maw($xs)
+            width: 100%
+            margin: 0
+
+.f-carousel__dots 
+    display: none
+
+.f-carousel__nav
+    button
+        +sz(40px, 40px)
+        border-radius: 50%
+        background-color: $white
+        box-shadow: $bxsd3
+
+        .slider-str &
+            background-color: transparent
+            box-shadow: none
+
+    
+
+
+
+    

@@ -65,10 +65,11 @@
                         <?php include '../templates/_sidebar.php'; ?>
                     </aside>
                 </article>
+              
 
                 <section class="page__slider">
                     <?php $blog_title = "More Posts"; ?>
-                    <?php $blog_class = "slider-3"; ?>
+                    <?php $blog_class = "slider-6"; ?>
                     <?php include '../templates/_blogs.php'; ?>
                 </section>
 
@@ -80,7 +81,15 @@
     <?php include '../templates/_footer.php'; ?>
     <?php include '../templates/_svg.php'; ?>
 
+    <script>
+        const slider_options = {
+            infinite: false,
+        }
+        const slider_6 = document.querySelector(".slider-6");
 
+        new Carousel(slider_6, slider_options);
+
+    </script>
 </body>
 
 </html>

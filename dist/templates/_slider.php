@@ -1,7 +1,13 @@
-<div class="blog__wrap swiper <?php if (isset($slids_class)) {echo $slids_class;} else {echo 'swiper-blog';}?>">
-    <div class="swiper-wrapper">
-        <?php foreach ($slids as $i => $item) {?>
-            <?php include '_slide.php';?>
-        <?php }?>
-    </div>
+<div class="slider__wrap">
+<div class="f-carousel <?php if (isset($slids_class)) {
+                            echo $slids_class;
+                        } ?>">
+    <?php foreach ($slids as $i => $item) { ?>
+        <div class="slider__slide f-carousel__slide">
+            <div class="slider__img">
+                <img src="<?php echo $item['img']; ?>" alt="<?php echo $item['alt']; ?>" width="300" height="150">
+            </div>
+        </div>
+    <?php } ?>
+</div>
 </div>

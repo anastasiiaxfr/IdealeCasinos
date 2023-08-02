@@ -7,7 +7,7 @@
     $max_win = $item['max_win'];
     $rating = $item['rating'];
     $likes = $item['likes'];
-    echo "<figure class='box swiper-slide'>
+    echo "<div class='f-carousel__slide slider__slide'><figure class='box'>
         <div class='box__img'>
             <img src='$img' alt='$title'>
 
@@ -43,5 +43,5 @@
                 </a>
             </div>
         </figcaption>
-    </figure>";
+    </figure></div>";
 }

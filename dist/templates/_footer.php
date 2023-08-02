@@ -10,67 +10,67 @@
             </div>
 
             <div class="footer-menu__wrap">
-                <?php include $_SERVER['DOCUMENT_ROOT'] . '/templates/_socials.php'; ?>
+                <?php include $_SERVER['DOCUMENT_ROOT'] . '/templates/_socials.php';?>
 
                 <?php
-                $data = array(
-                    array(
-                        "title" => "Kansspelgids",
-                        "list" => array(
-                            array("item" => "Over Cruks", "url" => "#"),
-                            array("item" => "Legale Casinos", "url" => "#"),
-                            array("item" => "Kanssepelbelasting", "url" => "#"),
-                            array("item" => "Kanssepelautoriteit", "url" => "#"),
-                        ),
-                    ),
-                    array(
-                        "title" => "Nuttige informatie",
-                        "list" => array(
-                            array("item" => "Privacybeleid", "url" => "#"),
-                            array("item" => "Algemene Voorwaarden", "url" => "#"),
-                            array("item" => "Verantwoord Gokken", "url" => "#"),
-                            array("item" => "Over Ons", "url" => "#"),
-                            array("item" => "Contactformulier", "url" => "#"),
-                        ),
-                    ),
-                    array(
-                        "title" => "Kansspelgids",
-                        "list" => array(
-                            array("item" => "Over Cruks", "url" => "#"),
-                            array("item" => "Legale Casinos", "url" => "#"),
-                            array("item" => "Kanssepelbelasting", "url" => "#"),
-                            array("item" => "Kanssepelautoriteit", "url" => "#"),
-                        ),
-                    ),
-                    array(
-                        "title" => "Nuttige informatie",
-                        "list" => array(
-                            array("item" => "Privacybeleid", "url" => "#"),
-                            array("item" => "Algemene Voorwaarden", "url" => "#"),
-                            array("item" => "Verantwoord Gokken", "url" => "#"),
-                            array("item" => "Over Ons", "url" => "#"),
-                            array("item" => "Contactformulier", "url" => "#"),
-                        ),
-                    ),
-                );
+$data = array(
+    array(
+        "title" => "Kansspelgids",
+        "list" => array(
+            array("item" => "Over Cruks", "url" => "#"),
+            array("item" => "Legale Casinos", "url" => "#"),
+            array("item" => "Kanssepelbelasting", "url" => "#"),
+            array("item" => "Kanssepelautoriteit", "url" => "#"),
+        ),
+    ),
+    array(
+        "title" => "Nuttige informatie",
+        "list" => array(
+            array("item" => "Privacybeleid", "url" => "#"),
+            array("item" => "Algemene Voorwaarden", "url" => "#"),
+            array("item" => "Verantwoord Gokken", "url" => "#"),
+            array("item" => "Over Ons", "url" => "#"),
+            array("item" => "Contactformulier", "url" => "#"),
+        ),
+    ),
+    array(
+        "title" => "Kansspelgids",
+        "list" => array(
+            array("item" => "Over Cruks", "url" => "#"),
+            array("item" => "Legale Casinos", "url" => "#"),
+            array("item" => "Kanssepelbelasting", "url" => "#"),
+            array("item" => "Kanssepelautoriteit", "url" => "#"),
+        ),
+    ),
+    array(
+        "title" => "Nuttige informatie",
+        "list" => array(
+            array("item" => "Privacybeleid", "url" => "#"),
+            array("item" => "Algemene Voorwaarden", "url" => "#"),
+            array("item" => "Verantwoord Gokken", "url" => "#"),
+            array("item" => "Over Ons", "url" => "#"),
+            array("item" => "Contactformulier", "url" => "#"),
+        ),
+    ),
+);
 
-                ?>
+?>
 
-                <?php foreach ($data as $item) { ?>
+                <?php foreach ($data as $item) {?>
                     <nav class="footer-menu">
                         <div class="footer-menu__title">
                             <?php echo $item['title']; ?>
                         </div>
                         <ul>
-                            <?php foreach ($item['list'] as $listItem) { ?>
+                            <?php foreach ($item['list'] as $listItem) {?>
                                 <li>
                                     <a href="<?php echo $listItem['url']; ?>"><?php echo $listItem['item']; ?></a>
                                 </li>
 
-                            <?php } ?>
+                            <?php }?>
                         </ul>
                     </nav>
-                <?php } ?>
+                <?php }?>
 
             </div>
 
@@ -109,10 +109,20 @@
         </div>
     </div>
 </footer>
-<?php include '_cookie.php'; ?>
-<script src="../lib/swiper/swiper-bundle.js"></script>
+<?php include '_cookie.php';?>
 
 <script src="../js/main.js"></script>
 
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css" />
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script> -->
 
 
+<script src="../lib/fancybox/carousel.umd.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const slider = document.querySelectorAll('.slider__wrap');
+        setTimeout(function() {
+            slider.forEach(i => i.classList.toggle('show'));
+        }, 50)
+    });
+</script>

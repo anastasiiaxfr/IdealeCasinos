@@ -55,14 +55,14 @@
                 </div>
 
                 <section class="page__slider">
-                    <div>
+                    <div class="slider__group">
                         <?php $slider_title = "Similar Games You Might Like"; ?>
-                        <?php $slider_class = "box--default slider-5"; ?>
+                        <?php $slider_class = "box--default slider-1"; ?>
                         <?php include '../templates/_games.php'; ?>
                     </div>
-                    <div>
+                    <div class="slider__group">
                         <?php $slider_title = "Games by Provider"; ?>
-                        <?php $slider_class = "box--default slider-5"; ?>
+                        <?php $slider_class = "box--default slider-2"; ?>
                         <?php include '../templates/_games.php'; ?>
                     </div>
                 </section>
@@ -75,7 +75,20 @@
     <?php include '../templates/_footer.php'; ?>
     <?php include '../templates/_svg.php'; ?>
 
+    <script>
+        const slider_options = {
+            infinite: false,
+            Navigation: {
+                nextTpl: `<svg class="icon"><use xlink:href="#slider-rt"></use></svg>`,
+                prevTpl: `<svg class="icon"><use xlink:href="#slider-lt"></use></svg>`,
+            },
+        }
+        const slider_1 = document.querySelector(".slider-1");
+        const slider_2 = document.querySelector(".slider-2");
+
+        new Carousel(slider_1, slider_options);
+        new Carousel(slider_2, slider_options);
+    </script>
 
 </body>
-
 </html>

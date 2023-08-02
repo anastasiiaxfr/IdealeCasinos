@@ -184,8 +184,8 @@
                             array("img" => "../img/img-9.png", "num" => "3", "title" => "Enter the amount", "desc" => "Enter the desired amount and choose your bank. You can make a deposit of 5 euros."),
                             array("img" => "../img/img-10.png", "num" => "4", "title" => "Complete the payment", "desc" => "You will now be redirected to your own familiar banking environment. Depending on your bank, you must confirm the payment using a box, your telephone or a special code."),
                         ) ?>
-                        <div class="str__card-wrap swiper swiper-str">
-                            <div class="swiper-wrapper">
+                        <div class="slider__wrap">
+                            <div class="f-carousel slider-str">
                                 <?php include './templates/_str.php'; ?>
                             </div>
                         </div>
@@ -407,6 +407,7 @@
                         <?php include './templates/_faq.php'; ?>
 
                         <?php $blog_title = "Blog" ?>
+                        <?php $blog_class = "slider-news"; ?>
                         <?php include './templates/_blogs.php'; ?>
 
                     </div>
@@ -423,7 +424,21 @@
     </main>
     <?php include './templates/_footer.php'; ?>
     <?php include './templates/_svg.php'; ?>
+    <script>
+        const slider_options = {
+            infinite: false,
+            Navigation: {
+                nextTpl: `<svg class="icon"><use xlink:href="#arr-slider-l"></use></svg>`,
+                prevTpl: `<svg class="icon"><use xlink:href="#arr-slider-r"></use></svg>`,
+            },
+        }
+        const slider_str = document.querySelector(".slider-str");
+        const slider_news = document.querySelector(".slider-news");
+
+        new Carousel(slider_str, slider_options);
+        new Carousel(slider_news);
+
+    </script>
 
 </body>
-
 </html>

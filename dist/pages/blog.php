@@ -63,23 +63,24 @@
                             </a>
                         <?php } ?>
                     </div>
-
                 </section>
+
 
                 <section>
                     <?php $blog_title = "Category Name"; ?>
+                    <?php $blog_class = "slider-3"; ?>
                     <?php include '../templates/_blogs.php'; ?>
                 </section>
 
                 <section>
                     <?php $blog_title = "Editor Choise"; ?>
-                    <?php $blog_class = "slider-3"; ?>
+                    <?php $blog_class = "slider-4"; ?>
                     <?php include '../templates/_blogs.php'; ?> 
                 </section>
 
                 <section>
                     <?php $blog_title = "Category Name"; ?>
-                    <?php $blog_class = "slider-4"; ?>
+                    <?php $blog_class = "slider-5"; ?>
                     <?php include '../templates/_blogs.php'; ?>
                 </section>
 
@@ -92,7 +93,18 @@
     <?php include '../templates/_footer.php'; ?>
     <?php include '../templates/_svg.php'; ?>
 
+    <script>
+        const slider_options = {
+            infinite: false,
+        }
+        const slider_3 = document.querySelector(".slider-3");
+        const slider_4 = document.querySelector(".slider-4");
+        const slider_5 = document.querySelector(".slider-5");
 
+        new Carousel(slider_3, slider_options);
+        new Carousel(slider_4, slider_options);
+        new Carousel(slider_5, slider_options);
+
+    </script>
 </body>
-
 </html>

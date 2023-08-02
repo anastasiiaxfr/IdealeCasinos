@@ -1,6 +1,7 @@
 
 <?php foreach ($str as $i => $item) { ?>
-<figure class="str__card swiper-slide">
+<div class="f-carousel__slide slider__slide">
+<figure class="str__card">
     <div class="str__card-img">
         <img src="<?php echo $item['img']; ?>" alt="<?php echo $item['title']; ?>">
     </div>
@@ -18,4 +19,5 @@
         </div>
     </figcaption>
 </figure>
+</div>
 <?php } ?>

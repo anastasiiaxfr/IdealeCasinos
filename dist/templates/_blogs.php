@@ -20,8 +20,8 @@
 <?php }
 ;?>
 
-<div class="blog__wrap swiper <?php if (isset($blog_class)) {echo $blog_class;} else {echo 'swiper-blog';}?>">
-    <div class="swiper-wrapper">
+<div class="slider__wrap">
+<div class="f-carousel <?php if (isset($blog_class)) {echo $blog_class;}?>">
         <?php foreach ($blogs as $i => $item) {?>
             <?php include '_blog.php';?>
         <?php }?>
