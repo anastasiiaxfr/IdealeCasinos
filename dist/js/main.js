@@ -82,11 +82,63 @@ const get_cookie = getCookie("policy");
 //DRAWER menu
 const menu_toggle = document.querySelector(".menu__toggler");
 const drawer = document.querySelector(".drawer__wrap");
+const menuLinks = document.querySelectorAll(".header-menu__link");
+const drawerItems = document.querySelectorAll(".drawer-menu__item");
+const parentWidth = document.querySelector(".header-menu").offsetWidth;
 
-menu_toggle.addEventListener("click", function () {
+menu_toggle.addEventListener("click", function (e) {
+  e.stopPropagation();
   drawer.classList.toggle("d-flex");
   this.classList.toggle("active");
 });
+
+drawerItems.forEach((item) => {
+  item.addEventListener("click", function () {
+    this.classList.toggle("show");
+  });
+
+  const submenuLinks = item.querySelector(".drawer-menu__submenu").querySelectorAll("a");
+
+  submenuLinks.forEach((link) => {
+    link.addEventListener("click", function () {
+      drawer.classList.remove("d-flex");
+      menu_toggle.classList.remove("active");
+    });
+  });
+});
+
+document.addEventListener("click", function (e) {
+  if (!drawer.contains(e.target) && !menu_toggle.contains(e.target)) {
+    drawer.classList.remove("d-flex");
+    menu_toggle.classList.remove("active");
+  }
+});
+
+//MENU items to display
+function updateMenuItems(menuLinks, drawerItems, parentWidth) {
+  let totalWidth = 0;
+
+  menuLinks.forEach((link, index) => {
+    totalWidth += link.offsetWidth + 16;
+    const menuItem = link.closest(".header-menu__item");
+
+    if (totalWidth <= parentWidth) {
+      menuItem.classList.add("active");
+      drawerItems[index].classList.remove("active");
+      menuItem.classList.remove("d-none");
+      drawerItems[index].classList.add("d-none");
+    } else {
+      menuItem.classList.remove("active");
+      drawerItems[index].classList.add("active");
+      menuItem.classList.add("d-none");
+      drawerItems[index].classList.remove("d-none");
+    }
+  });
+}
+
+
+updateMenuItems(menuLinks, drawerItems, parentWidth);
+//window.addEventListener("resize", updateMenuItems);
 
 //SEARCH
 const favorite = document.querySelector(".favorite");
