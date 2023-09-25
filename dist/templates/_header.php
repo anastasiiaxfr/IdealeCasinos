@@ -13,12 +13,12 @@
             $menu = array(
                 array(
                     "link" => "Snelle Uitbetaling Casino's1",
-                    "url" => "#",
+                    "url" => "https://idealecasinos-production.up.railway.app/pages/casino-review.php",
                     "icon" => "cup",
                     "sub" => array(
                         array(
                             "link" => "Minimale Storing",
-                            "url" => "#",
+                            "url" => "https://idealecasinos-production.up.railway.app/pages/sitemap.php",
                             "sub" => array(
                                 array("link" => "1 Euro Casinos", "url" => "#"),
                                 array("link" => "2 Euro Casinos", "url" => "#"),
@@ -30,7 +30,7 @@
                         ),
                         array(
                             "link" => "categorieen",
-                            "url" => "#",
+                            "url" => "https://idealecasinos-production.up.railway.app/pages/blog.php",
                             "sub" => array(
                                 array("link" => "Legal Casinos", "url" => "#"),
                                 array("link" => "Live Casinos", "url" => "#"),
@@ -41,7 +41,7 @@
                         ),
                         array(
                             "link" => "Top Casinos",
-                            "url" => "#",
+                            "url" => "https://idealecasinos-production.up.railway.app/pages/category.php",
                             "sub" => array(
                                 array("link" => "OneCasino Review", "url" => "#"),
                                 array("link" => "Live Holland Casino Review", "url" => "#"),
@@ -56,12 +56,12 @@
 
                 array(
                     "link" => "Snelle Uitbetaling Casino's2",
-                    "url" => "#",
+                    "url" => "https://idealecasinos-production.up.railway.app/pages/bonus-landing.php",
                     "icon" => "cup",
                     "sub" => array(
                         array(
                             "link" => "2Minimale Storing",
-                            "url" => "#",
+                            "url" => "https://idealecasinos-production.up.railway.app/pages/author.php",
                             "sub" => array(
                                 array("link" => "2 Euro Casinos", "url" => "#"),
                                 array("link" => "2 Euro Casinos", "url" => "#"),
@@ -73,7 +73,7 @@
                         ),
                         array(
                             "link" => "Top Casinos",
-                            "url" => "#",
+                            "url" => "https://idealecasinos-production.up.railway.app/pages/payment-system-sidebar.php",
                             "sub" => array(
                                 array("link" => "OneCasino Review", "url" => "#"),
                                 array("link" => "Live Holland Casino Review", "url" => "#"),
@@ -88,12 +88,12 @@
 
                 array(
                     "link" => "Snelle Uitbetaling Casino's3",
-                    "url" => "#",
+                    "url" => "https://idealecasinos-production.up.railway.app/pages/game-landing.php",
                     "icon" => "cup",
                     "sub" => array(
                         array(
                             "link" => "Minimale Storing",
-                            "url" => "#",
+                            "url" => "https://idealecasinos-production.up.railway.app/pages/blog-single.php",
                             "sub" => array(
                                 array("link" => "1 Euro Casinos", "url" => "#"),
                                 array("link" => "2 Euro Casinos", "url" => "#"),
@@ -108,12 +108,12 @@
 
                 array(
                     "link" => "Snelle Uitbetaling Casino's4",
-                    "url" => "#",
+                    "url" => "https://idealecasinos-production.up.railway.app/pages/payment-system.php",
                     "icon" => "cup",
                     "sub" => array(
                         array(
                             "link" => "Minimale Storing",
-                            "url" => "#",
+                            "url" => "https://idealecasinos-production.up.railway.app/pages/game-review.php",
                             "sub" => array(
                                 array("link" => "1 Euro Casinos", "url" => "#"),
                                 array("link" => "2 Euro Casinos", "url" => "#"),
@@ -125,7 +125,7 @@
                         ),
                         array(
                             "link" => "categorieen",
-                            "url" => "#",
+                            "url" => "https://idealecasinos-production.up.railway.app/pages/game-type-landing.php",
                             "sub" => array(
                                 array("link" => "Legal Casinos", "url" => "#"),
                                 array("link" => "Live Casinos", "url" => "#"),
@@ -136,7 +136,7 @@
                         ),
                         array(
                             "link" => "Top Casinos",
-                            "url" => "#",
+                            "url" => "https://idealecasinos-production.up.railway.app/pages/category.php",
                             "sub" => array(
                                 array("link" => "OneCasino Review", "url" => "#"),
                                 array("link" => "Live Holland Casino Review", "url" => "#"),
@@ -151,12 +151,12 @@
 
                 array(
                     "link" => "Snelle Uitbetaling Casino's5",
-                    "url" => "#",
+                    "url" => "https://idealecasinos-production.up.railway.app/pages/provider-landing.php",
                     "icon" => "cup",
                     "sub" => array(
                         array(
                             "link" => "Minimale Storing",
-                            "url" => "#",
+                            "url" => "https://idealecasinos-production.up.railway.app/pages/game-type-landing-sidebar.php",
                             "sub" => array(
                                 array("link" => "1 Euro Casinos", "url" => "#"),
                                 array("link" => "2 Euro Casinos", "url" => "#"),
@@ -194,7 +194,7 @@
 
                 array(
                     "link" => "Snelle Uitbetaling Casino's6",
-                    "url" => "#",
+                    "url" => "https://idealecasinos-production.up.railway.app/pages/info-page.php",
                     "icon" => "cup",
                     "sub" => array(
                         array(
@@ -237,7 +237,7 @@
 
                 array(
                     "link" => "Snelle Uitbetaling Casino's7",
-                    "url" => "#",
+                    "url" => "https://idealecasinos-production.up.railway.app/pages/landing-page.php",
                     "icon" => "cup",
                     "sub" => array(
                         array(
